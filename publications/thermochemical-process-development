@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Thermochemical Process Development: From Mechanism to Scale-Up and Industrial Adoption | Ahmad Saylam</title>
+
+  <meta name="citation_title" content="Thermochemical Process Development: From Mechanism to Scale-Up and Industrial Adoption">
+  <meta name="citation_author" content="Saylam, Ahmad">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_doi" content="10.5281/zenodo.20760609">
+  <meta name="citation_abstract_html_url" content="https://saylamah.github.io/publications/thermochemical-process-development.html">
+  <meta name="citation_pdf_url" content="https://saylamah.github.io/papers/thermochemical-process-development.pdf">
+
+  <meta name="description" content="Publication landing page for Thermochemical Process Development: From Mechanism to Scale-Up and Industrial Adoption by Ahmad Saylam.">
+</head>
+
+<body>
+  <p><a href="../publications.html">← Back to Publications</a></p>
+  
+  <h1>Thermochemical Process Development: From Mechanism to Scale-Up and Industrial Adoption</h1>
+
+  <p><strong>Author:</strong> Ahmad Saylam</p>
+
+  <p><strong>Document type:</strong> Technical Paper</p>
+
+  <p><strong>Year:</strong> 2026</p>
+
+  <p><strong>DOI:</strong> <a href="https://doi.org/10.5281/zenodo.20760609">10.5281/zenodo.20760609</a></p>
+
+  <p><strong>Zenodo record:</strong> <a href="https://zenodo.org/records/20760609">https://zenodo.org/records/20760609</a></p>
+
+  <h2>Abstract</h2>
+
+  <p>
+    Sustainable industrial transformation is often presented through large system goals: hydrogen, circular economy, waste-to-X, electrification, carbon management, and net-zero manufacturing. In practice, these goals become industrially meaningful only when physical-chemical and thermochemical processes can operate reliably under variable feedstocks, strict emission limits, changing energy prices, product-quality requirements, safety constraints, and real plant integration conditions.
+  </p>
+
+  <p>
+    This article argues that thermochemical knowledge remains a central enabling competence because it connects feedstock chemistry, reaction pathways, heat and mass transfer, reactor design, gas cleaning, emissions control, product specification, process integration, and scale-up evidence.
+  </p>
+
+  <p>
+    The article covers combustion, pyrolysis, gasification, reforming, biochar production, syngas generation, hydrogen-related systems, waste valorization, and carbon-management pathways. It proposes a development logic built on problem definition, feedstock-envelope qualification, product-intent design, controlling-phenomena analysis, model-assisted uncertainty reduction, experimental validation, decision-quality piloting, and disciplined scale-up.
+  </p>
+
+  <p>
+    The central message is that transformation technologies should not be judged by attractive labels or isolated laboratory effects, but by validated operating windows and complete flowsheet consequences. A process is industrially useful only when its benefit remains positive relative to a reference case after energy demand, emissions, separation burden, maintenance, reliability, uncertainty, product specification, and implementation constraints are considered.
+  </p>
+
+  <h2>Full Text</h2>
+
+  <p>
+    PDF link will be activated after the final PDF is uploaded:
+    <a href="https://saylamah.github.io/papers/thermochemical-process-development.pdf">
+      thermochemical-process-development.pdf
+    </a>
+  </p>
+
+  <h2>Citation</h2>
+
+  <p>
+    Saylam, A. (2026). Thermochemical Process Development: From Mechanism to Scale-Up and Industrial Adoption. Zenodo. https://doi.org/10.5281/zenodo.20760609
+  </p>
+</body>
+</html>
