@@ -1,0 +1,1261 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>Research &amp; Tools | Ahmad Saylam</title>
+
+  <meta
+    name="description"
+    content="Selected research areas, computational methods, engineering tools and reproducible technical resources by Ahmad Saylam across chemical kinetics, CFD, thermochemical processes and technology development."
+  >
+  <meta name="author" content="Ahmad Saylam">
+  <meta name="robots" content="index,follow">
+
+  <link
+    rel="canonical"
+    href="https://saylamah.github.io/research-tools.html"
+  >
+
+  <meta property="og:type" content="website">
+  <meta
+    property="og:title"
+    content="Research &amp; Tools | Ahmad Saylam"
+  >
+  <meta
+    property="og:description"
+    content="Research themes, modelling methods, engineering tools and reproducible resources connecting molecular chemistry, reactor simulation, CFD and industrial process development."
+  >
+  <meta
+    property="og:url"
+    content="https://saylamah.github.io/research-tools.html"
+  >
+
+  <style>
+    :root {
+      --ink: #13202c;
+      --muted: #536575;
+      --line: #d9e2e8;
+      --paper: #ffffff;
+      --soft: #f3f7f8;
+      --navy: #123c56;
+      --teal: #147b75;
+      --teal-dark: #0d5f5b;
+      --accent: #c98b2e;
+      --green-bg: #e3f2eb;
+      --green-ink: #17613f;
+      --yellow-bg: #fff0ce;
+      --yellow-ink: #76510c;
+      --grey-bg: #e8edf1;
+      --grey-ink: #4d5e6a;
+      --max: 1180px;
+      --shadow: 0 16px 40px rgba(18, 60, 86, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Inter, "Segoe UI", Arial, Helvetica, sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--teal-dark);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      color: var(--navy);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      margin-top: 0;
+      line-height: 1.18;
+      letter-spacing: -0.02em;
+    }
+
+    h1 {
+      max-width: 950px;
+      margin-bottom: 1.2rem;
+      font-size: clamp(2.5rem, 5vw, 4.8rem);
+    }
+
+    h2 {
+      font-size: clamp(1.9rem, 3.2vw, 3rem);
+    }
+
+    h3 {
+      font-size: 1.35rem;
+    }
+
+    h4 {
+      font-size: 1rem;
+    }
+
+    p {
+      margin-top: 0;
+    }
+
+    .container {
+      width: min(var(--max), calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+    }
+
+    .skip-link:focus {
+      top: 8px;
+      left: 8px;
+      z-index: 100;
+      padding: 0.7rem 1rem;
+      background: #ffffff;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.96);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(12px);
+    }
+
+    .header-inner {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      width: 43px;
+      height: 43px;
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      background: var(--navy);
+      color: #ffffff;
+      border-radius: 50%;
+      font-weight: 800;
+    }
+
+    .brand strong,
+    .brand small {
+      display: block;
+    }
+
+    .brand small {
+      color: var(--muted);
+      font-size: 0.72rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .site-nav {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.87rem;
+    }
+
+    .site-nav a {
+      padding: 0.55rem 0.1rem;
+      color: var(--ink);
+      border-bottom: 2px solid transparent;
+      text-decoration: none;
+    }
+
+    .site-nav a:hover,
+    .site-nav a[aria-current="page"] {
+      color: var(--teal-dark);
+      border-bottom-color: var(--teal);
+    }
+
+    .nav-toggle {
+      display: none;
+      padding: 0.55rem 0.8rem;
+      background: #ffffff;
+      color: var(--ink);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      font: inherit;
+    }
+
+    .hero {
+      padding: clamp(4.5rem, 8vw, 7.5rem) 0;
+      background:
+        linear-gradient(
+          135deg,
+          #f8fbfc 0%,
+          #edf5f5 62%,
+          #f8f4ec 100%
+        );
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      margin-bottom: 1rem;
+      color: var(--teal-dark);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .hero-lead {
+      max-width: 870px;
+      color: var(--muted);
+      font-size: clamp(1.08rem, 1.7vw, 1.3rem);
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 2rem;
+    }
+
+    .button {
+      min-height: 46px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem 1.15rem;
+      border-radius: 8px;
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .button.primary {
+      background: var(--teal);
+      color: #ffffff;
+    }
+
+    .button.primary:hover {
+      background: var(--teal-dark);
+      color: #ffffff;
+    }
+
+    .button.secondary {
+      background: #ffffff;
+      color: var(--navy);
+      border: 1px solid var(--navy);
+    }
+
+    .section {
+      padding: clamp(3.8rem, 7vw, 6.5rem) 0;
+    }
+
+    .muted {
+      background: var(--soft);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section-heading {
+      max-width: 850px;
+      margin-bottom: 2.5rem;
+    }
+
+    .section-heading > p:last-child {
+      color: var(--muted);
+    }
+
+    .research-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .research-card {
+      padding: 1.7rem;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      box-shadow: 0 8px 26px rgba(18, 60, 86, 0.04);
+    }
+
+    .research-number {
+      display: block;
+      margin-bottom: 0.9rem;
+      color: var(--accent);
+      font-weight: 850;
+    }
+
+    .research-card p,
+    .research-card li {
+      color: var(--muted);
+    }
+
+    .research-card ul {
+      margin-bottom: 0;
+      padding-left: 1.2rem;
+    }
+
+    .method-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .method-card {
+      padding: 1.5rem;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-top: 4px solid var(--teal);
+      border-radius: 12px;
+    }
+
+    .method-card p {
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .tool-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .tool-list li {
+      padding: 0.35rem 0;
+      color: var(--muted);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .tool-list li:last-child {
+      border-bottom: 0;
+    }
+
+    .repository-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.2rem;
+    }
+
+    .repository-card {
+      display: flex;
+      flex-direction: column;
+      padding: 1.7rem;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+    }
+
+    .repository-domain {
+      display: block;
+      margin-bottom: 0.75rem;
+      color: var(--teal-dark);
+      font-size: 0.74rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .repository-card p {
+      color: var(--muted);
+    }
+
+    .status {
+      align-self: flex-start;
+      display: inline-flex;
+      margin-bottom: 1rem;
+      padding: 0.32rem 0.62rem;
+      border-radius: 999px;
+      font-size: 0.74rem;
+      font-weight: 800;
+    }
+
+    .status.diagnostic {
+      background: var(--green-bg);
+      color: var(--green-ink);
+    }
+
+    .status.reconstruction {
+      background: var(--yellow-bg);
+      color: var(--yellow-ink);
+    }
+
+    .status.hypothesis {
+      background: var(--grey-bg);
+      color: var(--grey-ink);
+    }
+
+    .repository-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: auto;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
+    }
+
+    .repository-links a {
+      font-weight: 750;
+    }
+
+    .workflow {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 1px;
+      overflow: hidden;
+      background: var(--line);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+    }
+
+    .workflow article {
+      padding: 1.3rem;
+      background: #ffffff;
+    }
+
+    .workflow strong {
+      display: block;
+      margin-bottom: 0.45rem;
+      color: var(--navy);
+    }
+
+    .workflow p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .development-panel {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 3rem;
+      padding: clamp(1.7rem, 4vw, 3rem);
+      background: var(--navy);
+      color: #ffffff;
+      border-radius: 18px;
+    }
+
+    .development-panel .eyebrow {
+      color: #aee3df;
+    }
+
+    .development-panel p {
+      color: #d4e1e8;
+    }
+
+    .development-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .development-list li {
+      margin-bottom: 0.65rem;
+      padding: 0.8rem 1rem;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 9px;
+    }
+
+    .development-note {
+      margin-top: 1.2rem;
+      padding: 1rem;
+      color: #e6eef2;
+      background: rgba(255, 255, 255, 0.06);
+      border-left: 4px solid var(--accent);
+      border-radius: 0 9px 9px 0;
+    }
+
+    .policy-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .policy-card {
+      padding: 1.5rem;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+
+    .policy-card p {
+      color: var(--muted);
+    }
+
+    .boundary-box {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--accent);
+      border-radius: 0 12px 12px 0;
+    }
+
+    .boundary-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .site-footer {
+      padding: 3rem 0 1.5rem;
+      background: #0f1c27;
+      color: #d7e3ea;
+    }
+
+    .footer-grid,
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .site-footer p {
+      max-width: 650px;
+      color: #aabac5;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .site-footer a {
+      color: #ffffff;
+    }
+
+    .footer-bottom {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      color: #91a2ad;
+      border-top: 1px solid #31404c;
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 1040px) {
+      .nav-toggle {
+        display: block;
+      }
+
+      .site-nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        left: 20px;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1rem;
+        background: #ffffff;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+      }
+
+      .site-nav.open {
+        display: flex;
+      }
+
+      .site-nav a {
+        padding: 0.65rem;
+      }
+
+      .method-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .workflow {
+        grid-template-columns: 1fr;
+      }
+
+      .development-panel {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 760px) {
+      body {
+        font-size: 16px;
+      }
+
+      .container {
+        width: min(var(--max), calc(100% - 28px));
+      }
+
+      .brand small {
+        display: none;
+      }
+
+      .research-grid,
+      .repository-grid,
+      .method-grid,
+      .policy-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid,
+      .footer-bottom {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .button {
+        width: 100%;
+      }
+
+      .header-inner {
+        min-height: 68px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="Ahmad Saylam homepage"
+      >
+        <span class="brand-mark" aria-hidden="true">AS</span>
+
+        <span>
+          <strong>Ahmad Saylam</strong>
+          <small>Science · Engineering · Scale-Up</small>
+        </span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        Menu
+      </button>
+
+      <nav
+        id="site-nav"
+        class="site-nav"
+        aria-label="Primary navigation"
+      >
+        <a href="index.html">Home</a>
+        <a href="selected-work.html">Selected Work</a>
+
+        <a
+          href="research-tools.html"
+          aria-current="page"
+        >
+          Research &amp; Tools
+        </a>
+
+        <a href="publications.html">Publications</a>
+        <a href="index.html#consulting">Consulting Direction</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">
+          Research themes · Modelling methods · Reproducible resources
+        </p>
+
+        <h1>
+          Research and Engineering Tools
+        </h1>
+
+        <p class="hero-lead">
+          Selected methods and technical resources connecting applied physical
+          chemistry, chemical kinetics, reactor modelling, CFD, thermochemical
+          conversion, process development, experimental validation and
+          industrial decision support.
+        </p>
+
+        <div class="button-row">
+          <a class="button primary" href="#repositories">
+            Explore public tools
+          </a>
+
+          <a class="button secondary" href="selected-work.html">
+            View selected case studies
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Research themes</p>
+
+          <h2>
+            From molecular mechanisms to process and technology decisions
+          </h2>
+
+          <p>
+            The research direction is organized according to the physical and
+            chemical scales that must be connected during technology
+            development.
+          </p>
+        </div>
+
+        <div class="research-grid">
+          <article class="research-card">
+            <span class="research-number">01</span>
+
+            <h3>
+              Chemical Kinetics and Reactive Systems
+            </h3>
+
+            <ul>
+              <li>Detailed and reduced reaction mechanisms</li>
+              <li>Ignition and oxidation chemistry</li>
+              <li>Reaction-rate and pathway analysis</li>
+              <li>Sensitivity and kinetic-control analysis</li>
+              <li>Mechanism reduction and adaptive chemistry</li>
+              <li>Combustion emissions and nanoparticle inception</li>
+            </ul>
+          </article>
+
+          <article class="research-card">
+            <span class="research-number">02</span>
+
+            <h3>
+              Reactor, Flow and Multiscale Modelling
+            </h3>
+
+            <ul>
+              <li>Zero- and one-dimensional reactor modelling</li>
+              <li>Reactive-flow CFD</li>
+              <li>Turbulence–chemistry interaction</li>
+              <li>Heat and mass transfer</li>
+              <li>Species transport and residence-time effects</li>
+              <li>Homogeneous and heterogeneous systems</li>
+            </ul>
+          </article>
+
+          <article class="research-card">
+            <span class="research-number">03</span>
+
+            <h3>
+              Thermochemical and Sustainable Processes
+            </h3>
+
+            <ul>
+              <li>Pyrolysis and gasification</li>
+              <li>Reforming and syngas production</li>
+              <li>Biomass, residues and alternative feedstocks</li>
+              <li>Biochar and carbon-management screening</li>
+              <li>Waste-to-X and chemical recycling</li>
+              <li>Energy and resource integration</li>
+            </ul>
+          </article>
+
+          <article class="research-card">
+            <span class="research-number">04</span>
+
+            <h3>
+              Process Development and Scale-Up
+            </h3>
+
+            <ul>
+              <li>Technical feasibility and claims assessment</li>
+              <li>Experimental and pilot-programme planning</li>
+              <li>Reaction–transport regime diagnosis</li>
+              <li>Process intensification</li>
+              <li>Operability and scale-up risk</li>
+              <li>Technology and R&amp;D decision support</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Methods and computational environments</p>
+
+          <h2>
+            Complementary tools selected according to the technical problem
+          </h2>
+
+          <p>
+            Commercial software, open-source platforms and custom programs are
+            used according to the required physics, chemistry, modelling
+            resolution and validation evidence.
+          </p>
+        </div>
+
+        <div class="method-grid">
+          <article class="method-card">
+            <h3>CFD and Reactive Flow</h3>
+
+            <ul class="tool-list">
+              <li><strong>ANSYS Fluent</strong></li>
+              <li><strong>OpenFOAM</strong></li>
+              <li>Combustion modelling</li>
+              <li>Species transport</li>
+              <li>Heat transfer</li>
+              <li>Multiphase systems</li>
+            </ul>
+          </article>
+
+          <article class="method-card">
+            <h3>Chemical Kinetics</h3>
+
+            <ul class="tool-list">
+              <li><strong>CHEMKIN</strong></li>
+              <li><strong>Cantera</strong></li>
+              <li>Detailed mechanisms</li>
+              <li>Reactor networks</li>
+              <li>Sensitivity analysis</li>
+              <li>Mechanism reduction</li>
+            </ul>
+          </article>
+
+          <article class="method-card">
+            <h3>Scientific Computing</h3>
+
+            <ul class="tool-list">
+              <li><strong>Python</strong></li>
+              <li><strong>Fortran</strong></li>
+              <li><strong>MATLAB</strong></li>
+              <li><strong>C/C++</strong></li>
+              <li>Jupyter Notebook</li>
+              <li>Data analysis and visualization</li>
+            </ul>
+          </article>
+
+          <article class="method-card">
+            <h3>Engineering Analysis</h3>
+
+            <ul class="tool-list">
+              <li>Thermodynamics</li>
+              <li>Reaction engineering</li>
+              <li>Heat and mass transfer</li>
+              <li>Process calculations</li>
+              <li>Validation and optimization</li>
+              <li>Scale-up assessment</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="repositories" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Public technical repositories</p>
+
+          <h2>
+            Reproducible resources with explicit maturity boundaries
+          </h2>
+
+          <p>
+            The repositories below serve different purposes. Software tests,
+            screening calculations, reconstructed models and scientific
+            hypotheses are not presented as equivalent forms of evidence.
+          </p>
+        </div>
+
+        <div class="repository-grid">
+          <article class="repository-card">
+            <span class="repository-domain">
+              Reaction engineering · Desulfurization
+            </span>
+
+            <span class="status diagnostic">
+              Engineering diagnostic framework
+            </span>
+
+            <h3>
+              Desulfurization Reaction–Transport Regimes
+            </h3>
+
+            <p>
+              A structured framework for distinguishing kinetic,
+              mass-transfer, diffusion, adsorption, hydrodynamic and
+              separation limitations in sulfur-removal processes.
+            </p>
+
+            <div class="repository-links">
+              <a
+                href="https://github.com/saylamah/desulfurization-reaction-transport-regimes"
+                target="_blank"
+                rel="noopener"
+              >
+                Open repository
+              </a>
+
+              <a href="selected-work.html#case-studies">
+                View case-study context
+              </a>
+            </div>
+          </article>
+
+          <article class="repository-card">
+            <span class="repository-domain">
+              Wastewater · Advanced oxidation
+            </span>
+
+            <span class="status diagnostic">
+              Tested screening framework
+            </span>
+
+            <h3>
+              AOP Kinetic Process Framework
+            </h3>
+
+            <p>
+              Matrix-aware Python calculations for hydroxyl-radical
+              scavenging, radical utilization, apparent kinetics, treatment
+              time and selected process indicators.
+            </p>
+
+            <div class="repository-links">
+              <a
+                href="https://github.com/saylamah/aop-kinetic-process-framework"
+                target="_blank"
+                rel="noopener"
+              >
+                Open repository
+              </a>
+
+              <a href="publications/aop-kinetic-process-framework.html">
+                View scientific framework
+              </a>
+            </div>
+          </article>
+
+          <article class="repository-card">
+            <span class="repository-domain">
+              Biomass · Biochar · Thermochemical conversion
+            </span>
+
+            <span class="status reconstruction">
+              Research reconstruction
+            </span>
+
+            <h3>
+              Biochar and Biomass Process Modeling
+            </h3>
+
+            <p>
+              Cantera-based screening calculations, curated sensitivity cases
+              and model-consistency documentation for biomass conversion,
+              biochar, syngas and heat production.
+            </p>
+
+            <div class="repository-links">
+              <a
+                href="https://github.com/saylamah/biochar-process-modeling"
+                target="_blank"
+                rel="noopener"
+              >
+                Open repository
+              </a>
+
+              <a href="publications/biomass-conversion-biochar-heat.html">
+                View related publication
+              </a>
+            </div>
+          </article>
+
+          <article class="repository-card">
+            <span class="repository-domain">
+              Combustion · Nanoparticle inception
+            </span>
+
+            <span class="status hypothesis">
+              Scientific hypothesis
+            </span>
+
+            <h3>
+              NDMS Nanoparticle Inception
+            </h3>
+
+            <p>
+              An executable conceptual closure investigating the competition
+              between reversible precursor association, dissociation,
+              non-stabilizing loss and particle stabilization.
+            </p>
+
+            <div class="repository-links">
+              <a
+                href="https://github.com/saylamah/ndms-nanoparticle-inception"
+                target="_blank"
+                rel="noopener"
+              >
+                Open repository
+              </a>
+
+              <a href="publications/ndms-nanoparticle-inception.html">
+                View hypothesis paper
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Development workflow</p>
+
+          <h2>
+            A structured path from technical question to implementation
+          </h2>
+        </div>
+
+        <div class="workflow">
+          <article>
+            <strong>1. Define</strong>
+
+            <p>
+              Establish the system, feed, products, constraints, uncertainties
+              and decision objective.
+            </p>
+          </article>
+
+          <article>
+            <strong>2. Formulate</strong>
+
+            <p>
+              Identify the relevant chemistry, transport, thermodynamics and
+              process interactions.
+            </p>
+          </article>
+
+          <article>
+            <strong>3. Model</strong>
+
+            <p>
+              Select a transparent screening model, detailed kinetics, reactor
+              simulation or CFD according to need.
+            </p>
+          </article>
+
+          <article>
+            <strong>4. Validate</strong>
+
+            <p>
+              Compare with measurements, literature, benchmarks, balances and
+              predefined acceptance criteria.
+            </p>
+          </article>
+
+          <article>
+            <strong>5. Translate</strong>
+
+            <p>
+              Connect the evidence to pilot configuration, scale-up, risk,
+              operability and industrial decisions.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="development-panel">
+          <div>
+            <p class="eyebrow">Private research-development programme</p>
+
+            <h2>
+              Kinetic Intelligence
+            </h2>
+
+            <p>
+              Historical work on reaction rates, sensitivity, chemical
+              reaction networks, mechanism reduction and dynamic adaptive
+              chemistry is being reconstructed as a modern Python and Cantera
+              framework.
+            </p>
+
+            <p>
+              The current development package contains tested mathematical and
+              software foundations, but full Cantera combustion benchmarks
+              remain a required validation gate before public release.
+            </p>
+
+            <div class="development-note">
+              The framework remains a private research reconstruction. It is
+              not yet presented as validated public software or an industrial
+              predictive product.
+            </div>
+          </div>
+
+          <div>
+            <h3>Planned modules</h3>
+
+            <ul class="development-list">
+              <li>Mechanism audit and provenance</li>
+              <li>Scenario and reactor-case management</li>
+              <li>Reaction-rate and flux analysis</li>
+              <li>Sensitivity and kinetic-control diagnostics</li>
+              <li>Chemical reaction-network analysis</li>
+              <li>Static and adaptive mechanism reduction</li>
+              <li>Conservative state projection</li>
+              <li>Validation and applicability reporting</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Evidence, software and provenance policy</p>
+
+          <h2>
+            Public release follows technical and rights review
+          </h2>
+
+          <p>
+            Archived materials are not uploaded automatically. Scientific
+            value, software integrity and legal suitability are reviewed
+            before public use.
+          </p>
+        </div>
+
+        <div class="policy-grid">
+          <article class="policy-card">
+            <h3>Technical integrity</h3>
+
+            <p>
+              Equations, assumptions, units, balances, numerical methods and
+              validation status are reviewed before results are described as
+              reproducible or predictive.
+            </p>
+          </article>
+
+          <article class="policy-card">
+            <h3>Authorship and licensing</h3>
+
+            <p>
+              Historical codes, mechanisms, figures and documents are screened
+              for authorship, ownership, licence conditions and third-party
+              reuse restrictions.
+            </p>
+          </article>
+
+          <article class="policy-card">
+            <h3>Confidentiality</h3>
+
+            <p>
+              Employer, client and project information is excluded unless it
+              is already public, non-confidential and appropriate for reuse.
+            </p>
+          </article>
+        </div>
+
+        <div class="boundary-box">
+          <p>
+            This page presents research methods and public technical evidence.
+            The future consulting website will translate selected capabilities
+            into client-facing services, deliverables and engagement models.
+          </p>
+
+          <p>
+            The consulting platform will benefit from validated tools and
+            rights-cleared case-study material, but it will not reproduce
+            restricted archives or present unfinished research as established
+            industrial performance.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Ahmad Saylam</strong>
+
+        <p>
+          Selected public and non-confidential scientific, engineering and
+          professional resources.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="selected-work.html">Selected Work</a>
+        <a href="research-tools.html">Research &amp; Tools</a>
+        <a href="publications.html">Publications</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>
+        © <span id="year">2026</span> Ahmad Saylam
+      </span>
+
+      <span>
+        Technical evidence website · Consulting platform under development
+      </span>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector(".nav-toggle");
+    const siteNav = document.getElementById("site-nav");
+
+    if (navToggle && siteNav) {
+      navToggle.addEventListener("click", () => {
+        const isOpen = siteNav.classList.toggle("open");
+        navToggle.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      siteNav.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          siteNav.classList.remove("open");
+          navToggle.setAttribute("aria-expanded", "false");
+        });
+      });
+    }
+
+    const year = document.getElementById("year");
+
+    if (year) {
+      year.textContent = new Date().getFullYear();
+    }
+  </script>
+</body>
+</html>
