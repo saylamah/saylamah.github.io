@@ -16,10 +16,7 @@
   <link rel="canonical" href="https://saylamah.github.io/">
 
   <meta property="og:type" content="website">
-  <meta
-    property="og:title"
-    content="Prof. Dr. Ahmad Saylam | R&D and Technology Development"
-  >
+  <meta property="og:title" content="Prof. Dr. Ahmad Saylam | R&D and Technology Development">
   <meta
     property="og:description"
     content="Reactive and thermochemical systems—from molecular kinetics and CFD to validation, pilot development and industrial scale-up."
@@ -213,7 +210,8 @@
     }
 
     .site-nav a:hover,
-    .site-nav a:focus-visible {
+    .site-nav a:focus-visible,
+    .site-nav a[aria-current="page"] {
       color: var(--teal-dark);
       border-bottom-color: var(--teal);
     }
@@ -719,11 +717,7 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a
-        class="brand"
-        href="#top"
-        aria-label="Prof. Dr. Ahmad Saylam homepage"
-      >
+      <a class="brand" href="#top" aria-label="Prof. Dr. Ahmad Saylam homepage">
         <span class="brand-mark" aria-hidden="true">AS</span>
 
         <span>
@@ -742,7 +736,7 @@
       </button>
 
       <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-        <a href="#focus">Focus</a>
+        <a href="#top" aria-current="page">Home</a>
         <a href="selected-work.html">Selected Work</a>
         <a href="research-tools.html">Research &amp; Tools</a>
         <a href="publications.html">Publications</a>
@@ -767,11 +761,10 @@
           </h1>
 
           <p class="hero-lead">
-            Prof. Dr. Ahmad Saylam is an R&amp;D and technology development
-            leader and scientific engineering consultant working across
-            reactive and thermochemical systems, process modelling,
-            experimental validation, pilot development and sustainable
-            industrial innovation.
+            Prof. Dr. Ahmad Saylam is an R&amp;D and technology development leader and
+            scientific engineering consultant working across reactive and
+            thermochemical systems, process modelling, experimental validation,
+            pilot development and sustainable industrial innovation.
           </p>
 
           <div class="button-row">
@@ -1331,47 +1324,15 @@
 
       <div
         class="footer-links"
-        aria-label="Professional profiles and website navigation"
+        aria-label="Website navigation"
       >
-        <a
-          href="https://github.com/saylamah"
-          target="_blank"
-          rel="noopener"
-        >
-          GitHub
-        </a>
-
-        <a
-          href="https://www.linkedin.com/in/ahmad-saylam"
-          target="_blank"
-          rel="noopener"
-        >
-          LinkedIn
-        </a>
-
-        <a
-          href="https://orcid.org/0000-0001-7484-1265"
-          target="_blank"
-          rel="noopener"
-        >
-          ORCID
-        </a>
-
-        <a href="selected-work.html">
-          Selected Work
-        </a>
-
-        <a href="research-tools.html">
-          Research &amp; Tools
-        </a>
-
-        <a href="publications.html">
-          Publications
-        </a>
-
-        <a href="about-cv.html">
-          About &amp; CV
-        </a>
+        <a href="#top">Home</a>
+        <a href="selected-work.html">Selected Work</a>
+        <a href="research-tools.html">Research &amp; Tools</a>
+        <a href="publications.html">Publications</a>
+        <a href="about-cv.html">About &amp; CV</a>
+        <a href="#consulting">Consulting Direction</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
 
