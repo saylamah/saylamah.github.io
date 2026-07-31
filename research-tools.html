@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Research &amp; Tools | Dr. Ahmad Saylam</title>
+  <title>Research &amp; Engineering Tools | Dr. Ahmad Saylam</title>
 
   <meta
     name="description"
-    content="Selected research areas, computational methods, engineering tools and reproducible technical resources by Dr. Ahmad Saylam across chemical kinetics, CFD, thermochemical processes and technology development."
+    content="Research methods, engineering tools and reproducible resources by Dr. Ahmad Saylam across kinetics, CFD, thermochemical processes and scale-up."
   >
   <meta name="author" content="Dr. Ahmad Saylam">
   <meta name="robots" content="index,follow">
@@ -18,19 +18,93 @@
     href="https://saylamah.github.io/research-tools.html"
   >
 
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta
+    property="og:site_name"
+    content="Dr. Ahmad Saylam — Scientific &amp; Engineering Portfolio"
+  >
   <meta
     property="og:title"
-    content="Research &amp; Tools | Dr. Ahmad Saylam"
+    content="Research &amp; Engineering Tools | Dr. Ahmad Saylam"
   >
   <meta
     property="og:description"
-    content="Research themes, modelling methods, engineering tools and reproducible resources connecting molecular chemistry, reactor simulation, CFD and industrial process development."
+    content="Research methods, computational environments and reproducible technical resources connecting scientific models with engineering decisions."
   >
   <meta
     property="og:url"
     content="https://saylamah.github.io/research-tools.html"
   >
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary">
+  <meta
+    name="twitter:title"
+    content="Research &amp; Engineering Tools | Dr. Ahmad Saylam"
+  >
+  <meta
+    name="twitter:description"
+    content="Research methods, computational environments and reproducible technical resources connecting scientific models with engineering decisions."
+  >
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://saylamah.github.io/research-tools.html#webpage",
+    "url": "https://saylamah.github.io/research-tools.html",
+    "name": "Research and Engineering Tools",
+    "description": "Research methods, computational environments and reproducible technical resources connecting physical chemistry, chemical kinetics, reactor modeling, CFD, thermochemical processes and industrial scale-up.",
+    "inLanguage": "en",
+    "isPartOf": {
+      "@type": "WebSite",
+      "@id": "https://saylamah.github.io/#website",
+      "url": "https://saylamah.github.io/",
+      "name": "Dr. Ahmad Saylam — Scientific and Engineering Portfolio"
+    },
+    "about": {
+      "@type": "Person",
+      "@id": "https://saylamah.github.io/#person",
+      "name": "Ahmad Saylam",
+      "honorificPrefix": "Dr.",
+      "url": "https://saylamah.github.io/about-cv.html"
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "name": "Public scientific and engineering repositories",
+      "numberOfItems": 4,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Desulfurization Reaction–Transport Regimes",
+          "url": "https://github.com/saylamah/desulfurization-reaction-transport-regimes"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "AOP Kinetic Process Framework",
+          "url": "https://github.com/saylamah/aop-kinetic-process-framework"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Biochar Process Modeling",
+          "url": "https://github.com/saylamah/biochar-process-modeling"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "NDMS Nanoparticle Inception",
+          "url": "https://github.com/saylamah/ndms-nanoparticle-inception"
+        }
+      ]
+    }
+  }
+  </script>
 
   <style>
     :root {
@@ -45,6 +119,8 @@
       --accent: #c98b2e;
       --green-bg: #e3f2eb;
       --green-ink: #17613f;
+      --blue-bg: #e3edf5;
+      --blue-ink: #244f6b;
       --yellow-bg: #fff0ce;
       --yellow-ink: #76510c;
       --grey-bg: #e8edf1;
@@ -78,6 +154,12 @@
 
     a:hover {
       color: var(--navy);
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 3px;
     }
 
     h1,
@@ -206,6 +288,7 @@
       border: 1px solid var(--line);
       border-radius: 8px;
       font: inherit;
+      cursor: pointer;
     }
 
     .hero {
@@ -230,7 +313,7 @@
     }
 
     .hero-lead {
-      max-width: 870px;
+      max-width: 880px;
       color: var(--muted);
       font-size: clamp(1.08rem, 1.7vw, 1.3rem);
     }
@@ -280,7 +363,7 @@
     }
 
     .section-heading {
-      max-width: 850px;
+      max-width: 880px;
       margin-bottom: 2.5rem;
     }
 
@@ -331,11 +414,6 @@
       border: 1px solid var(--line);
       border-top: 4px solid var(--teal);
       border-radius: 12px;
-    }
-
-    .method-card p {
-      color: var(--muted);
-      font-size: 0.94rem;
     }
 
     .tool-list {
@@ -397,6 +475,11 @@
     .status.diagnostic {
       background: var(--green-bg);
       color: var(--green-ink);
+    }
+
+    .status.screening {
+      background: var(--blue-bg);
+      color: var(--blue-ink);
     }
 
     .status.reconstruction {
@@ -588,10 +671,7 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
-      .workflow {
-        grid-template-columns: 1fr;
-      }
-
+      .workflow,
       .development-panel {
         grid-template-columns: 1fr;
       }
@@ -632,6 +712,12 @@
         min-height: 68px;
       }
     }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
   </style>
 </head>
 
@@ -669,14 +755,9 @@
       >
         <a href="index.html">Home</a>
         <a href="selected-work.html">Selected Work</a>
-
-        <a
-          href="research-tools.html"
-          aria-current="page"
-        >
+        <a href="research-tools.html" aria-current="page">
           Research &amp; Tools
         </a>
-
         <a href="publications.html">Publications</a>
         <a href="about-cv.html">About</a>
         <a href="index.html#consulting">Consulting Direction</a>
@@ -692,15 +773,13 @@
           Research themes · Modelling methods · Reproducible resources
         </p>
 
-        <h1>
-          Research and Engineering Tools
-        </h1>
+        <h1>Research and Engineering Tools</h1>
 
         <p class="hero-lead">
-          Selected methods and technical resources connecting applied physical
-          chemistry, chemical kinetics, reactor modelling, CFD, thermochemical
-          conversion, process development, experimental validation and
-          industrial decision support.
+          Selected methods and technical resources connecting applied
+          physical chemistry, chemical kinetics, reactor modelling, CFD,
+          thermochemical conversion, process development, experimental
+          validation and industrial decision support.
         </p>
 
         <div class="button-row">
@@ -715,19 +794,24 @@
       </div>
     </section>
 
-    <section class="section">
+    <section
+      class="section"
+      aria-labelledby="research-themes-heading"
+    >
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">Research themes</p>
 
-          <h2>
+          <h2 id="research-themes-heading">
             From molecular mechanisms to process and technology decisions
           </h2>
 
           <p>
-            The research direction is organized according to the physical and
-            chemical scales that must be connected during technology
-            development.
+            The research direction connects physical and chemical phenomena
+            across molecular, reactor, equipment and process scales. The
+            purpose is not merely to increase model complexity, but to select
+            the level of scientific detail required for a reliable engineering
+            decision.
           </p>
         </div>
 
@@ -735,14 +819,12 @@
           <article class="research-card">
             <span class="research-number">01</span>
 
-            <h3>
-              Chemical Kinetics and Reactive Systems
-            </h3>
+            <h3>Chemical Kinetics and Reactive Systems</h3>
 
             <ul>
               <li>Detailed and reduced reaction mechanisms</li>
-              <li>Ignition and oxidation chemistry</li>
-              <li>Reaction-rate and pathway analysis</li>
+              <li>Ignition, oxidation and fuel-conversion chemistry</li>
+              <li>Reaction-rate, flux and pathway analysis</li>
               <li>Sensitivity and kinetic-control analysis</li>
               <li>Mechanism reduction and adaptive chemistry</li>
               <li>Combustion emissions and nanoparticle inception</li>
@@ -752,26 +834,22 @@
           <article class="research-card">
             <span class="research-number">02</span>
 
-            <h3>
-              Reactor, Flow and Multiscale Modelling
-            </h3>
+            <h3>Reactor, Flow and Multiscale Modelling</h3>
 
             <ul>
               <li>Zero- and one-dimensional reactor modelling</li>
-              <li>Reactive-flow CFD</li>
+              <li>Reactive-flow computational fluid dynamics</li>
               <li>Turbulence–chemistry interaction</li>
               <li>Heat and mass transfer</li>
               <li>Species transport and residence-time effects</li>
-              <li>Homogeneous and heterogeneous systems</li>
+              <li>Homogeneous and heterogeneous reactive systems</li>
             </ul>
           </article>
 
           <article class="research-card">
             <span class="research-number">03</span>
 
-            <h3>
-              Thermochemical and Sustainable Processes
-            </h3>
+            <h3>Thermochemical and Sustainable Processes</h3>
 
             <ul>
               <li>Pyrolysis and gasification</li>
@@ -786,9 +864,7 @@
           <article class="research-card">
             <span class="research-number">04</span>
 
-            <h3>
-              Process Development and Scale-Up
-            </h3>
+            <h3>Process Development, Validation and Scale-Up</h3>
 
             <ul>
               <li>Technical feasibility and claims assessment</li>
@@ -803,19 +879,22 @@
       </div>
     </section>
 
-    <section class="section muted">
+    <section
+      class="section muted"
+      aria-labelledby="methods-heading"
+    >
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">Methods and computational environments</p>
 
-          <h2>
+          <h2 id="methods-heading">
             Complementary tools selected according to the technical problem
           </h2>
 
           <p>
             Commercial software, open-source platforms and custom programs are
-            used according to the required physics, chemistry, modelling
-            resolution and validation evidence.
+            selected according to the required physics, chemistry, modelling
+            resolution, uncertainty and available validation evidence.
           </p>
         </div>
 
@@ -826,7 +905,7 @@
             <ul class="tool-list">
               <li><strong>ANSYS Fluent</strong></li>
               <li><strong>OpenFOAM</strong></li>
-              <li>Combustion modelling</li>
+              <li>Combustion and reactive-flow modelling</li>
               <li>Species transport</li>
               <li>Heat transfer</li>
               <li>Multiphase systems</li>
@@ -839,9 +918,9 @@
             <ul class="tool-list">
               <li><strong>CHEMKIN</strong></li>
               <li><strong>Cantera</strong></li>
-              <li>Detailed mechanisms</li>
+              <li>Detailed and reduced mechanisms</li>
               <li>Reactor networks</li>
-              <li>Sensitivity analysis</li>
+              <li>Sensitivity and pathway analysis</li>
               <li>Mechanism reduction</li>
             </ul>
           </article>
@@ -868,26 +947,31 @@
               <li>Heat and mass transfer</li>
               <li>Process calculations</li>
               <li>Validation and optimization</li>
-              <li>Scale-up assessment</li>
+              <li>Scale-up and technology assessment</li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="repositories" class="section">
+    <section
+      id="repositories"
+      class="section"
+      aria-labelledby="repositories-heading"
+    >
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">Public technical repositories</p>
 
-          <h2>
+          <h2 id="repositories-heading">
             Reproducible resources with explicit maturity boundaries
           </h2>
 
           <p>
-            The repositories below serve different purposes. Software tests,
-            screening calculations, reconstructed models and scientific
-            hypotheses are not presented as equivalent forms of evidence.
+            The repositories below serve different purposes. Tested screening
+            calculations, engineering diagnostic frameworks, reconstructed
+            research models and scientific hypotheses are not presented as
+            equivalent forms of evidence.
           </p>
         </div>
 
@@ -901,27 +985,25 @@
               Engineering diagnostic framework
             </span>
 
-            <h3>
-              Desulfurization Reaction–Transport Regimes
-            </h3>
+            <h3>Desulfurization Reaction–Transport Regimes</h3>
 
             <p>
               A structured framework for distinguishing kinetic,
               mass-transfer, diffusion, adsorption, hydrodynamic and
-              separation limitations in sulfur-removal processes.
+              downstream-separation limitations in sulfur-removal processes.
             </p>
 
             <div class="repository-links">
               <a
                 href="https://github.com/saylamah/desulfurization-reaction-transport-regimes"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer external"
               >
                 Open repository
               </a>
 
-              <a href="selected-work.html#case-studies">
-                View case-study context
+              <a href="publications/desulfurization-reaction-transport.html">
+                View scientific framework
               </a>
             </div>
           </article>
@@ -931,13 +1013,11 @@
               Wastewater · Advanced oxidation
             </span>
 
-            <span class="status diagnostic">
+            <span class="status screening">
               Tested screening framework
             </span>
 
-            <h3>
-              AOP Kinetic Process Framework
-            </h3>
+            <h3>AOP Kinetic Process Framework</h3>
 
             <p>
               Matrix-aware Python calculations for hydroxyl-radical
@@ -949,7 +1029,7 @@
               <a
                 href="https://github.com/saylamah/aop-kinetic-process-framework"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer external"
               >
                 Open repository
               </a>
@@ -969,9 +1049,7 @@
               Research reconstruction
             </span>
 
-            <h3>
-              Biochar and Biomass Process Modeling
-            </h3>
+            <h3>Biochar and Biomass Process Modeling</h3>
 
             <p>
               Cantera-based screening calculations, curated sensitivity cases
@@ -983,7 +1061,7 @@
               <a
                 href="https://github.com/saylamah/biochar-process-modeling"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer external"
               >
                 Open repository
               </a>
@@ -1003,9 +1081,7 @@
               Scientific hypothesis
             </span>
 
-            <h3>
-              NDMS Nanoparticle Inception
-            </h3>
+            <h3>NDMS Nanoparticle Inception</h3>
 
             <p>
               An executable conceptual closure investigating the competition
@@ -1017,13 +1093,13 @@
               <a
                 href="https://github.com/saylamah/ndms-nanoparticle-inception"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer external"
               >
                 Open repository
               </a>
 
-              <a href="publications/ndms-nanoparticle-inception.html">
-                View hypothesis paper
+              <a href="publications/persistence-stabilization-closure.html">
+                View modelling framework
               </a>
             </div>
           </article>
@@ -1031,47 +1107,52 @@
       </div>
     </section>
 
-    <section class="section muted">
+    <section
+      class="section muted"
+      aria-labelledby="workflow-heading"
+    >
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">Development workflow</p>
 
-          <h2>
+          <h2 id="workflow-heading">
             A structured path from technical question to implementation
           </h2>
+
+          <p>
+            The workflow connects scientific formulation with evidence,
+            engineering interpretation and practical implementation rather
+            than treating modelling as an isolated activity.
+          </p>
         </div>
 
         <div class="workflow">
           <article>
             <strong>1. Define</strong>
-
             <p>
-              Establish the system, feed, products, constraints, uncertainties
-              and decision objective.
+              Establish the system, feed, products, constraints,
+              uncertainties and decision objective.
             </p>
           </article>
 
           <article>
             <strong>2. Formulate</strong>
-
             <p>
-              Identify the relevant chemistry, transport, thermodynamics and
+              Identify the governing chemistry, transport, thermodynamics and
               process interactions.
             </p>
           </article>
 
           <article>
             <strong>3. Model</strong>
-
             <p>
-              Select a transparent screening model, detailed kinetics, reactor
-              simulation or CFD according to need.
+              Select a transparent screening model, detailed kinetics,
+              reactor simulation or CFD according to the decision need.
             </p>
           </article>
 
           <article>
             <strong>4. Validate</strong>
-
             <p>
               Compare with measurements, literature, benchmarks, balances and
               predefined acceptance criteria.
@@ -1080,7 +1161,6 @@
 
           <article>
             <strong>5. Translate</strong>
-
             <p>
               Connect the evidence to pilot configuration, scale-up, risk,
               operability and industrial decisions.
@@ -1090,38 +1170,43 @@
       </div>
     </section>
 
-    <section class="section">
+    <section
+      class="section"
+      aria-labelledby="kinetic-intelligence-heading"
+    >
       <div class="container">
         <div class="development-panel">
           <div>
             <p class="eyebrow">Private research-development programme</p>
 
-            <h2>
+            <h2 id="kinetic-intelligence-heading">
               Kinetic Intelligence
             </h2>
 
             <p>
               Historical work on reaction rates, sensitivity, chemical
               reaction networks, mechanism reduction and dynamic adaptive
-              chemistry is being reconstructed as a modern Python and Cantera
-              framework.
+              chemistry is being re-derived and reconstructed as a modern
+              Python and Cantera framework.
             </p>
 
             <p>
-              The current development package contains tested mathematical and
-              software foundations, but full Cantera combustion benchmarks
-              remain a required validation gate before public release.
+              The internal package contains tested mathematical and software
+              foundations. Full Cantera combustion benchmarks, real-mechanism
+              state-transfer checks and reproducible performance evaluation
+              remain required validation gates before public release.
             </p>
 
             <div class="development-note">
-              The framework remains a private research reconstruction. It is
-              not yet presented as validated public software or an industrial
-              predictive product.
+              Current maturity: research reconstruction. The framework is not
+              yet presented as validated public software, an industrial
+              predictive product or evidence of demonstrated computational
+              speed-up.
             </div>
           </div>
 
           <div>
-            <h3>Planned modules</h3>
+            <h3>Planned technical modules</h3>
 
             <ul class="development-list">
               <li>Mechanism audit and provenance</li>
@@ -1138,19 +1223,22 @@
       </div>
     </section>
 
-    <section class="section muted">
+    <section
+      class="section muted"
+      aria-labelledby="policy-heading"
+    >
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">Evidence, software and provenance policy</p>
 
-          <h2>
+          <h2 id="policy-heading">
             Public release follows technical and rights review
           </h2>
 
           <p>
             Archived materials are not uploaded automatically. Scientific
-            value, software integrity and legal suitability are reviewed
-            before public use.
+            value, software integrity, ownership, confidentiality and legal
+            suitability are reviewed before public use.
           </p>
         </div>
 
@@ -1161,7 +1249,7 @@
             <p>
               Equations, assumptions, units, balances, numerical methods and
               validation status are reviewed before results are described as
-              reproducible or predictive.
+              reproducible, predictive or suitable for engineering use.
             </p>
           </article>
 
@@ -1180,7 +1268,8 @@
 
             <p>
               Employer, client and project information is excluded unless it
-              is already public, non-confidential and appropriate for reuse.
+              is already public, non-confidential, rights-cleared and
+              appropriate for professional reuse.
             </p>
           </article>
         </div>
@@ -1188,15 +1277,16 @@
         <div class="boundary-box">
           <p>
             This page presents research methods and public technical evidence.
-            The future consulting website will translate selected capabilities
-            into client-facing services, deliverables and engagement models.
+            The future consulting platform will translate selected,
+            rights-cleared capabilities into client-facing services,
+            deliverables and engagement models.
           </p>
 
           <p>
-            The consulting platform will benefit from validated tools and
-            rights-cleared case-study material, but it will not reproduce
-            restricted archives or present unfinished research as established
-            industrial performance.
+            The consulting platform may benefit from validated tools and
+            suitable case-study material, but it will not reproduce restricted
+            archives or present unfinished research as established industrial
+            performance.
           </p>
         </div>
       </div>
