@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>About &amp; Professional Profile | Dr. Ahmad Saylam</title>
 
   <meta
     name="description"
-    content="Professional profile of Dr. Ahmad Saylam, an R&D and technology development leader and scientific engineering consultant working across reactive systems, thermochemical processes, CFD, validation and industrial scale-up."
+    content="Professional profile of Dr. Ahmad Saylam, an R&amp;D and technology-development leader connecting physical chemistry, modelling, validation and industrial scale-up."
   >
   <meta name="author" content="Dr. Ahmad Saylam">
   <meta name="robots" content="index,follow">
@@ -18,57 +18,109 @@
     href="https://saylamah.github.io/about-cv.html"
   >
 
+  <!-- Open Graph -->
   <meta property="og:type" content="profile">
+  <meta property="og:locale" content="en_US">
+  <meta
+    property="og:site_name"
+    content="Dr. Ahmad Saylam — Scientific &amp; Engineering Portfolio"
+  >
   <meta
     property="og:title"
     content="About &amp; Professional Profile | Dr. Ahmad Saylam"
   >
   <meta
     property="og:description"
-    content="Professional background, technical capabilities, development philosophy and selected career scope across science, engineering and industrial technology development."
+    content="Scientific and engineering profile spanning reactive systems, thermochemical processes, modelling, validation, technology development and industrial scale-up."
   >
   <meta
     property="og:url"
     content="https://saylamah.github.io/about-cv.html"
   >
 
+  <!-- Twitter / X -->
   <meta name="twitter:card" content="summary">
+  <meta
+    name="twitter:title"
+    content="About &amp; Professional Profile | Dr. Ahmad Saylam"
+  >
+  <meta
+    name="twitter:description"
+    content="Scientific and engineering profile spanning reactive systems, thermochemical processes, modelling, validation, technology development and industrial scale-up."
+  >
 
+  <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "@id": "https://saylamah.github.io/#person",
-    "name": "Ahmad Saylam",
-    "honorificPrefix": "Dr.",
-    "url": "https://saylamah.github.io/",
-    "jobTitle": "R&D and Technology Development Leader",
-    "description": "Scientific and engineering consultant working across reactive and thermochemical systems, modelling, validation, technology development and industrial scale-up.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressRegion": "North Rhine-Westphalia",
-      "addressCountry": "Germany"
-    },
-    "sameAs": [
-      "https://github.com/saylamah",
-      "https://www.linkedin.com/in/ahmad-saylam",
-      "https://orcid.org/0000-0001-7484-1265",
-      "https://scholar.google.com/citations?user=2I4xhywAAAAJ&hl=en"
-    ],
-    "knowsAbout": [
-      "Applied physical chemistry",
-      "Chemical kinetics",
-      "Combustion",
-      "Reactive systems",
-      "Thermochemical processes",
-      "Computational fluid dynamics",
-      "Reactor modelling",
-      "Process development",
-      "Experimental validation",
-      "Pilot development",
-      "Industrial scale-up",
-      "Process intensification",
-      "Wastewater treatment"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://saylamah.github.io/#website",
+        "url": "https://saylamah.github.io/",
+        "name": "Dr. Ahmad Saylam — Scientific and Engineering Portfolio",
+        "inLanguage": "en",
+        "publisher": {
+          "@id": "https://saylamah.github.io/#person"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://saylamah.github.io/#person",
+        "name": "Ahmad Saylam",
+        "honorificPrefix": "Dr.",
+        "url": "https://saylamah.github.io/about-cv.html",
+        "jobTitle": [
+          "R&D and Technology Development Leader",
+          "Scientific and Engineering Consultant"
+        ],
+        "description": "R&D and technology-development leader connecting applied physical chemistry, reactive and thermochemical systems, modelling, validation, pilot development and industrial scale-up.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "North Rhine-Westphalia",
+          "addressCountry": "DE"
+        },
+        "sameAs": [
+          "https://github.com/saylamah",
+          "https://www.linkedin.com/in/ahmad-saylam",
+          "https://orcid.org/0000-0001-7484-1265",
+          "https://scholar.google.com/citations?user=2I4xhywAAAAJ&hl=en"
+        ],
+        "knowsLanguage": [
+          "French",
+          "English",
+          "German"
+        ],
+        "knowsAbout": [
+          "Applied physical chemistry",
+          "Chemical kinetics",
+          "Combustion",
+          "Reactive systems",
+          "Thermochemical processes",
+          "Computational fluid dynamics",
+          "Reactor modelling",
+          "Process development",
+          "Experimental validation",
+          "Pilot development",
+          "Industrial scale-up",
+          "Process intensification",
+          "Wastewater treatment"
+        ]
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://saylamah.github.io/about-cv.html#webpage",
+        "url": "https://saylamah.github.io/about-cv.html",
+        "name": "About and Professional Profile — Dr. Ahmad Saylam",
+        "description": "Professional profile, technical capabilities, development path, methods and current direction of Dr. Ahmad Saylam.",
+        "inLanguage": "en",
+        "isPartOf": {
+          "@id": "https://saylamah.github.io/#website"
+        },
+        "mainEntity": {
+          "@id": "https://saylamah.github.io/#person"
+        }
+      }
     ]
   }
   </script>
@@ -115,6 +167,12 @@
       color: var(--navy);
     }
 
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 3px;
+    }
+
     h1,
     h2,
     h3,
@@ -126,7 +184,7 @@
 
     h1 {
       max-width: 950px;
-      margin-bottom: 1.25rem;
+      margin-bottom: 1.2rem;
       font-size: clamp(2.5rem, 5vw, 4.8rem);
     }
 
@@ -136,10 +194,6 @@
 
     h3 {
       font-size: 1.35rem;
-    }
-
-    h4 {
-      font-size: 1rem;
     }
 
     p {
@@ -217,7 +271,7 @@
       display: flex;
       align-items: center;
       gap: 1rem;
-      font-size: 0.86rem;
+      font-size: 0.87rem;
     }
 
     .site-nav a {
@@ -241,6 +295,7 @@
       border: 1px solid var(--line);
       border-radius: 8px;
       font: inherit;
+      cursor: pointer;
     }
 
     .hero {
@@ -313,7 +368,7 @@
 
     .profile-panel {
       padding: 1.7rem;
-      background: rgba(255, 255, 255, 0.85);
+      background: rgba(255, 255, 255, 0.88);
       border: 1px solid rgba(18, 60, 86, 0.12);
       border-radius: 18px;
       box-shadow: var(--shadow);
@@ -349,8 +404,8 @@
       display: block;
       color: var(--navy);
       font-size: 0.8rem;
-      text-transform: uppercase;
       letter-spacing: 0.06em;
+      text-transform: uppercase;
     }
 
     .profile-facts span {
@@ -684,16 +739,13 @@
         padding: 0.65rem;
       }
 
-      .hero-grid {
+      .hero-grid,
+      .direction-panel {
         grid-template-columns: 1fr;
       }
 
       .tool-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .direction-panel {
-        grid-template-columns: 1fr;
       }
     }
 
@@ -779,14 +831,7 @@
         <a href="selected-work.html">Selected Work</a>
         <a href="research-tools.html">Research &amp; Tools</a>
         <a href="publications.html">Publications</a>
-
-        <a
-          href="about-cv.html"
-          aria-current="page"
-        >
-          About
-        </a>
-
+        <a href="about-cv.html" aria-current="page">About</a>
         <a href="index.html#consulting">Consulting Direction</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -794,22 +839,22 @@
   </header>
 
   <main id="main">
-    <section class="hero">
+    <section class="hero" aria-labelledby="profile-heading">
       <div class="container hero-grid">
         <div>
           <p class="eyebrow">
             Professional profile · Scientific engineering · Technology development
           </p>
 
-          <h1>
+          <h1 id="profile-heading">
             R&amp;D leadership connecting scientific depth with practical
-            engineering decisions.
+            engineering decisions
           </h1>
 
           <p class="hero-lead">
-            Dr. Ahmad Saylam is an R&amp;D and technology development
-            leader and scientific engineering consultant with more than 35
-            years of experience across applied physical chemistry, combustion,
+            Dr. Ahmad Saylam is an R&amp;D and technology-development leader
+            and scientific engineering consultant with more than 35 years of
+            experience across applied physical chemistry, combustion,
             chemical kinetics, reactive systems, thermochemical processes,
             modelling, validation, pilot development and industrial
             innovation.
@@ -865,12 +910,16 @@
       </div>
     </section>
 
-    <section id="professional-summary" class="section">
+    <section
+      id="professional-summary"
+      class="section"
+      aria-labelledby="summary-heading"
+    >
       <div class="container summary-grid">
         <div class="summary-text">
           <p class="eyebrow">Professional summary</p>
 
-          <h2>
+          <h2 id="summary-heading">
             Scientific understanding translated into defensible development
             pathways
           </h2>
@@ -915,12 +964,15 @@
       </div>
     </section>
 
-    <section class="section muted">
+    <section
+      class="section muted"
+      aria-labelledby="capabilities-heading"
+    >
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">Core capability areas</p>
 
-          <h2>
+          <h2 id="capabilities-heading">
             Integrated expertise across science, modelling and implementation
           </h2>
         </div>
@@ -929,9 +981,7 @@
           <article class="capability-card">
             <span class="capability-number">01</span>
 
-            <h3>
-              Reactive Systems, Combustion and Chemical Kinetics
-            </h3>
+            <h3>Reactive Systems, Combustion and Chemical Kinetics</h3>
 
             <ul>
               <li>Oxidation, ignition and combustion chemistry</li>
@@ -946,9 +996,7 @@
           <article class="capability-card">
             <span class="capability-number">02</span>
 
-            <h3>
-              Reactor, CFD and Multiscale Modelling
-            </h3>
+            <h3>Reactor, CFD and Multiscale Modelling</h3>
 
             <ul>
               <li>Zero- to three-dimensional modelling</li>
@@ -963,9 +1011,7 @@
           <article class="capability-card">
             <span class="capability-number">03</span>
 
-            <h3>
-              Thermochemical and Sustainable Process Systems
-            </h3>
+            <h3>Thermochemical and Sustainable Process Systems</h3>
 
             <ul>
               <li>Pyrolysis and gasification</li>
@@ -980,9 +1026,7 @@
           <article class="capability-card">
             <span class="capability-number">04</span>
 
-            <h3>
-              Technology Development, Validation and Scale-Up
-            </h3>
+            <h3>Technology Development, Validation and Scale-Up</h3>
 
             <ul>
               <li>Technical feasibility and due diligence</li>
@@ -997,12 +1041,15 @@
       </div>
     </section>
 
-    <section class="section">
+    <section
+      class="section"
+      aria-labelledby="career-heading"
+    >
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">Professional development path</p>
 
-          <h2>
+          <h2 id="career-heading">
             A career developed across complementary technical scales
           </h2>
 
@@ -1020,9 +1067,7 @@
                 Fundamental and doctoral research
               </span>
 
-              <h3>
-                Oxidation, autoignition and combustion chemistry
-              </h3>
+              <h3>Oxidation, autoignition and combustion chemistry</h3>
 
               <p>
                 Doctoral-level research addressed the oxidation and
@@ -1039,9 +1084,7 @@
                 Combustion and emissions development
               </span>
 
-              <h3>
-                Flames, engines, soot and pollutant formation
-              </h3>
+              <h3>Flames, engines, soot and pollutant formation</h3>
 
               <p>
                 Subsequent work expanded into premixed and high-pressure
@@ -1058,9 +1101,7 @@
                 Thermochemical and process development
               </span>
 
-              <h3>
-                Biomass, syngas, fuels and waste conversion
-              </h3>
+              <h3>Biomass, syngas, fuels and waste conversion</h3>
 
               <p>
                 The technical scope broadened to pyrolysis, gasification,
@@ -1076,9 +1117,7 @@
                 Environmental and process-intensification systems
               </span>
 
-              <h3>
-                Water treatment, advanced oxidation and cavitation
-              </h3>
+              <h3>Water treatment, advanced oxidation and cavitation</h3>
 
               <p>
                 Engineering work has included wastewater treatment, advanced
@@ -1095,9 +1134,7 @@
                 Current professional direction
               </span>
 
-              <h3>
-                Scientific engineering and technology decision support
-              </h3>
+              <h3>Scientific engineering and technology decision support</h3>
 
               <p>
                 The current direction integrates modelling, validation,
@@ -1111,12 +1148,15 @@
       </div>
     </section>
 
-    <section class="section muted">
+    <section
+      class="section muted"
+      aria-labelledby="methods-heading"
+    >
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">Methods and software</p>
 
-          <h2>
+          <h2 id="methods-heading">
             Tools used according to the required chemistry, physics and scale
           </h2>
         </div>
@@ -1124,7 +1164,6 @@
         <div class="tool-grid">
           <article class="tool-card">
             <h3>ANSYS Fluent</h3>
-
             <p>
               Reactive flow, combustion, heat transfer, species transport,
               multiphase systems and coupled CFD analysis.
@@ -1133,7 +1172,6 @@
 
           <article class="tool-card">
             <h3>OpenFOAM</h3>
-
             <p>
               Open-source CFD workflows, solver evaluation, transport
               modelling and reproducible computational development.
@@ -1142,7 +1180,6 @@
 
           <article class="tool-card">
             <h3>CHEMKIN</h3>
-
             <p>
               Detailed chemical kinetics, ignition, reactor calculations,
               mechanism analysis, sensitivity and reduction.
@@ -1151,7 +1188,6 @@
 
           <article class="tool-card">
             <h3>Cantera</h3>
-
             <p>
               Open and reproducible reactor simulations, kinetics analysis,
               mechanism reconstruction and Python integration.
@@ -1160,7 +1196,6 @@
 
           <article class="tool-card">
             <h3>Python</h3>
-
             <p>
               Scientific computing, data analysis, kinetic frameworks,
               automation, testing and reproducible research.
@@ -1169,7 +1204,6 @@
 
           <article class="tool-card">
             <h3>Fortran</h3>
-
             <p>
               Legacy and high-performance scientific programs, kinetic
               calculations and method reconstruction.
@@ -1178,7 +1212,6 @@
 
           <article class="tool-card">
             <h3>MATLAB</h3>
-
             <p>
               Numerical analysis, modelling, data processing and development
               of engineering calculations.
@@ -1187,7 +1220,6 @@
 
           <article class="tool-card">
             <h3>C/C++</h3>
-
             <p>
               Scientific algorithms, numerical implementation and integration
               with computational modelling environments.
@@ -1197,12 +1229,15 @@
       </div>
     </section>
 
-    <section class="section">
+    <section
+      class="section"
+      aria-labelledby="principles-heading"
+    >
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">Development principles</p>
 
-          <h2>
+          <h2 id="principles-heading">
             Technical quality depends on disciplined interpretation
           </h2>
         </div>
@@ -1210,7 +1245,6 @@
         <div class="principle-grid">
           <article class="principle-card">
             <h3>Evidence before claims</h3>
-
             <p>
               Scientific concepts, screening calculations, reconstructed
               models, pilot observations and validated performance must be
@@ -1220,7 +1254,6 @@
 
           <article class="principle-card">
             <h3>Mechanism before equipment</h3>
-
             <p>
               Technology selection should follow identification of the
               governing chemical, transport, separation or operating
@@ -1230,7 +1263,6 @@
 
           <article class="principle-card">
             <h3>Scale as a technical variable</h3>
-
             <p>
               Residence time, mixing, heat transfer, transport, materials,
               control and safety can change fundamentally during scale-up.
@@ -1239,7 +1271,6 @@
 
           <article class="principle-card">
             <h3>Validation by design</h3>
-
             <p>
               Experimental and pilot programmes should be built around
               representative conditions, controls, balances and predefined
@@ -1249,7 +1280,6 @@
 
           <article class="principle-card">
             <h3>Transparent uncertainty</h3>
-
             <p>
               Assumptions, data limitations, model boundaries and remaining
               risks should be visible in technical decisions.
@@ -1258,7 +1288,6 @@
 
           <article class="principle-card">
             <h3>Practical scientific communication</h3>
-
             <p>
               Complex results should be translated into clear engineering
               implications, decision options and next development actions.
@@ -1268,12 +1297,15 @@
       </div>
     </section>
 
-    <section class="section muted">
+    <section
+      class="section muted"
+      aria-labelledby="languages-heading"
+    >
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">Languages and working environment</p>
 
-          <h2>
+          <h2 id="languages-heading">
             International scientific and professional communication
           </h2>
         </div>
@@ -1281,35 +1313,32 @@
         <div class="language-grid">
           <article class="language-card">
             <strong>French</strong>
-            <span>
-              Advanced professional and scientific communication
-            </span>
+            <span>Advanced professional and scientific communication</span>
           </article>
 
           <article class="language-card">
             <strong>English</strong>
-            <span>
-              Professional, scientific and technical communication
-            </span>
+            <span>Professional, scientific and technical communication</span>
           </article>
 
           <article class="language-card">
             <strong>German</strong>
-            <span>
-              Technical and professional working communication
-            </span>
+            <span>Technical and professional working communication</span>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section
+      class="section"
+      aria-labelledby="direction-heading"
+    >
       <div class="container">
         <div class="direction-panel">
           <div>
             <p class="eyebrow">Professional direction</p>
 
-            <h2>
+            <h2 id="direction-heading">
               Applied R&amp;D, scientific engineering and industrial
               innovation
             </h2>
@@ -1345,12 +1374,16 @@
       </div>
     </section>
 
-    <section id="contact" class="section muted">
+    <section
+      id="contact"
+      class="section muted"
+      aria-labelledby="contact-heading"
+    >
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">Contact and professional information</p>
 
-          <h2>
+          <h2 id="contact-heading">
             Professional discussion and technical collaboration
           </h2>
 
@@ -1368,7 +1401,7 @@
               <a
                 href="https://github.com/saylamah"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer external"
               >
                 GitHub
               </a>
@@ -1376,7 +1409,7 @@
               <a
                 href="https://www.linkedin.com/in/ahmad-saylam"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer external"
               >
                 LinkedIn
               </a>
@@ -1384,7 +1417,7 @@
               <a
                 href="https://orcid.org/0000-0001-7484-1265"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer external"
               >
                 ORCID
               </a>
@@ -1392,7 +1425,7 @@
               <a
                 href="https://scholar.google.com/citations?user=2I4xhywAAAAJ&amp;hl=en"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer external"
               >
                 Google Scholar
               </a>
