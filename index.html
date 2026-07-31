@@ -4,52 +4,112 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Dr. Ahmad Saylam | R&amp;D and Technology Development</title>
+  <title>Dr. Ahmad Saylam | R&amp;D &amp; Technology Development</title>
 
   <meta
     name="description"
-    content="Dr. Ahmad Saylam develops reactive and thermochemical systems through chemical kinetics, CFD, process validation, pilot development and scale-up."
+    content="Dr. Ahmad Saylam connects chemical kinetics, CFD, validation, pilot development and scale-up for reactive, thermochemical and sustainable process systems."
   >
   <meta name="author" content="Dr. Ahmad Saylam">
   <meta name="robots" content="index,follow">
 
   <link rel="canonical" href="https://saylamah.github.io/">
 
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Dr. Ahmad Saylam | R&D and Technology Development">
+  <meta property="og:locale" content="en_US">
+  <meta
+    property="og:site_name"
+    content="Dr. Ahmad Saylam — Scientific &amp; Engineering Portfolio"
+  >
+  <meta
+    property="og:title"
+    content="Dr. Ahmad Saylam | R&amp;D &amp; Technology Development"
+  >
   <meta
     property="og:description"
-    content="Dr. Ahmad Saylam develops reactive and thermochemical systems through chemical kinetics, CFD, process validation, pilot development and scale-up."
+    content="Scientific and engineering work connecting molecular mechanisms, modelling, validation, pilot development and industrial scale-up."
   >
   <meta property="og:url" content="https://saylamah.github.io/">
 
+  <!-- Twitter / X -->
   <meta name="twitter:card" content="summary">
+  <meta
+    name="twitter:title"
+    content="Dr. Ahmad Saylam | R&amp;D &amp; Technology Development"
+  >
+  <meta
+    name="twitter:description"
+    content="Scientific and engineering work connecting molecular mechanisms, modelling, validation, pilot development and industrial scale-up."
+  >
 
+  <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "@id": "https://saylamah.github.io/#person",
-    "name": "Ahmad Saylam",
-    "honorificPrefix": "Dr.",
-    "url": "https://saylamah.github.io/",
-    "jobTitle": "R&D and Technology Development Leader",
-    "sameAs": [
-      "https://github.com/saylamah",
-      "https://www.linkedin.com/in/ahmad-saylam",
-      "https://orcid.org/0000-0001-7484-1265",
-      "https://scholar.google.com/citations?user=2I4xhywAAAAJ&hl=en"
-    ],
-    "knowsAbout": [
-      "Applied physical chemistry",
-      "Chemical kinetics",
-      "Combustion",
-      "Reactive systems",
-      "Thermochemical processes",
-      "Computational fluid dynamics",
-      "Process development",
-      "Validation",
-      "Scale-up"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://saylamah.github.io/#website",
+        "url": "https://saylamah.github.io/",
+        "name": "Dr. Ahmad Saylam — Scientific and Engineering Portfolio",
+        "inLanguage": "en",
+        "publisher": {
+          "@id": "https://saylamah.github.io/#person"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://saylamah.github.io/#person",
+        "name": "Ahmad Saylam",
+        "honorificPrefix": "Dr.",
+        "url": "https://saylamah.github.io/",
+        "jobTitle": [
+          "R&D and Technology Development Leader",
+          "Scientific and Engineering Consultant"
+        ],
+        "description": "R&D and technology-development leader connecting applied physical chemistry, reactive and thermochemical systems, modelling, validation, pilot development and industrial scale-up.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "North Rhine-Westphalia",
+          "addressCountry": "DE"
+        },
+        "sameAs": [
+          "https://github.com/saylamah",
+          "https://www.linkedin.com/in/ahmad-saylam",
+          "https://orcid.org/0000-0001-7484-1265",
+          "https://scholar.google.com/citations?user=2I4xhywAAAAJ&hl=en"
+        ],
+        "knowsAbout": [
+          "Applied physical chemistry",
+          "Chemical kinetics",
+          "Combustion",
+          "Reactive systems",
+          "Thermochemical processes",
+          "Computational fluid dynamics",
+          "Reactor modelling",
+          "Process development",
+          "Experimental validation",
+          "Pilot development",
+          "Industrial scale-up",
+          "Process intensification",
+          "Wastewater treatment"
+        ]
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://saylamah.github.io/#webpage",
+        "url": "https://saylamah.github.io/",
+        "name": "Dr. Ahmad Saylam — R&D and Technology Development",
+        "description": "Scientific and engineering portfolio connecting publications, selected work, technical repositories, modelling methods and industrial development practice.",
+        "inLanguage": "en",
+        "isPartOf": {
+          "@id": "https://saylamah.github.io/#website"
+        },
+        "mainEntity": {
+          "@id": "https://saylamah.github.io/#person"
+        }
+      }
     ]
   }
   </script>
@@ -65,12 +125,14 @@
       --teal: #147b75;
       --teal-dark: #0d5f5b;
       --accent: #c98b2e;
-      --success-bg: #e3f2eb;
-      --success-ink: #17613f;
-      --research-bg: #fff0ce;
-      --research-ink: #76510c;
-      --concept-bg: #e8edf1;
-      --concept-ink: #4d5e6a;
+      --green-bg: #e3f2eb;
+      --green-ink: #17613f;
+      --blue-bg: #e3edf5;
+      --blue-ink: #244f6b;
+      --yellow-bg: #fff0ce;
+      --yellow-ink: #76510c;
+      --grey-bg: #e8edf1;
+      --grey-ink: #4d5e6a;
       --max: 1180px;
       --shadow: 0 16px 40px rgba(18, 60, 86, 0.08);
     }
@@ -102,6 +164,12 @@
       color: var(--navy);
     }
 
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 3px;
+    }
+
     h1,
     h2,
     h3 {
@@ -111,17 +179,17 @@
     }
 
     h1 {
-      max-width: 930px;
-      margin-bottom: 1.25rem;
-      font-size: clamp(2.5rem, 5.5vw, 5.25rem);
+      max-width: 950px;
+      margin-bottom: 1.2rem;
+      font-size: clamp(2.7rem, 5.5vw, 5.2rem);
     }
 
     h2 {
-      font-size: clamp(1.9rem, 3.2vw, 3.1rem);
+      font-size: clamp(1.9rem, 3.2vw, 3rem);
     }
 
     h3 {
-      font-size: 1.25rem;
+      font-size: 1.35rem;
     }
 
     p {
@@ -135,22 +203,22 @@
 
     .skip-link {
       position: absolute;
-      top: 8px;
       left: -9999px;
-      z-index: 100;
-      padding: 0.7rem 1rem;
-      background: #ffffff;
     }
 
     .skip-link:focus {
+      top: 8px;
       left: 8px;
+      z-index: 100;
+      padding: 0.7rem 1rem;
+      background: #ffffff;
     }
 
     .site-header {
       position: sticky;
       top: 0;
       z-index: 50;
-      background: rgba(255, 255, 255, 0.95);
+      background: rgba(255, 255, 255, 0.96);
       border-bottom: 1px solid var(--line);
       backdrop-filter: blur(12px);
     }
@@ -164,7 +232,6 @@
     }
 
     .brand {
-      min-width: max-content;
       display: flex;
       align-items: center;
       gap: 0.8rem;
@@ -177,11 +244,11 @@
       height: 43px;
       display: grid;
       place-items: center;
-      border-radius: 50%;
+      flex: 0 0 auto;
       background: var(--navy);
       color: #ffffff;
+      border-radius: 50%;
       font-weight: 800;
-      letter-spacing: 0.03em;
     }
 
     .brand strong,
@@ -200,7 +267,7 @@
       display: flex;
       align-items: center;
       gap: 1rem;
-      font-size: 0.86rem;
+      font-size: 0.87rem;
     }
 
     .site-nav a {
@@ -211,7 +278,6 @@
     }
 
     .site-nav a:hover,
-    .site-nav a:focus-visible,
     .site-nav a[aria-current="page"] {
       color: var(--teal-dark);
       border-bottom-color: var(--teal);
@@ -225,10 +291,11 @@
       border: 1px solid var(--line);
       border-radius: 8px;
       font: inherit;
+      cursor: pointer;
     }
 
     .hero {
-      padding: clamp(4.5rem, 9vw, 8rem) 0;
+      padding: clamp(4.8rem, 9vw, 8rem) 0;
       background:
         linear-gradient(
           135deg,
@@ -241,7 +308,7 @@
 
     .hero-grid {
       display: grid;
-      grid-template-columns: minmax(0, 1.7fr) minmax(300px, 0.75fr);
+      grid-template-columns: minmax(0, 1.65fr) minmax(300px, 0.75fr);
       gap: 4rem;
       align-items: center;
     }
@@ -256,7 +323,7 @@
     }
 
     .hero-lead {
-      max-width: 860px;
+      max-width: 870px;
       color: var(--muted);
       font-size: clamp(1.1rem, 1.7vw, 1.35rem);
     }
@@ -297,7 +364,7 @@
 
     .hero-panel {
       padding: 1.7rem;
-      background: rgba(255, 255, 255, 0.82);
+      background: rgba(255, 255, 255, 0.88);
       border: 1px solid rgba(18, 60, 86, 0.12);
       border-radius: 18px;
       box-shadow: var(--shadow);
@@ -305,9 +372,12 @@
 
     .panel-label {
       display: block;
-      margin-bottom: 1rem;
-      color: var(--navy);
+      margin-bottom: 0.8rem;
+      color: var(--teal-dark);
+      font-size: 0.76rem;
       font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
     }
 
     .check-list {
@@ -318,13 +388,18 @@
 
     .check-list li {
       position: relative;
-      padding: 0.35rem 0 0.35rem 1.65rem;
+      padding: 0.65rem 0 0.65rem 1.35rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .check-list li:last-child {
+      border-bottom: 0;
     }
 
     .check-list li::before {
       content: "";
       position: absolute;
-      top: 0.77rem;
+      top: 1.05rem;
       left: 0;
       width: 0.62rem;
       height: 0.62rem;
@@ -347,7 +422,7 @@
     }
 
     .section-heading {
-      max-width: 800px;
+      max-width: 850px;
       margin-bottom: 2.5rem;
     }
 
@@ -357,7 +432,7 @@
 
     .stats-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 1px;
       overflow: hidden;
       background: var(--line);
@@ -373,29 +448,24 @@
     .stats-grid strong {
       display: block;
       color: var(--navy);
-      font-size: 1.42rem;
+      font-size: 1.35rem;
     }
 
     .stats-grid span {
       display: block;
       color: var(--muted);
       font-size: 0.88rem;
-      line-height: 1.4;
+      line-height: 1.45;
     }
 
     .card-grid {
       display: grid;
-      gap: 1.2rem;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1rem;
     }
 
-    .card-grid.four {
-      grid-template-columns: repeat(4, 1fr);
-    }
-
-    .card,
-    .resource-card,
-    .policy-card {
-      padding: 1.7rem;
+    .card {
+      padding: 1.6rem;
       background: #ffffff;
       border: 1px solid var(--line);
       border-radius: 14px;
@@ -404,24 +474,33 @@
 
     .card-number {
       display: block;
-      margin-bottom: 1.1rem;
+      margin-bottom: 0.9rem;
       color: var(--accent);
       font-weight: 850;
     }
 
-    .card p,
-    .resource-card p,
-    .policy-card p {
+    .card p {
+      margin-bottom: 0;
       color: var(--muted);
     }
 
     .resource-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 1.2rem;
     }
 
-    .resource-card > span:first-child {
+    .resource-card {
+      display: flex;
+      flex-direction: column;
+      padding: 1.7rem;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+    }
+
+    .resource-domain {
       display: block;
       margin-bottom: 0.75rem;
       color: var(--teal-dark);
@@ -431,88 +510,99 @@
       text-transform: uppercase;
     }
 
+    .resource-card p {
+      color: var(--muted);
+    }
+
     .status {
+      align-self: flex-start;
       display: inline-flex;
       margin-bottom: 1rem;
-      padding: 0.28rem 0.6rem;
+      padding: 0.3rem 0.62rem;
       border-radius: 999px;
       font-size: 0.74rem;
       font-weight: 800;
     }
 
+    .status.diagnostic {
+      background: var(--green-bg);
+      color: var(--green-ink);
+    }
+
     .status.screening {
-      background: var(--success-bg);
-      color: var(--success-ink);
+      background: var(--blue-bg);
+      color: var(--blue-ink);
     }
 
-    .status.research {
-      background: var(--research-bg);
-      color: var(--research-ink);
+    .status.reconstruction {
+      background: var(--yellow-bg);
+      color: var(--yellow-ink);
     }
 
-    .status.concept {
-      background: var(--concept-bg);
-      color: var(--concept-ink);
+    .status.hypothesis {
+      background: var(--grey-bg);
+      color: var(--grey-ink);
     }
 
     .resource-links {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
-      margin-top: 1.1rem;
+      margin-top: auto;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
     }
 
     .resource-links a {
       font-weight: 750;
     }
 
-    .split {
+    .workflow {
       display: grid;
-      grid-template-columns: 1fr 1.1fr;
-      gap: 4rem;
-      align-items: start;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 1px;
+      overflow: hidden;
+      background: var(--line);
+      border: 1px solid var(--line);
+      border-radius: 14px;
     }
 
-    .process-list {
-      margin: 0;
-      padding: 0;
-      list-style: none;
+    .workflow article {
+      padding: 1.3rem;
+      background: #ffffff;
     }
 
-    .process-list li {
-      display: grid;
-      grid-template-columns: 120px 1fr;
-      gap: 1.2rem;
-      padding: 1.15rem 0;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .process-list strong {
+    .workflow strong {
+      display: block;
+      margin-bottom: 0.45rem;
       color: var(--navy);
     }
 
-    .process-list span {
+    .workflow p {
+      margin-bottom: 0;
       color: var(--muted);
+      font-size: 0.9rem;
     }
 
     .tool-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 0.9rem;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1rem;
     }
 
-    .tool-grid article {
-      min-height: 155px;
-      padding: 1.3rem;
+    .tool-card {
+      min-height: 165px;
+      padding: 1.4rem;
       background: #ffffff;
       border: 1px solid var(--line);
       border-top: 4px solid var(--teal);
-      border-radius: 10px;
+      border-radius: 12px;
     }
 
-    .tool-grid p {
+    .tool-card p {
+      margin-bottom: 0;
       color: var(--muted);
-      font-size: 0.92rem;
+      font-size: 0.93rem;
     }
 
     .consulting-section {
@@ -556,9 +646,27 @@
       border-radius: 0 10px 10px 0;
     }
 
+    .policy-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .policy-card {
+      padding: 1.5rem;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+
+    .policy-card p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
     .contact-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 1.2rem;
     }
 
@@ -573,20 +681,36 @@
       color: var(--muted);
     }
 
+    .profile-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+    }
+
+    .profile-links a {
+      padding: 0.5rem 0.7rem;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
     .site-footer {
       padding: 3rem 0 1.5rem;
       background: #0f1c27;
       color: #d7e3ea;
     }
 
-    .footer-grid {
+    .footer-grid,
+    .footer-bottom {
       display: flex;
       justify-content: space-between;
       gap: 2rem;
     }
 
-    .footer-grid p {
-      max-width: 640px;
+    .site-footer p {
+      max-width: 650px;
       color: #aabac5;
     }
 
@@ -594,17 +718,13 @@
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
-      align-content: flex-start;
     }
 
-    .footer-links a {
+    .site-footer a {
       color: #ffffff;
     }
 
     .footer-bottom {
-      display: flex;
-      justify-content: space-between;
-      gap: 1rem;
       margin-top: 2rem;
       padding-top: 1rem;
       color: #91a2ad;
@@ -640,13 +760,18 @@
         padding: 0.65rem;
       }
 
-      .hero-grid {
+      .hero-grid,
+      .consulting-grid {
         grid-template-columns: 1fr;
       }
 
-      .card-grid.four,
+      .card-grid,
       .tool-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .workflow {
+        grid-template-columns: 1fr;
       }
     }
 
@@ -663,39 +788,22 @@
         display: none;
       }
 
-      .hero {
-        padding: 4rem 0;
-      }
-
-      .hero-grid {
-        gap: 2rem;
-      }
-
       .stats-grid,
+      .card-grid,
       .resource-grid,
-      .split,
-      .consulting-grid,
+      .tool-grid,
+      .policy-grid,
       .contact-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .process-list li {
         grid-template-columns: 1fr;
       }
 
       .footer-grid,
       .footer-bottom {
         flex-direction: column;
-        align-items: flex-start;
       }
     }
 
     @media (max-width: 520px) {
-      .card-grid.four,
-      .tool-grid {
-        grid-template-columns: 1fr;
-      }
-
       .button {
         width: 100%;
       }
@@ -718,7 +826,11 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Dr. Ahmad Saylam homepage">
+      <a
+        class="brand"
+        href="#top"
+        aria-label="Dr. Ahmad Saylam homepage"
+      >
         <span class="brand-mark" aria-hidden="true">AS</span>
 
         <span>
@@ -736,7 +848,11 @@
         Menu
       </button>
 
-      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <nav
+        id="site-nav"
+        class="site-nav"
+        aria-label="Primary navigation"
+      >
         <a href="#top" aria-current="page">Home</a>
         <a href="selected-work.html">Selected Work</a>
         <a href="research-tools.html">Research &amp; Tools</a>
@@ -749,23 +865,22 @@
   </header>
 
   <main id="main">
-    <section id="top" class="hero">
+    <section id="top" class="hero" aria-labelledby="hero-heading">
       <div class="container hero-grid">
         <div>
           <p class="eyebrow">
             R&amp;D · Technology Development · Scientific Engineering
           </p>
 
-          <h1>
-            From molecular kinetics and CFD to validated process development
-            and industrial scale-up.
+          <h1 id="hero-heading">
+            From molecular mechanisms to validated industrial decisions
           </h1>
 
           <p class="hero-lead">
-            Dr. Ahmad Saylam is an R&amp;D and technology development leader and
-            scientific engineering consultant working across reactive and
-            thermochemical systems, process modelling, experimental validation,
-            pilot development and sustainable industrial innovation.
+            Dr. Ahmad Saylam connects applied physical chemistry, chemical
+            kinetics, reactor and CFD modelling, experimental validation,
+            pilot development and scale-up across reactive, thermochemical
+            and sustainable process systems.
           </p>
 
           <div class="button-row">
@@ -773,8 +888,8 @@
               Explore selected work
             </a>
 
-            <a class="button secondary" href="publications.html">
-              View publications
+            <a class="button secondary" href="research-tools.html">
+              View research and tools
             </a>
           </div>
         </div>
@@ -794,7 +909,7 @@
     </section>
 
     <section
-      class="section compact-section"
+      class="compact-section"
       aria-label="Professional capability summary"
     >
       <div class="container stats-grid">
@@ -809,144 +924,149 @@
         <article>
           <strong>0D–3D</strong>
           <span>
-            Chemical kinetics, reactor modelling and computational fluid
-            dynamics
+            From kinetic and reactor models to coupled CFD and process analysis
           </span>
         </article>
 
         <article>
-          <strong>Fluent · OpenFOAM</strong>
+          <strong>Lab to industry</strong>
           <span>
-            Reactive-flow, heat-transfer, species-transport and multiphase CFD
+            Connecting scientific evidence, validation, pilots and scale-up
           </span>
         </article>
 
         <article>
-          <strong>CHEMKIN · Cantera</strong>
+          <strong>International scope</strong>
           <span>
-            Mechanism analysis, reactor calculations, reduction and validation
-            workflows
+            Scientific, engineering and technology-development collaboration
           </span>
         </article>
       </div>
     </section>
 
-    <section id="focus" class="section">
+    <section
+      class="section"
+      aria-labelledby="capabilities-heading"
+    >
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">Professional focus</p>
+          <p class="eyebrow">Integrated capability</p>
 
-          <h2>Integrated scientific and engineering capability</h2>
+          <h2 id="capabilities-heading">
+            Scientific depth directed toward practical technology development
+          </h2>
 
           <p>
-            The work is organized around the technical decisions needed to
-            move from scientific understanding to a defensible process, pilot
-            or industrial development path.
+            The work combines fundamental understanding, fit-for-purpose
+            modelling, experimental evidence and engineering interpretation.
+            Each method is selected according to the decision, uncertainty,
+            available data and required scale.
           </p>
         </div>
 
-        <div class="card-grid four">
+        <div class="card-grid">
           <article class="card">
             <span class="card-number">01</span>
-
-            <h3>Reactive Systems &amp; Kinetic Intelligence</h3>
-
+            <h3>Reactive Systems &amp; Chemical Kinetics</h3>
             <p>
-              Detailed and reduced reaction mechanisms, ignition, combustion,
-              emissions, reaction networks, sensitivity, mechanism reduction
-              and adaptive chemistry.
+              Oxidation, ignition, combustion, emissions, detailed mechanisms,
+              sensitivity, reaction networks, mechanism reduction and
+              nanoparticle inception.
             </p>
           </article>
 
           <article class="card">
             <span class="card-number">02</span>
-
             <h3>Reactor, CFD &amp; Multiscale Modelling</h3>
-
             <p>
-              Homogeneous and heterogeneous reactors, reactive-flow CFD,
-              turbulence–chemistry interaction, transport coupling, numerical
-              verification and experiment–model comparison.
+              Zero- to three-dimensional models, reactive-flow CFD, heat and
+              mass transfer, species transport and experiment–model comparison.
             </p>
           </article>
 
           <article class="card">
             <span class="card-number">03</span>
-
             <h3>Thermochemical &amp; Sustainable Processes</h3>
-
             <p>
               Pyrolysis, gasification, reforming, syngas, biomass, biochar,
-              waste-to-X, fuels, oil processing, advanced oxidation and
-              resource recovery.
+              waste-to-X, chemical recycling and circular resource pathways.
             </p>
           </article>
 
           <article class="card">
             <span class="card-number">04</span>
-
-            <h3>Technology Development, Validation &amp; Scale-Up</h3>
-
+            <h3>Validation, Pilot Development &amp; Scale-Up</h3>
             <p>
-              Feasibility, technical due diligence, pilot-programme definition,
-              process configuration, claims assessment, operability, risk and
-              scale-up decision support.
+              Technical feasibility, evidence assessment, experimental design,
+              pilot configuration, operability, process risk and industrial
+              implementation decisions.
             </p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="selected-work" class="section muted">
+    <section
+      class="section muted"
+      aria-labelledby="evidence-heading"
+    >
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">Selected public work</p>
+          <p class="eyebrow">Selected public evidence</p>
 
-          <h2>Open technical resources with explicit evidence boundaries</h2>
+          <h2 id="evidence-heading">
+            Reproducible resources with explicit maturity boundaries
+          </h2>
 
           <p>
-            Each resource states what it supports, what remains under
-            validation and how the results should be interpreted.
+            Public work is presented according to its actual status. An
+            engineering diagnostic, a tested screening framework, a research
+            reconstruction and a scientific hypothesis are not treated as
+            equivalent evidence.
           </p>
         </div>
 
         <div class="resource-grid">
           <article class="resource-card">
-            <span>Reaction engineering</span>
+            <span class="resource-domain">
+              Reaction engineering · Desulfurization
+            </span>
 
-            <div class="status screening">
+            <span class="status diagnostic">
               Engineering diagnostic framework
-            </div>
+            </span>
 
             <h3>Desulfurization Reaction–Transport Regimes</h3>
 
             <p>
-              Structured diagnosis of kinetic, mass-transfer, diffusion,
-              separation and intensification limitations in gas- and
-              petroleum-stream desulfurization.
+              A structured method for distinguishing kinetic, transport,
+              adsorption, hydrodynamic and downstream-separation limitations
+              before selecting a process intervention.
             </p>
 
             <div class="resource-links">
               <a
                 href="https://github.com/saylamah/desulfurization-reaction-transport-regimes"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer external"
               >
                 Open repository
               </a>
 
               <a href="publications/desulfurization-reaction-transport.html">
-                Related publication
+                View scientific framework
               </a>
             </div>
           </article>
 
           <article class="resource-card">
-            <span>Water treatment</span>
+            <span class="resource-domain">
+              Wastewater treatment · Advanced oxidation
+            </span>
 
-            <div class="status screening">
+            <span class="status screening">
               Tested screening framework
-            </div>
+            </span>
 
             <h3>AOP Kinetic Process Framework</h3>
 
@@ -960,168 +1080,181 @@
               <a
                 href="https://github.com/saylamah/aop-kinetic-process-framework"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer external"
               >
                 Open repository
               </a>
 
               <a href="publications/aop-kinetic-process-framework.html">
-                Related publication
+                View scientific framework
               </a>
             </div>
           </article>
 
           <article class="resource-card">
-            <span>Thermochemical conversion</span>
+            <span class="resource-domain">
+              Biomass · Biochar · Thermochemical conversion
+            </span>
 
-            <div class="status research">
+            <span class="status reconstruction">
               Research reconstruction
-            </div>
+            </span>
 
             <h3>Biochar Process Modeling</h3>
 
             <p>
-              Simplified Cantera-based reactor examples and curated simulation
-              data for biomass conversion, biochar, syngas, heat generation
-              and model-validation planning.
+              Simplified Cantera-based reactor examples, curated cases and
+              model-consistency guidance for biomass conversion, biochar,
+              syngas and heat-production studies.
             </p>
 
             <div class="resource-links">
               <a
                 href="https://github.com/saylamah/biochar-process-modeling"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer external"
               >
                 Open repository
               </a>
 
               <a href="publications/biomass-conversion-biochar-heat.html">
-                Related publication
+                View related publication
               </a>
             </div>
           </article>
 
           <article class="resource-card">
-            <span>Frontier combustion science</span>
+            <span class="resource-domain">
+              Combustion · Nanoparticle inception
+            </span>
 
-            <div class="status concept">
+            <span class="status hypothesis">
               Scientific hypothesis
-            </div>
+            </span>
 
-            <h3>NDMS Nanoparticle Inception</h3>
+            <h3>NDMS Persistence–Stabilization Closure</h3>
 
             <p>
-              A reproducible persistence–stabilization closure exploring the
-              transition from reversible molecular association to persistent
-              incipient particles.
+              A falsifiable conceptual framework for examining the transition
+              from reversible precursor association to persistent combustion
+              nanoparticle inception.
             </p>
 
             <div class="resource-links">
               <a
                 href="https://github.com/saylamah/ndms-nanoparticle-inception"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer external"
               >
                 Open repository
               </a>
 
-              <a href="publications/ndms-nanoparticle-inception.html">
-                Related publication
+              <a href="publications/persistence-stabilization-closure.html">
+                View modelling framework
               </a>
             </div>
           </article>
         </div>
-      </div>
-    </section>
 
-    <section id="development" class="section">
-      <div class="container split">
-        <div>
-          <p class="eyebrow">Development approach</p>
+        <div class="button-row">
+          <a class="button primary" href="selected-work.html">
+            View case-study interpretation
+          </a>
 
-          <h2>Scientific rigour connected to implementation</h2>
-
-          <p>
-            The objective is not merely to demonstrate a scientific or
-            technological effect. It is to determine when, where and under
-            which constraints that effect becomes useful, reproducible and
-            transferable.
-          </p>
+          <a class="button secondary" href="publications.html">
+            Browse publications
+          </a>
         </div>
-
-        <ol class="process-list">
-          <li>
-            <strong>Define</strong>
-            <span>
-              Clarify the feed, products, operating regime, constraints and
-              decision objective.
-            </span>
-          </li>
-
-          <li>
-            <strong>Model</strong>
-            <span>
-              Select the appropriate resolution—from transparent screening
-              calculations to detailed kinetics and CFD.
-            </span>
-          </li>
-
-          <li>
-            <strong>Validate</strong>
-            <span>
-              Use experiments, literature, benchmarks, sensitivity analysis
-              and quantitative acceptance criteria.
-            </span>
-          </li>
-
-          <li>
-            <strong>Interpret</strong>
-            <span>
-              Separate mechanism, transport, uncertainty, limitations and
-              engineering relevance.
-            </span>
-          </li>
-
-          <li>
-            <strong>Scale</strong>
-            <span>
-              Translate evidence into pilot configuration, operability, safety,
-              control and industrial decisions.
-            </span>
-          </li>
-        </ol>
       </div>
     </section>
 
-    <section id="methods" class="section muted">
+    <section
+      class="section"
+      aria-labelledby="workflow-heading"
+    >
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">Methods and tools</p>
+          <p class="eyebrow">Development method</p>
 
-          <h2>
-            Complementary commercial, open-source and custom workflows
+          <h2 id="workflow-heading">
+            A controlled path from technical question to implementation
           </h2>
 
           <p>
-            Tools are selected according to the physics, chemistry, available
-            evidence and decision required—not by software preference alone.
+            Scientific and engineering activities are linked through one
+            development logic rather than performed as isolated tasks.
           </p>
         </div>
 
-        <div class="tool-grid">
+        <div class="workflow">
           <article>
-            <h3>CFD</h3>
-
+            <strong>1. Define</strong>
             <p>
-              <strong>ANSYS Fluent</strong> and <strong>OpenFOAM</strong> for
-              reactive flow, combustion, species transport, heat transfer,
-              multiphase systems and coupled transport.
+              Clarify the system, objective, constraints, uncertainties and
+              required decision.
             </p>
           </article>
 
           <article>
-            <h3>Chemical Kinetics</h3>
+            <strong>2. Formulate</strong>
+            <p>
+              Identify the governing chemistry, transport, thermodynamics and
+              process interactions.
+            </p>
+          </article>
 
+          <article>
+            <strong>3. Model</strong>
+            <p>
+              Select the simplest defensible model—from screening calculations
+              to detailed kinetics or CFD.
+            </p>
+          </article>
+
+          <article>
+            <strong>4. Validate</strong>
+            <p>
+              Compare against measurements, balances, literature, benchmarks
+              and predefined acceptance criteria.
+            </p>
+          </article>
+
+          <article>
+            <strong>5. Translate</strong>
+            <p>
+              Convert evidence into pilot design, scale-up, risk, operability
+              and industrial decisions.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="section muted"
+      aria-labelledby="tools-heading"
+    >
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Methods and computational environments</p>
+
+          <h2 id="tools-heading">
+            Complementary tools selected according to the problem
+          </h2>
+        </div>
+
+        <div class="tool-grid">
+          <article class="tool-card">
+            <h3>CFD &amp; Reactive Flow</h3>
+            <p>
+              <strong>ANSYS Fluent</strong> and <strong>OpenFOAM</strong> for
+              combustion, species transport, heat transfer, multiphase systems
+              and coupled flow–reaction analysis.
+            </p>
+          </article>
+
+          <article class="tool-card">
+            <h3>Chemical Kinetics</h3>
             <p>
               <strong>CHEMKIN</strong> and <strong>Cantera</strong> for reactor
               simulation, detailed mechanisms, sensitivity, reduction,
@@ -1129,51 +1262,53 @@
             </p>
           </article>
 
-          <article>
+          <article class="tool-card">
             <h3>Scientific Computing</h3>
-
             <p>
               <strong>Python</strong>, <strong>Fortran</strong>,
               <strong>MATLAB</strong>, <strong>C/C++</strong> and Jupyter for
-              modelling, data processing, reconstruction and reproducible
-              analysis.
+              modelling, reconstruction, testing and reproducible analysis.
             </p>
           </article>
 
-          <article>
+          <article class="tool-card">
             <h3>Engineering Analysis</h3>
-
             <p>
-              Thermodynamics, heat and mass transfer, reaction engineering,
-              process calculations, diagnostics, optimization, uncertainty and
-              scale-up assessment.
+              Thermodynamics, reaction engineering, heat and mass transfer,
+              process calculations, diagnostics, optimization, uncertainty
+              and scale-up assessment.
             </p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="consulting" class="section consulting-section">
+    <section
+      id="consulting"
+      class="section consulting-section"
+      aria-labelledby="consulting-heading"
+    >
       <div class="container consulting-grid">
         <div>
           <p class="eyebrow">Consulting direction</p>
 
-          <h2>
-            A separate client-facing consulting platform is under development.
+          <h2 id="consulting-heading">
+            A client-facing scientific and engineering consultancy is under
+            development
           </h2>
 
           <p>
-            This technical website provides the scientific and engineering
-            evidence layer. The consulting website will translate selected,
-            rights-cleared and technically reviewed material into practical
-            services, case studies and collaboration models.
+            This website is the technical evidence layer. The future
+            consulting platform will translate selected, rights-cleared and
+            technically reviewed material into client-focused services,
+            deliverables, case studies and collaboration models.
           </p>
 
           <div class="consulting-note">
-            The consulting platform will not duplicate this site. GitHub and
-            the technical website will document methods and evidence; the
-            consulting platform will focus on client problems, decision
-            pathways, deliverables and engagement models.
+            The consulting platform will not duplicate this website. GitHub and
+            the technical site will document methods, evidence and public
+            resources; the consulting platform will focus on client problems,
+            decision pathways and implementation support.
           </div>
         </div>
 
@@ -1204,53 +1339,74 @@
       </div>
     </section>
 
-    <section id="evidence" class="section">
-      <div class="container split">
-        <div>
-          <p class="eyebrow">Evidence and provenance</p>
+    <section
+      class="section"
+      aria-labelledby="policy-heading"
+    >
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Evidence and provenance policy</p>
 
-          <h2>Public material is selected, not bulk-published.</h2>
+          <h2 id="policy-heading">
+            Public credibility requires technical and rights control
+          </h2>
 
           <p>
-            Historical codes, mechanisms, figures, datasets and project
-            documents are screened before public use for authorship, ownership,
-            confidentiality, licensing, technical integrity and validation
-            status.
+            Public content is selected rather than bulk-published. Scientific
+            value, ownership, confidentiality, licensing, validation and
+            suitability for professional communication are reviewed before
+            release.
           </p>
         </div>
 
-        <div class="policy-card">
-          <h3>Public-information boundary</h3>
+        <div class="policy-grid">
+          <article class="policy-card">
+            <h3>Evidence status</h3>
+            <p>
+              Hypotheses, screening tools, reconstructed models, experimental
+              observations and validated results are labelled according to
+              their actual maturity.
+            </p>
+          </article>
 
-          <p>
-            This site does not intentionally disclose confidential client or
-            employer information, proprietary operating data, restricted
-            project details or third-party material without an appropriate
-            right to use it.
-          </p>
+          <article class="policy-card">
+            <h3>Authorship and rights</h3>
+            <p>
+              Historical programs, mechanisms, figures, manuscripts and data
+              are reviewed for authorship, ownership, licences and third-party
+              restrictions.
+            </p>
+          </article>
 
-          <p>
-            Research concepts, screening frameworks and validated results are
-            labelled differently to avoid implying a maturity level that the
-            evidence does not support.
-          </p>
+          <article class="policy-card">
+            <h3>Confidentiality</h3>
+            <p>
+              Client, employer and project information is excluded unless it
+              is public, non-confidential, rights-cleared and appropriate for
+              professional reuse.
+            </p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section muted">
+    <section
+      id="contact"
+      class="section muted"
+      aria-labelledby="contact-heading"
+    >
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">Professional contact</p>
+          <p class="eyebrow">Contact</p>
 
-          <h2>
-            Scientific, engineering and technology-development engagement
+          <h2 id="contact-heading">
+            Professional discussion and technical collaboration
           </h2>
 
           <p>
-            Relevant discussions may include applied R&amp;D, modelling,
-            technical evaluation, pilot planning, process development,
-            scale-up and independent scientific review.
+            Relevant discussions may concern R&amp;D leadership, scientific
+            engineering, modelling, validation, technology development,
+            scale-up or international technical collaboration.
           </p>
         </div>
 
@@ -1258,39 +1414,39 @@
           <article class="contact-card">
             <h3>Professional profiles</h3>
 
-            <p>
+            <div class="profile-links">
               <a
                 href="https://github.com/saylamah"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer external"
               >
                 GitHub
               </a>
-              ·
+
               <a
                 href="https://www.linkedin.com/in/ahmad-saylam"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer external"
               >
                 LinkedIn
               </a>
-              ·
+
               <a
                 href="https://orcid.org/0000-0001-7484-1265"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer external"
               >
                 ORCID
               </a>
-              ·
+
               <a
-                href="https://scholar.google.com/citations?user=2I4xhywAAAAJ&hl=en"
+                href="https://scholar.google.com/citations?user=2I4xhywAAAAJ&amp;hl=en"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer external"
               >
                 Google Scholar
               </a>
-            </p>
+            </div>
           </article>
 
           <article class="contact-card">
@@ -1303,7 +1459,7 @@
             </p>
 
             <p>
-              Please avoid sending confidential or proprietary information
+              Confidential or proprietary information should not be sent
               before an appropriate confidentiality arrangement is in place.
             </p>
           </article>
@@ -1323,10 +1479,7 @@
         </p>
       </div>
 
-      <div
-        class="footer-links"
-        aria-label="Website navigation"
-      >
+      <div class="footer-links" aria-label="Website navigation">
         <a href="#top">Home</a>
         <a href="selected-work.html">Selected Work</a>
         <a href="research-tools.html">Research &amp; Tools</a>
