@@ -1,63 +1,378 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Enhancing Biomass Conversion | Ahmad Saylam</title>
+  <title>Biomass Conversion, Biochar &amp; Heat Modelling | Dr. Ahmad Saylam</title>
 
-  <meta name="citation_title" content="Enhancing Biomass Conversion: Advanced Modeling and Process Optimization for Efficient Biochar and Heat Production">
+  <meta
+    name="description"
+    content="Open technical paper and companion research repository on simplified biomass drying, pyrolysis, oxidation, biochar, syngas and heat-production modelling."
+  >
+  <meta name="author" content="Dr. Ahmad Saylam">
+  <meta name="robots" content="index,follow">
+
+  <link
+    rel="canonical"
+    href="https://saylamah.github.io/publications/biomass-conversion-biochar-heat.html"
+  >
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+  <meta
+    property="og:site_name"
+    content="Dr. Ahmad Saylam — Scientific &amp; Engineering Portfolio"
+  >
+  <meta
+    property="og:title"
+    content="Biomass Conversion, Biochar &amp; Heat Modelling"
+  >
+  <meta
+    property="og:description"
+    content="Simplified biomass-conversion modelling covering drying, pyrolysis, oxidation, biochar yield, syngas components and heat-production trends."
+  >
+  <meta
+    property="og:url"
+    content="https://saylamah.github.io/publications/biomass-conversion-biochar-heat.html"
+  >
+  <meta property="article:published_time" content="2024-09">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary">
+  <meta
+    name="twitter:title"
+    content="Biomass Conversion, Biochar &amp; Heat Modelling"
+  >
+  <meta
+    name="twitter:description"
+    content="Simplified biomass-conversion modelling covering drying, pyrolysis, oxidation, biochar yield, syngas components and heat-production trends."
+  >
+
+  <!-- Scholarly citation metadata -->
+  <meta
+    name="citation_title"
+    content="Enhancing Biomass Conversion: Advanced Modelling and Process Optimization for Efficient Biochar and Heat Production"
+  >
   <meta name="citation_author" content="Saylam, Ahmad">
-  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_publication_date" content="2024/09">
   <meta name="citation_doi" content="10.5281/zenodo.19438451">
-  <meta name="citation_abstract_html_url" content="https://saylamah.github.io/publications/biomass-conversion-biochar-heat.html">
-  <meta name="citation_pdf_url" content="https://saylamah.github.io/papers/biomass-conversion-biochar-heat.pdf">
+  <meta name="citation_publisher" content="Zenodo">
+  <meta name="citation_language" content="en">
+  <meta
+    name="citation_abstract_html_url"
+    content="https://saylamah.github.io/publications/biomass-conversion-biochar-heat.html"
+  >
+  <meta
+    name="citation_pdf_url"
+    content="https://saylamah.github.io/papers/biomass-conversion-biochar-heat.pdf"
+  >
 
-  <meta name="description" content="Publication landing page for Enhancing Biomass Conversion: Advanced Modeling and Process Optimization for Efficient Biochar and Heat Production by Ahmad Saylam.">
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "@id": "https://saylamah.github.io/publications/biomass-conversion-biochar-heat.html#article",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://saylamah.github.io/publications/biomass-conversion-biochar-heat.html"
+    },
+    "headline": "Enhancing Biomass Conversion: Advanced Modelling and Process Optimization for Efficient Biochar and Heat Production",
+    "description": "A simplified modelling study of biomass drying, pyrolysis and oxidation, examining the predicted effects of temperature, moisture and oxygen concentration on biochar and selected gas-product trends.",
+    "datePublished": "2024-09",
+    "inLanguage": "en",
+    "author": {
+      "@type": "Person",
+      "@id": "https://saylamah.github.io/#person",
+      "name": "Ahmad Saylam",
+      "honorificPrefix": "Dr.",
+      "url": "https://saylamah.github.io/about-cv.html",
+      "sameAs": [
+        "https://orcid.org/0000-0001-7484-1265",
+        "https://github.com/saylamah"
+      ]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Zenodo",
+      "url": "https://zenodo.org/"
+    },
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "DOI",
+      "value": "10.5281/zenodo.19438451"
+    },
+    "url": "https://saylamah.github.io/publications/biomass-conversion-biochar-heat.html",
+    "sameAs": [
+      "https://doi.org/10.5281/zenodo.19438451",
+      "https://zenodo.org/records/19438452",
+      "https://github.com/saylamah/biochar-process-modeling"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "biomass conversion",
+      "biochar",
+      "pyrolysis",
+      "drying",
+      "partial oxidation",
+      "syngas",
+      "heat production",
+      "Cantera",
+      "process modelling"
+    ],
+    "about": [
+      "Biomass drying",
+      "Biomass pyrolysis",
+      "Biochar formation",
+      "Partial oxidation",
+      "Syngas components",
+      "Heat production",
+      "Process modelling"
+    ]
+  }
+  </script>
 </head>
 
 <body>
-  <p><a href="../publications.html">← Back to Publications</a></p>
-  
-  <h1>Enhancing Biomass Conversion: Advanced Modeling and Process Optimization for Efficient Biochar and Heat Production</h1>
-
-  <p><strong>Author:</strong> Ahmad Saylam</p>
-
-  <p><strong>Document type:</strong> Preprint / Technical Paper</p>
-
-  <p><strong>Year:</strong> 2026</p>
-
-  <p><strong>DOI:</strong> <a href="https://doi.org/10.5281/zenodo.19438452">10.5281/zenodo.19438451</a></p>
-
-  <p><strong>Zenodo record:</strong> <a href="https://zenodo.org/records/19438452">https://zenodo.org/records/19438451</a></p>
-
-  <h2>Abstract</h2>
-
   <p>
-    This work presents a comprehensive study on the modeling of drying, pyrolysis, and combustion of biomass for biochar, heat, and electricity production. Utilizing an ideal stirred reactor model, the study simulates the thermochemical processes involved in biomass conversion, focusing on a waste wood as primary feedstock.
+    <a href="../publications.html">← Back to Publications</a>
   </p>
 
-  <p>
-    It examines the impacts of temperature, moisture content, and oxygen concentration on biochar yield and the production rates of key gases such as carbon monoxide, hydrogen, and methane. The study highlights the optimal temperature ranges for drying, pyrolysis, and combustion to maximize biochar yield and minimize undesirable byproducts like ash and PAHs.
-  </p>
+  <main>
+    <article>
+      <header>
+        <h1>
+          Enhancing Biomass Conversion: Advanced Modelling and Process
+          Optimization for Efficient Biochar and Heat Production
+        </h1>
 
-  <p>
-    Chemical kinetics are based on the works of Ranzi et al. [19-21]. Results underscore the critical role of process parameters in optimizing biochar production, offering insights into the challenges and solutions associated with biomass conversion technologies.
-  </p>
+        <p><strong>Author:</strong> Dr. Ahmad Saylam</p>
+        <p><strong>Document type:</strong> Open technical preprint</p>
 
-  <h2>Full Text</h2>
+        <p>
+          <strong>Publication date:</strong>
+          <time datetime="2024-09">September 2024</time>
+        </p>
 
-  <p>
-    PDF link will be activated after the final PDF is uploaded:
-    <a href="https://saylamah.github.io/papers/biomass-conversion-biochar-heat.pdf">
-      biomass-conversion-biochar-heat.pdf
-    </a>
-  </p>
+        <p>
+          <strong>Scientific status:</strong>
+          Simplified research and engineering screening model. The reported
+          trends require experimental validation and should not be interpreted
+          as validated industrial design data or guaranteed biochar, syngas or
+          heat-production performance.
+        </p>
 
-  <h2>Citation</h2>
+        <p>
+          <strong>DOI:</strong>
+          <a
+            href="https://doi.org/10.5281/zenodo.19438451"
+            target="_blank"
+            rel="noopener noreferrer external"
+          >
+            10.5281/zenodo.19438451
+          </a>
+        </p>
 
-  <p>
-    Saylam, A. (2026). Enhancing Biomass Conversion: Advanced Modeling and Process Optimization for Efficient Biochar and Heat Production. Zenodo. https://doi.org/10.5281/zenodo.19438451
-  </p>
+        <p>
+          <strong>Zenodo record:</strong>
+          <a
+            href="https://zenodo.org/records/19438452"
+            target="_blank"
+            rel="noopener noreferrer external"
+          >
+            https://zenodo.org/records/19438452
+          </a>
+        </p>
+      </header>
+
+      <section aria-labelledby="abstract-heading">
+        <h2 id="abstract-heading">Abstract</h2>
+
+        <p>
+          This work presents a modelling study of drying, pyrolysis and
+          combustion of biomass for biochar, heat and electricity production.
+          Using an ideal stirred-reactor representation, the study examines
+          thermochemical conversion with waste wood as the primary feedstock.
+        </p>
+
+        <p>
+          The analysis considers the predicted effects of temperature, moisture
+          content and oxygen concentration on biochar yield and on the
+          production rates of selected gases, including carbon monoxide,
+          hydrogen and methane. It discusses operating ranges for drying,
+          pyrolysis and oxidation and their potential influence on biochar
+          production and undesirable by-products.
+        </p>
+
+        <p>
+          The chemical-kinetic treatment is based on published biomass
+          conversion work associated with Ranzi and co-workers. The results are
+          intended to support qualitative process understanding and the further
+          development of biomass-conversion models.
+        </p>
+      </section>
+
+      <section aria-labelledby="consistency-heading">
+        <h2 id="consistency-heading">Model-consistency note</h2>
+
+        <p>
+          The companion repository preserves the original simulation script
+          and identifies a temperature-unit inconsistency that must be resolved
+          before claiming exact reproduction of the published cases. The
+          original script passes values such as 790 to Cantera as kelvin,
+          whereas associated publication captions refer to temperatures such
+          as 790 °C.
+        </p>
+
+        <p>
+          Consequently, the archived figures and the reconstructed simulations
+          should presently be treated as research-development and
+          screening-level evidence. Exact numerical reproduction requires
+          confirmation of the original temperature basis, mechanism version,
+          initial conditions, feed composition, reactor assumptions, numerical
+          settings and post-processing method.
+        </p>
+      </section>
+
+      <section aria-labelledby="scope-heading">
+        <h2 id="scope-heading">Scope and evidence boundary</h2>
+
+        <p>
+          The work may support qualitative sensitivity analysis, model
+          reconstruction, education, validation planning and early-stage
+          comparison of thermochemical process concepts.
+        </p>
+
+        <p>
+          It does not constitute a complete multiphase biomass-reactor model,
+          industrial biochar-plant simulator, process-safety assessment,
+          emissions guarantee, carbon-credit certification or investment-grade
+          feasibility study.
+        </p>
+
+        <p>
+          Industrial application requires feedstock-specific characterization,
+          experimentally validated product yields, material and energy balance
+          closure, particle- and reactor-scale heat and mass transfer,
+          hydrodynamic characterization, emissions and tar analysis, materials
+          assessment, process-safety review and scale-up verification.
+        </p>
+      </section>
+
+      <section aria-labelledby="full-text-heading">
+        <h2 id="full-text-heading">Full text</h2>
+
+        <ul>
+          <li>
+            <a
+              href="../papers/biomass-conversion-biochar-heat.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open the website PDF
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://zenodo.org/records/19438452"
+              target="_blank"
+              rel="noopener noreferrer external"
+            >
+              Access the Zenodo record and deposited files
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="license-heading">
+        <h2 id="license-heading">License</h2>
+
+        <p>
+          The author-deposited paper identifies the work as available under the
+          <a
+            href="https://creativecommons.org/licenses/by/4.0/"
+            target="_blank"
+            rel="noopener noreferrer license"
+          >
+            Creative Commons Attribution 4.0 International licence
+          </a>.
+        </p>
+      </section>
+
+      <section aria-labelledby="citation-heading">
+        <h2 id="citation-heading">Recommended citation</h2>
+
+        <p>
+          <cite>
+            Saylam, A. (2024). Enhancing Biomass Conversion: Advanced
+            Modelling and Process Optimization for Efficient Biochar and Heat
+            Production. Zenodo.
+          </cite>
+          <a
+            href="https://doi.org/10.5281/zenodo.19438451"
+            target="_blank"
+            rel="noopener noreferrer external"
+          >
+            https://doi.org/10.5281/zenodo.19438451
+          </a>
+        </p>
+      </section>
+
+      <section aria-labelledby="repository-heading">
+        <h2 id="repository-heading">Companion research repository</h2>
+
+        <p>
+          The public repository contains a simplified Cantera-compatible
+          mechanism, the preserved original script, refactored Python modules,
+          curated simulation data, sensitivity cases, assumptions and
+          limitations, model-consistency notes, a validation plan and basic
+          automated software tests.
+        </p>
+
+        <p>
+          The repository is classified as a research reconstruction and
+          engineering screening framework. Its software tests verify selected
+          program behaviour; they do not establish that the thermochemical
+          mechanism is quantitatively predictive.
+        </p>
+
+        <ul>
+          <li>
+            <a
+              href="https://github.com/saylamah/biochar-process-modeling"
+              target="_blank"
+              rel="noopener noreferrer external"
+            >
+              GitHub repository: biochar-process-modeling
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="related-heading">
+        <h2 id="related-heading">Related technical resources</h2>
+
+        <ul>
+          <li>
+            <a href="thermochemical-process-development.html">
+              Thermochemical Process Development: From Mechanism to Scale-Up
+              and Industrial Adoption
+            </a>
+          </li>
+
+          <li>
+            <a href="waste-to-x-biomass-carbon-credit.html">
+              Advancing Waste-to-X Technologies: Sustainable Thermochemical
+              Pathways for Biomass Valorization and Carbon Credit Potential
+            </a>
+          </li>
+        </ul>
+      </section>
+    </article>
+  </main>
 </body>
 </html>
