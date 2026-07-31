@@ -1,1712 +1,1920 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-
-<title>Publications &amp; Technical Outputs | Dr. Ahmad Saylam</title>
-
-<meta
-  name="description"
-  content="Selected publications and technical outputs by Dr. Ahmad Saylam across combustion, chemical kinetics, nanoparticle inception, thermochemical processes, water treatment, process intensification and scale-up."
->
-<meta name="author" content="Dr. Ahmad Saylam">
-<meta name="robots" content="index,follow">
-
-<link rel="canonical" href="https://saylamah.github.io/publications.html">
-
-<meta property="og:type" content="website">
-<meta
-  property="og:title"
-  content="Publications &amp; Technical Outputs | Dr. Ahmad Saylam"
->
-<meta
-  property="og:description"
-  content="Selected scientific, engineering and professional outputs across reactive systems, thermochemical processes, water treatment, modelling and scale-up."
->
-<meta
-  property="og:url"
-  content="https://saylamah.github.io/publications.html"
->
-
-<style>
-:root {
-  --ink: #13202c;
-  --muted: #536575;
-  --line: #d9e2e8;
-  --paper: #ffffff;
-  --soft: #f3f7f8;
-  --navy: #123c56;
-  --teal: #147b75;
-  --teal-dark: #0d5f5b;
-  --max: 1180px;
-  --shadow: 0 16px 40px rgba(18, 60, 86, 0.08);
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  background: var(--paper);
-  color: var(--ink);
-  font-family: Inter, "Segoe UI", Arial, Helvetica, sans-serif;
-  font-size: 17px;
-  line-height: 1.6;
-}
-
-a {
-  color: var(--teal-dark);
-  text-underline-offset: 3px;
-}
-
-a:hover {
-  color: var(--navy);
-}
-
-h1,
-h2,
-h3 {
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-}
-
-h1 {
-  max-width: 900px;
-  margin: 0.3rem 0 1rem;
-  font-size: clamp(2.5rem, 5vw, 4.7rem);
-}
-
-h2 {
-  font-size: clamp(1.45rem, 2.6vw, 2rem);
-}
-
-p {
-  margin-top: 0;
-}
-
-.container {
-  width: min(var(--max), calc(100% - 40px));
-  margin-inline: auto;
-}
-
-.skip-link {
-  position: absolute;
-  left: -9999px;
-}
-
-.skip-link:focus {
-  top: 8px;
-  left: 8px;
-  z-index: 100;
-  padding: 0.7rem 1rem;
-  background: #ffffff;
-}
-
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background: rgba(255, 255, 255, 0.96);
-  border-bottom: 1px solid var(--line);
-  backdrop-filter: blur(12px);
-}
-
-.header-inner {
-  min-height: 78px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  color: var(--ink);
-  text-decoration: none;
-}
-
-.brand-mark {
-  width: 43px;
-  height: 43px;
-  display: grid;
-  place-items: center;
-  background: var(--navy);
-  color: #ffffff;
-  border-radius: 50%;
-  font-weight: 800;
-}
-
-.brand strong,
-.brand small {
-  display: block;
-}
-
-.brand small {
-  color: var(--muted);
-  font-size: 0.72rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.site-nav {
-  display: flex;
-  gap: 1rem;
-  font-size: 0.87rem;
-}
-
-.site-nav a {
-  padding: 0.55rem 0.1rem;
-  color: var(--ink);
-  border-bottom: 2px solid transparent;
-  text-decoration: none;
-}
-
-.site-nav a:hover,
-.site-nav a[aria-current="page"] {
-  color: var(--teal-dark);
-  border-bottom-color: var(--teal);
-}
-
-.nav-toggle {
-  display: none;
-  padding: 0.55rem 0.8rem;
-  background: #ffffff;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  font: inherit;
-}
-
-.hero {
-  padding: clamp(4.5rem, 8vw, 7rem) 0;
-  background:
-    linear-gradient(
-      135deg,
-      #f8fbfc,
-      #edf5f5 62%,
-      #f8f4ec
-    );
-  border-bottom: 1px solid var(--line);
-}
-
-.eyebrow {
-  margin-bottom: 1rem;
-  color: var(--teal-dark);
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-}
-
-.hero-lead {
-  max-width: 830px;
-  color: var(--muted);
-  font-size: clamp(1.08rem, 1.7vw, 1.3rem);
-}
-
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-  margin-top: 1.8rem;
-}
-
-.button {
-  min-height: 46px;
-  display: inline-flex;
-  align-items: center;
-  padding: 0.75rem 1.15rem;
-  border-radius: 8px;
-  font-weight: 750;
-  text-decoration: none;
-}
-
-.button.primary {
-  background: var(--teal);
-  color: #ffffff;
-}
-
-.button.primary:hover {
-  background: var(--teal-dark);
-  color: #ffffff;
-}
-
-.button.secondary {
-  background: #ffffff;
-  color: var(--navy);
-  border: 1px solid var(--navy);
-}
-
-.section {
-  padding: clamp(3.5rem, 7vw, 6rem) 0;
-}
-
-.muted {
-  background: var(--soft);
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-}
-
-.section-heading {
-  max-width: 820px;
-  margin-bottom: 2rem;
-}
-
-.section-heading p:last-child {
-  color: var(--muted);
-}
-
-.controls {
-  padding: 1.2rem;
-  background: #ffffff;
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  box-shadow: var(--shadow);
-}
-
-.search-label {
-  display: block;
-  margin-bottom: 0.45rem;
-  font-weight: 750;
-}
-
-.search-input {
-  width: 100%;
-  min-height: 48px;
-  padding: 0.75rem 0.9rem;
-  border: 1px solid #bfcbd3;
-  border-radius: 8px;
-  font: inherit;
-}
-
-.search-input:focus {
-  outline: 3px solid rgba(20, 123, 117, 0.18);
-  border-color: var(--teal);
-}
-
-.filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.55rem;
-  margin-top: 1rem;
-}
-
-.filter-button {
-  padding: 0.55rem 0.8rem;
-  background: var(--soft);
-  color: var(--ink);
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  cursor: pointer;
-  font: inherit;
-  font-size: 0.86rem;
-  font-weight: 700;
-}
-
-.filter-button:hover,
-.filter-button.active {
-  background: var(--navy);
-  color: #ffffff;
-  border-color: var(--navy);
-}
-
-.results-line {
-  margin: 1rem 0 0;
-  color: var(--muted);
-  font-size: 0.9rem;
-}
-
-.publication-section {
-  margin-top: 3.5rem;
-}
-
-.publication-section.hidden,
-.publication-card.hidden {
-  display: none;
-}
-
-.section-title {
-  margin-bottom: 1rem;
-  padding-bottom: 0.7rem;
-  border-bottom: 2px solid var(--line);
-}
-
-.publication-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
-}
-
-.publication-card {
-  min-height: 155px;
-  display: flex;
-  flex-direction: column;
-  padding: 1.25rem;
-  background: #ffffff;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(18, 60, 86, 0.04);
-}
-
-.publication-type {
-  align-self: flex-start;
-  margin-bottom: 0.75rem;
-  padding: 0.24rem 0.52rem;
-  background: #e5f2f0;
-  color: var(--teal-dark);
-  border-radius: 999px;
-  font-size: 0.71rem;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
-.publication-card h3 {
-  margin: 0 0 0.9rem;
-  font-size: 1.05rem;
-}
-
-.publication-card h3 a {
-  color: var(--navy);
-  text-decoration: none;
-}
-
-.publication-card h3 a:hover {
-  text-decoration: underline;
-}
-
-.open-link {
-  margin-top: auto;
-  font-size: 0.89rem;
-  font-weight: 750;
-}
-
-.no-results {
-  display: none;
-  margin-top: 2rem;
-  padding: 1.3rem;
-  background: #ffffff;
-  color: var(--muted);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-}
-
-.no-results.visible {
-  display: block;
-}
-
-.note-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-.note-card {
-  padding: 1.4rem;
-  border: 1px solid var(--line);
-  border-radius: 14px;
-}
-
-.note-card p {
-  color: var(--muted);
-}
-
-.profile-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.7rem;
-}
-
-.profile-links a {
-  padding: 0.5rem 0.7rem;
-  background: var(--soft);
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.site-footer {
-  padding: 3rem 0 1.5rem;
-  background: #0f1c27;
-  color: #d7e3ea;
-}
-
-.footer-grid,
-.footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-}
-
-.site-footer p {
-  max-width: 650px;
-  color: #aabac5;
-}
-
-.footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.site-footer a {
-  color: #ffffff;
-}
-
-.footer-bottom {
-  margin-top: 2rem;
-  padding-top: 1rem;
-  color: #91a2ad;
-  border-top: 1px solid #31404c;
-  font-size: 0.8rem;
-}
-
-@media (max-width: 980px) {
-  .nav-toggle {
-    display: block;
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Publications &amp; Technical Outputs | Dr. Ahmad Saylam</title>
+
+  <meta
+    name="description"
+    content="Selected publications and technical outputs by Dr. Ahmad Saylam across kinetics, combustion, thermochemical processes, water treatment and scale-up."
+  >
+  <meta name="author" content="Dr. Ahmad Saylam">
+  <meta name="robots" content="index,follow">
+
+  <link
+    rel="canonical"
+    href="https://saylamah.github.io/publications.html"
+  >
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta
+    property="og:site_name"
+    content="Dr. Ahmad Saylam — Scientific &amp; Engineering Portfolio"
+  >
+  <meta
+    property="og:title"
+    content="Publications &amp; Technical Outputs | Dr. Ahmad Saylam"
+  >
+  <meta
+    property="og:description"
+    content="Selected peer-reviewed research, technical frameworks, professional articles and open scientific outputs."
+  >
+  <meta
+    property="og:url"
+    content="https://saylamah.github.io/publications.html"
+  >
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary">
+  <meta
+    name="twitter:title"
+    content="Publications &amp; Technical Outputs | Dr. Ahmad Saylam"
+  >
+  <meta
+    name="twitter:description"
+    content="Selected peer-reviewed research, technical frameworks, professional articles and open scientific outputs."
+  >
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://saylamah.github.io/#website",
+        "url": "https://saylamah.github.io/",
+        "name": "Dr. Ahmad Saylam — Scientific and Engineering Portfolio",
+        "inLanguage": "en",
+        "publisher": {
+          "@id": "https://saylamah.github.io/#person"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://saylamah.github.io/#person",
+        "name": "Ahmad Saylam",
+        "honorificPrefix": "Dr.",
+        "url": "https://saylamah.github.io/about-cv.html",
+        "sameAs": [
+          "https://github.com/saylamah",
+          "https://orcid.org/0000-0001-7484-1265",
+          "https://scholar.google.com/citations?user=2I4xhywAAAAJ&hl=en",
+          "https://www.linkedin.com/in/ahmad-saylam"
+        ]
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://saylamah.github.io/publications.html#webpage",
+        "url": "https://saylamah.github.io/publications.html",
+        "name": "Publications and Technical Outputs",
+        "description": "Selected peer-reviewed research, technical frameworks, professional articles and open scientific outputs by Dr. Ahmad Saylam.",
+        "inLanguage": "en",
+        "isPartOf": {
+          "@id": "https://saylamah.github.io/#website"
+        },
+        "about": {
+          "@id": "https://saylamah.github.io/#person"
+        }
+      }
+    ]
   }
+  </script>
 
-  .site-nav {
-    display: none;
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    left: 20px;
-    flex-direction: column;
-    padding: 1rem;
-    background: #ffffff;
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    box-shadow: var(--shadow);
-  }
+  <style>
+    :root {
+      --ink: #13202c;
+      --muted: #536575;
+      --line: #d9e2e8;
+      --paper: #ffffff;
+      --soft: #f3f7f8;
+      --navy: #123c56;
+      --teal: #147b75;
+      --teal-dark: #0d5f5b;
+      --accent: #c98b2e;
+      --max: 1180px;
+      --shadow: 0 16px 40px rgba(18, 60, 86, 0.08);
+    }
 
-  .site-nav.open {
-    display: flex;
-  }
+    * {
+      box-sizing: border-box;
+    }
 
-  .site-nav a {
-    padding: 0.65rem;
-  }
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-@media (max-width: 760px) {
-  body {
-    font-size: 16px;
-  }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Inter, "Segoe UI", Arial, Helvetica, sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+    }
 
-  .container {
-    width: min(var(--max), calc(100% - 28px));
-  }
+    a {
+      color: var(--teal-dark);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
 
-  .brand small {
-    display: none;
-  }
+    a:hover {
+      color: var(--navy);
+    }
 
-  .publication-grid,
-  .note-grid {
-    grid-template-columns: 1fr;
-  }
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 3px;
+    }
 
-  .footer-grid,
-  .footer-bottom {
-    flex-direction: column;
-  }
-}
+    h1,
+    h2,
+    h3 {
+      margin-top: 0;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
 
-@media (max-width: 520px) {
-  .button {
-    width: 100%;
-  }
+    h1 {
+      max-width: 900px;
+      margin-bottom: 1rem;
+      font-size: clamp(2.5rem, 5vw, 4.7rem);
+    }
 
-  .header-inner {
-    min-height: 68px;
-  }
-}
-</style>
+    h2 {
+      font-size: clamp(1.45rem, 2.6vw, 2rem);
+    }
+
+    p {
+      margin-top: 0;
+    }
+
+    .container {
+      width: min(var(--max), calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+    }
+
+    .skip-link:focus {
+      top: 8px;
+      left: 8px;
+      z-index: 100;
+      padding: 0.7rem 1rem;
+      background: #ffffff;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.96);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(12px);
+    }
+
+    .header-inner {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      width: 43px;
+      height: 43px;
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      background: var(--navy);
+      color: #ffffff;
+      border-radius: 50%;
+      font-weight: 800;
+    }
+
+    .brand strong,
+    .brand small {
+      display: block;
+    }
+
+    .brand small {
+      color: var(--muted);
+      font-size: 0.72rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .site-nav {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.87rem;
+    }
+
+    .site-nav a {
+      padding: 0.55rem 0.1rem;
+      color: var(--ink);
+      border-bottom: 2px solid transparent;
+      text-decoration: none;
+    }
+
+    .site-nav a:hover,
+    .site-nav a[aria-current="page"] {
+      color: var(--teal-dark);
+      border-bottom-color: var(--teal);
+    }
+
+    .nav-toggle {
+      display: none;
+      padding: 0.55rem 0.8rem;
+      background: #ffffff;
+      color: var(--ink);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    .hero {
+      padding: clamp(4.5rem, 8vw, 7rem) 0;
+      background:
+        linear-gradient(
+          135deg,
+          #f8fbfc 0%,
+          #edf5f5 62%,
+          #f8f4ec 100%
+        );
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      margin-bottom: 1rem;
+      color: var(--teal-dark);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .hero-lead {
+      max-width: 850px;
+      color: var(--muted);
+      font-size: clamp(1.08rem, 1.7vw, 1.3rem);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 1.8rem;
+    }
+
+    .button {
+      min-height: 46px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem 1.15rem;
+      border-radius: 8px;
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .button.primary {
+      background: var(--teal);
+      color: #ffffff;
+    }
+
+    .button.primary:hover {
+      background: var(--teal-dark);
+      color: #ffffff;
+    }
+
+    .button.secondary {
+      background: #ffffff;
+      color: var(--navy);
+      border: 1px solid var(--navy);
+    }
+
+    .section {
+      padding: clamp(3.5rem, 7vw, 6rem) 0;
+    }
+
+    .muted {
+      background: var(--soft);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section-heading {
+      max-width: 850px;
+      margin-bottom: 2rem;
+    }
+
+    .section-heading > p:last-child {
+      color: var(--muted);
+    }
+
+    .controls {
+      padding: 1.25rem;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+    }
+
+    .search-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 0.75rem;
+      align-items: end;
+    }
+
+    .search-field {
+      min-width: 0;
+    }
+
+    .search-label {
+      display: block;
+      margin-bottom: 0.45rem;
+      font-weight: 750;
+    }
+
+    .search-input {
+      width: 100%;
+      min-height: 48px;
+      padding: 0.75rem 0.9rem;
+      border: 1px solid #bfcbd3;
+      border-radius: 8px;
+      font: inherit;
+    }
+
+    .clear-button {
+      min-height: 48px;
+      padding: 0.7rem 1rem;
+      background: #ffffff;
+      color: var(--navy);
+      border: 1px solid var(--navy);
+      border-radius: 8px;
+      font: inherit;
+      font-weight: 750;
+      cursor: pointer;
+    }
+
+    .clear-button:hover {
+      background: var(--soft);
+    }
+
+    .filter-label {
+      margin: 1rem 0 0.55rem;
+      font-size: 0.92rem;
+      font-weight: 750;
+    }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+    }
+
+    .filter-button {
+      padding: 0.55rem 0.8rem;
+      background: var(--soft);
+      color: var(--ink);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      cursor: pointer;
+      font: inherit;
+      font-size: 0.86rem;
+      font-weight: 700;
+    }
+
+    .filter-button:hover,
+    .filter-button.active {
+      background: var(--navy);
+      color: #ffffff;
+      border-color: var(--navy);
+    }
+
+    .results-line {
+      margin: 1rem 0 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .publication-section {
+      margin-top: 3.5rem;
+    }
+
+    .publication-section.hidden,
+    .publication-card.hidden {
+      display: none;
+    }
+
+    .section-title {
+      margin-bottom: 1rem;
+      padding-bottom: 0.7rem;
+      border-bottom: 2px solid var(--line);
+    }
+
+    .publication-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .publication-card {
+      min-height: 165px;
+      display: flex;
+      flex-direction: column;
+      padding: 1.25rem;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(18, 60, 86, 0.04);
+    }
+
+    .publication-type {
+      align-self: flex-start;
+      margin-bottom: 0.75rem;
+      padding: 0.24rem 0.52rem;
+      background: #e5f2f0;
+      color: var(--teal-dark);
+      border-radius: 999px;
+      font-size: 0.71rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .publication-card h3 {
+      margin: 0 0 0.9rem;
+      font-size: 1.05rem;
+    }
+
+    .publication-card h3 a {
+      color: var(--navy);
+      text-decoration: none;
+    }
+
+    .publication-card h3 a:hover {
+      text-decoration: underline;
+    }
+
+    .open-link {
+      margin-top: auto;
+      font-size: 0.89rem;
+      font-weight: 750;
+    }
+
+    .no-results {
+      display: none;
+      margin-top: 2rem;
+      padding: 1.3rem;
+      background: #ffffff;
+      color: var(--muted);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+
+    .no-results.visible {
+      display: block;
+    }
+
+    .note-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .note-card {
+      padding: 1.4rem;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+    }
+
+    .note-card p {
+      color: var(--muted);
+    }
+
+    .profile-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+    }
+
+    .profile-links a {
+      padding: 0.5rem 0.7rem;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .site-footer {
+      padding: 3rem 0 1.5rem;
+      background: #0f1c27;
+      color: #d7e3ea;
+    }
+
+    .footer-grid,
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .site-footer p {
+      max-width: 650px;
+      color: #aabac5;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .site-footer a {
+      color: #ffffff;
+    }
+
+    .footer-bottom {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      color: #91a2ad;
+      border-top: 1px solid #31404c;
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 980px) {
+      .nav-toggle {
+        display: block;
+      }
+
+      .site-nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        left: 20px;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1rem;
+        background: #ffffff;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+      }
+
+      .site-nav.open {
+        display: flex;
+      }
+
+      .site-nav a {
+        padding: 0.65rem;
+      }
+    }
+
+    @media (max-width: 760px) {
+      body {
+        font-size: 16px;
+      }
+
+      .container {
+        width: min(var(--max), calc(100% - 28px));
+      }
+
+      .brand small {
+        display: none;
+      }
+
+      .publication-grid,
+      .note-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .search-row {
+        grid-template-columns: 1fr;
+      }
+
+      .clear-button {
+        width: 100%;
+      }
+
+      .footer-grid,
+      .footer-bottom {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .button {
+        width: 100%;
+      }
+
+      .header-inner {
+        min-height: 68px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+  </style>
 </head>
 
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<header class="site-header">
-  <div class="container header-inner">
-    <a
-      class="brand"
-      href="index.html"
-      aria-label="Dr. Ahmad Saylam homepage"
-    >
-      <span class="brand-mark" aria-hidden="true">AS</span>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="Dr. Ahmad Saylam homepage"
+      >
+        <span class="brand-mark" aria-hidden="true">AS</span>
 
-      <span>
-        <strong>Dr. Ahmad Saylam</strong>
-        <small>Science · Engineering · Scale-Up</small>
-      </span>
-    </a>
+        <span>
+          <strong>Dr. Ahmad Saylam</strong>
+          <small>Science · Engineering · Scale-Up</small>
+        </span>
+      </a>
 
-    <button
-      class="nav-toggle"
-      type="button"
-      aria-expanded="false"
-      aria-controls="site-nav"
-    >
-      Menu
-    </button>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        Menu
+      </button>
 
-    <nav
-      id="site-nav"
-      class="site-nav"
-      aria-label="Primary navigation"
-    >
-      <a href="index.html">Home</a>
-      <a href="selected-work.html">Selected Work</a>
-      <a href="research-tools.html">Research &amp; Tools</a>
-      <a href="publications.html" aria-current="page">Publications</a>
-      <a href="about-cv.html">About</a>
-      <a href="index.html#consulting">Consulting Direction</a>
-      <a href="index.html#contact">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<main id="main">
-  <section class="hero">
-    <div class="container">
-      <p class="eyebrow">Scientific and engineering record</p>
-
-      <h1>Publications &amp; Technical Outputs</h1>
-
-      <p class="hero-lead">
-        Selected peer-reviewed research, technical frameworks,
-        professional articles and open scientific outputs across reactive
-        systems, combustion, chemical kinetics, thermochemical processes,
-        water treatment, process intensification and engineering scale-up.
-      </p>
-
-      <div class="hero-actions">
-        <a class="button primary" href="#catalogue">
-          Explore the catalogue
-        </a>
-
-        <a class="button secondary" href="index.html">
-          Return to homepage
-        </a>
-      </div>
+      <nav
+        id="site-nav"
+        class="site-nav"
+        aria-label="Primary navigation"
+      >
+        <a href="index.html">Home</a>
+        <a href="selected-work.html">Selected Work</a>
+        <a href="research-tools.html">Research &amp; Tools</a>
+        <a href="publications.html" aria-current="page">Publications</a>
+        <a href="about-cv.html">About</a>
+        <a href="index.html#consulting">Consulting Direction</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
     </div>
-  </section>
+  </header>
 
-  <section id="catalogue" class="section muted">
-    <div class="container">
-      <div class="section-heading">
-        <p class="eyebrow">Search and filter</p>
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Scientific and engineering record</p>
 
-        <h2>Find work by topic</h2>
+        <h1>Publications &amp; Technical Outputs</h1>
+
+        <p class="hero-lead">
+          Selected peer-reviewed research, technical frameworks,
+          professional articles and open scientific outputs across reactive
+          systems, combustion, chemical kinetics, thermochemical processes,
+          water treatment, process intensification and engineering scale-up.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button primary" href="#catalogue">
+            Explore the catalogue
+          </a>
+
+          <a class="button secondary" href="selected-work.html">
+            View selected work
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="catalogue"
+      class="section muted"
+      aria-labelledby="catalogue-heading"
+    >
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Search and filter</p>
+
+          <h2 id="catalogue-heading">Find work by topic</h2>
+
+          <p>
+            Search by title or filter by technical domain. Links lead to
+            publication pages, public bibliographic records,
+            author-accessible versions or external publisher pages according
+            to the access status of each work.
+          </p>
+        </div>
+
+        <div class="controls">
+          <div class="search-row">
+            <div class="search-field">
+              <label class="search-label" for="publication-search">
+                Search titles and topics
+              </label>
+
+              <input
+                id="publication-search"
+                class="search-input"
+                type="search"
+                placeholder="Example: soot, kinetics, wastewater, scale-up"
+                autocomplete="off"
+                aria-controls="publication-catalogue"
+              >
+            </div>
+
+            <button id="clear-search" class="clear-button" type="button">
+              Clear search
+            </button>
+          </div>
+
+          <p id="filter-label" class="filter-label">
+            Filter by technical domain
+          </p>
+
+          <div
+            class="filters"
+            role="group"
+            aria-labelledby="filter-label"
+          >
+            <button
+              class="filter-button active"
+              type="button"
+              data-filter="all"
+              aria-pressed="true"
+            >
+              All
+            </button>
+
+            <button
+              class="filter-button"
+              type="button"
+              data-filter="nanoparticles"
+              aria-pressed="false"
+            >
+              Nanoparticles &amp; NDMS
+            </button>
+
+            <button
+              class="filter-button"
+              type="button"
+              data-filter="combustion"
+              aria-pressed="false"
+            >
+              Combustion &amp; Kinetics
+            </button>
+
+            <button
+              class="filter-button"
+              type="button"
+              data-filter="water"
+              aria-pressed="false"
+            >
+              Water &amp; AOP
+            </button>
+
+            <button
+              class="filter-button"
+              type="button"
+              data-filter="desulfurization"
+              aria-pressed="false"
+            >
+              Desulfurization &amp; Intensification
+            </button>
+
+            <button
+              class="filter-button"
+              type="button"
+              data-filter="thermochemical"
+              aria-pressed="false"
+            >
+              Thermochemical &amp; Waste-to-X
+            </button>
+
+            <button
+              class="filter-button"
+              type="button"
+              data-filter="energy"
+              aria-pressed="false"
+            >
+              Energy Systems
+            </button>
+
+            <button
+              class="filter-button"
+              type="button"
+              data-filter="engineering"
+              aria-pressed="false"
+            >
+              Scale-Up &amp; Engineering
+            </button>
+
+            <button
+              class="filter-button"
+              type="button"
+              data-filter="professional"
+              aria-pressed="false"
+            >
+              Professional Articles
+            </button>
+          </div>
+
+          <p
+            id="results-line"
+            class="results-line"
+            aria-live="polite"
+          >
+            29 items shown
+          </p>
+        </div>
+
+        <div id="publication-catalogue">
+          <section
+            class="publication-section"
+            data-section="nanoparticles"
+            aria-labelledby="nanoparticles-publications-heading"
+          >
+            <h2
+              id="nanoparticles-publications-heading"
+              class="section-title"
+            >
+              Nanoparticle Inception, Combustion Aerosols &amp; NDMS
+            </h2>
+
+            <div class="publication-grid">
+              <article
+                class="publication-card"
+                data-category="nanoparticles"
+              >
+                <span class="publication-type">Scientific concept</span>
+
+                <h3>
+                  <a href="publications/ndms-nanoparticle-inception.html">
+                    A Transient Nano-Dense Molecular State in Nanoparticle
+                    Inception: Bridging Physical Clustering and Chemical
+                    Stabilization
+                  </a>
+                </h3>
+
+                <a
+                  class="open-link"
+                  href="publications/ndms-nanoparticle-inception.html"
+                >
+                  Open publication page
+                </a>
+              </article>
+
+              <article
+                class="publication-card"
+                data-category="nanoparticles"
+              >
+                <span class="publication-type">Modelling framework</span>
+
+                <h3>
+                  <a
+                    href="publications/persistence-stabilization-closure.html"
+                  >
+                    Transient Nano-Dense Molecular States as a
+                    Persistence–Stabilization Closure for Combustion
+                    Nanoparticle Inception
+                  </a>
+                </h3>
+
+                <a
+                  class="open-link"
+                  href="publications/persistence-stabilization-closure.html"
+                >
+                  Open publication page
+                </a>
+              </article>
+            </div>
+          </section>
+
+          <section
+            class="publication-section"
+            data-section="combustion"
+            aria-labelledby="combustion-publications-heading"
+          >
+            <h2
+              id="combustion-publications-heading"
+              class="section-title"
+            >
+              Combustion, Soot, Engines &amp; Chemical Kinetics
+            </h2>
+
+            <div class="publication-grid">
+              <article
+                class="publication-card"
+                data-category="combustion"
+              >
+                <span class="publication-type">Combustion research</span>
+
+                <h3>
+                  <a
+                    href="papers/influence-lateral-species-diffusion-heat-transfer.html"
+                  >
+                    Influence of Lateral Species Diffusion and Heat Transfer
+                    on the Evaluation of Near-Threshold Sooting Flames
+                  </a>
+                </h3>
+
+                <a
+                  class="open-link"
+                  href="papers/influence-lateral-species-diffusion-heat-transfer.html"
+                >
+                  Open publication page
+                </a>
+              </article>
+
+              <article
+                class="publication-card"
+                data-category="combustion"
+              >
+                <span class="publication-type">Combustion research</span>
+
+                <h3>
+                  <a
+                    href="papers/near-threshold-soot-formation-elevated-pressure.html"
+                  >
+                    Near-Threshold Soot Formation in Premixed Flames at
+                    Elevated Pressure
+                  </a>
+                </h3>
+
+                <a
+                  class="open-link"
+                  href="papers/near-threshold-soot-formation-elevated-pressure.html"
+                >
+                  Open publication page
+                </a>
+              </article>
+
+              <article
+                class="publication-card"
+                data-category="combustion"
+              >
+                <span class="publication-type">Combustion research</span>
+
+                <h3>
+                  <a href="publications/high-pressure-sooting-flame.html">
+                    Behavior of Premixed Sooting Flame in a High-Pressure
+                    Burner
+                  </a>
+                </h3>
+
+                <a
+                  class="open-link"
+                  href="publications/high-pressure-sooting-flame.html"
+                >
+                  Open publication page
+                </a>
+              </article>
+
+              <article
+                class="publication-card"
+                data-category="combustion"
+              >
+                <span class="publication-type">Engine emissions</span>
+
+                <h3>
+                  <a
+                    href="publications/diesel-engine-pollutant-emissions.html"
+                  >
+                    Methodology to Reduce Diesel Engine Pollutant Emissions
+                  </a>
+                </h3>
+
+                <a
+                  class="open-link"
+                  href="publications/diesel-engine-pollutant-emissions.html"
+                >
+                  Open publication page
+                </a>
+              </article>
+
+              <article
+                class="publication-card"
+                data-category="combustion"
+              >
+                <span class="publication-type">Mechanism reduction</span>
+
+                <h3>
+                  <a
+                    href="publications/chemical-kinetic-mechanism-reduction.html"
+                  >
+                    Reduction of Large Detailed Chemical Kinetic Mechanisms
+                    for Autoignition Using Joint Analyses of Reaction Rates
+                    and Sensitivities
+                  </a>
+                </h3>
+
+                <a
+                  class="open-link"
+                  href="publications/chemical-kinetic-mechanism-reduction.html"
+                >
+                  Open publication page
+                </a>
+              </article>
+
+              <article
+                class="publication-card"
+                data-category="combustion"
+              >
+                <span class="publication-type">Reaction networks</span>
+
+                <h3>
+                  <a
+                    href="papers/degree-centrality-combustion-reaction-networks.html"
+                  >
+                    Degree Centrality of Combustion Reaction Networks for
+                    Analysing and Modelling Combustion Processes
+                  </a>
+                </h3>
+
+                <a
+                  class="open-link"
+                  href="papers/degree-centrality-combustion-reaction-networks.html"
+                >
+                  Open publication page
+                </a>
+              </article>
+
+              <article
+                class="publication-card"
+                data-category="combustion"
+              >
+                <span class="publication-type">
+                  Experimental diagnostics
+                </span>
+
+                <h3>
+                  <a
+                    href="publications/high-pressure-flame-facility-diagnostics.html"
+                  >
+                    Characterization of a High-Pressure Flame Facility Using
+                    High-Speed Chemiluminescence and OH LIF Imaging
+                  </a>
+                </h3>
+
+                <a
+                  class="open-link"
+                  href="publications/high-pressure-flame-facility-diagnostics.html"
+                >
+                  Open publication page
+                </a>
+              </article>
+
+              <article
+                class="publication-card"
+                data-category="combustion"
+              >
+                <span class="publication-type">Fuel chemistry</span>
+
+                <h3>
+                  <a
+                    href="papers/benzene-addition-methane-n-heptane-rapid-compression.html"
+                  >
+                    Benzene Addition to a Fuel-Stoichiometric
+                    Methane/O₂/N₂ Flat Flame and to n-Heptane/Air Mixtures
+                    under Rapid Compression
+                  </a>
+                </h3>
+
+                <a
+                  class="open-link"
+                  href="papers/benzene-addition-methane-n-heptane-rapid-compression.html"
+                >
+                  Open publication page
+                </a>
+              </article>
+
+              <article
+                class="publication-card"
+                data-category="combustion"
+              >
+                <span class="publication-type">HCCI chemistry</span>
+
+                <h3>
+                  <a
+                    href="papers/reactive-species-formation-c1-c3-alkanes-hcci.html"
+                  >
+                    Modelling Study of Reactive Species Formation from C1–C3
+                    Alkanes in an HCCI Engine
+                  </a>
+                </h3>
+
+                <a
+                  class="open-link"
+                  href="papers/reactive-species-formation-c1-c3-alkanes-hcci.html"
+                >
+                  Open publication page
+                </a>
+              </article>
+
+              <article
+                class="publication-card"
+                data-category="combustion"
+              >
+                <span class="publication-type">HCCI concept</span>
+
+                <h3>
+                  <a href="publications/hcci-engine-chemical-reactor.html">
+                    HCCI Engine as Chemical Reactor to Produce
+                    Fuel/Chemicals: An Exploring Study of n-Alkanes
+                    Low-Temperature Chemistry
+                  </a>
+                </h3>
+
+                <a
+                  class="open-link"
+                  href="publications/hcci-engine-chemical-reactor.html"
+                >
+                  Open publication page
+                </a>
+              </article>
+
+              <article
+                class="publication-card"
+                data-category="combustion"
+              >
+                <span class="publication-type">Doctoral thesis</span>
+
+                <h3>
+                  <a
+                    href="publications/oxidation-autoignition-alkanes-aromatics.html"
+                  >
+                    Modelling Studies of the Oxidation and Autoignition of
+                    Alkanes, Aromatics, and Their Mixtures at High Pressure
+                    between 600 and 1500 K
+                  </a>
+                </h3>
+
+                <a
+                  class="open-link"
+                  href="publications/oxidation-autoignition-alkanes-aromatics.html"
+                >
+                  Open publication page
+                </a>
+              </article>
+            </div>
+          </section>
+
+          <section
+            class="publication-section"
+            data-section="water"
+            aria-labelledby="water-publications-heading"
+          >
+            <h2
+              id="water-publications-heading"
+              class="section-title"
+            >
+              Wastewater Treatment, Advanced Oxidation &amp; Resource
+              Recovery
+            </h2>
+
+            <div class="publication-grid">
+              <article
+                class="publication-card"
+                data-category="water"
+              >
+                <span class="publication-type">Technical framework</span>
+
+                <h3>
+                  <a
+                    href="publications/wastewater-treatment-resource-recovery.html"
+                  >
+                    Advances in Wastewater Treatment: Energy Efficiency,
+                    Micropollutants, and Circular Resource Recovery
+                  </a>
+                </h3>
+
+                <a
+                  class="open-link"
+                  href="publications/wastewater-treatment-resource-recovery.html"
+                >
+                  Open publication page
+                </a>
+              </article>
+
+              <article
+                class="publication-card"
+                data-category="water"
+              >
+                <span class="publication-type">
+                  Kinetic-process framework
+                </span>
+
+                <h3>
+                  <a
+                    href="publications/aop-kinetic-process-framework.html"
+                  >
+                    A Unified Kinetic–Process Framework for Advanced
+                    Oxidation Processes: From Radical Chemistry to
+                    Reactor-Scale Performance in Wastewater Treatment
+                  </a>
+                </h3>
+
+                <a
+                  class="open-link"
+                  href="publications/aop-kinetic-process-framework.html"
+                >
+                  Open publication page
+                </a>
+              </article>
+            </div>
+          </section>
+
+          <section
+            class="publication-section"
+            data-section="desulfurization"
+            aria-labelledby="desulfurization-publications-heading"
+          >
+            <h2
+              id="desulfurization-publications-heading"
+              class="section-title"
+            >
+              Desulfurization, Process Intensification &amp; Hydrodynamic
+              Cavitation
+            </h2>
+
+            <div class="publication-grid">
+              <article
+                class="publication-card"
+                data-category="desulfurization"
+              >
+                <span class="publication-type">
+                  Engineering diagnostic
+                </span>
+
+                <h3>
+                  <a
+                    href="publications/desulfurization-reaction-transport.html"
+                  >
+                    Reaction–Transport Regime Analysis for Desulfurization
+                    of Gas and Petroleum Streams: An Engineering Diagnostic
+                    Framework
+                  </a>
+                </h3>
+
+                <a
+                  class="open-link"
+                  href="publications/desulfurization-reaction-transport.html"
+                >
+                  Open publication page
+                </a>
+              </article>
+
+              <article
+                class="publication-card"
+                data-category="desulfurization"
+              >
+                <span class="publication-type">
+                  Process intensification
+                </span>
+
+                <h3>
+                  <a
+                    href="publications/hydrodynamic-cavitation-industrial-usefulness.html"
+                  >
+                    Industrial Usefulness and Technology Selection in
+                    Process Intensification: Energy-Normalized Metrics for
+                    Hydrodynamic Cavitation
+                  </a>
+                </h3>
+
+                <a
+                  class="open-link"
+                  href="publications/hydrodynamic-cavitation-industrial-usefulness.html"
+                >
+                  Open publication page
+                </a>
+              </article>
+            </div>
+          </section>
+
+          <section
+            class="publication-section"
+            data-section="thermochemical"
+            aria-labelledby="thermochemical-publications-heading"
+          >
+            <h2
+              id="thermochemical-publications-heading"
+              class="section-title"
+            >
+              Thermochemical Processes, Waste-to-X, Biochar &amp; Carbon
+              Management
+            </h2>
+
+            <div class="publication-grid">
+              <article
+                class="publication-card"
+                data-category="thermochemical"
+              >
+                <span class="publication-type">Process development</span>
+
+                <h3>
+                  <a
+                    href="publications/thermochemical-process-development.html"
+                  >
+                    Thermochemical Process Development: From Mechanism to
+                    Scale-Up and Industrial Adoption
+                  </a>
+                </h3>
+
+                <a
+                  class="open-link"
+                  href="publications/thermochemical-process-development.html"
+                >
+                  Open publication page
+                </a>
+              </article>
+
+              <article
+                class="publication-card"
+                data-category="thermochemical"
+              >
+                <span class="publication-type">Waste-to-X</span>
+
+                <h3>
+                  <a
+                    href="publications/waste-to-x-biomass-carbon-credit.html"
+                  >
+                    Advancing Waste-to-X Technologies: Sustainable
+                    Thermochemical Pathways for Biomass Valorization and
+                    Carbon Credit Potential
+                  </a>
+                </h3>
+
+                <a
+                  class="open-link"
+                  href="publications/waste-to-x-biomass-carbon-credit.html"
+                >
+                  Open publication page
+                </a>
+              </article>
+
+              <article
+                class="publication-card"
+                data-category="thermochemical"
+              >
+                <span class="publication-type">Catalytic conversion</span>
+
+                <h3>
+                  <a
+                    href="publications/catalytic-waste-recycling-conversion.html"
+                  >
+                    Catalytic Technologies for Waste Recycling and
+                    Conversion: Driving Sustainable Innovation
+                  </a>
+                </h3>
+
+                <a
+                  class="open-link"
+                  href="publications/catalytic-waste-recycling-conversion.html"
+                >
+                  Open publication page
+                </a>
+              </article>
+
+              <article
+                class="publication-card"
+                data-category="thermochemical"
+              >
+                <span class="publication-type">Chemical recycling</span>
+
+                <h3>
+                  <a
+                    href="publications/chemical-recycling-plastic-waste.html"
+                  >
+                    Advancements in Chemical Recycling of Plastic Waste:
+                    A Sustainable Path Forward
+                  </a>
+                </h3>
+
+                <a
+                  class="open-link"
+                  href="publications/chemical-recycling-plastic-waste.html"
+                >
+                  Open publication page
+                </a>
+              </article>
+
+              <article
+                class="publication-card"
+                data-category="thermochemical"
+              >
+                <span class="publication-type">Biomass modelling</span>
+
+                <h3>
+                  <a
+                    href="publications/biomass-conversion-biochar-heat.html"
+                  >
+                    Enhancing Biomass Conversion: Advanced Modeling and
+                    Process Optimization for Efficient Biochar and Heat
+                    Production
+                  </a>
+                </h3>
+
+                <a
+                  class="open-link"
+                  href="publications/biomass-conversion-biochar-heat.html"
+                >
+                  Open publication page
+                </a>
+              </article>
+            </div>
+          </section>
+
+          <section
+            class="publication-section"
+            data-section="energy"
+            aria-labelledby="energy-publications-heading"
+          >
+            <h2
+              id="energy-publications-heading"
+              class="section-title"
+            >
+              Energy Storage &amp; Sustainable Energy Systems
+            </h2>
+
+            <div class="publication-grid">
+              <article
+                class="publication-card"
+                data-category="energy"
+              >
+                <span class="publication-type">
+                  Technology comparison
+                </span>
+
+                <h3>
+                  <a
+                    href="publications/battery-technologies-energy-storage.html"
+                  >
+                    Future Energy Storage: Comparative Analysis of Key
+                    Battery Technologies
+                  </a>
+                </h3>
+
+                <a
+                  class="open-link"
+                  href="publications/battery-technologies-energy-storage.html"
+                >
+                  Open publication page
+                </a>
+              </article>
+            </div>
+          </section>
+
+          <section
+            class="publication-section"
+            data-section="engineering"
+            aria-labelledby="engineering-publications-heading"
+          >
+            <h2
+              id="engineering-publications-heading"
+              class="section-title"
+            >
+              Engineering Scale-Up, Project Management &amp; Complex Systems
+            </h2>
+
+            <div class="publication-grid">
+              <article
+                class="publication-card"
+                data-category="engineering"
+              >
+                <span class="publication-type">Scale-up</span>
+
+                <h3>
+                  <a
+                    href="publications/engineering-scale-up-lab-to-industry.html"
+                  >
+                    Engineering Scale-Up: Overcoming Challenges from Lab to
+                    Industry
+                  </a>
+                </h3>
+
+                <a
+                  class="open-link"
+                  href="publications/engineering-scale-up-lab-to-industry.html"
+                >
+                  Open publication page
+                </a>
+              </article>
+
+              <article
+                class="publication-card"
+                data-category="engineering"
+              >
+                <span class="publication-type">Project management</span>
+
+                <h3>
+                  <a
+                    href="publications/cross-cultural-project-management.html"
+                  >
+                    Cross-Cultural Project Management: Insights from Five
+                    Global Contexts
+                  </a>
+                </h3>
+
+                <a
+                  class="open-link"
+                  href="publications/cross-cultural-project-management.html"
+                >
+                  Open publication page
+                </a>
+              </article>
+
+              <article
+                class="publication-card"
+                data-category="engineering"
+              >
+                <span class="publication-type">Complex systems</span>
+
+                <h3>
+                  <a
+                    href="publications/entropy-attraction-complexity.html"
+                  >
+                    From Disorder to Order: The Universal Dance of Entropy,
+                    Attraction, and Complexity
+                  </a>
+                </h3>
+
+                <a
+                  class="open-link"
+                  href="publications/entropy-attraction-complexity.html"
+                >
+                  Open publication page
+                </a>
+              </article>
+            </div>
+          </section>
+
+          <section
+            class="publication-section"
+            data-section="professional"
+            aria-labelledby="professional-publications-heading"
+          >
+            <h2
+              id="professional-publications-heading"
+              class="section-title"
+            >
+              Professional Magazine &amp; Industrial Publications
+            </h2>
+
+            <div class="publication-grid">
+              <article
+                class="publication-card"
+                data-category="professional thermochemical"
+              >
+                <span class="publication-type">Biomass Magazine</span>
+
+                <h3>
+                  <a
+                    href="https://biomassmagazine.com/articles/advancing-waste-to-x-technologies-carbon-credit-opportunities-and-sustainability-impacts"
+                    target="_blank"
+                    rel="noopener noreferrer external"
+                  >
+                    Advancing Waste-to-X Technologies: Carbon Credit
+                    Opportunities and Sustainability Impacts
+                  </a>
+                </h3>
+
+                <a
+                  class="open-link"
+                  href="https://biomassmagazine.com/articles/advancing-waste-to-x-technologies-carbon-credit-opportunities-and-sustainability-impacts"
+                  target="_blank"
+                  rel="noopener noreferrer external"
+                >
+                  Open external publication
+                </a>
+              </article>
+
+              <article
+                class="publication-card"
+                data-category="professional thermochemical"
+              >
+                <span class="publication-type">
+                  VDI energie + umwelt
+                </span>
+
+                <h3>
+                  <a
+                    href="https://www.ingenieur.de/wp-content/uploads/2025/04/VDI-energie-umwelt_5-6_2025_VDI-energie-umwelt-04-05-2025.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer external"
+                  >
+                    Innovativ zu nachhaltiger Biokohle – CO₂-Speicher aus
+                    Abfall
+                  </a>
+                </h3>
+
+                <a
+                  class="open-link"
+                  href="https://www.ingenieur.de/wp-content/uploads/2025/04/VDI-energie-umwelt_5-6_2025_VDI-energie-umwelt-04-05-2025.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer external"
+                >
+                  Open external publication
+                </a>
+              </article>
+
+              <article
+                class="publication-card"
+                data-category="professional desulfurization"
+              >
+                <span class="publication-type">RECYCLING Magazin</span>
+
+                <h3>
+                  <a
+                    href="https://osscs.industrystock.com/558535/RAPTECH-RecyclingMagazin-062026.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer external"
+                  >
+                    Hydrodynamische Kavitation
+                  </a>
+                </h3>
+
+                <a
+                  class="open-link"
+                  href="https://osscs.industrystock.com/558535/RAPTECH-RecyclingMagazin-062026.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer external"
+                >
+                  Open external publication
+                </a>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <div
+          id="no-results"
+          class="no-results"
+          role="status"
+        >
+          No publication matched the current search and filter.
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="section"
+      aria-labelledby="access-heading"
+    >
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Access and provenance</p>
+
+          <h2 id="access-heading">Responsible publication access</h2>
+        </div>
+
+        <div class="note-grid">
+          <article class="note-card">
+            <h3>Access note</h3>
+
+            <p>
+              Some journal articles are available only through publisher or
+              institutional access. This website provides bibliographic
+              records, DOI links, original summaries and author-accessible
+              versions only where the applicable rights permit them.
+            </p>
+
+            <p>
+              Restricted publisher versions are not intentionally reproduced
+              or redistributed through this website.
+            </p>
+          </article>
+
+          <article class="note-card">
+            <h3>Research profiles</h3>
+
+            <p>
+              External profiles provide broader bibliographic and
+              professional context.
+            </p>
+
+            <div class="profile-links">
+              <a
+                href="https://github.com/saylamah"
+                target="_blank"
+                rel="noopener noreferrer external"
+              >
+                GitHub
+              </a>
+
+              <a
+                href="https://orcid.org/0000-0001-7484-1265"
+                target="_blank"
+                rel="noopener noreferrer external"
+              >
+                ORCID
+              </a>
+
+              <a
+                href="https://scholar.google.com/citations?user=2I4xhywAAAAJ&amp;hl=en"
+                target="_blank"
+                rel="noopener noreferrer external"
+              >
+                Google Scholar
+              </a>
+
+              <a
+                href="https://www.researchgate.net/profile/Ahmad-Saylam"
+                target="_blank"
+                rel="noopener noreferrer external"
+              >
+                ResearchGate
+              </a>
+
+              <a
+                href="https://independent.academia.edu/AhmadSaylam"
+                target="_blank"
+                rel="noopener noreferrer external"
+              >
+                Academia.edu
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Dr. Ahmad Saylam</strong>
 
         <p>
-          Search by title or filter by technical domain. Links lead to
-          publication pages, public bibliographic records,
-          author-accessible versions or external publisher pages according
-          to the access status of each work.
+          Selected public and non-confidential scientific, engineering and
+          professional resources.
         </p>
       </div>
 
-      <div class="controls">
-        <label class="search-label" for="publication-search">
-          Search titles and topics
-        </label>
-
-        <input
-          id="publication-search"
-          class="search-input"
-          type="search"
-          placeholder="Example: soot, kinetics, wastewater, scale-up"
-          autocomplete="off"
-        >
-
-        <div class="filters" aria-label="Publication topic filters">
-          <button
-            class="filter-button active"
-            type="button"
-            data-filter="all"
-          >
-            All
-          </button>
-
-          <button
-            class="filter-button"
-            type="button"
-            data-filter="nanoparticles"
-          >
-            Nanoparticles &amp; NDMS
-          </button>
-
-          <button
-            class="filter-button"
-            type="button"
-            data-filter="combustion"
-          >
-            Combustion &amp; Kinetics
-          </button>
-
-          <button
-            class="filter-button"
-            type="button"
-            data-filter="water"
-          >
-            Water &amp; AOP
-          </button>
-
-          <button
-            class="filter-button"
-            type="button"
-            data-filter="desulfurization"
-          >
-            Desulfurization &amp; Intensification
-          </button>
-
-          <button
-            class="filter-button"
-            type="button"
-            data-filter="thermochemical"
-          >
-            Thermochemical &amp; Waste-to-X
-          </button>
-
-          <button
-            class="filter-button"
-            type="button"
-            data-filter="energy"
-          >
-            Energy Systems
-          </button>
-
-          <button
-            class="filter-button"
-            type="button"
-            data-filter="engineering"
-          >
-            Scale-Up &amp; Engineering
-          </button>
-
-          <button
-            class="filter-button"
-            type="button"
-            data-filter="professional"
-          >
-            Professional Articles
-          </button>
-        </div>
-
-        <p
-          id="results-line"
-          class="results-line"
-          aria-live="polite"
-        ></p>
-      </div>
-
-      <div id="publication-catalogue">
-        <section
-          class="publication-section"
-          data-section="nanoparticles"
-        >
-          <h2 class="section-title">
-            Nanoparticle Inception, Combustion Aerosols &amp; NDMS
-          </h2>
-
-          <div class="publication-grid">
-            <article
-              class="publication-card"
-              data-category="nanoparticles"
-            >
-              <span class="publication-type">Scientific concept</span>
-
-              <h3>
-                <a href="publications/ndms-nanoparticle-inception.html">
-                  A Transient Nano-Dense Molecular State in Nanoparticle
-                  Inception: Bridging Physical Clustering and Chemical
-                  Stabilization
-                </a>
-              </h3>
-
-              <a
-                class="open-link"
-                href="publications/ndms-nanoparticle-inception.html"
-              >
-                Open publication page
-              </a>
-            </article>
-
-            <article
-              class="publication-card"
-              data-category="nanoparticles"
-            >
-              <span class="publication-type">Modelling framework</span>
-
-              <h3>
-                <a
-                  href="publications/persistence-stabilization-closure.html"
-                >
-                  Transient Nano-Dense Molecular States as a
-                  Persistence–Stabilization Closure for Combustion
-                  Nanoparticle Inception
-                </a>
-              </h3>
-
-              <a
-                class="open-link"
-                href="publications/persistence-stabilization-closure.html"
-              >
-                Open publication page
-              </a>
-            </article>
-          </div>
-        </section>
-
-        <section
-          class="publication-section"
-          data-section="combustion"
-        >
-          <h2 class="section-title">
-            Combustion, Soot, Engines &amp; Chemical Kinetics
-          </h2>
-
-          <div class="publication-grid">
-            <article
-              class="publication-card"
-              data-category="combustion"
-            >
-              <span class="publication-type">Combustion research</span>
-
-              <h3>
-                <a
-                  href="papers/influence-lateral-species-diffusion-heat-transfer.html"
-                >
-                  Influence of Lateral Species Diffusion and Heat
-                  Transfer on the Evaluation of Near-Threshold Sooting
-                  Flames
-                </a>
-              </h3>
-
-              <a
-                class="open-link"
-                href="papers/influence-lateral-species-diffusion-heat-transfer.html"
-              >
-                Open publication page
-              </a>
-            </article>
-
-            <article
-              class="publication-card"
-              data-category="combustion"
-            >
-              <span class="publication-type">Combustion research</span>
-
-              <h3>
-                <a
-                  href="papers/near-threshold-soot-formation-elevated-pressure.html"
-                >
-                  Near-Threshold Soot Formation in Premixed Flames at
-                  Elevated Pressure
-                </a>
-              </h3>
-
-              <a
-                class="open-link"
-                href="papers/near-threshold-soot-formation-elevated-pressure.html"
-              >
-                Open publication page
-              </a>
-            </article>
-
-            <article
-              class="publication-card"
-              data-category="combustion"
-            >
-              <span class="publication-type">Combustion research</span>
-
-              <h3>
-                <a href="publications/high-pressure-sooting-flame.html">
-                  Behavior of Premixed Sooting Flame in a High-Pressure
-                  Burner
-                </a>
-              </h3>
-
-              <a
-                class="open-link"
-                href="publications/high-pressure-sooting-flame.html"
-              >
-                Open publication page
-              </a>
-            </article>
-
-            <article
-              class="publication-card"
-              data-category="combustion"
-            >
-              <span class="publication-type">Engine emissions</span>
-
-              <h3>
-                <a
-                  href="publications/diesel-engine-pollutant-emissions.html"
-                >
-                  Methodology to Reduce Diesel Engine Pollutant Emissions
-                </a>
-              </h3>
-
-              <a
-                class="open-link"
-                href="publications/diesel-engine-pollutant-emissions.html"
-              >
-                Open publication page
-              </a>
-            </article>
-
-            <article
-              class="publication-card"
-              data-category="combustion"
-            >
-              <span class="publication-type">Mechanism reduction</span>
-
-              <h3>
-                <a
-                  href="publications/chemical-kinetic-mechanism-reduction.html"
-                >
-                  Reduction of Large Detailed Chemical Kinetic Mechanisms
-                  for Autoignition Using Joint Analyses of Reaction Rates
-                  and Sensitivities
-                </a>
-              </h3>
-
-              <a
-                class="open-link"
-                href="publications/chemical-kinetic-mechanism-reduction.html"
-              >
-                Open publication page
-              </a>
-            </article>
-
-            <article
-              class="publication-card"
-              data-category="combustion"
-            >
-              <span class="publication-type">Reaction networks</span>
-
-              <h3>
-                <a
-                  href="papers/degree-centrality-combustion-reaction-networks.html"
-                >
-                  Degree Centrality of Combustion Reaction Networks for
-                  Analysing and Modelling Combustion Processes
-                </a>
-              </h3>
-
-              <a
-                class="open-link"
-                href="papers/degree-centrality-combustion-reaction-networks.html"
-              >
-                Open publication page
-              </a>
-            </article>
-
-            <article
-              class="publication-card"
-              data-category="combustion"
-            >
-              <span class="publication-type">
-                Experimental diagnostics
-              </span>
-
-              <h3>
-                <a
-                  href="publications/high-pressure-flame-facility-diagnostics.html"
-                >
-                  Characterization of a High-Pressure Flame Facility Using
-                  High-Speed Chemiluminescence and OH LIF Imaging
-                </a>
-              </h3>
-
-              <a
-                class="open-link"
-                href="publications/high-pressure-flame-facility-diagnostics.html"
-              >
-                Open publication page
-              </a>
-            </article>
-
-            <article
-              class="publication-card"
-              data-category="combustion"
-            >
-              <span class="publication-type">Fuel chemistry</span>
-
-              <h3>
-                <a
-                  href="papers/benzene-addition-methane-n-heptane-rapid-compression.html"
-                >
-                  Benzene Addition to a Fuel-Stoichiometric
-                  Methane/O₂/N₂ Flat Flame and to n-Heptane/Air Mixtures
-                  under Rapid Compression
-                </a>
-              </h3>
-
-              <a
-                class="open-link"
-                href="papers/benzene-addition-methane-n-heptane-rapid-compression.html"
-              >
-                Open publication page
-              </a>
-            </article>
-
-            <article
-              class="publication-card"
-              data-category="combustion"
-            >
-              <span class="publication-type">HCCI chemistry</span>
-
-              <h3>
-                <a
-                  href="papers/reactive-species-formation-c1-c3-alkanes-hcci.html"
-                >
-                  Modelling Study of Reactive Species Formation from C1–C3
-                  Alkanes in an HCCI Engine
-                </a>
-              </h3>
-
-              <a
-                class="open-link"
-                href="papers/reactive-species-formation-c1-c3-alkanes-hcci.html"
-              >
-                Open publication page
-              </a>
-            </article>
-
-            <article
-              class="publication-card"
-              data-category="combustion"
-            >
-              <span class="publication-type">HCCI concept</span>
-
-              <h3>
-                <a href="publications/hcci-engine-chemical-reactor.html">
-                  HCCI Engine as Chemical Reactor to Produce
-                  Fuel/Chemicals: An Exploring Study of n-Alkanes
-                  Low-Temperature Chemistry
-                </a>
-              </h3>
-
-              <a
-                class="open-link"
-                href="publications/hcci-engine-chemical-reactor.html"
-              >
-                Open publication page
-              </a>
-            </article>
-
-            <article
-              class="publication-card"
-              data-category="combustion"
-            >
-              <span class="publication-type">Doctoral thesis</span>
-
-              <h3>
-                <a
-                  href="publications/oxidation-autoignition-alkanes-aromatics.html"
-                >
-                  Modelling Studies of the Oxidation and Autoignition of
-                  Alkanes, Aromatics, and Their Mixtures at High Pressure
-                  between 600 and 1500 K
-                </a>
-              </h3>
-
-              <a
-                class="open-link"
-                href="publications/oxidation-autoignition-alkanes-aromatics.html"
-              >
-                Open publication page
-              </a>
-            </article>
-          </div>
-        </section>
-
-        <section class="publication-section" data-section="water">
-          <h2 class="section-title">
-            Wastewater Treatment, Advanced Oxidation &amp; Resource
-            Recovery
-          </h2>
-
-          <div class="publication-grid">
-            <article
-              class="publication-card"
-              data-category="water"
-            >
-              <span class="publication-type">Technical framework</span>
-
-              <h3>
-                <a
-                  href="publications/wastewater-treatment-resource-recovery.html"
-                >
-                  Advances in Wastewater Treatment: Energy Efficiency,
-                  Micropollutants, and Circular Resource Recovery
-                </a>
-              </h3>
-
-              <a
-                class="open-link"
-                href="publications/wastewater-treatment-resource-recovery.html"
-              >
-                Open publication page
-              </a>
-            </article>
-
-            <article
-              class="publication-card"
-              data-category="water"
-            >
-              <span class="publication-type">
-                Kinetic-process framework
-              </span>
-
-              <h3>
-                <a
-                  href="publications/aop-kinetic-process-framework.html"
-                >
-                  A Unified Kinetic–Process Framework for Advanced
-                  Oxidation Processes: From Radical Chemistry to
-                  Reactor-Scale Performance in Wastewater Treatment
-                </a>
-              </h3>
-
-              <a
-                class="open-link"
-                href="publications/aop-kinetic-process-framework.html"
-              >
-                Open publication page
-              </a>
-            </article>
-          </div>
-        </section>
-
-        <section
-          class="publication-section"
-          data-section="desulfurization"
-        >
-          <h2 class="section-title">
-            Desulfurization, Process Intensification &amp; Hydrodynamic
-            Cavitation
-          </h2>
-
-          <div class="publication-grid">
-            <article
-              class="publication-card"
-              data-category="desulfurization"
-            >
-              <span class="publication-type">
-                Engineering diagnostic
-              </span>
-
-              <h3>
-                <a
-                  href="publications/desulfurization-reaction-transport.html"
-                >
-                  Reaction–Transport Regime Analysis for Desulfurization
-                  of Gas and Petroleum Streams: An Engineering Diagnostic
-                  Framework
-                </a>
-              </h3>
-
-              <a
-                class="open-link"
-                href="publications/desulfurization-reaction-transport.html"
-              >
-                Open publication page
-              </a>
-            </article>
-
-            <article
-              class="publication-card"
-              data-category="desulfurization"
-            >
-              <span class="publication-type">
-                Process intensification
-              </span>
-
-              <h3>
-                <a
-                  href="publications/hydrodynamic-cavitation-industrial-usefulness.html"
-                >
-                  Industrial Usefulness and Technology Selection in
-                  Process Intensification: Energy-Normalized Metrics for
-                  Hydrodynamic Cavitation
-                </a>
-              </h3>
-
-              <a
-                class="open-link"
-                href="publications/hydrodynamic-cavitation-industrial-usefulness.html"
-              >
-                Open publication page
-              </a>
-            </article>
-          </div>
-        </section>
-
-        <section
-          class="publication-section"
-          data-section="thermochemical"
-        >
-          <h2 class="section-title">
-            Thermochemical Processes, Waste-to-X, Biochar &amp; Carbon
-            Management
-          </h2>
-
-          <div class="publication-grid">
-            <article
-              class="publication-card"
-              data-category="thermochemical"
-            >
-              <span class="publication-type">Process development</span>
-
-              <h3>
-                <a
-                  href="publications/thermochemical-process-development.html"
-                >
-                  Thermochemical Process Development: From Mechanism to
-                  Scale-Up and Industrial Adoption
-                </a>
-              </h3>
-
-              <a
-                class="open-link"
-                href="publications/thermochemical-process-development.html"
-              >
-                Open publication page
-              </a>
-            </article>
-
-            <article
-              class="publication-card"
-              data-category="thermochemical"
-            >
-              <span class="publication-type">Waste-to-X</span>
-
-              <h3>
-                <a
-                  href="publications/waste-to-x-biomass-carbon-credit.html"
-                >
-                  Advancing Waste-to-X Technologies: Sustainable
-                  Thermochemical Pathways for Biomass Valorization and
-                  Carbon Credit Potential
-                </a>
-              </h3>
-
-              <a
-                class="open-link"
-                href="publications/waste-to-x-biomass-carbon-credit.html"
-              >
-                Open publication page
-              </a>
-            </article>
-
-            <article
-              class="publication-card"
-              data-category="thermochemical"
-            >
-              <span class="publication-type">Catalytic conversion</span>
-
-              <h3>
-                <a
-                  href="publications/catalytic-waste-recycling-conversion.html"
-                >
-                  Catalytic Technologies for Waste Recycling and
-                  Conversion: Driving Sustainable Innovation
-                </a>
-              </h3>
-
-              <a
-                class="open-link"
-                href="publications/catalytic-waste-recycling-conversion.html"
-              >
-                Open publication page
-              </a>
-            </article>
-
-            <article
-              class="publication-card"
-              data-category="thermochemical"
-            >
-              <span class="publication-type">Chemical recycling</span>
-
-              <h3>
-                <a
-                  href="publications/chemical-recycling-plastic-waste.html"
-                >
-                  Advancements in Chemical Recycling of Plastic Waste: A
-                  Sustainable Path Forward
-                </a>
-              </h3>
-
-              <a
-                class="open-link"
-                href="publications/chemical-recycling-plastic-waste.html"
-              >
-                Open publication page
-              </a>
-            </article>
-
-            <article
-              class="publication-card"
-              data-category="thermochemical"
-            >
-              <span class="publication-type">Biomass modelling</span>
-
-              <h3>
-                <a
-                  href="publications/biomass-conversion-biochar-heat.html"
-                >
-                  Enhancing Biomass Conversion: Advanced Modeling and
-                  Process Optimization for Efficient Biochar and Heat
-                  Production
-                </a>
-              </h3>
-
-              <a
-                class="open-link"
-                href="publications/biomass-conversion-biochar-heat.html"
-              >
-                Open publication page
-              </a>
-            </article>
-          </div>
-        </section>
-
-        <section class="publication-section" data-section="energy">
-          <h2 class="section-title">
-            Energy Storage &amp; Sustainable Energy Systems
-          </h2>
-
-          <div class="publication-grid">
-            <article
-              class="publication-card"
-              data-category="energy"
-            >
-              <span class="publication-type">
-                Technology comparison
-              </span>
-
-              <h3>
-                <a
-                  href="publications/battery-technologies-energy-storage.html"
-                >
-                  Future Energy Storage: Comparative Analysis of Key
-                  Battery Technologies
-                </a>
-              </h3>
-
-              <a
-                class="open-link"
-                href="publications/battery-technologies-energy-storage.html"
-              >
-                Open publication page
-              </a>
-            </article>
-          </div>
-        </section>
-
-        <section
-          class="publication-section"
-          data-section="engineering"
-        >
-          <h2 class="section-title">
-            Engineering Scale-Up, Project Management &amp; Complex
-            Systems
-          </h2>
-
-          <div class="publication-grid">
-            <article
-              class="publication-card"
-              data-category="engineering"
-            >
-              <span class="publication-type">Scale-up</span>
-
-              <h3>
-                <a
-                  href="publications/engineering-scale-up-lab-to-industry.html"
-                >
-                  Engineering Scale-Up: Overcoming Challenges from Lab to
-                  Industry
-                </a>
-              </h3>
-
-              <a
-                class="open-link"
-                href="publications/engineering-scale-up-lab-to-industry.html"
-              >
-                Open publication page
-              </a>
-            </article>
-
-            <article
-              class="publication-card"
-              data-category="engineering"
-            >
-              <span class="publication-type">Project management</span>
-
-              <h3>
-                <a
-                  href="publications/cross-cultural-project-management.html"
-                >
-                  Cross-Cultural Project Management: Insights from Five
-                  Global Contexts
-                </a>
-              </h3>
-
-              <a
-                class="open-link"
-                href="publications/cross-cultural-project-management.html"
-              >
-                Open publication page
-              </a>
-            </article>
-
-            <article
-              class="publication-card"
-              data-category="engineering"
-            >
-              <span class="publication-type">Complex systems</span>
-
-              <h3>
-                <a
-                  href="publications/entropy-attraction-complexity.html"
-                >
-                  From Disorder to Order: The Universal Dance of Entropy,
-                  Attraction, and Complexity
-                </a>
-              </h3>
-
-              <a
-                class="open-link"
-                href="publications/entropy-attraction-complexity.html"
-              >
-                Open publication page
-              </a>
-            </article>
-          </div>
-        </section>
-
-        <section
-          class="publication-section"
-          data-section="professional"
-        >
-          <h2 class="section-title">
-            Professional Magazine &amp; Industrial Publications
-          </h2>
-
-          <div class="publication-grid">
-            <article
-              class="publication-card"
-              data-category="professional thermochemical"
-            >
-              <span class="publication-type">Biomass Magazine</span>
-
-              <h3>
-                <a
-                  href="https://biomassmagazine.com/articles/advancing-waste-to-x-technologies-carbon-credit-opportunities-and-sustainability-impacts"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Advancing Waste-to-X Technologies: Carbon Credit
-                  Opportunities and Sustainability Impacts
-                </a>
-              </h3>
-
-              <a
-                class="open-link"
-                href="https://biomassmagazine.com/articles/advancing-waste-to-x-technologies-carbon-credit-opportunities-and-sustainability-impacts"
-                target="_blank"
-                rel="noopener"
-              >
-                Open external publication
-              </a>
-            </article>
-
-            <article
-              class="publication-card"
-              data-category="professional thermochemical"
-            >
-              <span class="publication-type">
-                VDI energie + umwelt
-              </span>
-
-              <h3>
-                <a
-                  href="https://www.ingenieur.de/wp-content/uploads/2025/04/VDI-energie-umwelt_5-6_2025_VDI-energie-umwelt-04-05-2025.pdf"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Innovativ zu nachhaltiger Biokohle – CO₂-Speicher aus
-                  Abfall
-                </a>
-              </h3>
-
-              <a
-                class="open-link"
-                href="https://www.ingenieur.de/wp-content/uploads/2025/04/VDI-energie-umwelt_5-6_2025_VDI-energie-umwelt-04-05-2025.pdf"
-                target="_blank"
-                rel="noopener"
-              >
-                Open external publication
-              </a>
-            </article>
-
-            <article
-              class="publication-card"
-              data-category="professional desulfurization"
-            >
-              <span class="publication-type">RECYCLING Magazin</span>
-
-              <h3>
-                <a
-                  href="https://osscs.industrystock.com/558535/RAPTECH-RecyclingMagazin-062026.pdf"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Hydrodynamische Kavitation
-                </a>
-              </h3>
-
-              <a
-                class="open-link"
-                href="https://osscs.industrystock.com/558535/RAPTECH-RecyclingMagazin-062026.pdf"
-                target="_blank"
-                rel="noopener"
-              >
-                Open external publication
-              </a>
-            </article>
-          </div>
-        </section>
-      </div>
-
-      <div
-        id="no-results"
-        class="no-results"
-        role="status"
-      >
-        No publication matched the current search and filter.
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="selected-work.html">Selected Work</a>
+        <a href="research-tools.html">Research &amp; Tools</a>
+        <a href="publications.html">Publications</a>
+        <a href="about-cv.html">About</a>
+        <a href="index.html#consulting">Consulting Direction</a>
+        <a href="index.html#contact">Contact</a>
       </div>
     </div>
-  </section>
 
-  <section class="section">
-    <div class="container">
-      <div class="section-heading">
-        <p class="eyebrow">Access and provenance</p>
+    <div class="container footer-bottom">
+      <span>
+        © <span id="year">2026</span> Dr. Ahmad Saylam
+      </span>
 
-        <h2>Responsible publication access</h2>
-      </div>
-
-      <div class="note-grid">
-        <article class="note-card">
-          <h3>Access note</h3>
-
-          <p>
-            Some journal articles are available only through publisher or
-            institutional access. This website provides bibliographic
-            records, DOI links, original summaries and author-accessible
-            versions only where the applicable rights permit them.
-          </p>
-
-          <p>
-            Restricted publisher versions are not intentionally
-            reproduced or redistributed through this website.
-          </p>
-        </article>
-
-        <article class="note-card">
-          <h3>Research profiles</h3>
-
-          <p>
-            External profiles provide broader bibliographic and
-            professional context.
-          </p>
-
-          <div class="profile-links">
-            <a
-              href="https://github.com/saylamah"
-              target="_blank"
-              rel="noopener"
-            >
-              GitHub
-            </a>
-
-            <a
-              href="https://orcid.org/0000-0001-7484-1265"
-              target="_blank"
-              rel="noopener"
-            >
-              ORCID
-            </a>
-
-            <a
-              href="https://scholar.google.com/citations?user=2I4xhywAAAAJ&amp;hl=en"
-              target="_blank"
-              rel="noopener"
-            >
-              Google Scholar
-            </a>
-
-            <a
-              href="https://www.researchgate.net/profile/Ahmad-Saylam"
-              target="_blank"
-              rel="noopener"
-            >
-              ResearchGate
-            </a>
-
-            <a
-              href="https://independent.academia.edu/AhmadSaylam"
-              target="_blank"
-              rel="noopener"
-            >
-              Academia.edu
-            </a>
-          </div>
-        </article>
-      </div>
+      <span>
+        Technical evidence website · Consulting platform under development
+      </span>
     </div>
-  </section>
-</main>
+  </footer>
 
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div>
-      <strong>Dr. Ahmad Saylam</strong>
+  <script>
+    const navToggle = document.querySelector(".nav-toggle");
+    const siteNav = document.getElementById("site-nav");
 
-      <p>
-        Selected public and non-confidential scientific, engineering and
-        professional resources.
-      </p>
-    </div>
+    if (navToggle && siteNav) {
+      navToggle.addEventListener("click", () => {
+        const isOpen = siteNav.classList.toggle("open");
+        navToggle.setAttribute("aria-expanded", String(isOpen));
+      });
 
-    <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="selected-work.html">Selected Work</a>
-      <a href="research-tools.html">Research &amp; Tools</a>
-      <a href="publications.html">Publications</a>
-      <a href="about-cv.html">About</a>
-      <a href="index.html#consulting">Consulting Direction</a>
-      <a href="index.html#contact">Contact</a>
-    </div>
-  </div>
-
-  <div class="container footer-bottom">
-    <span>
-      © <span id="year">2026</span> Dr. Ahmad Saylam
-    </span>
-
-    <span>
-      Technical evidence website · Consulting platform under development
-    </span>
-  </div>
-</footer>
-
-<script>
-const navToggle = document.querySelector(".nav-toggle");
-const siteNav = document.getElementById("site-nav");
-
-if (navToggle && siteNav) {
-  navToggle.addEventListener("click", () => {
-    const isOpen = siteNav.classList.toggle("open");
-    navToggle.setAttribute("aria-expanded", String(isOpen));
-  });
-
-  siteNav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      siteNav.classList.remove("open");
-      navToggle.setAttribute("aria-expanded", "false");
-    });
-  });
-}
-
-const searchInput = document.getElementById("publication-search");
-const filterButtons = document.querySelectorAll(".filter-button");
-const publicationCards = Array.from(
-  document.querySelectorAll(".publication-card")
-);
-const publicationSections = Array.from(
-  document.querySelectorAll(".publication-section")
-);
-const resultsLine = document.getElementById("results-line");
-const noResults = document.getElementById("no-results");
-
-let activeFilter = "all";
-
-function applyFilters() {
-  const query = searchInput.value.trim().toLowerCase();
-  let visibleCount = 0;
-
-  publicationCards.forEach((card) => {
-    const categories = card.dataset.category.split(" ");
-
-    const matchesFilter =
-      activeFilter === "all" ||
-      categories.includes(activeFilter);
-
-    const matchesSearch =
-      query === "" ||
-      card.textContent.toLowerCase().includes(query);
-
-    const isVisible = matchesFilter && matchesSearch;
-
-    card.classList.toggle("hidden", !isVisible);
-
-    if (isVisible) {
-      visibleCount += 1;
+      siteNav.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          siteNav.classList.remove("open");
+          navToggle.setAttribute("aria-expanded", "false");
+        });
+      });
     }
-  });
 
-  publicationSections.forEach((section) => {
-    const hasVisibleCard = section.querySelector(
-      ".publication-card:not(.hidden)"
+    const searchInput = document.getElementById("publication-search");
+    const clearSearch = document.getElementById("clear-search");
+
+    const filterButtons = Array.from(
+      document.querySelectorAll(".filter-button")
     );
 
-    section.classList.toggle("hidden", !hasVisibleCard);
-  });
+    const publicationCards = Array.from(
+      document.querySelectorAll(".publication-card")
+    );
 
-  resultsLine.textContent =
-    `${visibleCount} item${visibleCount === 1 ? "" : "s"} shown`;
+    const publicationSections = Array.from(
+      document.querySelectorAll(".publication-section")
+    );
 
-  noResults.classList.toggle("visible", visibleCount === 0);
-}
+    const resultsLine = document.getElementById("results-line");
+    const noResults = document.getElementById("no-results");
 
-filterButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    filterButtons.forEach((item) => {
-      item.classList.remove("active");
+    let activeFilter = "all";
+
+    function applyFilters() {
+      const query = searchInput.value.trim().toLowerCase();
+      let visibleCount = 0;
+
+      publicationCards.forEach((card) => {
+        const categories = card.dataset.category.split(" ");
+
+        const matchesFilter =
+          activeFilter === "all" ||
+          categories.includes(activeFilter);
+
+        const matchesSearch =
+          query === "" ||
+          card.textContent.toLowerCase().includes(query);
+
+        const isVisible = matchesFilter && matchesSearch;
+
+        card.classList.toggle("hidden", !isVisible);
+
+        if (isVisible) {
+          visibleCount += 1;
+        }
+      });
+
+      publicationSections.forEach((section) => {
+        const hasVisibleCard = section.querySelector(
+          ".publication-card:not(.hidden)"
+        );
+
+        section.classList.toggle("hidden", !hasVisibleCard);
+      });
+
+      resultsLine.textContent =
+        `${visibleCount} item${visibleCount === 1 ? "" : "s"} shown`;
+
+      noResults.classList.toggle("visible", visibleCount === 0);
+    }
+
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        filterButtons.forEach((item) => {
+          const isActive = item === button;
+
+          item.classList.toggle("active", isActive);
+          item.setAttribute("aria-pressed", String(isActive));
+        });
+
+        activeFilter = button.dataset.filter;
+        applyFilters();
+      });
     });
 
-    button.classList.add("active");
-    activeFilter = button.dataset.filter;
+    searchInput.addEventListener("input", applyFilters);
+
+    clearSearch.addEventListener("click", () => {
+      searchInput.value = "";
+      searchInput.focus();
+      applyFilters();
+    });
+
+    const year = document.getElementById("year");
+
+    if (year) {
+      year.textContent = new Date().getFullYear();
+    }
 
     applyFilters();
-  });
-});
-
-searchInput.addEventListener("input", applyFilters);
-
-const year = document.getElementById("year");
-
-if (year) {
-  year.textContent = new Date().getFullYear();
-}
-
-applyFilters();
-</script>
+  </script>
 </body>
 </html>
