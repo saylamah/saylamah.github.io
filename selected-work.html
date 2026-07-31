@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Selected Work &amp; Case Studies | Dr. Ahmad Saylam</title>
 
   <meta
     name="description"
-    content="Selected scientific and engineering work by Dr. Ahmad Saylam across reaction engineering, advanced oxidation, thermochemical conversion, nanoparticle inception, modelling, validation and scale-up."
+    content="Selected case studies by Dr. Ahmad Saylam linking scientific models, engineering interpretation, validation and industrial scale-up decisions."
   >
   <meta name="author" content="Dr. Ahmad Saylam">
   <meta name="robots" content="index,follow">
@@ -18,19 +18,93 @@
     href="https://saylamah.github.io/selected-work.html"
   >
 
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta
+    property="og:site_name"
+    content="Dr. Ahmad Saylam — Scientific &amp; Engineering Portfolio"
+  >
   <meta
     property="og:title"
     content="Selected Work &amp; Case Studies | Dr. Ahmad Saylam"
   >
   <meta
     property="og:description"
-    content="Selected public work connecting scientific methods, reproducible tools, engineering interpretation and practical process-development decisions."
+    content="Selected case studies connecting scientific methods, engineering interpretation, validation and practical process-development decisions."
   >
   <meta
     property="og:url"
     content="https://saylamah.github.io/selected-work.html"
   >
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary">
+  <meta
+    name="twitter:title"
+    content="Selected Work &amp; Case Studies | Dr. Ahmad Saylam"
+  >
+  <meta
+    name="twitter:description"
+    content="Selected case studies connecting scientific methods, engineering interpretation, validation and practical process-development decisions."
+  >
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://saylamah.github.io/selected-work.html#webpage",
+    "url": "https://saylamah.github.io/selected-work.html",
+    "name": "Selected Work and Technical Case Studies",
+    "description": "Selected public and non-confidential scientific and engineering case studies connecting models, evidence, validation and practical development decisions.",
+    "inLanguage": "en",
+    "isPartOf": {
+      "@type": "WebSite",
+      "@id": "https://saylamah.github.io/#website",
+      "url": "https://saylamah.github.io/",
+      "name": "Dr. Ahmad Saylam — Scientific and Engineering Portfolio"
+    },
+    "about": {
+      "@type": "Person",
+      "@id": "https://saylamah.github.io/#person",
+      "name": "Ahmad Saylam",
+      "honorificPrefix": "Dr.",
+      "url": "https://saylamah.github.io/about-cv.html"
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "name": "Selected scientific and engineering case studies",
+      "numberOfItems": 4,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Desulfurization Reaction–Transport Regimes",
+          "url": "https://saylamah.github.io/publications/desulfurization-reaction-transport.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "AOP Kinetic Process Framework",
+          "url": "https://saylamah.github.io/publications/aop-kinetic-process-framework.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Biochar and Biomass Process Modeling",
+          "url": "https://saylamah.github.io/publications/biomass-conversion-biochar-heat.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "NDMS Persistence–Stabilization Closure",
+          "url": "https://saylamah.github.io/publications/persistence-stabilization-closure.html"
+        }
+      ]
+    }
+  }
+  </script>
 
   <style>
     :root {
@@ -80,6 +154,12 @@
 
     a:hover {
       color: var(--navy);
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 3px;
     }
 
     h1,
@@ -208,6 +288,7 @@
       border: 1px solid var(--line);
       border-radius: 8px;
       font: inherit;
+      cursor: pointer;
     }
 
     .hero {
@@ -565,10 +646,7 @@
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .case-grid {
-        grid-template-columns: 1fr;
-      }
-
+      .case-grid,
       .development-card {
         grid-template-columns: 1fr;
       }
@@ -619,6 +697,12 @@
         min-height: 68px;
       }
     }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
   </style>
 </head>
 
@@ -633,7 +717,6 @@
         aria-label="Dr. Ahmad Saylam homepage"
       >
         <span class="brand-mark" aria-hidden="true">AS</span>
-
         <span>
           <strong>Dr. Ahmad Saylam</strong>
           <small>Science · Engineering · Scale-Up</small>
@@ -655,14 +738,9 @@
         aria-label="Primary navigation"
       >
         <a href="index.html">Home</a>
-
-        <a
-          href="selected-work.html"
-          aria-current="page"
-        >
+        <a href="selected-work.html" aria-current="page">
           Selected Work
         </a>
-
         <a href="research-tools.html">Research &amp; Tools</a>
         <a href="publications.html">Publications</a>
         <a href="about-cv.html">About</a>
@@ -679,9 +757,7 @@
           Scientific evidence · Engineering interpretation · Practical value
         </p>
 
-        <h1>
-          Selected Work and Technical Case Studies
-        </h1>
+        <h1>Selected Work and Technical Case Studies</h1>
 
         <p class="hero-lead">
           A focused selection of public and non-confidential work showing how
@@ -694,7 +770,6 @@
           <a class="button primary" href="#case-studies">
             Explore case studies
           </a>
-
           <a class="button secondary" href="publications.html">
             View publications
           </a>
@@ -702,12 +777,12 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" aria-labelledby="selection-principles-heading">
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">Selection principles</p>
 
-          <h2>
+          <h2 id="selection-principles-heading">
             Public work is selected according to evidence and practical use
           </h2>
 
@@ -723,7 +798,6 @@
         <div class="principle-grid">
           <article class="principle-card">
             <strong>Technically relevant</strong>
-
             <p>
               The work addresses a real scientific, modelling, process or
               scale-up question.
@@ -732,7 +806,6 @@
 
           <article class="principle-card">
             <strong>Evidence-labelled</strong>
-
             <p>
               Screening tools, reconstructed models, hypotheses and validated
               results are not presented as equivalent.
@@ -741,7 +814,6 @@
 
           <article class="principle-card">
             <strong>Rights-cleared</strong>
-
             <p>
               Authorship, confidentiality, licensing and third-party reuse are
               reviewed before public release.
@@ -750,7 +822,6 @@
 
           <article class="principle-card">
             <strong>Practically interpretable</strong>
-
             <p>
               Results are connected to decisions, limitations, validation
               needs and possible next development steps.
@@ -760,18 +831,24 @@
       </div>
     </section>
 
-    <section id="case-studies" class="section muted">
+    <section
+      id="case-studies"
+      class="section muted"
+      aria-labelledby="case-studies-heading"
+    >
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">Current public case studies</p>
 
-          <h2>
+          <h2 id="case-studies-heading">
             Selected examples across process and scientific development
           </h2>
 
           <p>
-            These case studies demonstrate different maturity levels and
-            different forms of technical value.
+            These examples have different maturity levels and provide
+            different forms of technical value. Their status labels are part
+            of the scientific interpretation and should not be treated as
+            equivalent validation claims.
           </p>
         </div>
 
@@ -782,9 +859,7 @@
                 Reaction engineering · Fuels and gas processing
               </span>
 
-              <h3>
-                Desulfurization Reaction–Transport Regimes
-              </h3>
+              <h3>Desulfurization Reaction–Transport Regimes</h3>
 
               <p class="case-summary">
                 A structured framework for distinguishing intrinsic chemistry
@@ -801,7 +876,6 @@
           <div class="case-grid">
             <section class="case-column">
               <h4>Technical problem</h4>
-
               <p>
                 High removal percentages alone do not reveal which mechanism
                 controls process performance or whether an intensification
@@ -811,7 +885,6 @@
 
             <section class="case-column">
               <h4>Contribution</h4>
-
               <ul>
                 <li>Reaction–transport regime classification</li>
                 <li>Bottleneck-oriented interpretation</li>
@@ -822,7 +895,6 @@
 
             <section class="case-column">
               <h4>Practical value</h4>
-
               <p>
                 Supports experiment design, process comparison, claims
                 assessment and selection of appropriate chemical, transport,
@@ -835,7 +907,7 @@
             <a
               href="https://github.com/saylamah/desulfurization-reaction-transport-regimes"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer external"
             >
               Open GitHub repository
             </a>
@@ -859,9 +931,7 @@
                 Wastewater treatment · Advanced oxidation
               </span>
 
-              <h3>
-                AOP Kinetic Process Framework
-              </h3>
+              <h3>AOP Kinetic Process Framework</h3>
 
               <p class="case-summary">
                 A Python framework for interpreting hydroxyl-radical
@@ -878,7 +948,6 @@
           <div class="case-grid">
             <section class="case-column">
               <h4>Technical problem</h4>
-
               <p>
                 Apparent pollutant-degradation rates may be dominated by water
                 chemistry and background radical scavenging rather than
@@ -888,7 +957,6 @@
 
             <section class="case-column">
               <h4>Contribution</h4>
-
               <ul>
                 <li>Matrix scavenging calculations</li>
                 <li>Radical-utilization fractions</li>
@@ -900,7 +968,6 @@
 
             <section class="case-column">
               <h4>Practical value</h4>
-
               <p>
                 Supports matrix characterization, interpretation of apparent
                 AOP performance, comparison of scenarios and preparation of
@@ -913,7 +980,7 @@
             <a
               href="https://github.com/saylamah/aop-kinetic-process-framework"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer external"
             >
               Open GitHub repository
             </a>
@@ -922,9 +989,7 @@
               View scientific framework
             </a>
 
-            <a
-              href="publications/wastewater-treatment-resource-recovery.html"
-            >
+            <a href="publications/wastewater-treatment-resource-recovery.html">
               View broader treatment context
             </a>
           </div>
@@ -937,9 +1002,7 @@
                 Biomass · Biochar · Thermochemical conversion
               </span>
 
-              <h3>
-                Biochar and Biomass Process Modeling
-              </h3>
+              <h3>Biochar and Biomass Process Modeling</h3>
 
               <p class="case-summary">
                 A reconstruction-oriented repository containing a simplified
@@ -956,7 +1019,6 @@
           <div class="case-grid">
             <section class="case-column">
               <h4>Technical problem</h4>
-
               <p>
                 Archived simulations may contain useful qualitative trends but
                 cannot become reliable design tools without resolving unit,
@@ -966,7 +1028,6 @@
 
             <section class="case-column">
               <h4>Contribution</h4>
-
               <ul>
                 <li>Cantera-compatible mechanism and examples</li>
                 <li>Curated moisture, temperature and atmosphere cases</li>
@@ -978,7 +1039,6 @@
 
             <section class="case-column">
               <h4>Practical value</h4>
-
               <p>
                 Demonstrates how legacy scientific material can be converted
                 into a transparent, auditable development foundation before
@@ -991,7 +1051,7 @@
             <a
               href="https://github.com/saylamah/biochar-process-modeling"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer external"
             >
               Open GitHub repository
             </a>
@@ -1013,9 +1073,7 @@
                 Combustion science · Nanoparticle inception
               </span>
 
-              <h3>
-                NDMS Persistence–Stabilization Closure
-              </h3>
+              <h3>NDMS Persistence–Stabilization Closure</h3>
 
               <p class="case-summary">
                 A scientific hypothesis and executable conceptual model
@@ -1033,7 +1091,6 @@
           <div class="case-grid">
             <section class="case-column">
               <h4>Scientific problem</h4>
-
               <p>
                 The transition from molecular precursors and reversible
                 clusters to the first persistent particles remains weakly
@@ -1043,7 +1100,6 @@
 
             <section class="case-column">
               <h4>Contribution</h4>
-
               <ul>
                 <li>Explicit association and dissociation terms</li>
                 <li>Non-stabilizing loss pathways</li>
@@ -1055,7 +1111,6 @@
 
             <section class="case-column">
               <h4>Scientific value</h4>
-
               <p>
                 Provides a structured and falsifiable framework for comparing
                 persistence and stabilization pathways without presenting the
@@ -1068,7 +1123,7 @@
             <a
               href="https://github.com/saylamah/ndms-nanoparticle-inception"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer external"
             >
               Open GitHub repository
             </a>
@@ -1085,13 +1140,13 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" aria-labelledby="kinetic-intelligence-heading">
       <div class="container">
         <div class="development-card">
           <div>
             <p class="eyebrow">Current private development priority</p>
 
-            <h2>
+            <h2 id="kinetic-intelligence-heading">
               Kinetic Intelligence
             </h2>
 
@@ -1102,9 +1157,9 @@
             </p>
 
             <p>
-              The work is presently under private reconstruction and
-              benchmark validation. It is not yet presented as a validated
-              public software product.
+              The work is presently under private reconstruction and benchmark
+              validation. It is not yet presented as a validated public
+              software product.
             </p>
 
             <div class="development-note">
@@ -1117,7 +1172,6 @@
 
           <div>
             <h3>Planned technical modules</h3>
-
             <ul class="development-list">
               <li>Mechanism audit and provenance</li>
               <li>Reaction-rate and flux analysis</li>
@@ -1132,12 +1186,15 @@
       </div>
     </section>
 
-    <section class="section muted">
+    <section
+      class="section muted"
+      aria-labelledby="practical-use-heading"
+    >
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">Practical engineering use</p>
 
-          <h2>
+          <h2 id="practical-use-heading">
             How selected technical work can support real decisions
           </h2>
 
@@ -1152,7 +1209,6 @@
         <div class="application-grid">
           <article class="application-card">
             <h3>Bottleneck diagnosis</h3>
-
             <p>
               Separate reaction, transport, hydrodynamic, separation and
               operating constraints before selecting a technical intervention.
@@ -1161,7 +1217,6 @@
 
           <article class="application-card">
             <h3>Model selection</h3>
-
             <p>
               Determine whether a transparent screening model, detailed
               kinetics, reactor simulation or CFD is justified by the decision
@@ -1171,7 +1226,6 @@
 
           <article class="application-card">
             <h3>Validation planning</h3>
-
             <p>
               Define measurements, controls, acceptance criteria and
               representative conditions required to test a technical claim.
@@ -1180,7 +1234,6 @@
 
           <article class="application-card">
             <h3>Technology assessment</h3>
-
             <p>
               Evaluate whether a proposed technology addresses the governing
               mechanism and creates net value after energy, chemicals,
@@ -1190,7 +1243,6 @@
 
           <article class="application-card">
             <h3>Scale-up risk</h3>
-
             <p>
               Identify changes in residence time, mixing, heat transfer,
               transport, operability, materials and control that may prevent
@@ -1200,7 +1252,6 @@
 
           <article class="application-card">
             <h3>Technical communication</h3>
-
             <p>
               Convert complex scientific findings into transparent engineering
               assumptions, evidence boundaries, decision criteria and
@@ -1211,20 +1262,23 @@
       </div>
     </section>
 
-    <section class="section">
+    <section
+      class="section"
+      aria-labelledby="consulting-boundary-heading"
+    >
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">Connection to the consulting website</p>
 
-          <h2>
+          <h2 id="consulting-boundary-heading">
             Evidence here; client-facing applications there
           </h2>
         </div>
 
         <div class="boundary-box">
           <p>
-            This technical website documents selected methods, public
-            evidence, publications and reproducible resources.
+            This technical website documents selected methods, public evidence,
+            publications and reproducible resources.
           </p>
 
           <p>
@@ -1248,7 +1302,6 @@
     <div class="container footer-grid">
       <div>
         <strong>Dr. Ahmad Saylam</strong>
-
         <p>
           Selected public and non-confidential scientific, engineering and
           professional resources.
