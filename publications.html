@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Publications &amp; Technical Outputs | Dr. Ahmad Saylam</title>
+  <title>Publications, Technical Frameworks &amp; Open Outputs | Dr. Ahmad Saylam</title>
 
   <meta
     name="description"
-    content="Selected publications and technical outputs by Dr. Ahmad Saylam across kinetics, combustion, thermochemical processes, water treatment and scale-up."
+    content="Selected peer-reviewed publications, technical frameworks, professional articles and open scientific outputs by Dr. Ahmad Saylam across chemical kinetics, combustion, thermochemical processes, water treatment, process intensification, energy systems and industrial scale-up."
   >
   <meta name="author" content="Dr. Ahmad Saylam">
   <meta name="robots" content="index,follow">
@@ -27,11 +27,11 @@
   >
   <meta
     property="og:title"
-    content="Publications &amp; Technical Outputs | Dr. Ahmad Saylam"
+    content="Publications, Technical Frameworks &amp; Open Outputs | Dr. Ahmad Saylam"
   >
   <meta
     property="og:description"
-    content="Selected peer-reviewed research, technical frameworks, professional articles and open scientific outputs."
+    content="A searchable record of peer-reviewed research, technical frameworks, professional articles and open scientific outputs spanning molecular mechanisms to industrial scale-up."
   >
   <meta
     property="og:url"
@@ -42,11 +42,11 @@
   <meta name="twitter:card" content="summary">
   <meta
     name="twitter:title"
-    content="Publications &amp; Technical Outputs | Dr. Ahmad Saylam"
+    content="Publications, Technical Frameworks &amp; Open Outputs | Dr. Ahmad Saylam"
   >
   <meta
     name="twitter:description"
-    content="Selected peer-reviewed research, technical frameworks, professional articles and open scientific outputs."
+    content="A searchable record of peer-reviewed research, technical frameworks, professional articles and open scientific outputs spanning molecular mechanisms to industrial scale-up."
   >
 
   <!-- Structured data -->
@@ -81,14 +81,19 @@
         "@type": "CollectionPage",
         "@id": "https://saylamah.github.io/publications.html#webpage",
         "url": "https://saylamah.github.io/publications.html",
-        "name": "Publications and Technical Outputs",
-        "description": "Selected peer-reviewed research, technical frameworks, professional articles and open scientific outputs by Dr. Ahmad Saylam.",
+        "name": "Publications, Technical Frameworks and Open Outputs",
+        "description": "A searchable collection of peer-reviewed research, technical frameworks, professional articles and open scientific outputs by Dr. Ahmad Saylam.",
         "inLanguage": "en",
         "isPartOf": {
           "@id": "https://saylamah.github.io/#website"
         },
         "about": {
           "@id": "https://saylamah.github.io/#person"
+        },
+        "mainEntity": {
+          "@type": "ItemList",
+          "name": "Selected scientific and engineering outputs",
+          "numberOfItems": 29
         }
       }
     ]
@@ -153,9 +158,9 @@
     }
 
     h1 {
-      max-width: 900px;
+      max-width: 980px;
       margin-bottom: 1rem;
-      font-size: clamp(2.5rem, 5vw, 4.7rem);
+      font-size: clamp(2.5rem, 5vw, 4.8rem);
     }
 
     h2 {
@@ -286,7 +291,7 @@
     }
 
     .hero-lead {
-      max-width: 850px;
+      max-width: 920px;
       color: var(--muted);
       font-size: clamp(1.08rem, 1.7vw, 1.3rem);
     }
@@ -336,12 +341,37 @@
     }
 
     .section-heading {
-      max-width: 850px;
+      max-width: 900px;
       margin-bottom: 2rem;
     }
 
     .section-heading > p:last-child {
       color: var(--muted);
+    }
+
+    .orientation-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .orientation-card {
+      padding: 1.4rem;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+
+    .orientation-card strong {
+      display: block;
+      margin-bottom: 0.45rem;
+      color: var(--navy);
+    }
+
+    .orientation-card p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 0.92rem;
     }
 
     .controls {
@@ -511,18 +541,23 @@
 
     .note-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 1rem;
     }
 
     .note-card {
       padding: 1.4rem;
+      background: #ffffff;
       border: 1px solid var(--line);
       border-radius: 14px;
     }
 
     .note-card p {
       color: var(--muted);
+    }
+
+    .note-card p:last-child {
+      margin-bottom: 0;
     }
 
     .profile-links {
@@ -538,6 +573,18 @@
       border-radius: 8px;
       font-weight: 700;
       text-decoration: none;
+    }
+
+    .boundary-box {
+      margin-top: 1.2rem;
+      padding: 1.35rem;
+      background: var(--soft);
+      border-left: 5px solid var(--accent);
+      border-radius: 0 12px 12px 0;
+    }
+
+    .boundary-box p:last-child {
+      margin-bottom: 0;
     }
 
     .site-footer {
@@ -603,6 +650,14 @@
       .site-nav a {
         padding: 0.65rem;
       }
+
+      .orientation-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .note-grid {
+        grid-template-columns: 1fr;
+      }
     }
 
     @media (max-width: 760px) {
@@ -618,8 +673,8 @@
         display: none;
       }
 
-      .publication-grid,
-      .note-grid {
+      .orientation-grid,
+      .publication-grid {
         grid-template-columns: 1fr;
       }
 
@@ -692,24 +747,30 @@
         <a href="research-tools.html">Research &amp; Tools</a>
         <a href="publications.html" aria-current="page">Publications</a>
         <a href="about-cv.html">About</a>
-        <a href="index.html#consulting">Consulting Direction</a>
+        <a href="index.html#consulting">Professional Engagement</a>
         <a href="index.html#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero">
+    <section class="hero" aria-labelledby="page-heading">
       <div class="container">
-        <p class="eyebrow">Scientific and engineering record</p>
+        <p class="eyebrow">
+          Scholarly record · Open technical outputs · Responsible access
+        </p>
 
-        <h1>Publications &amp; Technical Outputs</h1>
+        <h1 id="page-heading">
+          Publications, Technical Frameworks and Open Scientific Outputs
+        </h1>
 
         <p class="hero-lead">
-          Selected peer-reviewed research, technical frameworks,
-          professional articles and open scientific outputs across reactive
-          systems, combustion, chemical kinetics, thermochemical processes,
-          water treatment, process intensification and engineering scale-up.
+          A searchable record of peer-reviewed research, doctoral work,
+          technical and modelling frameworks, professional articles and open
+          scientific outputs across reactive systems, combustion, chemical
+          kinetics, thermochemical processes, wastewater treatment, process
+          intensification, sustainable energy systems and engineering
+          scale-up.
         </p>
 
         <div class="hero-actions">
@@ -718,8 +779,65 @@
           </a>
 
           <a class="button secondary" href="selected-work.html">
-            View selected work
+            View engineering case studies
           </a>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="section"
+      aria-labelledby="orientation-heading"
+    >
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">How the record is organized</p>
+
+          <h2 id="orientation-heading">
+            Different output types are presented with different evidence and
+            access expectations
+          </h2>
+
+          <p>
+            The catalogue combines established scholarly publications with
+            open technical frameworks and professional articles. These outputs
+            serve different purposes and should not be interpreted as having
+            identical peer-review, validation, maturity or access status.
+          </p>
+        </div>
+
+        <div class="orientation-grid">
+          <article class="orientation-card">
+            <strong>Peer-reviewed research</strong>
+            <p>
+              Journal and conference work documenting experimental,
+              computational or theoretical scientific contributions.
+            </p>
+          </article>
+
+          <article class="orientation-card">
+            <strong>Technical frameworks</strong>
+            <p>
+              Structured engineering methods, screening models and process
+              interpretations with explicit applicability boundaries.
+            </p>
+          </article>
+
+          <article class="orientation-card">
+            <strong>Open scientific outputs</strong>
+            <p>
+              Theses, preprints, repositories and modelling resources released
+              with clear provenance and maturity statements.
+            </p>
+          </article>
+
+          <article class="orientation-card">
+            <strong>Professional articles</strong>
+            <p>
+              Accessible industry-facing communication translating technical
+              subjects for broader engineering and management audiences.
+            </p>
+          </article>
         </div>
       </div>
     </section>
@@ -739,7 +857,7 @@
             Search by title or filter by technical domain. Links lead to
             publication pages, public bibliographic records,
             author-accessible versions or external publisher pages according
-            to the access status of each work.
+            to the access and rights status of each work.
           </p>
         </div>
 
@@ -908,9 +1026,7 @@
                 <span class="publication-type">Modelling framework</span>
 
                 <h3>
-                  <a
-                    href="publications/persistence-stabilization-closure.html"
-                  >
+                  <a href="publications/persistence-stabilization-closure.html">
                     Transient Nano-Dense Molecular States as a
                     Persistence–Stabilization Closure for Combustion
                     Nanoparticle Inception
@@ -1080,9 +1196,7 @@
                 class="publication-card"
                 data-category="combustion"
               >
-                <span class="publication-type">
-                  Experimental diagnostics
-                </span>
+                <span class="publication-type">Experimental diagnostics</span>
 
                 <h3>
                   <a
@@ -1135,8 +1249,8 @@
                   <a
                     href="papers/reactive-species-formation-c1-c3-alkanes-hcci.html"
                   >
-                    Modelling Study of Reactive Species Formation from C1–C3
-                    Alkanes in an HCCI Engine
+                    Modelling Study of Reactive Species Formation from
+                    C1–C3 Alkanes in an HCCI Engine
                   </a>
                 </h3>
 
@@ -1156,9 +1270,8 @@
 
                 <h3>
                   <a href="publications/hcci-engine-chemical-reactor.html">
-                    HCCI Engine as Chemical Reactor to Produce
-                    Fuel/Chemicals: An Exploring Study of n-Alkanes
-                    Low-Temperature Chemistry
+                    HCCI Engine as Chemical Reactor to Produce Fuel/Chemicals:
+                    An Exploring Study of n-Alkanes Low-Temperature Chemistry
                   </a>
                 </h3>
 
@@ -1201,19 +1314,12 @@
             data-section="water"
             aria-labelledby="water-publications-heading"
           >
-            <h2
-              id="water-publications-heading"
-              class="section-title"
-            >
-              Wastewater Treatment, Advanced Oxidation &amp; Resource
-              Recovery
+            <h2 id="water-publications-heading" class="section-title">
+              Wastewater Treatment, Advanced Oxidation &amp; Resource Recovery
             </h2>
 
             <div class="publication-grid">
-              <article
-                class="publication-card"
-                data-category="water"
-              >
+              <article class="publication-card" data-category="water">
                 <span class="publication-type">Technical framework</span>
 
                 <h3>
@@ -1233,18 +1339,13 @@
                 </a>
               </article>
 
-              <article
-                class="publication-card"
-                data-category="water"
-              >
+              <article class="publication-card" data-category="water">
                 <span class="publication-type">
                   Kinetic-process framework
                 </span>
 
                 <h3>
-                  <a
-                    href="publications/aop-kinetic-process-framework.html"
-                  >
+                  <a href="publications/aop-kinetic-process-framework.html">
                     A Unified Kinetic–Process Framework for Advanced
                     Oxidation Processes: From Radical Chemistry to
                     Reactor-Scale Performance in Wastewater Treatment
@@ -1279,9 +1380,7 @@
                 class="publication-card"
                 data-category="desulfurization"
               >
-                <span class="publication-type">
-                  Engineering diagnostic
-                </span>
+                <span class="publication-type">Engineering diagnostic</span>
 
                 <h3>
                   <a
@@ -1305,16 +1404,14 @@
                 class="publication-card"
                 data-category="desulfurization"
               >
-                <span class="publication-type">
-                  Process intensification
-                </span>
+                <span class="publication-type">Process intensification</span>
 
                 <h3>
                   <a
                     href="publications/hydrodynamic-cavitation-industrial-usefulness.html"
                   >
-                    Industrial Usefulness and Technology Selection in
-                    Process Intensification: Energy-Normalized Metrics for
+                    Industrial Usefulness and Technology Selection in Process
+                    Intensification: Energy-Normalized Metrics for
                     Hydrodynamic Cavitation
                   </a>
                 </h3>
@@ -1400,8 +1497,8 @@
                   <a
                     href="publications/catalytic-waste-recycling-conversion.html"
                   >
-                    Catalytic Technologies for Waste Recycling and
-                    Conversion: Driving Sustainable Innovation
+                    Catalytic Technologies for Waste Recycling and Conversion:
+                    Driving Sustainable Innovation
                   </a>
                 </h3>
 
@@ -1467,21 +1564,13 @@
             data-section="energy"
             aria-labelledby="energy-publications-heading"
           >
-            <h2
-              id="energy-publications-heading"
-              class="section-title"
-            >
+            <h2 id="energy-publications-heading" class="section-title">
               Energy Storage &amp; Sustainable Energy Systems
             </h2>
 
             <div class="publication-grid">
-              <article
-                class="publication-card"
-                data-category="energy"
-              >
-                <span class="publication-type">
-                  Technology comparison
-                </span>
+              <article class="publication-card" data-category="energy">
+                <span class="publication-type">Technology comparison</span>
 
                 <h3>
                   <a
@@ -1595,7 +1684,7 @@
               id="professional-publications-heading"
               class="section-title"
             >
-              Professional Magazine &amp; Industrial Publications
+              Professional and Industry Articles
             </h2>
 
             <div class="publication-grid">
@@ -1630,9 +1719,7 @@
                 class="publication-card"
                 data-category="professional thermochemical"
               >
-                <span class="publication-type">
-                  VDI energie + umwelt
-                </span>
+                <span class="publication-type">VDI energie + umwelt</span>
 
                 <h3>
                   <a
@@ -1700,14 +1787,23 @@
     >
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">Access and provenance</p>
+          <p class="eyebrow">Access, provenance and interpretation</p>
 
-          <h2 id="access-heading">Responsible publication access</h2>
+          <h2 id="access-heading">
+            Responsible publication access and evidence use
+          </h2>
+
+          <p>
+            Public accessibility, peer-review status and technical maturity are
+            separate questions. The catalogue therefore links each record
+            through the most appropriate lawful and technically informative
+            route available.
+          </p>
         </div>
 
         <div class="note-grid">
           <article class="note-card">
-            <h3>Access note</h3>
+            <h3>Access and copyright</h3>
 
             <p>
               Some journal articles are available only through publisher or
@@ -1723,11 +1819,28 @@
           </article>
 
           <article class="note-card">
+            <h3>Evidence and maturity</h3>
+
+            <p>
+              Peer-reviewed studies, theses, preprints, reconstructed models,
+              screening frameworks and professional articles are identified
+              according to their actual type and should not be treated as
+              equivalent evidence.
+            </p>
+
+            <p>
+              Technical claims remain bounded by the methods, data,
+              assumptions, validation and applicability stated in the
+              corresponding record.
+            </p>
+          </article>
+
+          <article class="note-card">
             <h3>Research profiles</h3>
 
             <p>
-              External profiles provide broader bibliographic and
-              professional context.
+              External profiles provide broader bibliographic and professional
+              context.
             </p>
 
             <div class="profile-links">
@@ -1773,6 +1886,23 @@
             </div>
           </article>
         </div>
+
+        <div class="boundary-box">
+          <p>
+            This catalogue is the publication and technical-output layer of the
+            wider professional ecosystem. It documents scientific work and
+            public technical reasoning; it does not convert every publication
+            into a general industrial-performance claim.
+          </p>
+
+          <p>
+            Practical interpretation, case-study context and development
+            relevance are presented in
+            <a href="selected-work.html">Selected Work</a>. Relevant
+            professional discussions can be initiated through
+            <a href="index.html#consulting">Professional Engagement</a>.
+          </p>
+        </div>
       </div>
     </section>
   </main>
@@ -1788,13 +1918,13 @@
         </p>
       </div>
 
-      <div class="footer-links">
+      <div class="footer-links" aria-label="Website navigation">
         <a href="index.html">Home</a>
         <a href="selected-work.html">Selected Work</a>
         <a href="research-tools.html">Research &amp; Tools</a>
         <a href="publications.html">Publications</a>
         <a href="about-cv.html">About</a>
-        <a href="index.html#consulting">Consulting Direction</a>
+        <a href="index.html#consulting">Professional Engagement</a>
         <a href="index.html#contact">Contact</a>
       </div>
     </div>
@@ -1805,7 +1935,7 @@
       </span>
 
       <span>
-        Technical evidence website · Consulting platform under development
+        Scholarly record · Open technical outputs · Responsible access
       </span>
     </div>
   </footer>
@@ -1830,19 +1960,15 @@
 
     const searchInput = document.getElementById("publication-search");
     const clearSearch = document.getElementById("clear-search");
-
     const filterButtons = Array.from(
       document.querySelectorAll(".filter-button")
     );
-
     const publicationCards = Array.from(
       document.querySelectorAll(".publication-card")
     );
-
     const publicationSections = Array.from(
       document.querySelectorAll(".publication-section")
     );
-
     const resultsLine = document.getElementById("results-line");
     const noResults = document.getElementById("no-results");
 
@@ -1888,14 +2014,14 @@
 
     filterButtons.forEach((button) => {
       button.addEventListener("click", () => {
+        activeFilter = button.dataset.filter;
+
         filterButtons.forEach((item) => {
           const isActive = item === button;
-
           item.classList.toggle("active", isActive);
           item.setAttribute("aria-pressed", String(isActive));
         });
 
-        activeFilter = button.dataset.filter;
         applyFilters();
       });
     });
@@ -1904,8 +2030,16 @@
 
     clearSearch.addEventListener("click", () => {
       searchInput.value = "";
-      searchInput.focus();
+      activeFilter = "all";
+
+      filterButtons.forEach((button) => {
+        const isAll = button.dataset.filter === "all";
+        button.classList.toggle("active", isAll);
+        button.setAttribute("aria-pressed", String(isAll));
+      });
+
       applyFilters();
+      searchInput.focus();
     });
 
     const year = document.getElementById("year");
