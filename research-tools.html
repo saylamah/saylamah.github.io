@@ -4,11 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Research &amp; Engineering Tools | Dr. Ahmad Saylam</title>
-
-  <meta
-    name="description"
-    content="Research methods, engineering tools and reproducible resources by Dr. Ahmad Saylam across kinetics, CFD, thermochemical processes and scale-up."
+  <title>Research Methods, Modelling &amp; Reproducible Tools |:contentReference[oaicite:0]{index=0}on"
+    content="Research methods, modelling environments and reproducible engineering tools by Dr. Ahmad Saylam across chemical kinetics, CFD, thermochemical processes, validation, pilot development and industrial scale-up."
   >
   <meta name="author" content="Dr. Ahmad Saylam">
   <meta name="robots" content="index,follow">
@@ -27,11 +24,11 @@
   >
   <meta
     property="og:title"
-    content="Research &amp; Engineering Tools | Dr. Ahmad Saylam"
+    content="Research Methods, Modelling &amp; Reproducible Tools | Dr. Ahmad Saylam"
   >
   <meta
     property="og:description"
-    content="Research methods, computational environments and reproducible technical resources connecting scientific models with engineering decisions."
+    content="Scientific methods, modelling environments and reproducible resources connecting molecular mechanisms, reactor behaviour, process development and industrial decisions."
   >
   <meta
     property="og:url"
@@ -42,11 +39,11 @@
   <meta name="twitter:card" content="summary">
   <meta
     name="twitter:title"
-    content="Research &amp; Engineering Tools | Dr. Ahmad Saylam"
+    content="Research Methods, Modelling &amp; Reproducible Tools | Dr. Ahmad Saylam"
   >
   <meta
     name="twitter:description"
-    content="Research methods, computational environments and reproducible technical resources connecting scientific models with engineering decisions."
+    content="Scientific methods, modelling environments and reproducible resources connecting molecular mechanisms, reactor behaviour, process development and industrial decisions."
   >
 
   <!-- Structured data -->
@@ -56,8 +53,8 @@
     "@type": "CollectionPage",
     "@id": "https://saylamah.github.io/research-tools.html#webpage",
     "url": "https://saylamah.github.io/research-tools.html",
-    "name": "Research and Engineering Tools",
-    "description": "Research methods, computational environments and reproducible technical resources connecting physical chemistry, chemical kinetics, reactor modeling, CFD, thermochemical processes and industrial scale-up.",
+    "name": "Research Methods, Modelling and Reproducible Tools",
+    "description": "Research methods, modelling environments and reproducible technical resources connecting physical chemistry, chemical kinetics, reactor modelling, CFD, thermochemical processes, validation and industrial scale-up.",
     "inLanguage": "en",
     "isPartOf": {
       "@type": "WebSite",
@@ -172,7 +169,7 @@
     }
 
     h1 {
-      max-width: 950px;
+      max-width: 980px;
       margin-bottom: 1.2rem;
       font-size: clamp(2.5rem, 5vw, 4.8rem);
     }
@@ -313,7 +310,7 @@
     }
 
     .hero-lead {
-      max-width: 880px;
+      max-width: 920px;
       color: var(--muted);
       font-size: clamp(1.08rem, 1.7vw, 1.3rem);
     }
@@ -363,12 +360,37 @@
     }
 
     .section-heading {
-      max-width: 880px;
+      max-width: 900px;
       margin-bottom: 2.5rem;
     }
 
     .section-heading > p:last-child {
       color: var(--muted);
+    }
+
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .audience-card {
+      padding: 1.4rem;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+
+    .audience-card strong {
+      display: block;
+      margin-bottom: 0.45rem;
+      color: var(--navy);
+    }
+
+    .audience-card p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 0.92rem;
     }
 
     .research-grid {
@@ -400,6 +422,38 @@
     .research-card ul {
       margin-bottom: 0;
       padding-left: 1.2rem;
+    }
+
+    .decision-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .decision-card {
+      padding: 1.5rem;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-top: 4px solid var(--teal);
+      border-radius: 12px;
+    }
+
+    .decision-level {
+      display: block;
+      margin-bottom: 0.55rem;
+      color: var(--accent);
+      font-size: 0.76rem;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .decision-card p {
+      color: var(--muted);
+    }
+
+    .decision-card p:last-child {
+      margin-bottom: 0;
     }
 
     .method-grid {
@@ -587,6 +641,7 @@
     }
 
     .policy-card p {
+      margin-bottom: 0;
       color: var(--muted);
     }
 
@@ -667,6 +722,8 @@
         padding: 0.65rem;
       }
 
+      .audience-grid,
+      .decision-grid,
       .method-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
@@ -690,7 +747,9 @@
         display: none;
       }
 
+      .audience-grid,
       .research-grid,
+      .decision-grid,
       .repository-grid,
       .method-grid,
       .policy-grid {
@@ -755,31 +814,36 @@
       >
         <a href="index.html">Home</a>
         <a href="selected-work.html">Selected Work</a>
+
         <a href="research-tools.html" aria-current="page">
           Research &amp; Tools
         </a>
+
         <a href="publications.html">Publications</a>
         <a href="about-cv.html">About</a>
-        <a href="index.html#consulting">Consulting Direction</a>
+        <a href="index.html#consulting">Professional Engagement</a>
         <a href="index.html#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero">
+    <section class="hero" aria-labelledby="page-heading">
       <div class="container">
         <p class="eyebrow">
-          Research themes · Modelling methods · Reproducible resources
+          Scientific methods · Modelling hierarchy · Reproducible resources
         </p>
 
-        <h1>Research and Engineering Tools</h1>
+        <h1 id="page-heading">
+          Research Methods, Modelling and Reproducible Engineering Tools
+        </h1>
 
         <p class="hero-lead">
-          Selected methods and technical resources connecting applied
-          physical chemistry, chemical kinetics, reactor modelling, CFD,
-          thermochemical conversion, process development, experimental
-          validation and industrial decision support.
+          Selected methods, computational environments and public technical
+          resources connecting applied physical chemistry, chemical kinetics,
+          reactor modelling, CFD, thermochemical conversion, process
+          development, experimental validation, pilot systems and industrial
+          decision support.
         </p>
 
         <div class="button-row">
@@ -788,7 +852,7 @@
           </a>
 
           <a class="button secondary" href="selected-work.html">
-            View selected case studies
+            View engineering case studies
           </a>
         </div>
       </div>
@@ -796,22 +860,79 @@
 
     <section
       class="section"
+      aria-labelledby="audience-heading"
+    >
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">How to use this page</p>
+
+          <h2 id="audience-heading">
+            One technical foundation serving different levels of decision
+          </h2>
+
+          <p>
+            The same scientific resource can have different value for a
+            researcher, engineer, manager or student. The purpose is therefore
+            to present methods with enough technical depth for specialists
+            while keeping their assumptions, maturity and practical relevance
+            understandable to broader audiences.
+          </p>
+        </div>
+
+        <div class="audience-grid">
+          <article class="audience-card">
+            <strong>Researchers</strong>
+            <p>
+              Examine assumptions, governing mechanisms, equations,
+              reproducibility, validation boundaries and open scientific
+              questions.
+            </p>
+          </article>
+
+          <article class="audience-card">
+            <strong>Engineers</strong>
+            <p>
+              Connect chemistry and transport phenomena to reactor behaviour,
+              equipment performance, pilot configuration and scale-up risk.
+            </p>
+          </article>
+
+          <article class="audience-card">
+            <strong>Managers and technical leaders</strong>
+            <p>
+              Identify which evidence is decision-ready, which uncertainties
+              remain and what development work is justified next.
+            </p>
+          </article>
+
+          <article class="audience-card">
+            <strong>Students and non-specialists</strong>
+            <p>
+              Follow the progression from a technical question through
+              modelling and validation to a defensible practical conclusion.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="section muted"
       aria-labelledby="research-themes-heading"
     >
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">Research themes</p>
+          <p class="eyebrow">Research and engineering themes</p>
 
           <h2 id="research-themes-heading">
             From molecular mechanisms to process and technology decisions
           </h2>
 
           <p>
-            The research direction connects physical and chemical phenomena
-            across molecular, reactor, equipment and process scales. The
-            purpose is not merely to increase model complexity, but to select
-            the level of scientific detail required for a reliable engineering
-            decision.
+            The work connects physical and chemical phenomena across
+            molecular, reactor, equipment and process scales. The objective is
+            not maximum model complexity, but the level of scientific detail
+            required to answer the decision reliably.
           </p>
         </div>
 
@@ -837,12 +958,12 @@
             <h3>Reactor, Flow and Multiscale Modelling</h3>
 
             <ul>
-              <li>Zero- and one-dimensional reactor modelling</li>
+              <li>Zero- to three-dimensional modelling</li>
+              <li>Homogeneous and heterogeneous reactors</li>
               <li>Reactive-flow computational fluid dynamics</li>
               <li>Turbulence–chemistry interaction</li>
-              <li>Heat and mass transfer</li>
-              <li>Species transport and residence-time effects</li>
-              <li>Homogeneous and heterogeneous reactive systems</li>
+              <li>Heat, mass and species transport</li>
+              <li>Residence-time and mixing effects</li>
             </ul>
           </article>
 
@@ -871,9 +992,81 @@
               <li>Experimental and pilot-programme planning</li>
               <li>Reaction–transport regime diagnosis</li>
               <li>Process intensification</li>
-              <li>Operability and scale-up risk</li>
+              <li>Operability, control and scale-up risk</li>
               <li>Technology and R&amp;D decision support</li>
             </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="section"
+      aria-labelledby="modelling-level-heading"
+    >
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Fit-for-purpose modelling</p>
+
+          <h2 id="modelling-level-heading">
+            The appropriate model depends on the decision, not on complexity
+            alone
+          </h2>
+
+          <p>
+            A reliable development programme often moves through several
+            modelling levels. Increasing detail is justified only when it
+            resolves a material uncertainty, changes a decision or provides
+            evidence that cannot be obtained more simply.
+          </p>
+        </div>
+
+        <div class="decision-grid">
+          <article class="decision-card">
+            <span class="decision-level">Level 1</span>
+
+            <h3>Balances and screening calculations</h3>
+
+            <p>
+              Establish orders of magnitude, thermodynamic limits, material and
+              energy balances, plausible operating windows and immediate
+              feasibility constraints.
+            </p>
+          </article>
+
+          <article class="decision-card">
+            <span class="decision-level">Level 2</span>
+
+            <h3>Kinetic and mechanistic models</h3>
+
+            <p>
+              Resolve reaction pathways, controlling species, time scales,
+              sensitivities, competing chemistry and intrinsic conversion
+              behaviour.
+            </p>
+          </article>
+
+          <article class="decision-card">
+            <span class="decision-level">Level 3</span>
+
+            <h3>Reactor and CFD models</h3>
+
+            <p>
+              Couple chemistry with residence time, mixing, transport, heat
+              transfer, phase behaviour and equipment-scale flow structures.
+            </p>
+          </article>
+
+          <article class="decision-card">
+            <span class="decision-level">Level 4</span>
+
+            <h3>Pilot and scale-up interpretation</h3>
+
+            <p>
+              Test representative operation, validate model assumptions and
+              address operability, control, materials, safety, reliability and
+              industrial transfer.
+            </p>
           </article>
         </div>
       </div>
@@ -892,9 +1085,10 @@
           </h2>
 
           <p>
-            Commercial software, open-source platforms and custom programs are
-            selected according to the required physics, chemistry, modelling
-            resolution, uncertainty and available validation evidence.
+            Commercial software, open-source platforms and custom scientific
+            programs are selected according to the required chemistry,
+            physics, modelling resolution, uncertainty and available
+            validation evidence.
           </p>
         </div>
 
@@ -906,7 +1100,7 @@
               <li><strong>ANSYS Fluent</strong></li>
               <li><strong>OpenFOAM</strong></li>
               <li>Combustion and reactive-flow modelling</li>
-              <li>Species transport</li>
+              <li>Species and energy transport</li>
               <li>Heat transfer</li>
               <li>Multiphase systems</li>
             </ul>
@@ -1129,14 +1323,16 @@
         <div class="workflow">
           <article>
             <strong>1. Define</strong>
+
             <p>
-              Establish the system, feed, products, constraints,
-              uncertainties and decision objective.
+              Establish the system, feed, products, constraints, uncertainties
+              and decision objective.
             </p>
           </article>
 
           <article>
             <strong>2. Formulate</strong>
+
             <p>
               Identify the governing chemistry, transport, thermodynamics and
               process interactions.
@@ -1145,14 +1341,16 @@
 
           <article>
             <strong>3. Model</strong>
+
             <p>
-              Select a transparent screening model, detailed kinetics,
-              reactor simulation or CFD according to the decision need.
+              Select a transparent screening model, detailed kinetics, reactor
+              simulation or CFD according to the decision need.
             </p>
           </article>
 
           <article>
             <strong>4. Validate</strong>
+
             <p>
               Compare with measurements, literature, benchmarks, balances and
               predefined acceptance criteria.
@@ -1161,6 +1359,7 @@
 
           <article>
             <strong>5. Translate</strong>
+
             <p>
               Connect the evidence to pilot configuration, scale-up, risk,
               operability and industrial decisions.
@@ -1177,7 +1376,7 @@
       <div class="container">
         <div class="development-panel">
           <div>
-            <p class="eyebrow">Private research-development programme</p>
+            <p class="eyebrow">Controlled research-development programme</p>
 
             <h2 id="kinetic-intelligence-heading">
               Kinetic Intelligence
@@ -1199,9 +1398,8 @@
 
             <div class="development-note">
               Current maturity: research reconstruction. The framework is not
-              yet presented as validated public software, an industrial
-              predictive product or evidence of demonstrated computational
-              speed-up.
+              presented as validated public software, an industrial predictive
+              product or evidence of demonstrated computational speed-up.
             </div>
           </div>
 
@@ -1276,17 +1474,24 @@
 
         <div class="boundary-box">
           <p>
-            This page presents research methods and public technical evidence.
-            The future consulting platform will translate selected,
-            rights-cleared capabilities into client-facing services,
-            deliverables and engagement models.
+            This page presents scientific methods, modelling environments and
+            public technical evidence. It supports the wider professional
+            profile without converting unfinished research into marketing
+            claims.
           </p>
 
           <p>
-            The consulting platform may benefit from validated tools and
-            suitable case-study material, but it will not reproduce restricted
-            archives or present unfinished research as established industrial
-            performance.
+            A separate client-facing consulting platform may later translate
+            selected, rights-cleared and sufficiently validated capabilities
+            into defined services, deliverables and engagement models without
+            duplicating the technical resources published here.
+          </p>
+
+          <p>
+            Relevant scientific, engineering and professional discussions can
+            be initiated through the
+            <a href="index.html#consulting">Professional Engagement</a>
+            section.
           </p>
         </div>
       </div>
@@ -1304,13 +1509,13 @@
         </p>
       </div>
 
-      <div class="footer-links">
+      <div class="footer-links" aria-label="Website navigation">
         <a href="index.html">Home</a>
         <a href="selected-work.html">Selected Work</a>
         <a href="research-tools.html">Research &amp; Tools</a>
         <a href="publications.html">Publications</a>
         <a href="about-cv.html">About</a>
-        <a href="index.html#consulting">Consulting Direction</a>
+        <a href="index.html#consulting">Professional Engagement</a>
         <a href="index.html#contact">Contact</a>
       </div>
     </div>
@@ -1321,7 +1526,7 @@
       </span>
 
       <span>
-        Technical evidence website · Consulting platform under development
+        Scientific methods · Reproducible tools · Engineering decisions
       </span>
     </div>
   </footer>
