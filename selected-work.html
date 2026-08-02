@@ -174,7 +174,7 @@
     h1 {
       max-width: 950px;
       margin-bottom: 1.2rem;
-      font-size: clamp(2.5rem, 5vw, 4.8rem);
+      font-size: clamp(2.2rem, 3.6vw, 3.8rem);
     }
 
     h2 {
@@ -350,6 +350,11 @@
       background: #ffffff;
       color: var(--navy);
       border: 1px solid var(--navy);
+    }
+
+    .button.secondary:hover {
+      background: var(--soft);
+      color: var(--navy);
     }
 
     .section {
@@ -576,7 +581,7 @@
       border-radius: 0 12px 12px 0;
     }
 
-    .boundary-box p:last-child {
+    .boundary-box p:last-of-type {
       margin-bottom: 0;
     }
 
@@ -622,11 +627,11 @@
       }
 
       .site-nav {
-        display: none;
         position: absolute;
         top: 70px;
         right: 20px;
         left: 20px;
+        display: none;
         flex-direction: column;
         align-items: stretch;
         padding: 1rem;
@@ -749,8 +754,8 @@
         <a href="research-tools.html">Research &amp; Tools</a>
         <a href="publications.html">Publications</a>
         <a href="about-cv.html">About</a>
-        <a href="index.html#consulting">Professional Engagement</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="consulting.html">Consulting</a>
+        <a href="consulting.html#contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -779,8 +784,8 @@
             Explore case studies
           </a>
 
-          <a class="button secondary" href="about-cv.html">
-            View professional profile
+          <a class="button secondary" href="consulting.html">
+            Explore consulting services
           </a>
         </div>
       </div>
@@ -811,6 +816,7 @@
         <div class="principle-grid">
           <article class="principle-card">
             <strong>Evidence maturity</strong>
+
             <p>
               Diagnostic frameworks, tested screening tools, research
               reconstructions and scientific hypotheses are labelled
@@ -820,6 +826,7 @@
 
           <article class="principle-card">
             <strong>Decision relevance</strong>
+
             <p>
               Each case identifies the technical question, the contribution and
               the decision or development activity it can support.
@@ -828,6 +835,7 @@
 
           <article class="principle-card">
             <strong>Rights and confidentiality</strong>
+
             <p>
               Authorship, ownership, licensing, employer rights and
               confidentiality are reviewed before material is published.
@@ -836,6 +844,7 @@
 
           <article class="principle-card">
             <strong>Transferability limits</strong>
+
             <p>
               Public examples demonstrate methods and reasoning; they do not
               replace representative validation or site-specific engineering.
@@ -890,6 +899,7 @@
           <div class="case-grid">
             <section class="case-column">
               <h4>Technical question</h4>
+
               <p>
                 Which mechanism actually controls process performance, and
                 does a proposed intensification method address that bottleneck?
@@ -898,6 +908,7 @@
 
             <section class="case-column">
               <h4>Contribution</h4>
+
               <ul>
                 <li>Reaction–transport regime classification</li>
                 <li>Bottleneck-oriented interpretation</li>
@@ -908,6 +919,7 @@
 
             <section class="case-column">
               <h4>Decision value</h4>
+
               <p>
                 Supports experimental design, process comparison, claims
                 assessment and selection of chemical, transport, separation or
@@ -961,6 +973,7 @@
           <div class="case-grid">
             <section class="case-column">
               <h4>Technical question</h4>
+
               <p>
                 How strongly do background water constituents compete for
                 radicals, and what does that imply for apparent pollutant
@@ -970,6 +983,7 @@
 
             <section class="case-column">
               <h4>Contribution</h4>
+
               <ul>
                 <li>Matrix-scavenging calculations</li>
                 <li>Radical-utilization fractions</li>
@@ -981,6 +995,7 @@
 
             <section class="case-column">
               <h4>Decision value</h4>
+
               <p>
                 Supports matrix characterization, scenario comparison,
                 interpretation of apparent AOP performance and preparation of
@@ -1032,6 +1047,7 @@
           <div class="case-grid">
             <section class="case-column">
               <h4>Technical question</h4>
+
               <p>
                 Which qualitative trends in archived simulations remain useful,
                 and what must be resolved before the model can support design
@@ -1041,6 +1057,7 @@
 
             <section class="case-column">
               <h4>Contribution</h4>
+
               <ul>
                 <li>Cantera-compatible mechanism and examples</li>
                 <li>Curated moisture, temperature and atmosphere cases</li>
@@ -1052,6 +1069,7 @@
 
             <section class="case-column">
               <h4>Decision value</h4>
+
               <p>
                 Demonstrates how legacy scientific material can become a
                 transparent, auditable development foundation before model
@@ -1104,6 +1122,7 @@
           <div class="case-grid">
             <section class="case-column">
               <h4>Scientific question</h4>
+
               <p>
                 How might reversible precursor association progress toward the
                 first persistent particles without assuming a universal
@@ -1113,6 +1132,7 @@
 
             <section class="case-column">
               <h4>Contribution</h4>
+
               <ul>
                 <li>Explicit association and dissociation terms</li>
                 <li>Non-stabilizing loss pathways</li>
@@ -1124,6 +1144,7 @@
 
             <section class="case-column">
               <h4>Scientific value</h4>
+
               <p>
                 Provides a structured and falsifiable basis for comparing
                 persistence and stabilization pathways while keeping the
@@ -1226,6 +1247,7 @@
         <div class="application-grid">
           <article class="application-card">
             <h3>Bottleneck diagnosis</h3>
+
             <p>
               Separate reaction, transport, hydrodynamic, separation and
               operating constraints before selecting an intervention.
@@ -1234,6 +1256,7 @@
 
           <article class="application-card">
             <h3>Model selection</h3>
+
             <p>
               Determine whether screening calculations, detailed kinetics,
               reactor simulation or CFD are justified by the decision and
@@ -1243,6 +1266,7 @@
 
           <article class="application-card">
             <h3>Validation planning</h3>
+
             <p>
               Define measurements, controls, representative conditions and
               acceptance criteria required to test a technical claim.
@@ -1251,6 +1275,7 @@
 
           <article class="application-card">
             <h3>Technology assessment</h3>
+
             <p>
               Test whether a proposed technology addresses the governing
               mechanism and creates net value after energy, chemicals,
@@ -1260,6 +1285,7 @@
 
           <article class="application-card">
             <h3>Scale-up risk</h3>
+
             <p>
               Identify changes in residence time, mixing, heat transfer,
               transport, operability, materials and control that may prevent
@@ -1269,6 +1295,7 @@
 
           <article class="application-card">
             <h3>Technical communication</h3>
+
             <p>
               Translate complex findings into explicit assumptions, evidence
               boundaries, decision criteria and development actions.
@@ -1287,33 +1314,46 @@
           <p class="eyebrow">Role within the professional ecosystem</p>
 
           <h2 id="ecosystem-heading">
-            Public evidence here; defined professional engagement through
-            appropriate channels
+            Public evidence supporting defined consulting and professional
+            engagement
           </h2>
         </div>
 
         <div class="boundary-box">
           <p>
-            This website documents selected methods, publications,
-            reproducible resources and non-confidential case-study reasoning.
-            It is the scientific and engineering evidence layer of the wider
-            professional ecosystem.
+            This page documents selected methods, publications, reproducible
+            resources and non-confidential case-study reasoning. It functions
+            as the scientific and engineering evidence layer supporting
+            professional positioning and defined consulting services.
           </p>
 
           <p>
-            A separate client-facing consulting platform may later present
-            defined services, deliverables and engagement models without
-            duplicating the technical resources published here.
+            The
+            <a href="consulting.html">Consulting page</a>
+            presents client-facing services, practical deliverables,
+            application domains, working methods, confidentiality provisions
+            and engagement boundaries without duplicating the detailed
+            technical evidence published here.
           </p>
 
           <p>
             Confidential project information, employer-owned material,
             proprietary operating data and unverified claims are not used as
-            public marketing content. Relevant leadership, specialist,
-            advisory and collaborative discussions can be initiated through
-            the <a href="index.html#consulting">Professional Engagement</a>
-            section.
+            public marketing content. Potential assignments are assessed for
+            technical fit, evidence availability, intellectual-property
+            boundaries, conflicts of interest and practical implementation
+            value.
           </p>
+
+          <div class="button-row">
+            <a class="button primary" href="consulting.html">
+              Explore consulting services
+            </a>
+
+            <a class="button secondary" href="about-cv.html">
+              View professional profile
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -1325,8 +1365,8 @@
         <strong>Dr. Ahmad Saylam</strong>
 
         <p>
-          Selected public and non-confidential scientific, engineering and
-          professional resources.
+          Selected public and non-confidential scientific, engineering,
+          professional and consulting resources.
         </p>
       </div>
 
@@ -1336,8 +1376,8 @@
         <a href="research-tools.html">Research &amp; Tools</a>
         <a href="publications.html">Publications</a>
         <a href="about-cv.html">About</a>
-        <a href="index.html#consulting">Professional Engagement</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="consulting.html">Consulting</a>
+        <a href="consulting.html#contact">Contact</a>
       </div>
     </div>
 
