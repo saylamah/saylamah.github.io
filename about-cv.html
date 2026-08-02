@@ -8,7 +8,7 @@
 
   <meta
     name="description"
-    content="Evidence-aligned profile of Dr. Ahmad Saylam, an R&amp;D and technology-development leader in chemical kinetics, CFD, process development, pilot validation and industrial scale-up."
+    content="Evidence-aligned profile of Dr. Ahmad Saylam, an R&amp;D and technology-development leader in chemical kinetics, CFD, process development, pilot validation, industrial scale-up and scientific engineering."
   >
   <meta name="author" content="Dr. Ahmad Saylam">
   <meta name="robots" content="index,follow">
@@ -62,7 +62,21 @@
         "inLanguage": "en",
         "publisher": {
           "@id": "https://saylamah.github.io/#person"
-        }
+        },
+        "hasPart": [
+          {
+            "@id": "https://saylamah.github.io/selected-work.html#webpage"
+          },
+          {
+            "@id": "https://saylamah.github.io/research-tools.html#webpage"
+          },
+          {
+            "@id": "https://saylamah.github.io/publications.html#webpage"
+          },
+          {
+            "@id": "https://saylamah.github.io/consulting.html#webpage"
+          }
+        ]
       },
       {
         "@type": "Person",
@@ -103,8 +117,10 @@
           "Experimental validation",
           "Pilot development",
           "Industrial scale-up",
+          "Technology assessment",
           "Process intensification",
-          "Wastewater treatment"
+          "Wastewater treatment",
+          "Advanced oxidation processes"
         ]
       },
       {
@@ -185,7 +201,7 @@
     h1 {
       max-width: 950px;
       margin-bottom: 1.2rem;
-      font-size: clamp(2.5rem, 5vw, 4.8rem);
+      font-size: clamp(2.2rem, 3.6vw, 3.8rem);
     }
 
     h2 {
@@ -364,6 +380,11 @@
       background: #ffffff;
       color: var(--navy);
       border: 1px solid var(--navy);
+    }
+
+    .button.secondary:hover {
+      background: var(--soft);
+      color: var(--navy);
     }
 
     .profile-panel {
@@ -637,6 +658,27 @@
       color: #d4e1e8;
     }
 
+    .direction-panel .button.primary {
+      background: #ffffff;
+      color: var(--navy);
+    }
+
+    .direction-panel .button.primary:hover {
+      background: var(--soft);
+      color: var(--navy);
+    }
+
+    .direction-panel .button.secondary {
+      background: transparent;
+      color: #ffffff;
+      border-color: #ffffff;
+    }
+
+    .direction-panel .button.secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+    }
+
     .direction-list {
       margin: 0;
       padding: 0;
@@ -725,11 +767,11 @@
       }
 
       .site-nav {
-        display: none;
         position: absolute;
         top: 70px;
         right: 20px;
         left: 20px;
+        display: none;
         flex-direction: column;
         align-items: stretch;
         padding: 1rem;
@@ -840,7 +882,7 @@
         <a href="research-tools.html">Research &amp; Tools</a>
         <a href="publications.html">Publications</a>
         <a href="about-cv.html" aria-current="page">About</a>
-        <a href="index.html#consulting">Professional Engagement</a>
+        <a href="consulting.html">Consulting</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -908,7 +950,7 @@
             <li>
               <strong>Professional scope</strong>
               <span>
-                Leadership, specialist, advisory and collaborative roles
+                Leadership, specialist, consulting and collaborative roles
               </span>
             </li>
           </ul>
@@ -997,6 +1039,7 @@
         <div class="principle-grid">
           <article class="principle-card">
             <h3>Research and scientific engineering</h3>
+
             <p>
               University records support work in high-pressure combustion,
               soot diagnostics, chemical kinetics, chemical-conversion and
@@ -1007,6 +1050,7 @@
 
           <article class="principle-card">
             <h3>Industrial R&amp;D and process development</h3>
+
             <p>
               Qualified German employment references support combustion test
               work, thermochemical-process development, process calculations,
@@ -1017,6 +1061,7 @@
 
           <article class="principle-card">
             <h3>Qualifications and professional trust</h3>
+
             <p>
               The portfolio includes a doctorate in physical chemistry, a
               postgraduate diploma in energetics, a Bachelor of Science degree,
@@ -1104,7 +1149,7 @@
             <h3>Technology Development, Validation and Scale-Up</h3>
 
             <ul>
-              <li>Technical feasibility and due diligence</li>
+              <li>Technical feasibility and technology assessment</li>
               <li>Process and pilot configuration</li>
               <li>Experimental programme definition</li>
               <li>Claims and evidence assessment</li>
@@ -1213,9 +1258,10 @@
 
               <p>
                 The current direction integrates modelling, validation,
-                process development, technical assessment and scale-up into
-                focused support for industrial innovation and R&amp;D
-                decisions.
+                process development, technical assessment and scale-up for
+                industrial R&amp;D leadership, specialist engineering roles,
+                defined consulting assignments and scientific or technical
+                collaboration.
               </p>
             </article>
           </li>
@@ -1239,6 +1285,7 @@
         <div class="tool-grid">
           <article class="tool-card">
             <h3>ANSYS Fluent</h3>
+
             <p>
               Reactive flow, combustion, heat transfer, species transport,
               multiphase systems and coupled CFD analysis.
@@ -1247,6 +1294,7 @@
 
           <article class="tool-card">
             <h3>OpenFOAM</h3>
+
             <p>
               Open-source CFD workflows, solver evaluation, transport
               modelling and reproducible computational development.
@@ -1255,6 +1303,7 @@
 
           <article class="tool-card">
             <h3>CHEMKIN</h3>
+
             <p>
               Detailed chemical kinetics, ignition, reactor calculations,
               mechanism analysis, sensitivity and reduction.
@@ -1263,6 +1312,7 @@
 
           <article class="tool-card">
             <h3>Cantera</h3>
+
             <p>
               Open and reproducible reactor simulations, kinetics analysis,
               mechanism reconstruction and Python integration.
@@ -1271,6 +1321,7 @@
 
           <article class="tool-card">
             <h3>Python</h3>
+
             <p>
               Scientific computing, data analysis, kinetic frameworks,
               automation, testing and reproducible research.
@@ -1279,6 +1330,7 @@
 
           <article class="tool-card">
             <h3>Fortran</h3>
+
             <p>
               Legacy and high-performance scientific programs, kinetic
               calculations and method reconstruction.
@@ -1287,6 +1339,7 @@
 
           <article class="tool-card">
             <h3>MATLAB</h3>
+
             <p>
               Numerical analysis, modelling, data processing and development
               of engineering calculations.
@@ -1295,6 +1348,7 @@
 
           <article class="tool-card">
             <h3>C/C++</h3>
+
             <p>
               Scientific algorithms, numerical implementation and integration
               with computational modelling environments.
@@ -1320,6 +1374,7 @@
         <div class="principle-grid">
           <article class="principle-card">
             <h3>Evidence before claims</h3>
+
             <p>
               Scientific concepts, screening calculations, reconstructed
               models, pilot observations and validated performance must be
@@ -1329,6 +1384,7 @@
 
           <article class="principle-card">
             <h3>Mechanism before equipment</h3>
+
             <p>
               Technology selection should follow identification of the
               governing chemical, transport, separation or operating
@@ -1338,6 +1394,7 @@
 
           <article class="principle-card">
             <h3>Scale as a technical variable</h3>
+
             <p>
               Residence time, mixing, heat transfer, transport, materials,
               control and safety can change fundamentally during scale-up.
@@ -1346,6 +1403,7 @@
 
           <article class="principle-card">
             <h3>Validation by design</h3>
+
             <p>
               Experimental and pilot programmes should be built around
               representative conditions, controls, balances and predefined
@@ -1355,6 +1413,7 @@
 
           <article class="principle-card">
             <h3>Transparent uncertainty</h3>
+
             <p>
               Assumptions, data limitations, model boundaries and remaining
               risks should be visible in technical decisions.
@@ -1363,6 +1422,7 @@
 
           <article class="principle-card">
             <h3>Practical scientific communication</h3>
+
             <p>
               Complex results should be translated into clear engineering
               implications, decision options and next development actions.
@@ -1414,15 +1474,16 @@
             <p class="eyebrow">Professional direction</p>
 
             <h2 id="direction-heading">
-              Relevant professional, scientific and industrial engagement
+              Employment, consulting and technical collaboration
             </h2>
 
             <p>
-              Priority directions include R&amp;D and technology-development
-              leadership, specialist and technical-project roles, and selected
-              scientific or engineering advisory assignments that connect
-              scientific analysis with process, pilot and industrial
-              development.
+              Priority directions include suitable R&amp;D and
+              technology-development leadership, specialist engineering and
+              technical-project roles, together with selected scientific and
+              engineering consulting assignments that connect analysis,
+              modelling, validation, pilot development and industrial
+              implementation.
             </p>
 
             <p>
@@ -1431,6 +1492,16 @@
               boundaries, implementation feasibility and realistic
               professional or commercial value.
             </p>
+
+            <div class="button-row">
+              <a class="button primary" href="consulting.html">
+                Explore consulting services
+              </a>
+
+              <a class="button secondary" href="selected-work.html">
+                Review selected work
+              </a>
+            </div>
           </div>
 
           <div>
@@ -1442,7 +1513,7 @@
               <li>CFD, reactor and chemical-kinetic modelling</li>
               <li>Experimental validation and pilot planning</li>
               <li>Process engineering, PFD/P&amp;ID and scale-up support</li>
-              <li>Technology due diligence and claims assessment</li>
+              <li>Technology assessment and technical claims review</li>
               <li>Scientific, industrial and international collaboration</li>
             </ul>
           </div>
@@ -1464,9 +1535,9 @@
           </h2>
 
           <p>
-            A detailed CV, selected supporting evidence and additional
-            project information can be provided in the context of a relevant
-            professional or technical discussion.
+            A detailed CV, selected supporting evidence and additional project
+            information can be provided in the context of a relevant
+            professional, scientific or technical discussion.
           </p>
         </div>
 
@@ -1513,7 +1584,9 @@
             <h3>Email</h3>
 
             <p>
-              <a href="mailto:saylamah@gmail.com">
+              <a
+                href="mailto:saylamah@gmail.com?subject=Professional%20and%20Technical%20Inquiry"
+              >
                 saylamah@gmail.com
               </a>
             </p>
@@ -1534,18 +1607,18 @@
         <strong>Dr. Ahmad Saylam</strong>
 
         <p>
-          Selected public and non-confidential scientific, engineering and
-          professional resources.
+          Selected public and non-confidential scientific, engineering,
+          professional and consulting resources.
         </p>
       </div>
 
-      <div class="footer-links">
+      <div class="footer-links" aria-label="Website navigation">
         <a href="index.html">Home</a>
         <a href="selected-work.html">Selected Work</a>
         <a href="research-tools.html">Research &amp; Tools</a>
         <a href="publications.html">Publications</a>
         <a href="about-cv.html">About</a>
-        <a href="index.html#consulting">Professional Engagement</a>
+        <a href="consulting.html">Consulting</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
@@ -1556,7 +1629,7 @@
       </span>
 
       <span>
-        Technical evidence · Professional profile · Selected collaboration
+        Technical evidence · Professional profile · Scientific engineering
       </span>
     </div>
   </footer>
