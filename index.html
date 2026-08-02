@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Dr. Ahmad Saylam | R&amp;D, Process Development &amp; Scale-Up</title>
+  <title>Dr. Ahmad Saylam | R&amp;D &amp; Technology Development</title>
 
   <meta
     name="description"
-    content="Dr. Ahmad Saylam is an R&amp;D and technology-development leader connecting chemical kinetics, CFD, process development, experimental validation, pilot plants and industrial scale-up across reactive, thermochemical and sustainable process systems."
+    content="Scientific and engineering portfolio of Dr. Ahmad Saylam covering chemical kinetics, CFD, process development, pilot validation, industrial scale-up and evidence-based consulting."
   >
   <meta name="author" content="Dr. Ahmad Saylam">
   <meta name="robots" content="index,follow">
@@ -24,11 +24,11 @@
   >
   <meta
     property="og:title"
-    content="Dr. Ahmad Saylam | R&amp;D, Process Development &amp; Scale-Up"
+    content="Dr. Ahmad Saylam | R&amp;D &amp; Technology Development"
   >
   <meta
     property="og:description"
-    content="R&amp;D leadership and scientific engineering connecting molecular mechanisms, modelling, validation, process development, pilot plants and industrial scale-up."
+    content="Scientific engineering connecting molecular mechanisms, modelling, validation, pilot development, industrial scale-up and evidence-based consulting."
   >
   <meta property="og:url" content="https://saylamah.github.io/">
 
@@ -36,11 +36,11 @@
   <meta name="twitter:card" content="summary">
   <meta
     name="twitter:title"
-    content="Dr. Ahmad Saylam | R&amp;D, Process Development &amp; Scale-Up"
+    content="Dr. Ahmad Saylam | R&amp;D &amp; Technology Development"
   >
   <meta
     name="twitter:description"
-    content="R&amp;D leadership and scientific engineering connecting molecular mechanisms, modelling, validation, process development, pilot plants and industrial scale-up."
+    content="Scientific engineering connecting molecular mechanisms, modelling, validation, pilot development, industrial scale-up and evidence-based consulting."
   >
 
   <!-- Structured data -->
@@ -56,7 +56,24 @@
         "inLanguage": "en",
         "publisher": {
           "@id": "https://saylamah.github.io/#person"
-        }
+        },
+        "hasPart": [
+          {
+            "@id": "https://saylamah.github.io/selected-work.html#webpage"
+          },
+          {
+            "@id": "https://saylamah.github.io/research-tools.html#webpage"
+          },
+          {
+            "@id": "https://saylamah.github.io/publications.html#webpage"
+          },
+          {
+            "@id": "https://saylamah.github.io/about-cv.html#webpage"
+          },
+          {
+            "@id": "https://saylamah.github.io/consulting.html#webpage"
+          }
+        ]
       },
       {
         "@type": "Person",
@@ -92,16 +109,19 @@
           "Experimental validation",
           "Pilot development",
           "Industrial scale-up",
+          "Technology assessment",
+          "R&D strategy",
           "Process intensification",
-          "Wastewater treatment"
+          "Wastewater treatment",
+          "Advanced oxidation processes"
         ]
       },
       {
         "@type": "ProfilePage",
         "@id": "https://saylamah.github.io/#webpage",
         "url": "https://saylamah.github.io/",
-        "name": "Dr. Ahmad Saylam — R&D, Process Development and Scale-Up",
-        "description": "Scientific and engineering portfolio connecting professional expertise, publications, reproducible tools, selected work, process development and industrial scale-up.",
+        "name": "Dr. Ahmad Saylam — R&D and Technology Development",
+        "description": "Scientific and engineering portfolio connecting publications, selected work, technical repositories, modelling methods, industrial development practice and evidence-based consulting.",
         "inLanguage": "en",
         "isPartOf": {
           "@id": "https://saylamah.github.io/#website"
@@ -362,6 +382,10 @@
       border: 1px solid var(--navy);
     }
 
+    .button.secondary:hover {
+      background: var(--soft);
+    }
+
     .hero-panel {
       padding: 1.7rem;
       background: rgba(255, 255, 255, 0.88);
@@ -618,6 +642,27 @@
       color: #d4e1e8;
     }
 
+    .consulting-section .button.primary {
+      background: #ffffff;
+      color: var(--navy);
+    }
+
+    .consulting-section .button.primary:hover {
+      background: var(--soft);
+      color: var(--navy);
+    }
+
+    .consulting-section .button.secondary {
+      background: transparent;
+      color: #ffffff;
+      border-color: #ffffff;
+    }
+
+    .consulting-section .button.secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+    }
+
     .consulting-grid {
       display: grid;
       grid-template-columns: 1.1fr 0.9fr;
@@ -738,11 +783,11 @@
       }
 
       .site-nav {
-        display: none;
         position: absolute;
         top: 70px;
         right: 20px;
         left: 20px;
+        display: none;
         flex-direction: column;
         align-items: stretch;
         padding: 1rem;
@@ -858,7 +903,7 @@
         <a href="research-tools.html">Research &amp; Tools</a>
         <a href="publications.html">Publications</a>
         <a href="about-cv.html">About</a>
-        <a href="#consulting">Professional Engagement</a>
+        <a href="consulting.html">Consulting</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -869,7 +914,7 @@
       <div class="container hero-grid">
         <div>
           <p class="eyebrow">
-            R&amp;D &amp; Technology Development · Process Development · Scale-Up
+            R&amp;D · Technology Development · Scientific Engineering
           </p>
 
           <h1 id="hero-heading">
@@ -877,33 +922,31 @@
           </h1>
 
           <p class="hero-lead">
-            Dr. Ahmad Saylam is an R&amp;D and technology-development leader
-            with more than 35 years of experience connecting applied physical
-            chemistry, chemical kinetics, reactor and CFD modelling,
-            experimental validation, process and pilot development, and
-            industrial scale-up across reactive, thermochemical and
-            sustainable process systems.
+            Dr. Ahmad Saylam connects applied physical chemistry, chemical
+            kinetics, reactor and CFD modelling, experimental validation,
+            pilot development and scale-up across reactive, thermochemical
+            and sustainable process systems.
           </p>
 
           <div class="button-row">
-            <a class="button primary" href="about-cv.html">
-              View professional profile
+            <a class="button primary" href="selected-work.html">
+              Explore selected work
             </a>
 
-            <a class="button secondary" href="selected-work.html">
-              Explore selected work
+            <a class="button secondary" href="research-tools.html">
+              View research and tools
             </a>
           </div>
         </div>
 
-        <aside class="hero-panel" aria-label="Professional value">
-          <span class="panel-label">Where I add value</span>
+        <aside class="hero-panel" aria-label="Professional focus">
+          <span class="panel-label">Professional focus</span>
 
           <ul class="check-list">
-            <li>R&amp;D and technology-development leadership</li>
-            <li>Chemical kinetics, reactor modelling and CFD</li>
-            <li>Experimental validation and evidence assessment</li>
-            <li>Process and pilot-plant development</li>
+            <li>Reactive systems and kinetic intelligence</li>
+            <li>Reactor, CFD and multiscale modelling</li>
+            <li>Thermochemical and sustainable processes</li>
+            <li>Technology validation and pilot development</li>
             <li>Scale-up and engineering decision support</li>
           </ul>
         </aside>
@@ -917,33 +960,34 @@
       <div class="container stats-grid">
         <article>
           <strong>35+ years</strong>
-          <span>
-            Applied research, industrial R&amp;D, process development and
-            technical project leadership
-          </span>
-        </article>
 
-        <article>
-          <strong>Research to industry</strong>
           <span>
-            Connecting mechanisms, models, experiments, pilot systems and
-            implementation decisions
+            Across research, modelling, pilot development and industrial
+            environments
           </span>
         </article>
 
         <article>
           <strong>0D–3D</strong>
+
           <span>
-            Chemical kinetics, reactor modelling, CFD and process-level
-            analysis
+            From kinetic and reactor models to coupled CFD and process analysis
           </span>
         </article>
 
         <article>
-          <strong>Evidence-aligned profile</strong>
+          <strong>Lab to industry</strong>
+
           <span>
-            Qualified references, academic credentials and controlled
-            third-party records
+            Connecting scientific evidence, validation, pilots and scale-up
+          </span>
+        </article>
+
+        <article>
+          <strong>International scope</strong>
+
+          <span>
+            Scientific, engineering and technology-development collaboration
           </span>
         </article>
       </div>
@@ -972,7 +1016,9 @@
         <div class="card-grid">
           <article class="card">
             <span class="card-number">01</span>
+
             <h3>Reactive Systems &amp; Chemical Kinetics</h3>
+
             <p>
               Oxidation, ignition, combustion, emissions, detailed mechanisms,
               sensitivity, reaction networks, mechanism reduction and
@@ -982,7 +1028,9 @@
 
           <article class="card">
             <span class="card-number">02</span>
+
             <h3>Reactor, CFD &amp; Multiscale Modelling</h3>
+
             <p>
               Zero- to three-dimensional models, reactive-flow CFD, heat and
               mass transfer, species transport and experiment–model comparison.
@@ -991,7 +1039,9 @@
 
           <article class="card">
             <span class="card-number">03</span>
+
             <h3>Thermochemical &amp; Sustainable Processes</h3>
+
             <p>
               Pyrolysis, gasification, reforming, syngas, biomass, biochar,
               waste-to-X, chemical recycling and circular resource pathways.
@@ -1000,7 +1050,9 @@
 
           <article class="card">
             <span class="card-number">04</span>
+
             <h3>Validation, Pilot Development &amp; Scale-Up</h3>
+
             <p>
               Technical feasibility, evidence assessment, experimental design,
               pilot configuration, operability, process risk and industrial
@@ -1194,6 +1246,7 @@
         <div class="workflow">
           <article>
             <strong>1. Define</strong>
+
             <p>
               Clarify the system, objective, constraints, uncertainties and
               required decision.
@@ -1202,6 +1255,7 @@
 
           <article>
             <strong>2. Formulate</strong>
+
             <p>
               Identify the governing chemistry, transport, thermodynamics and
               process interactions.
@@ -1210,6 +1264,7 @@
 
           <article>
             <strong>3. Model</strong>
+
             <p>
               Select the simplest defensible model—from screening calculations
               to detailed kinetics or CFD.
@@ -1218,6 +1273,7 @@
 
           <article>
             <strong>4. Validate</strong>
+
             <p>
               Compare against measurements, balances, literature, benchmarks
               and predefined acceptance criteria.
@@ -1226,6 +1282,7 @@
 
           <article>
             <strong>5. Translate</strong>
+
             <p>
               Convert evidence into pilot design, scale-up, risk, operability
               and industrial decisions.
@@ -1251,6 +1308,7 @@
         <div class="tool-grid">
           <article class="tool-card">
             <h3>CFD &amp; Reactive Flow</h3>
+
             <p>
               <strong>ANSYS Fluent</strong> and <strong>OpenFOAM</strong> for
               combustion, species transport, heat transfer, multiphase systems
@@ -1260,6 +1318,7 @@
 
           <article class="tool-card">
             <h3>Chemical Kinetics</h3>
+
             <p>
               <strong>CHEMKIN</strong> and <strong>Cantera</strong> for reactor
               simulation, detailed mechanisms, sensitivity, reduction,
@@ -1269,6 +1328,7 @@
 
           <article class="tool-card">
             <h3>Scientific Computing</h3>
+
             <p>
               <strong>Python</strong>, <strong>Fortran</strong>,
               <strong>MATLAB</strong>, <strong>C/C++</strong> and Jupyter for
@@ -1278,6 +1338,7 @@
 
           <article class="tool-card">
             <h3>Engineering Analysis</h3>
+
             <p>
               Thermodynamics, reaction engineering, heat and mass transfer,
               process calculations, diagnostics, optimization, uncertainty
@@ -1295,52 +1356,77 @@
     >
       <div class="container consulting-grid">
         <div>
-          <p class="eyebrow">Professional engagement</p>
+          <p class="eyebrow">
+            Scientific &amp; Engineering Consulting
+          </p>
 
           <h2 id="consulting-heading">
-            Selected scientific, engineering and advisory collaboration
+            Evidence-based support for complex technical decisions
           </h2>
 
           <p>
-            Relevant discussions may concern R&amp;D leadership, specialist and
-            technical-project roles, process and technology development,
-            modelling, experimental validation, pilot planning, scale-up and
-            focused engineering decision support.
+            Selected consulting services support organizations in evaluating
+            scientific effects, emerging technologies and process concepts;
+            defining R&amp;D and validation pathways; developing pilot systems;
+            and translating evidence into defensible scale-up and
+            implementation decisions.
+          </p>
+
+          <p>
+            The Consulting page presents defined services, practical
+            deliverables, application domains, working methods and engagement
+            boundaries. This website remains the supporting scientific and
+            engineering evidence layer.
           </p>
 
           <div class="consulting-note">
-            This website remains the scientific and engineering evidence layer.
-            A separate client-facing consulting platform may later present
-            defined services, deliverables and engagement models without
-            duplicating the technical resources published here. Opportunities
-            are assessed according to technical fit, evidence requirements,
-            confidentiality, intellectual-property boundaries and practical
-            implementation value.
+            Potential engagements are reviewed for technical fit, evidence
+            availability, confidentiality, intellectual-property boundaries,
+            conflicts of interest and practical implementation value before
+            acceptance.
+          </div>
+
+          <div class="button-row">
+            <a class="button primary" href="consulting.html">
+              Explore consulting services
+            </a>
+
+            <a class="button secondary" href="selected-work.html">
+              Review selected evidence
+            </a>
           </div>
         </div>
 
         <div
           class="consulting-list"
-          aria-label="Relevant professional engagement areas"
+          aria-label="Principal consulting services"
         >
           <div>
-            <strong>R&amp;D &amp; Technology-Development Leadership</strong>
+            <strong>R&amp;D and Technology Development</strong>
           </div>
 
           <div>
-            <strong>Reactive Systems &amp; Chemical-Kinetic Intelligence</strong>
+            <strong>
+              Feasibility, Technology Assessment and Decision Support
+            </strong>
           </div>
 
           <div>
-            <strong>CFD, Reactor &amp; Multiscale Modelling</strong>
+            <strong>
+              Process Development, Pilot Validation and Scale-Up
+            </strong>
           </div>
 
           <div>
-            <strong>Process, Pilot-Plant &amp; Scale-Up Development</strong>
+            <strong>
+              Reactive, Thermochemical and Multiscale Modelling
+            </strong>
           </div>
 
           <div>
-            <strong>Technology Assessment &amp; Engineering Decision Support</strong>
+            <strong>
+              Sustainable and Environmental Process Systems
+            </strong>
           </div>
         </div>
       </div>
@@ -1369,6 +1455,7 @@
         <div class="policy-grid">
           <article class="policy-card">
             <h3>Evidence status</h3>
+
             <p>
               Hypotheses, screening tools, reconstructed models, experimental
               observations and validated results are labelled according to
@@ -1378,6 +1465,7 @@
 
           <article class="policy-card">
             <h3>Authorship and rights</h3>
+
             <p>
               Historical programs, mechanisms, figures, manuscripts and data
               are reviewed for authorship, ownership, licences and third-party
@@ -1387,6 +1475,7 @@
 
           <article class="policy-card">
             <h3>Confidentiality</h3>
+
             <p>
               Client, employer and project information is excluded unless it
               is public, non-confidential, rights-cleared and appropriate for
@@ -1413,7 +1502,7 @@
           <p>
             Relevant discussions may concern R&amp;D leadership, scientific
             engineering, modelling, validation, technology development,
-            scale-up or international technical collaboration.
+            scale-up, consulting or international technical collaboration.
           </p>
         </div>
 
@@ -1460,7 +1549,9 @@
             <h3>Email</h3>
 
             <p>
-              <a href="mailto:saylamah@gmail.com">
+              <a
+                href="mailto:saylamah@gmail.com?subject=Scientific%20and%20Engineering%20Inquiry"
+              >
                 saylamah@gmail.com
               </a>
             </p>
@@ -1481,8 +1572,8 @@
         <strong>Dr. Ahmad Saylam</strong>
 
         <p>
-          Selected public and non-confidential scientific, engineering and
-          professional resources.
+          Selected public and non-confidential scientific, engineering,
+          professional and consulting resources.
         </p>
       </div>
 
@@ -1492,7 +1583,7 @@
         <a href="research-tools.html">Research &amp; Tools</a>
         <a href="publications.html">Publications</a>
         <a href="about-cv.html">About</a>
-        <a href="#consulting">Professional Engagement</a>
+        <a href="consulting.html">Consulting</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
@@ -1503,7 +1594,7 @@
       </span>
 
       <span>
-        Technical evidence · Professional profile · Selected collaboration
+        Technical evidence website · Scientific and engineering consulting
       </span>
     </div>
   </footer>
