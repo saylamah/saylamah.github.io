@@ -13,43 +13,19 @@
   <meta name="author" content="Dr. Ahmad Saylam">
   <meta name="robots" content="index,follow">
 
-  <link
-    rel="canonical"
-    href="https://saylamah.github.io/publications.html"
-  >
+  <link rel="canonical" href="https://saylamah.github.io/publications.html">
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
-  <meta
-    property="og:site_name"
-    content="Dr. Ahmad Saylam — Scientific &amp; Engineering Portfolio"
-  >
-  <meta
-    property="og:title"
-    content="Publications, Technical Frameworks &amp; Open Outputs | Dr. Ahmad Saylam"
-  >
-  <meta
-    property="og:description"
-    content="A searchable record of peer-reviewed research, technical frameworks, professional articles and open scientific outputs spanning molecular mechanisms to industrial scale-up."
-  >
-  <meta
-    property="og:url"
-    content="https://saylamah.github.io/publications.html"
-  >
+  <meta property="og:site_name" content="Dr. Ahmad Saylam — Scientific &amp; Engineering Portfolio">
+  <meta property="og:title" content="Publications, Technical Frameworks &amp; Open Outputs | Dr. Ahmad Saylam">
+  <meta property="og:description" content="A searchable scientific record with dates, sources, identifiers, evidence labels, technical descriptions and links to related cases and repositories.">
+  <meta property="og:url" content="https://saylamah.github.io/publications.html">
 
-  <!-- Twitter / X -->
   <meta name="twitter:card" content="summary">
-  <meta
-    name="twitter:title"
-    content="Publications, Technical Frameworks &amp; Open Outputs | Dr. Ahmad Saylam"
-  >
-  <meta
-    name="twitter:description"
-    content="A searchable record of peer-reviewed research, technical frameworks, professional articles and open scientific outputs spanning molecular mechanisms to industrial scale-up."
-  >
+  <meta name="twitter:title" content="Publications, Technical Frameworks &amp; Open Outputs | Dr. Ahmad Saylam">
+  <meta name="twitter:description" content="A searchable scientific record with dates, sources, identifiers, evidence labels, technical descriptions and related technical evidence.">
 
-  <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -62,7 +38,14 @@
         "inLanguage": "en",
         "publisher": {
           "@id": "https://saylamah.github.io/#person"
-        }
+        },
+        "hasPart": [
+          {"@id": "https://saylamah.github.io/selected-work.html#webpage"},
+          {"@id": "https://saylamah.github.io/research-tools.html#webpage"},
+          {"@id": "https://saylamah.github.io/publications.html#webpage"},
+          {"@id": "https://saylamah.github.io/about-cv.html#webpage"},
+          {"@id": "https://saylamah.github.io/consulting.html#webpage"}
+        ]
       },
       {
         "@type": "Person",
@@ -70,11 +53,16 @@
         "name": "Ahmad Saylam",
         "honorificPrefix": "Dr.",
         "url": "https://saylamah.github.io/about-cv.html",
+        "jobTitle": [
+          "R&D, Process & Technology Development Leader",
+          "Scientific & Engineering Consultant"
+        ],
         "sameAs": [
           "https://github.com/saylamah",
+          "https://www.linkedin.com/in/ahmad-saylam",
           "https://orcid.org/0000-0001-7484-1265",
           "https://scholar.google.com/citations?user=2I4xhywAAAAJ&hl=en",
-          "https://www.linkedin.com/in/ahmad-saylam"
+          "https://www.researchgate.net/profile/Ahmad-Saylam"
         ]
       },
       {
@@ -82,7 +70,7 @@
         "@id": "https://saylamah.github.io/publications.html#webpage",
         "url": "https://saylamah.github.io/publications.html",
         "name": "Publications, Technical Frameworks and Open Outputs",
-        "description": "A searchable collection of peer-reviewed research, technical frameworks, professional articles and open scientific outputs by Dr. Ahmad Saylam.",
+        "description": "A searchable collection of peer-reviewed research, doctoral work, technical frameworks, professional articles and open scientific outputs by Dr. Ahmad Saylam.",
         "inLanguage": "en",
         "isPartOf": {
           "@id": "https://saylamah.github.io/#website"
@@ -111,17 +99,23 @@
       --teal: #147b75;
       --teal-dark: #0d5f5b;
       --accent: #c98b2e;
+      --green-bg: #e3f2eb;
+      --green-ink: #17613f;
+      --blue-bg: #e3edf5;
+      --blue-ink: #244f6b;
+      --yellow-bg: #fff0ce;
+      --yellow-ink: #76510c;
+      --grey-bg: #e8edf1;
+      --grey-ink: #4d5e6a;
+      --violet-bg: #eee9f7;
+      --violet-ink: #57407b;
       --max: 1180px;
       --shadow: 0 16px 40px rgba(18, 60, 86, 0.08);
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
@@ -138,9 +132,7 @@
       text-underline-offset: 3px;
     }
 
-    a:hover {
-      color: var(--navy);
-    }
+    a:hover { color: var(--navy); }
 
     a:focus-visible,
     button:focus-visible,
@@ -149,9 +141,7 @@
       outline-offset: 3px;
     }
 
-    h1,
-    h2,
-    h3 {
+    h1, h2, h3 {
       margin-top: 0;
       line-height: 1.2;
       letter-spacing: -0.02em;
@@ -163,13 +153,11 @@
       font-size: clamp(2.2rem, 3.6vw, 3.8rem);
     }
 
-    h2 {
-      font-size: clamp(1.45rem, 2.6vw, 2rem);
-    }
+    h2 { font-size: clamp(1.45rem, 2.6vw, 2.1rem); }
 
-    p {
-      margin-top: 0;
-    }
+    h3 { font-size: 1.08rem; }
+
+    p { margin-top: 0; }
 
     .container {
       width: min(var(--max), calc(100% - 40px));
@@ -227,9 +215,7 @@
     }
 
     .brand strong,
-    .brand small {
-      display: block;
-    }
+    .brand small { display: block; }
 
     .brand small {
       color: var(--muted);
@@ -271,13 +257,7 @@
 
     .hero {
       padding: clamp(4.5rem, 8vw, 7rem) 0;
-      background:
-        linear-gradient(
-          135deg,
-          #f8fbfc 0%,
-          #edf5f5 62%,
-          #f8f4ec 100%
-        );
+      background: linear-gradient(135deg, #f8fbfc 0%, #edf5f5 62%, #f8f4ec 100%);
       border-bottom: 1px solid var(--line);
     }
 
@@ -296,7 +276,8 @@
       font-size: clamp(1.08rem, 1.7vw, 1.3rem);
     }
 
-    .hero-actions {
+    .hero-actions,
+    .button-row {
       display: flex;
       flex-wrap: wrap;
       gap: 0.8rem;
@@ -330,9 +311,7 @@
       border: 1px solid var(--navy);
     }
 
-    .section {
-      padding: clamp(3.5rem, 7vw, 6rem) 0;
-    }
+    .section { padding: clamp(3.5rem, 7vw, 6rem) 0; }
 
     .muted {
       background: var(--soft);
@@ -341,34 +320,40 @@
     }
 
     .section-heading {
-      max-width: 900px;
+      max-width: 920px;
       margin-bottom: 2rem;
     }
 
-    .section-heading > p:last-child {
-      color: var(--muted);
-    }
+    .section-heading > p:last-child { color: var(--muted); }
 
-    .orientation-grid {
+    .orientation-grid,
+    .priority-grid {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 1rem;
     }
 
-    .orientation-card {
+    .orientation-card,
+    .priority-card {
       padding: 1.4rem;
       background: #ffffff;
       border: 1px solid var(--line);
       border-radius: 12px;
     }
 
-    .orientation-card strong {
+    .priority-card {
+      border-top: 4px solid var(--navy);
+    }
+
+    .orientation-card strong,
+    .priority-card strong {
       display: block;
       margin-bottom: 0.45rem;
       color: var(--navy);
     }
 
-    .orientation-card p {
+    .orientation-card p,
+    .priority-card p {
       margin-bottom: 0;
       color: var(--muted);
       font-size: 0.92rem;
@@ -387,10 +372,6 @@
       grid-template-columns: minmax(0, 1fr) auto;
       gap: 0.75rem;
       align-items: end;
-    }
-
-    .search-field {
-      min-width: 0;
     }
 
     .search-label {
@@ -418,10 +399,6 @@
       font: inherit;
       font-weight: 750;
       cursor: pointer;
-    }
-
-    .clear-button:hover {
-      background: var(--soft);
     }
 
     .filter-label {
@@ -461,14 +438,10 @@
       font-size: 0.9rem;
     }
 
-    .publication-section {
-      margin-top: 3.5rem;
-    }
+    .publication-section { margin-top: 3.5rem; }
 
     .publication-section.hidden,
-    .publication-card.hidden {
-      display: none;
-    }
+    .publication-card.hidden { display: none; }
 
     .section-title {
       margin-bottom: 1rem;
@@ -483,31 +456,58 @@
     }
 
     .publication-card {
-      min-height: 165px;
       display: flex;
       flex-direction: column;
-      padding: 1.25rem;
+      min-height: 310px;
+      padding: 1.35rem;
       background: #ffffff;
       border: 1px solid var(--line);
       border-radius: 12px;
       box-shadow: 0 8px 24px rgba(18, 60, 86, 0.04);
     }
 
+    .publication-card.priority {
+      border-top: 4px solid var(--teal);
+    }
+
     .publication-type {
       align-self: flex-start;
       margin-bottom: 0.75rem;
-      padding: 0.24rem 0.52rem;
-      background: #e5f2f0;
-      color: var(--teal-dark);
+      padding: 0.26rem 0.56rem;
       border-radius: 999px;
       font-size: 0.71rem;
       font-weight: 800;
       text-transform: uppercase;
     }
 
+    .type-peer {
+      background: var(--green-bg);
+      color: var(--green-ink);
+    }
+
+    .type-framework {
+      background: var(--blue-bg);
+      color: var(--blue-ink);
+    }
+
+    .type-hypothesis {
+      background: var(--grey-bg);
+      color: var(--grey-ink);
+    }
+
+    .type-review {
+      background: var(--yellow-bg);
+      color: var(--yellow-ink);
+    }
+
+    .type-professional {
+      background: var(--violet-bg);
+      color: var(--violet-ink);
+    }
+
     .publication-card h3 {
-      margin: 0 0 0.9rem;
-      font-size: 1.05rem;
+      margin: 0 0 0.75rem;
+      font-size: 1.08rem;
     }
 
     .publication-card h3 a {
@@ -515,12 +515,34 @@
       text-decoration: none;
     }
 
-    .publication-card h3 a:hover {
-      text-decoration: underline;
+    .publication-card h3 a:hover { text-decoration: underline; }
+
+    .meta {
+      margin-bottom: 0.85rem;
+      color: var(--muted);
+      font-size: 0.87rem;
     }
 
-    .open-link {
+    .meta strong { color: var(--ink); }
+
+    .description {
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .identifier {
+      margin: 0.2rem 0 0.8rem;
+      font-size: 0.86rem;
+      overflow-wrap: anywhere;
+    }
+
+    .card-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem 1rem;
       margin-top: auto;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
       font-size: 0.89rem;
       font-weight: 750;
     }
@@ -535,9 +557,7 @@
       border-radius: 12px;
     }
 
-    .no-results.visible {
-      display: block;
-    }
+    .no-results.visible { display: block; }
 
     .note-grid {
       display: grid;
@@ -552,13 +572,7 @@
       border-radius: 14px;
     }
 
-    .note-card p {
-      color: var(--muted);
-    }
-
-    .note-card p:last-child {
-      margin-bottom: 0;
-    }
+    .note-card p { color: var(--muted); }
 
     .profile-links {
       display: flex;
@@ -581,10 +595,6 @@
       background: var(--soft);
       border-left: 5px solid var(--accent);
       border-radius: 0 12px 12px 0;
-    }
-
-    .boundary-box p:last-child {
-      margin-bottom: 0;
     }
 
     .site-footer {
@@ -611,9 +621,7 @@
       gap: 1rem;
     }
 
-    .site-footer a {
-      color: #ffffff;
-    }
+    .site-footer a { color: #ffffff; }
 
     .footer-bottom {
       margin-top: 2rem;
@@ -624,9 +632,7 @@
     }
 
     @media (max-width: 980px) {
-      .nav-toggle {
-        display: block;
-      }
+      .nav-toggle { display: block; }
 
       .site-nav {
         position: absolute;
@@ -643,48 +649,36 @@
         box-shadow: var(--shadow);
       }
 
-      .site-nav.open {
-        display: flex;
-      }
+      .site-nav.open { display: flex; }
 
-      .site-nav a {
-        padding: 0.65rem;
-      }
+      .site-nav a { padding: 0.65rem; }
 
-      .orientation-grid {
+      .orientation-grid,
+      .priority-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
-      .note-grid {
-        grid-template-columns: 1fr;
-      }
+      .note-grid { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 760px) {
-      body {
-        font-size: 16px;
-      }
+      body { font-size: 16px; }
 
       .container {
         width: min(var(--max), calc(100% - 28px));
       }
 
-      .brand small {
-        display: none;
-      }
+      .brand small { display: none; }
 
       .orientation-grid,
+      .priority-grid,
       .publication-grid {
         grid-template-columns: 1fr;
       }
 
-      .search-row {
-        grid-template-columns: 1fr;
-      }
+      .search-row { grid-template-columns: 1fr; }
 
-      .clear-button {
-        width: 100%;
-      }
+      .clear-button { width: 100%; }
 
       .footer-grid,
       .footer-bottom {
@@ -693,19 +687,12 @@
     }
 
     @media (max-width: 520px) {
-      .button {
-        width: 100%;
-      }
-
-      .header-inner {
-        min-height: 68px;
-      }
+      .button { width: 100%; }
+      .header-inner { min-height: 68px; }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      html {
-        scroll-behavior: auto;
-      }
+      html { scroll-behavior: auto; }
     }
   </style>
 </head>
@@ -715,33 +702,19 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a
-        class="brand"
-        href="index.html"
-        aria-label="Dr. Ahmad Saylam homepage"
-      >
+      <a class="brand" href="index.html" aria-label="Dr. Ahmad Saylam homepage">
         <span class="brand-mark" aria-hidden="true">AS</span>
-
         <span>
           <strong>Dr. Ahmad Saylam</strong>
           <small>Science · Engineering · Scale-Up</small>
         </span>
       </a>
 
-      <button
-        class="nav-toggle"
-        type="button"
-        aria-expanded="false"
-        aria-controls="site-nav"
-      >
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
         Menu
       </button>
 
-      <nav
-        id="site-nav"
-        class="site-nav"
-        aria-label="Primary navigation"
-      >
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
         <a href="index.html">Home</a>
         <a href="selected-work.html">Selected Work</a>
         <a href="research-tools.html">Research &amp; Tools</a>
@@ -756,1156 +729,626 @@
   <main id="main">
     <section class="hero" aria-labelledby="page-heading">
       <div class="container">
-        <p class="eyebrow">
-          Scholarly record · Open technical outputs · Responsible access
-        </p>
+        <p class="eyebrow">Scholarly record · Open technical outputs · Responsible access</p>
 
         <h1 id="page-heading">
           Publications, Technical Frameworks and Open Scientific Outputs
         </h1>
 
         <p class="hero-lead">
-          A searchable record of peer-reviewed research, doctoral work,
-          technical and modelling frameworks, professional articles and open
-          scientific outputs across reactive systems, combustion, chemical
-          kinetics, thermochemical processes, wastewater treatment, process
-          intensification, sustainable energy systems and engineering
-          scale-up.
+          A searchable scientific record with publication dates, authors,
+          sources, identifiers, evidence labels, technical descriptions and
+          links to related case studies and repositories across combustion,
+          chemical kinetics, nanoparticle inception, thermochemical systems,
+          wastewater treatment, process intensification, energy systems and
+          engineering scale-up.
         </p>
 
         <div class="hero-actions">
-          <a class="button primary" href="#catalogue">
-            Explore the catalogue
-          </a>
-
-          <a class="button secondary" href="selected-work.html">
-            View engineering case studies
-          </a>
+          <a class="button primary" href="#catalogue">Explore the catalogue</a>
+          <a class="button secondary" href="selected-work.html">View engineering case studies</a>
         </div>
       </div>
     </section>
 
-    <section
-      class="section"
-      aria-labelledby="orientation-heading"
-    >
+    <section class="section" aria-labelledby="orientation-heading">
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">How the record is organized</p>
 
           <h2 id="orientation-heading">
-            Different output types are presented with different evidence and
-            access expectations
+            Output type, evidence status and access route are kept distinct
           </h2>
 
           <p>
-            The catalogue combines established scholarly publications with
-            open technical frameworks and professional articles. These outputs
-            serve different purposes and should not be interpreted as having
-            identical peer-review, validation, maturity or access status.
+            Peer-reviewed articles, doctoral work, open preprints, engineering
+            frameworks, research reconstructions and professional articles do
+            not provide the same type or level of evidence. Each record is
+            therefore labelled according to its actual status and bounded by
+            its methods, assumptions, validation and access rights.
           </p>
         </div>
 
         <div class="orientation-grid">
           <article class="orientation-card">
             <strong>Peer-reviewed research</strong>
-
-            <p>
-              Journal and conference work documenting experimental,
-              computational or theoretical scientific contributions.
-            </p>
+            <p>Journal and conference work documenting defined experimental, computational or theoretical contributions.</p>
           </article>
 
           <article class="orientation-card">
             <strong>Technical frameworks</strong>
-
-            <p>
-              Structured engineering methods, screening models and process
-              interpretations with explicit applicability boundaries.
-            </p>
+            <p>Engineering methods, diagnostic structures and screening tools with explicit applicability boundaries.</p>
           </article>
 
           <article class="orientation-card">
             <strong>Open scientific outputs</strong>
-
-            <p>
-              Theses, preprints, repositories and modelling resources released
-              with clear provenance and maturity statements.
-            </p>
+            <p>Theses, preprints and reproducible resources released with provenance, licence and maturity information.</p>
           </article>
 
           <article class="orientation-card">
             <strong>Professional articles</strong>
-
-            <p>
-              Accessible industry-facing communication translating technical
-              subjects for broader engineering and management audiences.
-            </p>
+            <p>Industry-facing knowledge transfer that should not be interpreted as peer-reviewed scientific validation.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section
-      id="catalogue"
-      class="section muted"
-      aria-labelledby="catalogue-heading"
-    >
+    <section class="section muted" aria-labelledby="priority-heading">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Priority scientific evidence</p>
+
+          <h2 id="priority-heading">
+            Strongest outputs supporting the current professional positioning
+          </h2>
+
+          <p>
+            The following groups carry the greatest weight for reactive and
+            thermochemical systems, modelling, validation and scale-up. The
+            complete catalogue remains available below.
+          </p>
+        </div>
+
+        <div class="priority-grid">
+          <article class="priority-card">
+            <strong>Combustion &amp; high-pressure soot</strong>
+            <p>Recent peer-reviewed work in Combustion and Flame, Carbon, Reactions and Experiments in Fluids.</p>
+          </article>
+
+          <article class="priority-card">
+            <strong>Kinetic intelligence foundations</strong>
+            <p>Mechanism reduction, reaction-network centrality, HCCI chemistry and doctoral oxidation research.</p>
+          </article>
+
+          <article class="priority-card">
+            <strong>Engineering frameworks</strong>
+            <p>Desulfurization, AOPs, thermochemical process development, industrial usefulness and scale-up.</p>
+          </article>
+
+          <article class="priority-card">
+            <strong>Frontier scientific models</strong>
+            <p>NDMS hypothesis and persistence–stabilization closure, explicitly presented as exploratory research.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="catalogue" class="section" aria-labelledby="catalogue-heading">
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">Search and filter</p>
-
           <h2 id="catalogue-heading">Find work by topic</h2>
-
           <p>
-            Search by title or filter by technical domain. Links lead to
-            publication pages, public bibliographic records,
-            author-accessible versions or external publisher pages according
-            to the access and rights status of each work.
+            Search by title, author, source, DOI, method or technical topic.
+            Links lead to the website record, DOI or lawful external publication
+            page according to the access status of each output.
           </p>
         </div>
 
         <div class="controls">
           <div class="search-row">
-            <div class="search-field">
-              <label class="search-label" for="publication-search">
-                Search titles and topics
-              </label>
-
+            <div>
+              <label class="search-label" for="publication-search">Search publications and topics</label>
               <input
                 id="publication-search"
                 class="search-input"
                 type="search"
-                placeholder="Example: soot, kinetics, wastewater, scale-up"
+                placeholder="Example: soot, kinetics, wastewater, scale-up, DOI"
                 autocomplete="off"
                 aria-controls="publication-catalogue"
               >
             </div>
 
-            <button id="clear-search" class="clear-button" type="button">
-              Clear search
-            </button>
+            <button id="clear-search" class="clear-button" type="button">Clear search</button>
           </div>
 
-          <p id="filter-label" class="filter-label">
-            Filter by technical domain
-          </p>
+          <p id="filter-label" class="filter-label">Filter by technical domain</p>
 
-          <div
-            class="filters"
-            role="group"
-            aria-labelledby="filter-label"
-          >
-            <button
-              class="filter-button active"
-              type="button"
-              data-filter="all"
-              aria-pressed="true"
-            >
-              All
-            </button>
-
-            <button
-              class="filter-button"
-              type="button"
-              data-filter="nanoparticles"
-              aria-pressed="false"
-            >
-              Nanoparticles &amp; NDMS
-            </button>
-
-            <button
-              class="filter-button"
-              type="button"
-              data-filter="combustion"
-              aria-pressed="false"
-            >
-              Combustion &amp; Kinetics
-            </button>
-
-            <button
-              class="filter-button"
-              type="button"
-              data-filter="water"
-              aria-pressed="false"
-            >
-              Water &amp; AOP
-            </button>
-
-            <button
-              class="filter-button"
-              type="button"
-              data-filter="desulfurization"
-              aria-pressed="false"
-            >
-              Desulfurization &amp; Intensification
-            </button>
-
-            <button
-              class="filter-button"
-              type="button"
-              data-filter="thermochemical"
-              aria-pressed="false"
-            >
-              Thermochemical &amp; Waste-to-X
-            </button>
-
-            <button
-              class="filter-button"
-              type="button"
-              data-filter="energy"
-              aria-pressed="false"
-            >
-              Energy Systems
-            </button>
-
-            <button
-              class="filter-button"
-              type="button"
-              data-filter="engineering"
-              aria-pressed="false"
-            >
-              Scale-Up &amp; Engineering
-            </button>
-
-            <button
-              class="filter-button"
-              type="button"
-              data-filter="professional"
-              aria-pressed="false"
-            >
-              Professional Articles
-            </button>
+          <div class="filters" role="group" aria-labelledby="filter-label">
+            <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-button" type="button" data-filter="nanoparticles" aria-pressed="false">Nanoparticles &amp; NDMS</button>
+            <button class="filter-button" type="button" data-filter="combustion" aria-pressed="false">Combustion &amp; Kinetics</button>
+            <button class="filter-button" type="button" data-filter="water" aria-pressed="false">Water &amp; AOP</button>
+            <button class="filter-button" type="button" data-filter="desulfurization" aria-pressed="false">Desulfurization &amp; Intensification</button>
+            <button class="filter-button" type="button" data-filter="thermochemical" aria-pressed="false">Thermochemical &amp; Waste-to-X</button>
+            <button class="filter-button" type="button" data-filter="energy" aria-pressed="false">Energy Systems</button>
+            <button class="filter-button" type="button" data-filter="engineering" aria-pressed="false">Scale-Up &amp; Engineering</button>
+            <button class="filter-button" type="button" data-filter="professional" aria-pressed="false">Professional Articles</button>
           </div>
 
-          <p
-            id="results-line"
-            class="results-line"
-            aria-live="polite"
-          >
-            29 items shown
-          </p>
+          <p id="results-line" class="results-line" aria-live="polite">29 items shown</p>
         </div>
 
         <div id="publication-catalogue">
-          <section
-            class="publication-section"
-            data-section="nanoparticles"
-            aria-labelledby="nanoparticles-publications-heading"
-          >
-            <h2
-              id="nanoparticles-publications-heading"
-              class="section-title"
-            >
-              Nanoparticle Inception, Combustion Aerosols &amp; NDMS
-            </h2>
+
+          <section class="publication-section" data-section="nanoparticles" aria-labelledby="nanoparticles-heading">
+            <h2 id="nanoparticles-heading" class="section-title">Nanoparticle Inception, Combustion Aerosols &amp; NDMS</h2>
 
             <div class="publication-grid">
-              <article
-                class="publication-card"
-                data-category="nanoparticles"
-              >
-                <span class="publication-type">Scientific concept</span>
-
-                <h3>
-                  <a href="publications/ndms-nanoparticle-inception.html">
-                    A Transient Nano-Dense Molecular State in Nanoparticle
-                    Inception: Bridging Physical Clustering and Chemical
-                    Stabilization
-                  </a>
-                </h3>
-
-                <a
-                  class="open-link"
-                  href="publications/ndms-nanoparticle-inception.html"
-                >
-                  Open publication page
-                </a>
+              <article class="publication-card priority" data-category="nanoparticles hypothesis preprint">
+                <span class="publication-type type-hypothesis">Scientific hypothesis · Open preprint</span>
+                <h3><a href="publications/ndms-nanoparticle-inception.html">A Transient Nano-Dense Molecular State in Nanoparticle Inception: Bridging Physical Clustering and Chemical Stabilization</a></h3>
+                <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> March 2026<br><strong>Platform:</strong> Zenodo</p>
+                <p class="identifier"><strong>DOI:</strong> 10.5281/zenodo.19730735</p>
+                <p class="description">Proposes NDMS as a testable bridge between reversible molecular clustering and chemically stabilized nanoparticle inception. The concept is exploratory and is not presented as a universally validated physical state or inception mechanism.</p>
+                <div class="card-links">
+                  <a href="publications/ndms-nanoparticle-inception.html">Open publication page</a>
+                  <a href="https://doi.org/10.5281/zenodo.19730735" target="_blank" rel="noopener noreferrer external">Open DOI</a>
+                  <a href="https://github.com/saylamah/ndms-nanoparticle-inception" target="_blank" rel="noopener noreferrer external">Related repository</a>
+                </div>
               </article>
 
-              <article
-                class="publication-card"
-                data-category="nanoparticles"
-              >
-                <span class="publication-type">Modelling framework</span>
-
-                <h3>
-                  <a href="publications/persistence-stabilization-closure.html">
-                    Transient Nano-Dense Molecular States as a
-                    Persistence–Stabilization Closure for Combustion
-                    Nanoparticle Inception
-                  </a>
-                </h3>
-
-                <a
-                  class="open-link"
-                  href="publications/persistence-stabilization-closure.html"
-                >
-                  Open publication page
-                </a>
+              <article class="publication-card priority" data-category="nanoparticles hypothesis framework preprint">
+                <span class="publication-type type-hypothesis">Exploratory modelling framework · Open preprint</span>
+                <h3><a href="publications/persistence-stabilization-closure.html">Transient Nano-Dense Molecular States as a Persistence–Stabilization Closure for Combustion Nanoparticle Inception</a></h3>
+                <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> May 2026<br><strong>Platform:</strong> Zenodo</p>
+                <p class="identifier"><strong>DOI:</strong> 10.5281/zenodo.20258147</p>
+                <p class="description">Translates the NDMS hypothesis into a reduced closure separating association, dissociation, non-stabilizing loss and stabilization. It is a falsifiable conceptual model, not a validated particle-number or soot-yield predictor.</p>
+                <div class="card-links">
+                  <a href="publications/persistence-stabilization-closure.html">Open publication page</a>
+                  <a href="https://doi.org/10.5281/zenodo.20258147" target="_blank" rel="noopener noreferrer external">Open DOI</a>
+                  <a href="selected-work.html#ndms-framework">Related case</a>
+                </div>
               </article>
             </div>
           </section>
 
-          <section
-            class="publication-section"
-            data-section="combustion"
-            aria-labelledby="combustion-publications-heading"
-          >
-            <h2
-              id="combustion-publications-heading"
-              class="section-title"
-            >
-              Combustion, Soot, Engines &amp; Chemical Kinetics
-            </h2>
+          <section class="publication-section" data-section="combustion" aria-labelledby="combustion-heading">
+            <h2 id="combustion-heading" class="section-title">Combustion, Soot, Engines &amp; Chemical Kinetics</h2>
 
             <div class="publication-grid">
-              <article
-                class="publication-card"
-                data-category="combustion"
-              >
-                <span class="publication-type">Combustion research</span>
-
-                <h3>
-                  <a
-                    href="papers/influence-lateral-species-diffusion-heat-transfer.html"
-                  >
-                    Influence of Lateral Species Diffusion and Heat Transfer
-                    on the Evaluation of Near-Threshold Sooting Flames
-                  </a>
-                </h3>
-
-                <a
-                  class="open-link"
-                  href="papers/influence-lateral-species-diffusion-heat-transfer.html"
-                >
-                  Open publication page
-                </a>
+              <article class="publication-card priority" data-category="combustion soot transport peer-reviewed">
+                <span class="publication-type type-peer">Peer-reviewed journal article</span>
+                <h3><a href="papers/influence-lateral-species-diffusion-heat-transfer.html">Influence of Lateral Species Diffusion and Heat Transfer on the Evaluation of Near-Threshold Sooting Flames</a></h3>
+                <p class="meta"><strong>Authors:</strong> Ahmad Saylam, Torsten Endres, Christof Schulz<br><strong>Date:</strong> July 2023<br><strong>Source:</strong> Combustion and Flame, Vol. 253, Article 112775</p>
+                <p class="identifier"><strong>DOI:</strong> 10.1016/j.combustflame.2023.112775</p>
+                <p class="description">Evaluates how lateral species diffusion and heat transfer affect interpretation of near-threshold sooting flames and the adequacy of simplified one-dimensional assumptions.</p>
+                <div class="card-links">
+                  <a href="papers/influence-lateral-species-diffusion-heat-transfer.html">Open publication page</a>
+                  <a href="https://doi.org/10.1016/j.combustflame.2023.112775" target="_blank" rel="noopener noreferrer external">Open DOI</a>
+                  <a href="selected-work.html#high-pressure-combustion">Related case</a>
+                </div>
               </article>
 
-              <article
-                class="publication-card"
-                data-category="combustion"
-              >
-                <span class="publication-type">Combustion research</span>
-
-                <h3>
-                  <a
-                    href="papers/near-threshold-soot-formation-elevated-pressure.html"
-                  >
-                    Near-Threshold Soot Formation in Premixed Flames at
-                    Elevated Pressure
-                  </a>
-                </h3>
-
-                <a
-                  class="open-link"
-                  href="papers/near-threshold-soot-formation-elevated-pressure.html"
-                >
-                  Open publication page
-                </a>
+              <article class="publication-card priority" data-category="combustion soot pressure diagnostics peer-reviewed">
+                <span class="publication-type type-peer">Peer-reviewed journal article</span>
+                <h3><a href="papers/near-threshold-soot-formation-elevated-pressure.html">Near-Threshold Soot Formation in Premixed Flames at Elevated Pressure</a></h3>
+                <p class="meta"><strong>Authors:</strong> Xiaotong Mi, Ahmad Saylam, Torsten Endres, Christof Schulz, Thomas Dreier<br><strong>Date:</strong> May 2021<br><strong>Source:</strong> Carbon, Vol. 181, pp. 143–154</p>
+                <p class="identifier"><strong>DOI:</strong> 10.1016/j.carbon.2021.05.014</p>
+                <p class="description">Investigates soot formation near the lean sooting threshold in premixed ethylene–air flames up to 10 bar using laser extinction and time-resolved laser-induced incandescence.</p>
+                <div class="card-links">
+                  <a href="papers/near-threshold-soot-formation-elevated-pressure.html">Open publication page</a>
+                  <a href="https://doi.org/10.1016/j.carbon.2021.05.014" target="_blank" rel="noopener noreferrer external">Open DOI</a>
+                  <a href="selected-work.html#high-pressure-combustion">Related case</a>
+                </div>
               </article>
 
-              <article
-                class="publication-card"
-                data-category="combustion"
-              >
-                <span class="publication-type">Combustion research</span>
-
-                <h3>
-                  <a href="publications/high-pressure-sooting-flame.html">
-                    Behavior of Premixed Sooting Flame in a High-Pressure
-                    Burner
-                  </a>
-                </h3>
-
-                <a
-                  class="open-link"
-                  href="publications/high-pressure-sooting-flame.html"
-                >
-                  Open publication page
-                </a>
+              <article class="publication-card priority" data-category="combustion soot cfd pressure peer-reviewed">
+                <span class="publication-type type-peer">Peer-reviewed open-access article</span>
+                <h3><a href="publications/high-pressure-sooting-flame.html">Behavior of Premixed Sooting Flame in a High-Pressure Burner</a></h3>
+                <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> 2 February 2023<br><strong>Source:</strong> Reactions, 4(1), 155–170</p>
+                <p class="identifier"><strong>DOI:</strong> 10.3390/reactions4010009</p>
+                <p class="description">Uses three-, two- and one-dimensional CFD to examine pressure, optical-port geometry and burner-edge effects on mixing, temperature and soot-formation behaviour.</p>
+                <div class="card-links">
+                  <a href="publications/high-pressure-sooting-flame.html">Open publication page</a>
+                  <a href="https://doi.org/10.3390/reactions4010009" target="_blank" rel="noopener noreferrer external">Open DOI</a>
+                  <a href="selected-work.html#high-pressure-combustion">Related case</a>
+                </div>
               </article>
 
-              <article
-                class="publication-card"
-                data-category="combustion"
-              >
-                <span class="publication-type">Engine emissions</span>
-
-                <h3>
-                  <a
-                    href="publications/diesel-engine-pollutant-emissions.html"
-                  >
-                    Methodology to Reduce Diesel Engine Pollutant Emissions
-                  </a>
-                </h3>
-
-                <a
-                  class="open-link"
-                  href="publications/diesel-engine-pollutant-emissions.html"
-                >
-                  Open publication page
-                </a>
+              <article class="publication-card priority" data-category="combustion kinetics reaction-networks peer-reviewed">
+                <span class="publication-type type-peer">Peer-reviewed journal article</span>
+                <h3><a href="papers/degree-centrality-combustion-reaction-networks.html">Degree Centrality of Combustion Reaction Networks for Analysing and Modelling Combustion Processes</a></h3>
+                <p class="meta"><strong>Authors:</strong> Ahmad Saylam, Kamal Hadj Ali, Mustapha Fikri<br><strong>Date:</strong> Online 6 December 2019; issue 2020<br><strong>Source:</strong> Combustion Theory and Modelling, 24(3), 442–459</p>
+                <p class="identifier"><strong>DOI:</strong> 10.1080/13647830.2019.1699167</p>
+                <p class="description">Applies degree-centrality measures to combustion reaction networks to identify structurally influential species and reactions and connect graph descriptors with kinetic interpretation.</p>
+                <div class="card-links">
+                  <a href="papers/degree-centrality-combustion-reaction-networks.html">Open publication page</a>
+                  <a href="https://doi.org/10.1080/13647830.2019.1699167" target="_blank" rel="noopener noreferrer external">Open DOI</a>
+                  <a href="research-tools.html#kinetic-intelligence-heading">Related development</a>
+                </div>
               </article>
 
-              <article
-                class="publication-card"
-                data-category="combustion"
-              >
-                <span class="publication-type">Mechanism reduction</span>
-
-                <h3>
-                  <a
-                    href="publications/chemical-kinetic-mechanism-reduction.html"
-                  >
-                    Reduction of Large Detailed Chemical Kinetic Mechanisms
-                    for Autoignition Using Joint Analyses of Reaction Rates
-                    and Sensitivities
-                  </a>
-                </h3>
-
-                <a
-                  class="open-link"
-                  href="publications/chemical-kinetic-mechanism-reduction.html"
-                >
-                  Open publication page
-                </a>
+              <article class="publication-card priority" data-category="combustion kinetics mechanism-reduction peer-reviewed">
+                <span class="publication-type type-peer">Peer-reviewed journal article</span>
+                <h3><a href="publications/chemical-kinetic-mechanism-reduction.html">Reduction of Large Detailed Chemical Kinetic Mechanisms for Autoignition Using Joint Analyses of Reaction Rates and Sensitivities</a></h3>
+                <p class="meta"><strong>Authors:</strong> Ahmad Saylam, Marc Ribaucour, William J. Pitz, René Minetti<br><strong>Date:</strong> 2007<br><strong>Source:</strong> International Journal of Chemical Kinetics, 39(4), 181–196</p>
+                <p class="identifier"><strong>DOI:</strong> 10.1002/kin.20232</p>
+                <p class="description">Combines reaction-rate and sensitivity analyses to identify removable reactions while preserving autoignition behaviour, providing a scientific foundation for later mechanism-reduction work.</p>
+                <div class="card-links">
+                  <a href="publications/chemical-kinetic-mechanism-reduction.html">Open publication page</a>
+                  <a href="https://doi.org/10.1002/kin.20232" target="_blank" rel="noopener noreferrer external">Open DOI</a>
+                  <a href="research-tools.html#kinetic-intelligence-heading">Related development</a>
+                </div>
               </article>
 
-              <article
-                class="publication-card"
-                data-category="combustion"
-              >
-                <span class="publication-type">Reaction networks</span>
-
-                <h3>
-                  <a
-                    href="papers/degree-centrality-combustion-reaction-networks.html"
-                  >
-                    Degree Centrality of Combustion Reaction Networks for
-                    Analysing and Modelling Combustion Processes
-                  </a>
-                </h3>
-
-                <a
-                  class="open-link"
-                  href="papers/degree-centrality-combustion-reaction-networks.html"
-                >
-                  Open publication page
-                </a>
+              <article class="publication-card" data-category="combustion diagnostics pressure peer-reviewed">
+                <span class="publication-type type-peer">Peer-reviewed journal article</span>
+                <h3><a href="publications/high-pressure-flame-facility-diagnostics.html">Characterization of a High-Pressure Flame Facility Using High-Speed Chemiluminescence and OH LIF Imaging</a></h3>
+                <p class="meta"><strong>Authors:</strong> Will Swain, Yejun Wang, Pradeep Parajuli, Matthew Hay, Ahmad Saylam, Thomas Dreier, Christof Schulz, Waruna D. Kulatilaka<br><strong>Date:</strong> 18 March 2023<br><strong>Source:</strong> Experiments in Fluids, 64, Article 71</p>
+                <p class="identifier"><strong>DOI:</strong> 10.1007/s00348-023-03611-0</p>
+                <p class="description">Characterizes an optically accessible high-pressure flame facility using high-speed chemiluminescence and planar OH LIF to separate flame behaviour from facility and boundary effects.</p>
+                <div class="card-links">
+                  <a href="publications/high-pressure-flame-facility-diagnostics.html">Open publication page</a>
+                  <a href="https://doi.org/10.1007/s00348-023-03611-0" target="_blank" rel="noopener noreferrer external">Open DOI</a>
+                  <a href="selected-work.html#high-pressure-combustion">Related case</a>
+                </div>
               </article>
 
-              <article
-                class="publication-card"
-                data-category="combustion"
-              >
-                <span class="publication-type">Experimental diagnostics</span>
-
-                <h3>
-                  <a
-                    href="publications/high-pressure-flame-facility-diagnostics.html"
-                  >
-                    Characterization of a High-Pressure Flame Facility Using
-                    High-Speed Chemiluminescence and OH LIF Imaging
-                  </a>
-                </h3>
-
-                <a
-                  class="open-link"
-                  href="publications/high-pressure-flame-facility-diagnostics.html"
-                >
-                  Open publication page
-                </a>
+              <article class="publication-card" data-category="combustion fuel-chemistry autoignition peer-reviewed">
+                <span class="publication-type type-peer">Peer-reviewed journal article</span>
+                <h3><a href="papers/benzene-addition-methane-n-heptane-rapid-compression.html">Benzene Addition to a Fuel-Stoichiometric Methane/O₂/N₂ Flat Flame and to n-Heptane/Air Mixtures under Rapid Compression</a></h3>
+                <p class="meta"><strong>Authors:</strong> Abderrahman El Bakali, Marc Ribaucour, Ahmad Saylam, Sylvain Touchard, René Minetti, Pierre-Alexandre Glaude, Jean-François Pauwels<br><strong>Date:</strong> May 2006<br><strong>Source:</strong> Fuel, 85(7–8), 881–895</p>
+                <p class="identifier"><strong>DOI:</strong> 10.1016/j.fuel.2005.10.009</p>
+                <p class="description">Develops and evaluates a detailed mechanism for benzene-containing methane flames and n-heptane mixtures under rapid compression, linking aromatic and low-temperature oxidation chemistry.</p>
+                <div class="card-links">
+                  <a href="papers/benzene-addition-methane-n-heptane-rapid-compression.html">Open publication page</a>
+                  <a href="https://doi.org/10.1016/j.fuel.2005.10.009" target="_blank" rel="noopener noreferrer external">Open DOI</a>
+                </div>
               </article>
 
-              <article
-                class="publication-card"
-                data-category="combustion"
-              >
-                <span class="publication-type">Fuel chemistry</span>
-
-                <h3>
-                  <a
-                    href="papers/benzene-addition-methane-n-heptane-rapid-compression.html"
-                  >
-                    Benzene Addition to a Fuel-Stoichiometric
-                    Methane/O₂/N₂ Flat Flame and to n-Heptane/Air Mixtures
-                    under Rapid Compression
-                  </a>
-                </h3>
-
-                <a
-                  class="open-link"
-                  href="papers/benzene-addition-methane-n-heptane-rapid-compression.html"
-                >
-                  Open publication page
-                </a>
+              <article class="publication-card" data-category="combustion hcci kinetics peer-reviewed">
+                <span class="publication-type type-peer">Peer-reviewed journal article</span>
+                <h3><a href="papers/reactive-species-formation-c1-c3-alkanes-hcci.html">Modeling Study of Reactive Species Formation from C1–C3 Alkanes in an HCCI Engine</a></h3>
+                <p class="meta"><strong>Authors:</strong> Ahmad Saylam, Burak Atakan, Sebastian A. Kaiser<br><strong>Date:</strong> Online 9 July 2019<br><strong>Source:</strong> Combustion Theory and Modelling, 23(6), 1119–1133</p>
+                <p class="identifier"><strong>DOI:</strong> 10.1080/13647830.2019.1638972</p>
+                <p class="description">Uses a single-zone HCCI model to study formation of oxygenated hydrocarbons, hydrogen peroxide and ethylene from C1–C3 alkanes under low- and intermediate-temperature conditions.</p>
+                <div class="card-links">
+                  <a href="papers/reactive-species-formation-c1-c3-alkanes-hcci.html">Open publication page</a>
+                  <a href="https://doi.org/10.1080/13647830.2019.1638972" target="_blank" rel="noopener noreferrer external">Open DOI</a>
+                </div>
               </article>
 
-              <article
-                class="publication-card"
-                data-category="combustion"
-              >
-                <span class="publication-type">HCCI chemistry</span>
-
-                <h3>
-                  <a
-                    href="papers/reactive-species-formation-c1-c3-alkanes-hcci.html"
-                  >
-                    Modelling Study of Reactive Species Formation from
-                    C1–C3 Alkanes in an HCCI Engine
-                  </a>
-                </h3>
-
-                <a
-                  class="open-link"
-                  href="papers/reactive-species-formation-c1-c3-alkanes-hcci.html"
-                >
-                  Open publication page
-                </a>
+              <article class="publication-card" data-category="combustion hcci modelling exploratory">
+                <span class="publication-type type-framework">Exploratory HCCI modelling study</span>
+                <h3><a href="publications/hcci-engine-chemical-reactor.html">HCCI Engine as Chemical Reactor to Produce Fuel/Chemicals: An Exploring Study of n-Alkanes Low-Temperature Chemistry</a></h3>
+                <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> 11 December 2020<br><strong>Source:</strong> Asian Journal of Engineering and Technology Innovation, 8(2), 1–12</p>
+                <p class="identifier"><strong>Identifier:</strong> Publisher record; archival DOI to be used only after final canonical confirmation</p>
+                <p class="description">Explores production of oxygenates, hydrogen peroxide, formaldehyde and alkenes from C1–C7 n-alkanes in an HCCI reactor concept. It is not evidence of an industrial chemical-production process.</p>
+                <div class="card-links">
+                  <a href="publications/hcci-engine-chemical-reactor.html">Open publication page</a>
+                </div>
               </article>
 
-              <article
-                class="publication-card"
-                data-category="combustion"
-              >
-                <span class="publication-type">HCCI concept</span>
-
-                <h3>
-                  <a href="publications/hcci-engine-chemical-reactor.html">
-                    HCCI Engine as Chemical Reactor to Produce Fuel/Chemicals:
-                    An Exploring Study of n-Alkanes Low-Temperature Chemistry
-                  </a>
-                </h3>
-
-                <a
-                  class="open-link"
-                  href="publications/hcci-engine-chemical-reactor.html"
-                >
-                  Open publication page
-                </a>
+              <article class="publication-card" data-category="combustion diesel emissions modelling">
+                <span class="publication-type type-framework">Journal modelling study</span>
+                <h3><a href="publications/diesel-engine-pollutant-emissions.html">Methodology to Reduce Diesel Engine Pollutant Emissions</a></h3>
+                <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> 26 February 2022<br><strong>Source:</strong> International Journal of Petrochemistry &amp; Natural Gas, 1(1), 4–8</p>
+                <p class="identifier"><strong>DOI:</strong> No independently verified DOI</p>
+                <p class="description">Uses a homogeneous multizone model and detailed chemistry to assess additive–diesel-surrogate blends. Reported trends require experimental validation and complementary NOx-control assessment.</p>
+                <div class="card-links">
+                  <a href="publications/diesel-engine-pollutant-emissions.html">Open publication page</a>
+                </div>
               </article>
 
-              <article
-                class="publication-card"
-                data-category="combustion"
-              >
-                <span class="publication-type">Doctoral thesis</span>
-
-                <h3>
-                  <a
-                    href="publications/oxidation-autoignition-alkanes-aromatics.html"
-                  >
-                    Modelling Studies of the Oxidation and Autoignition of
-                    Alkanes, Aromatics, and Their Mixtures at High Pressure
-                    between 600 and 1500 K
-                  </a>
-                </h3>
-
-                <a
-                  class="open-link"
-                  href="publications/oxidation-autoignition-alkanes-aromatics.html"
-                >
-                  Open publication page
-                </a>
+              <article class="publication-card" data-category="combustion thesis kinetics soot">
+                <span class="publication-type type-framework">Doctoral thesis</span>
+                <h3><a href="publications/oxidation-autoignition-alkanes-aromatics.html">Modelling Studies of the Oxidation and Autoignition of Alkanes, Aromatics, and Their Mixtures at High Pressure between 600 and 1500 K</a></h3>
+                <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> November 2005<br><strong>Type:</strong> Doctoral thesis in physical chemistry</p>
+                <p class="identifier"><strong>Identifier:</strong> Archival DOI exists; insert only after final canonical confirmation</p>
+                <p class="description">Integrates hydrocarbon oxidation and autoignition modelling, detailed-mechanism reduction, experimental validation and laser-diagnostic study of soot and polycyclic aromatic species.</p>
+                <div class="card-links">
+                  <a href="publications/oxidation-autoignition-alkanes-aromatics.html">Open publication page</a>
+                </div>
               </article>
             </div>
           </section>
 
-          <section
-            class="publication-section"
-            data-section="water"
-            aria-labelledby="water-publications-heading"
-          >
-            <h2 id="water-publications-heading" class="section-title">
-              Wastewater Treatment, Advanced Oxidation &amp; Resource Recovery
-            </h2>
+          <section class="publication-section" data-section="water" aria-labelledby="water-heading">
+            <h2 id="water-heading" class="section-title">Wastewater Treatment, Advanced Oxidation &amp; Resource Recovery</h2>
 
             <div class="publication-grid">
-              <article class="publication-card" data-category="water">
-                <span class="publication-type">Technical framework</span>
-
-                <h3>
-                  <a
-                    href="publications/wastewater-treatment-resource-recovery.html"
-                  >
-                    Advances in Wastewater Treatment: Energy Efficiency,
-                    Micropollutants, and Circular Resource Recovery
-                  </a>
-                </h3>
-
-                <a
-                  class="open-link"
-                  href="publications/wastewater-treatment-resource-recovery.html"
-                >
-                  Open publication page
-                </a>
+              <article class="publication-card priority" data-category="water aop kinetics framework preprint">
+                <span class="publication-type type-framework">Kinetic–process framework · Open preprint</span>
+                <h3><a href="publications/aop-kinetic-process-framework.html">A Unified Kinetic–Process Framework for Advanced Oxidation Processes: From Radical Chemistry to Reactor-Scale Performance in Wastewater Treatment</a></h3>
+                <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> April 2026<br><strong>Platform:</strong> Zenodo</p>
+                <p class="identifier"><strong>DOI:</strong> 10.5281/zenodo.19732394</p>
+                <p class="description">Links hydroxyl-radical generation, contaminant kinetics, matrix scavenging, oxidant utilization and reactor-scale indicators to explain why intrinsic reactivity may not translate into useful treatment performance.</p>
+                <div class="card-links">
+                  <a href="publications/aop-kinetic-process-framework.html">Open publication page</a>
+                  <a href="https://doi.org/10.5281/zenodo.19732394" target="_blank" rel="noopener noreferrer external">Open DOI</a>
+                  <a href="https://github.com/saylamah/aop-kinetic-process-framework" target="_blank" rel="noopener noreferrer external">Related repository</a>
+                  <a href="selected-work.html#aop-framework">Related case</a>
+                </div>
               </article>
 
-              <article class="publication-card" data-category="water">
-                <span class="publication-type">
-                  Kinetic-process framework
-                </span>
-
-                <h3>
-                  <a href="publications/aop-kinetic-process-framework.html">
-                    A Unified Kinetic–Process Framework for Advanced
-                    Oxidation Processes: From Radical Chemistry to
-                    Reactor-Scale Performance in Wastewater Treatment
-                  </a>
-                </h3>
-
-                <a
-                  class="open-link"
-                  href="publications/aop-kinetic-process-framework.html"
-                >
-                  Open publication page
-                </a>
+              <article class="publication-card" data-category="water wastewater review preprint">
+                <span class="publication-type type-review">Technical review · Open preprint</span>
+                <h3><a href="publications/wastewater-treatment-resource-recovery.html">Advances in Wastewater Treatment: Energy Efficiency, Micropollutants, and Circular Resource Recovery</a></h3>
+                <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> 26 March 2026<br><strong>Platform:</strong> Zenodo</p>
+                <p class="identifier"><strong>DOI:</strong> 10.5281/zenodo.19438613</p>
+                <p class="description">Reviews biological, physicochemical, membrane and advanced-treatment strategies with emphasis on micropollutants, energy demand, reuse and circular resource recovery.</p>
+                <div class="card-links">
+                  <a href="publications/wastewater-treatment-resource-recovery.html">Open publication page</a>
+                  <a href="https://doi.org/10.5281/zenodo.19438613" target="_blank" rel="noopener noreferrer external">Open DOI</a>
+                </div>
               </article>
             </div>
           </section>
 
-          <section
-            class="publication-section"
-            data-section="desulfurization"
-            aria-labelledby="desulfurization-publications-heading"
-          >
-            <h2
-              id="desulfurization-publications-heading"
-              class="section-title"
-            >
-              Desulfurization, Process Intensification &amp; Hydrodynamic
-              Cavitation
-            </h2>
+          <section class="publication-section" data-section="desulfurization" aria-labelledby="desulfurization-heading">
+            <h2 id="desulfurization-heading" class="section-title">Desulfurization, Process Intensification &amp; Hydrodynamic Cavitation</h2>
 
             <div class="publication-grid">
-              <article
-                class="publication-card"
-                data-category="desulfurization"
-              >
-                <span class="publication-type">Engineering diagnostic</span>
-
-                <h3>
-                  <a
-                    href="publications/desulfurization-reaction-transport.html"
-                  >
-                    Reaction–Transport Regime Analysis for Desulfurization
-                    of Gas and Petroleum Streams: An Engineering Diagnostic
-                    Framework
-                  </a>
-                </h3>
-
-                <a
-                  class="open-link"
-                  href="publications/desulfurization-reaction-transport.html"
-                >
-                  Open publication page
-                </a>
+              <article class="publication-card priority" data-category="desulfurization transport framework preprint">
+                <span class="publication-type type-framework">Engineering diagnostic framework · Open preprint</span>
+                <h3><a href="publications/desulfurization-reaction-transport.html">Reaction–Transport Regime Analysis for Desulfurization of Gas and Petroleum Streams: An Engineering Diagnostic Framework</a></h3>
+                <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> May 2026<br><strong>Platform:</strong> Zenodo</p>
+                <p class="identifier"><strong>DOI:</strong> 10.5281/zenodo.20095695</p>
+                <p class="description">Distinguishes intrinsic kinetics from adsorption, interphase transfer, internal diffusion, hydrodynamics and downstream separation limitations to identify the controlling regime.</p>
+                <div class="card-links">
+                  <a href="publications/desulfurization-reaction-transport.html">Open publication page</a>
+                  <a href="https://doi.org/10.5281/zenodo.20095695" target="_blank" rel="noopener noreferrer external">Open DOI</a>
+                  <a href="https://github.com/saylamah/desulfurization-reaction-transport-regimes" target="_blank" rel="noopener noreferrer external">Related repository</a>
+                  <a href="selected-work.html#desulfurization-framework">Related case</a>
+                </div>
               </article>
 
-              <article
-                class="publication-card"
-                data-category="desulfurization"
-              >
-                <span class="publication-type">Process intensification</span>
-
-                <h3>
-                  <a
-                    href="publications/hydrodynamic-cavitation-industrial-usefulness.html"
-                  >
-                    Industrial Usefulness and Technology Selection in Process
-                    Intensification: Energy-Normalized Metrics for
-                    Hydrodynamic Cavitation
-                  </a>
-                </h3>
-
-                <a
-                  class="open-link"
-                  href="publications/hydrodynamic-cavitation-industrial-usefulness.html"
-                >
-                  Open publication page
-                </a>
+              <article class="publication-card priority" data-category="desulfurization intensification cavitation framework preprint">
+                <span class="publication-type type-framework">Technology-selection framework · Open preprint</span>
+                <h3><a href="publications/hydrodynamic-cavitation-industrial-usefulness.html">Industrial Usefulness and Technology Selection in Process Intensification: Energy-Normalized Metrics for Hydrodynamic Cavitation</a></h3>
+                <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> June 2026<br><strong>Platform:</strong> Zenodo</p>
+                <p class="identifier"><strong>DOI:</strong> 10.5281/zenodo.20593905</p>
+                <p class="description">Defines an Industrial Usefulness Window and energy-normalized indicators that include energy, chemicals, pressure loss, separation, maintenance, reliability and uncertainty.</p>
+                <div class="card-links">
+                  <a href="publications/hydrodynamic-cavitation-industrial-usefulness.html">Open publication page</a>
+                  <a href="https://doi.org/10.5281/zenodo.20593905" target="_blank" rel="noopener noreferrer external">Open DOI</a>
+                </div>
               </article>
             </div>
           </section>
 
-          <section
-            class="publication-section"
-            data-section="thermochemical"
-            aria-labelledby="thermochemical-publications-heading"
-          >
-            <h2
-              id="thermochemical-publications-heading"
-              class="section-title"
-            >
-              Thermochemical Processes, Waste-to-X, Biochar &amp; Carbon
-              Management
-            </h2>
+          <section class="publication-section" data-section="thermochemical" aria-labelledby="thermochemical-heading">
+            <h2 id="thermochemical-heading" class="section-title">Thermochemical Processes, Waste-to-X, Biochar &amp; Circular Conversion</h2>
 
             <div class="publication-grid">
-              <article
-                class="publication-card"
-                data-category="thermochemical"
-              >
-                <span class="publication-type">Process development</span>
-
-                <h3>
-                  <a
-                    href="publications/thermochemical-process-development.html"
-                  >
-                    Thermochemical Process Development: From Mechanism to
-                    Scale-Up and Industrial Adoption
-                  </a>
-                </h3>
-
-                <a
-                  class="open-link"
-                  href="publications/thermochemical-process-development.html"
-                >
-                  Open publication page
-                </a>
+              <article class="publication-card priority" data-category="thermochemical scale-up framework preprint">
+                <span class="publication-type type-framework">Process-development framework · Open preprint</span>
+                <h3><a href="publications/thermochemical-process-development.html">Thermochemical Process Development: From Mechanism to Scale-Up and Industrial Adoption</a></h3>
+                <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> June 2026<br><strong>Platform:</strong> Zenodo</p>
+                <p class="identifier"><strong>DOI:</strong> 10.5281/zenodo.20760609</p>
+                <p class="description">Connects feedstock characterization, reaction mechanisms, transport, reactor behaviour, product recovery, pilot validation and industrial implementation through evidence-gated development stages.</p>
+                <div class="card-links">
+                  <a href="publications/thermochemical-process-development.html">Open publication page</a>
+                  <a href="https://doi.org/10.5281/zenodo.20760609" target="_blank" rel="noopener noreferrer external">Open DOI</a>
+                  <a href="selected-work.html#pyrolysis-process-development">Related case</a>
+                </div>
               </article>
 
-              <article
-                class="publication-card"
-                data-category="thermochemical"
-              >
-                <span class="publication-type">Waste-to-X</span>
-
-                <h3>
-                  <a
-                    href="publications/waste-to-x-biomass-carbon-credit.html"
-                  >
-                    Advancing Waste-to-X Technologies: Sustainable
-                    Thermochemical Pathways for Biomass Valorization and
-                    Carbon Credit Potential
-                  </a>
-                </h3>
-
-                <a
-                  class="open-link"
-                  href="publications/waste-to-x-biomass-carbon-credit.html"
-                >
-                  Open publication page
-                </a>
+              <article class="publication-card" data-category="thermochemical biomass biochar modelling reconstruction">
+                <span class="publication-type type-framework">Thermochemical modelling study · Research reconstruction</span>
+                <h3><a href="publications/biomass-conversion-biochar-heat.html">Enhancing Biomass Conversion: Advanced Modeling and Process Optimization for Efficient Biochar and Heat Production</a></h3>
+                <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> September 2024<br><strong>Platform:</strong> Zenodo</p>
+                <p class="identifier"><strong>DOI:</strong> Canonical Zenodo DOI under final verification</p>
+                <p class="description">Uses simplified reactor modelling to examine drying, pyrolysis and combustion trends. It is a screening-level foundation, not a validated feedstock-, particle- or reactor-specific industrial model.</p>
+                <div class="card-links">
+                  <a href="publications/biomass-conversion-biochar-heat.html">Open publication page</a>
+                  <a href="https://github.com/saylamah/biochar-process-modeling" target="_blank" rel="noopener noreferrer external">Related repository</a>
+                  <a href="selected-work.html#biochar-framework">Related case</a>
+                </div>
               </article>
 
-              <article
-                class="publication-card"
-                data-category="thermochemical"
-              >
-                <span class="publication-type">Catalytic conversion</span>
-
-                <h3>
-                  <a
-                    href="publications/catalytic-waste-recycling-conversion.html"
-                  >
-                    Catalytic Technologies for Waste Recycling and Conversion:
-                    Driving Sustainable Innovation
-                  </a>
-                </h3>
-
-                <a
-                  class="open-link"
-                  href="publications/catalytic-waste-recycling-conversion.html"
-                >
-                  Open publication page
-                </a>
+              <article class="publication-card" data-category="thermochemical waste-to-x biochar carbon preprint">
+                <span class="publication-type type-review">Waste-to-X assessment · Open preprint</span>
+                <h3><a href="publications/waste-to-x-biomass-carbon-credit.html">Advancing Waste-to-X Technologies: Sustainable Thermochemical Pathways for Biomass Valorization and Carbon Credit Potential</a></h3>
+                <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> 28 December 2024<br><strong>Platform:</strong> Zenodo</p>
+                <p class="identifier"><strong>DOI:</strong> 10.5281/zenodo.19785243</p>
+                <p class="description">Compares thermochemical routes to biochar, syngas and useful energy while treating carbon-credit potential as conditional on lifecycle boundaries, permanence and certification rules.</p>
+                <div class="card-links">
+                  <a href="publications/waste-to-x-biomass-carbon-credit.html">Open publication page</a>
+                  <a href="https://doi.org/10.5281/zenodo.19785243" target="_blank" rel="noopener noreferrer external">Open DOI</a>
+                </div>
               </article>
 
-              <article
-                class="publication-card"
-                data-category="thermochemical"
-              >
-                <span class="publication-type">Chemical recycling</span>
-
-                <h3>
-                  <a
-                    href="publications/chemical-recycling-plastic-waste.html"
-                  >
-                    Advancements in Chemical Recycling of Plastic Waste:
-                    A Sustainable Path Forward
-                  </a>
-                </h3>
-
-                <a
-                  class="open-link"
-                  href="publications/chemical-recycling-plastic-waste.html"
-                >
-                  Open publication page
-                </a>
+              <article class="publication-card" data-category="thermochemical catalytic waste review preprint">
+                <span class="publication-type type-review">Catalytic-conversion review · Open preprint</span>
+                <h3><a href="publications/catalytic-waste-recycling-conversion.html">Catalytic Technologies for Waste Recycling and Conversion: Driving Sustainable Innovation</a></h3>
+                <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> 13 January 2025<br><strong>Platform:</strong> Zenodo</p>
+                <p class="identifier"><strong>DOI:</strong> 10.5281/zenodo.19769294</p>
+                <p class="description">Reviews catalytic routes for organic waste, biomass and plastic conversion while identifying deactivation, cost, selectivity and scale-up as central barriers.</p>
+                <div class="card-links">
+                  <a href="publications/catalytic-waste-recycling-conversion.html">Open publication page</a>
+                  <a href="https://doi.org/10.5281/zenodo.19769294" target="_blank" rel="noopener noreferrer external">Open DOI</a>
+                </div>
               </article>
 
-              <article
-                class="publication-card"
-                data-category="thermochemical"
-              >
-                <span class="publication-type">Biomass modelling</span>
-
-                <h3>
-                  <a
-                    href="publications/biomass-conversion-biochar-heat.html"
-                  >
-                    Enhancing Biomass Conversion: Advanced Modeling and
-                    Process Optimization for Efficient Biochar and Heat
-                    Production
-                  </a>
-                </h3>
-
-                <a
-                  class="open-link"
-                  href="publications/biomass-conversion-biochar-heat.html"
-                >
-                  Open publication page
-                </a>
+              <article class="publication-card" data-category="thermochemical plastics recycling review preprint">
+                <span class="publication-type type-review">Chemical-recycling review · Open preprint</span>
+                <h3><a href="publications/chemical-recycling-plastic-waste.html">Advancements in Chemical Recycling of Plastic Waste: A Sustainable Path Forward</a></h3>
+                <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> 6 October 2024<br><strong>Platform:</strong> Zenodo</p>
+                <p class="identifier"><strong>DOI:</strong> 10.5281/zenodo.19438550</p>
+                <p class="description">Discusses pyrolysis, gasification and depolymerization for difficult plastic streams while emphasizing dependence on feed composition, contamination, upgrading and downstream purification.</p>
+                <div class="card-links">
+                  <a href="publications/chemical-recycling-plastic-waste.html">Open publication page</a>
+                  <a href="https://doi.org/10.5281/zenodo.19438550" target="_blank" rel="noopener noreferrer external">Open DOI</a>
+                </div>
               </article>
             </div>
           </section>
 
-          <section
-            class="publication-section"
-            data-section="energy"
-            aria-labelledby="energy-publications-heading"
-          >
-            <h2 id="energy-publications-heading" class="section-title">
-              Energy Storage &amp; Sustainable Energy Systems
-            </h2>
+          <section class="publication-section" data-section="energy" aria-labelledby="energy-heading">
+            <h2 id="energy-heading" class="section-title">Energy Storage &amp; Sustainable Energy Systems</h2>
 
             <div class="publication-grid">
-              <article class="publication-card" data-category="energy">
-                <span class="publication-type">Technology comparison</span>
-
-                <h3>
-                  <a
-                    href="publications/battery-technologies-energy-storage.html"
-                  >
-                    Future Energy Storage: Comparative Analysis of Key
-                    Battery Technologies
-                  </a>
-                </h3>
-
-                <a
-                  class="open-link"
-                  href="publications/battery-technologies-energy-storage.html"
-                >
-                  Open publication page
-                </a>
+              <article class="publication-card" data-category="energy battery review preprint">
+                <span class="publication-type type-review">Comparative technology review · Open preprint</span>
+                <h3><a href="publications/battery-technologies-energy-storage.html">Future Energy Storage: Comparative Analysis of Key Battery Technologies</a></h3>
+                <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> February 2025<br><strong>Platform:</strong> Zenodo</p>
+                <p class="identifier"><strong>DOI:</strong> 10.5281/zenodo.19792613</p>
+                <p class="description">Compares electrolysis–fuel-cell cycles, lithium-ion, sodium-ion, solid-state, redox-flow and organic solid-flow storage using efficiency, density, life, cost and scalability criteria.</p>
+                <div class="card-links">
+                  <a href="publications/battery-technologies-energy-storage.html">Open publication page</a>
+                  <a href="https://doi.org/10.5281/zenodo.19792613" target="_blank" rel="noopener noreferrer external">Open DOI</a>
+                </div>
               </article>
             </div>
           </section>
 
-          <section
-            class="publication-section"
-            data-section="engineering"
-            aria-labelledby="engineering-publications-heading"
-          >
-            <h2
-              id="engineering-publications-heading"
-              class="section-title"
-            >
-              Engineering Scale-Up, Project Management &amp; Complex Systems
-            </h2>
+          <section class="publication-section" data-section="engineering" aria-labelledby="engineering-heading">
+            <h2 id="engineering-heading" class="section-title">Engineering Scale-Up, Project Management &amp; Complex Systems</h2>
 
             <div class="publication-grid">
-              <article
-                class="publication-card"
-                data-category="engineering"
-              >
-                <span class="publication-type">Scale-up</span>
-
-                <h3>
-                  <a
-                    href="publications/engineering-scale-up-lab-to-industry.html"
-                  >
-                    Engineering Scale-Up: Overcoming Challenges from Lab to
-                    Industry
-                  </a>
-                </h3>
-
-                <a
-                  class="open-link"
-                  href="publications/engineering-scale-up-lab-to-industry.html"
-                >
-                  Open publication page
-                </a>
+              <article class="publication-card priority" data-category="engineering scale-up framework preprint">
+                <span class="publication-type type-framework">Engineering scale-up framework · Open preprint</span>
+                <h3><a href="publications/engineering-scale-up-lab-to-industry.html">Engineering Scale-Up: Overcoming Challenges from Lab to Industry</a></h3>
+                <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> February 2025<br><strong>Platform:</strong> Zenodo</p>
+                <p class="identifier"><strong>DOI:</strong> 10.5281/zenodo.19767463</p>
+                <p class="description">Treats scale-up as a multidisciplinary development problem involving flow, heat and mass transfer, kinetics, materials, modelling, economics, operability and risk.</p>
+                <div class="card-links">
+                  <a href="publications/engineering-scale-up-lab-to-industry.html">Open publication page</a>
+                  <a href="https://doi.org/10.5281/zenodo.19767463" target="_blank" rel="noopener noreferrer external">Open DOI</a>
+                  <a href="selected-work.html">Related cases</a>
+                </div>
               </article>
 
-              <article
-                class="publication-card"
-                data-category="engineering"
-              >
-                <span class="publication-type">Project management</span>
-
-                <h3>
-                  <a
-                    href="publications/cross-cultural-project-management.html"
-                  >
-                    Cross-Cultural Project Management: Insights from Five
-                    Global Contexts
-                  </a>
-                </h3>
-
-                <a
-                  class="open-link"
-                  href="publications/cross-cultural-project-management.html"
-                >
-                  Open publication page
-                </a>
+              <article class="publication-card" data-category="engineering project-management professional-study preprint">
+                <span class="publication-type type-review">Comparative professional study · Open preprint</span>
+                <h3><a href="publications/cross-cultural-project-management.html">Cross-Cultural Project Management: Insights from Five Global Contexts</a></h3>
+                <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> May 2025<br><strong>Platform:</strong> Zenodo</p>
+                <p class="identifier"><strong>DOI:</strong> 10.5281/zenodo.19768788</p>
+                <p class="description">Compares project-goal definition, team structures, management approaches and evaluation across five global contexts. It is a structured interpretation rather than a controlled empirical cross-national study.</p>
+                <div class="card-links">
+                  <a href="publications/cross-cultural-project-management.html">Open publication page</a>
+                  <a href="https://doi.org/10.5281/zenodo.19768788" target="_blank" rel="noopener noreferrer external">Open DOI</a>
+                </div>
               </article>
 
-              <article
-                class="publication-card"
-                data-category="engineering"
-              >
-                <span class="publication-type">Complex systems</span>
-
-                <h3>
-                  <a
-                    href="publications/entropy-attraction-complexity.html"
-                  >
-                    From Disorder to Order: The Universal Dance of Entropy,
-                    Attraction, and Complexity
-                  </a>
-                </h3>
-
-                <a
-                  class="open-link"
-                  href="publications/entropy-attraction-complexity.html"
-                >
-                  Open publication page
-                </a>
+              <article class="publication-card" data-category="engineering complexity conceptual preprint">
+                <span class="publication-type type-hypothesis">Interdisciplinary conceptual essay · Open preprint</span>
+                <h3><a href="publications/entropy-attraction-complexity.html">From Disorder to Order: The Universal Dance of Entropy, Attraction, and Complexity</a></h3>
+                <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> 23 November 2024<br><strong>Platform:</strong> Zenodo</p>
+                <p class="identifier"><strong>DOI:</strong> 10.5281/zenodo.19787053</p>
+                <p class="description">Discusses emergence of organized structures across physical, chemical, biological and gravitational systems while remaining consistent with the Second Law of Thermodynamics.</p>
+                <div class="card-links">
+                  <a href="publications/entropy-attraction-complexity.html">Open publication page</a>
+                  <a href="https://doi.org/10.5281/zenodo.19787053" target="_blank" rel="noopener noreferrer external">Open DOI</a>
+                </div>
               </article>
             </div>
           </section>
 
-          <section
-            class="publication-section"
-            data-section="professional"
-            aria-labelledby="professional-publications-heading"
-          >
-            <h2
-              id="professional-publications-heading"
-              class="section-title"
-            >
-              Professional and Industry Articles
-            </h2>
+          <section class="publication-section" data-section="professional" aria-labelledby="professional-heading">
+            <h2 id="professional-heading" class="section-title">Professional and Industry Articles</h2>
 
             <div class="publication-grid">
-              <article
-                class="publication-card"
-                data-category="professional thermochemical"
-              >
-                <span class="publication-type">Biomass Magazine</span>
-
-                <h3>
-                  <a
-                    href="https://biomassmagazine.com/articles/advancing-waste-to-x-technologies-carbon-credit-opportunities-and-sustainability-impacts"
-                    target="_blank"
-                    rel="noopener noreferrer external"
-                  >
-                    Advancing Waste-to-X Technologies: Carbon Credit
-                    Opportunities and Sustainability Impacts
-                  </a>
-                </h3>
-
-                <a
-                  class="open-link"
-                  href="https://biomassmagazine.com/articles/advancing-waste-to-x-technologies-carbon-credit-opportunities-and-sustainability-impacts"
-                  target="_blank"
-                  rel="noopener noreferrer external"
-                >
-                  Open external publication
-                </a>
+              <article class="publication-card" data-category="professional thermochemical waste-to-x">
+                <span class="publication-type type-professional">Professional industry article</span>
+                <h3><a href="https://biomassmagazine.com/articles/advancing-waste-to-x-technologies-carbon-credit-opportunities-and-sustainability-impacts" target="_blank" rel="noopener noreferrer external">Advancing Waste-to-X Technologies: Carbon Credit Opportunities and Sustainability Impacts</a></h3>
+                <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> 15 April 2025<br><strong>Source:</strong> Biomass Magazine</p>
+                <p class="description">Translates Waste-to-X and biochar assessment into an industry-facing discussion of thermochemical pathways, environmental performance and conditional carbon-credit opportunities.</p>
+                <div class="card-links">
+                  <a href="https://biomassmagazine.com/articles/advancing-waste-to-x-technologies-carbon-credit-opportunities-and-sustainability-impacts" target="_blank" rel="noopener noreferrer external">Open external publication</a>
+                  <a href="publications/waste-to-x-biomass-carbon-credit.html">Related technical output</a>
+                </div>
               </article>
 
-              <article
-                class="publication-card"
-                data-category="professional thermochemical"
-              >
-                <span class="publication-type">VDI energie + umwelt</span>
-
-                <h3>
-                  <a
-                    href="https://www.ingenieur.de/wp-content/uploads/2025/04/VDI-energie-umwelt_5-6_2025_VDI-energie-umwelt-04-05-2025.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer external"
-                  >
-                    Innovativ zu nachhaltiger Biokohle – CO₂-Speicher aus
-                    Abfall
-                  </a>
-                </h3>
-
-                <a
-                  class="open-link"
-                  href="https://www.ingenieur.de/wp-content/uploads/2025/04/VDI-energie-umwelt_5-6_2025_VDI-energie-umwelt-04-05-2025.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer external"
-                >
-                  Open external publication
-                </a>
+              <article class="publication-card" data-category="professional thermochemical biochar">
+                <span class="publication-type type-professional">German engineering article</span>
+                <h3><a href="https://www.ingenieur.de/wp-content/uploads/2025/04/VDI-energie-umwelt_5-6_2025_VDI-energie-umwelt-04-05-2025.pdf" target="_blank" rel="noopener noreferrer external">Innovativ zu nachhaltiger Biokohle – CO₂-Speicher aus Abfall</a></h3>
+                <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> 2025<br><strong>Source:</strong> VDI energie + umwelt, issue 5–6/2025</p>
+                <p class="description">Communicates biochar production and carbon storage from waste biomass to a German engineering audience. It is professional knowledge transfer, not peer-reviewed validation or carbon-removal certification.</p>
+                <div class="card-links">
+                  <a href="https://www.ingenieur.de/wp-content/uploads/2025/04/VDI-energie-umwelt_5-6_2025_VDI-energie-umwelt-04-05-2025.pdf" target="_blank" rel="noopener noreferrer external">Open external publication</a>
+                </div>
               </article>
 
-              <article
-                class="publication-card"
-                data-category="professional desulfurization"
-              >
-                <span class="publication-type">RECYCLING Magazin</span>
-
-                <h3>
-                  <a
-                    href="https://osscs.industrystock.com/558535/RAPTECH-RecyclingMagazin-062026.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer external"
-                  >
-                    Hydrodynamische Kavitation
-                  </a>
-                </h3>
-
-                <a
-                  class="open-link"
-                  href="https://osscs.industrystock.com/558535/RAPTECH-RecyclingMagazin-062026.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer external"
-                >
-                  Open external publication
-                </a>
+              <article class="publication-card" data-category="professional desulfurization cavitation">
+                <span class="publication-type type-professional">German industry article</span>
+                <h3><a href="https://osscs.industrystock.com/558535/RAPTECH-RecyclingMagazin-062026.pdf" target="_blank" rel="noopener noreferrer external">Hydrodynamische Kavitation</a></h3>
+                <p class="meta"><strong>Contribution context:</strong> Ahmad Saylam / RAPTECH-related professional article<br><strong>Date:</strong> 2026<br><strong>Source:</strong> RECYCLING Magazin, issue 06/2026</p>
+                <p class="description">Introduces hydrodynamic cavitation and potential process applications for an industry audience. It is not independent proof of proprietary equipment performance or universal process benefits.</p>
+                <div class="card-links">
+                  <a href="https://osscs.industrystock.com/558535/RAPTECH-RecyclingMagazin-062026.pdf" target="_blank" rel="noopener noreferrer external">Open external publication</a>
+                </div>
               </article>
             </div>
           </section>
         </div>
 
-        <div
-          id="no-results"
-          class="no-results"
-          role="status"
-        >
+        <div id="no-results" class="no-results" role="status">
           No publication matched the current search and filter.
         </div>
       </div>
     </section>
 
-    <section
-      class="section"
-      aria-labelledby="access-heading"
-    >
+    <section class="section muted" aria-labelledby="access-heading">
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">Access, provenance and interpretation</p>
 
-          <h2 id="access-heading">
-            Responsible publication access and evidence use
-          </h2>
+          <h2 id="access-heading">Responsible publication access and evidence use</h2>
 
           <p>
             Public accessibility, peer-review status and technical maturity are
-            separate questions. The catalogue therefore links each record
-            through the most appropriate lawful and technically informative
-            route available.
+            separate questions. The catalogue therefore uses the most
+            appropriate lawful and technically informative route available.
           </p>
         </div>
 
         <div class="note-grid">
           <article class="note-card">
             <h3>Access and copyright</h3>
-
-            <p>
-              Some journal articles are available only through publisher or
-              institutional access. This website provides bibliographic
-              records, DOI links, original summaries and author-accessible
-              versions only where the applicable rights permit them.
-            </p>
-
-            <p>
-              Restricted publisher versions are not intentionally reproduced
-              or redistributed through this website.
-            </p>
+            <p>Some journal articles require publisher or institutional access. Restricted publisher versions are not intentionally reproduced or redistributed here.</p>
           </article>
 
           <article class="note-card">
             <h3>Evidence and maturity</h3>
-
-            <p>
-              Peer-reviewed studies, theses, preprints, reconstructed models,
-              screening frameworks and professional articles are identified
-              according to their actual type and should not be treated as
-              equivalent evidence.
-            </p>
-
-            <p>
-              Technical claims remain bounded by the methods, data,
-              assumptions, validation and applicability stated in the
-              corresponding record.
-            </p>
+            <p>Peer-reviewed studies, theses, open preprints, reconstructed models, screening frameworks and professional articles are labelled according to their actual type.</p>
           </article>
 
           <article class="note-card">
             <h3>Research profiles</h3>
-
-            <p>
-              External profiles provide broader bibliographic and professional
-              context.
-            </p>
-
+            <p>External profiles provide broader bibliographic and professional context.</p>
             <div class="profile-links">
-              <a
-                href="https://github.com/saylamah"
-                target="_blank"
-                rel="noopener noreferrer external"
-              >
-                GitHub
-              </a>
-
-              <a
-                href="https://orcid.org/0000-0001-7484-1265"
-                target="_blank"
-                rel="noopener noreferrer external"
-              >
-                ORCID
-              </a>
-
-              <a
-                href="https://scholar.google.com/citations?user=2I4xhywAAAAJ&amp;hl=en"
-                target="_blank"
-                rel="noopener noreferrer external"
-              >
-                Google Scholar
-              </a>
-
-              <a
-                href="https://www.researchgate.net/profile/Ahmad-Saylam"
-                target="_blank"
-                rel="noopener noreferrer external"
-              >
-                ResearchGate
-              </a>
-
-              <a
-                href="https://independent.academia.edu/AhmadSaylam"
-                target="_blank"
-                rel="noopener noreferrer external"
-              >
-                Academia.edu
-              </a>
+              <a href="https://github.com/saylamah" target="_blank" rel="noopener noreferrer external">GitHub</a>
+              <a href="https://orcid.org/0000-0001-7484-1265" target="_blank" rel="noopener noreferrer external">ORCID</a>
+              <a href="https://scholar.google.com/citations?user=2I4xhywAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer external">Google Scholar</a>
+              <a href="https://www.researchgate.net/profile/Ahmad-Saylam" target="_blank" rel="noopener noreferrer external">ResearchGate</a>
             </div>
           </article>
         </div>
 
         <div class="boundary-box">
           <p>
-            This catalogue is the publication and technical-output layer of the
-            wider professional ecosystem. It documents scientific work and
-            public technical reasoning; it does not convert every publication
-            into a general industrial-performance claim.
+            This catalogue is the scientific-output layer of the wider
+            professional ecosystem. It documents scientific work and public
+            technical reasoning without converting every record into a general
+            industrial-performance claim.
           </p>
 
           <p>
-            Practical interpretation, case-study context and development
-            relevance are presented in
-            <a href="selected-work.html">Selected Work</a>. Defined scientific
-            and engineering services, deliverables and engagement boundaries
-            are presented on the
+            Practical interpretation and application context are presented in
+            <a href="selected-work.html">Selected Work</a>. Methods and
+            computational environments are presented in
+            <a href="research-tools.html">Research &amp; Tools</a>. Defined
+            services and engagement boundaries are presented on the
             <a href="consulting.html">Consulting page</a>.
+          </p>
+
+          <p>
+            Two legacy records retain temporary identifier notes because their
+            canonical archival DOI requires final confirmation. No conflicting
+            DOI has been published in this page.
           </p>
         </div>
       </div>
@@ -1916,11 +1359,7 @@
     <div class="container footer-grid">
       <div>
         <strong>Dr. Ahmad Saylam</strong>
-
-        <p>
-          Selected public and non-confidential scientific, engineering,
-          professional and consulting resources.
-        </p>
+        <p>Selected public and non-confidential scientific, engineering, professional and consulting resources.</p>
       </div>
 
       <div class="footer-links" aria-label="Website navigation">
@@ -1935,13 +1374,8 @@
     </div>
 
     <div class="container footer-bottom">
-      <span>
-        © <span id="year">2026</span> Dr. Ahmad Saylam
-      </span>
-
-      <span>
-        Scholarly record · Open technical outputs · Responsible access
-      </span>
+      <span>© <span id="year">2026</span> Dr. Ahmad Saylam</span>
+      <span>Scholarly record · Evidence status · Responsible access</span>
     </div>
   </footer>
 
@@ -1965,15 +1399,9 @@
 
     const searchInput = document.getElementById("publication-search");
     const clearSearch = document.getElementById("clear-search");
-    const filterButtons = Array.from(
-      document.querySelectorAll(".filter-button")
-    );
-    const publicationCards = Array.from(
-      document.querySelectorAll(".publication-card")
-    );
-    const publicationSections = Array.from(
-      document.querySelectorAll(".publication-section")
-    );
+    const filterButtons = Array.from(document.querySelectorAll(".filter-button"));
+    const publicationCards = Array.from(document.querySelectorAll(".publication-card"));
+    const publicationSections = Array.from(document.querySelectorAll(".publication-section"));
     const resultsLine = document.getElementById("results-line");
     const noResults = document.getElementById("no-results");
 
@@ -1985,17 +1413,12 @@
 
       publicationCards.forEach((card) => {
         const categories = card.dataset.category.split(" ");
-
         const matchesFilter =
-          activeFilter === "all" ||
-          categories.includes(activeFilter);
-
+          activeFilter === "all" || categories.includes(activeFilter);
         const matchesSearch =
-          query === "" ||
-          card.textContent.toLowerCase().includes(query);
+          query === "" || card.textContent.toLowerCase().includes(query);
 
         const isVisible = matchesFilter && matchesSearch;
-
         card.classList.toggle("hidden", !isVisible);
 
         if (isVisible) {
@@ -2004,10 +1427,7 @@
       });
 
       publicationSections.forEach((section) => {
-        const hasVisibleCard = section.querySelector(
-          ".publication-card:not(.hidden)"
-        );
-
+        const hasVisibleCard = section.querySelector(".publication-card:not(.hidden)");
         section.classList.toggle("hidden", !hasVisibleCard);
       });
 
