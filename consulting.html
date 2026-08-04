@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Scientific &amp; Engineering Consulting | Dr. Ahmad Saylam</title>
+  <title>R&amp;D, Process Development &amp; Scale-Up Consulting | Dr. Ahmad Saylam</title>
 
   <meta
     name="description"
-    content="Evidence-based consulting for R&amp;D, technology assessment, process development, modelling, pilot validation and industrial scale-up."
+    content="Evidence-based scientific and engineering consulting for R&amp;D, technology assessment, process development, modelling, pilot validation and industrial scale-up."
   >
   <meta name="author" content="Dr. Ahmad Saylam">
   <meta name="robots" content="index,follow">
@@ -21,18 +21,22 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
+
   <meta
     property="og:site_name"
     content="Dr. Ahmad Saylam — Scientific &amp; Engineering Portfolio"
   >
+
   <meta
     property="og:title"
-    content="Scientific &amp; Engineering Consulting | Dr. Ahmad Saylam"
+    content="R&amp;D, Process Development &amp; Scale-Up Consulting | Dr. Ahmad Saylam"
   >
+
   <meta
     property="og:description"
     content="Evidence-based support for complex R&amp;D, process-development, technology-assessment, pilot-validation and scale-up decisions."
   >
+
   <meta
     property="og:url"
     content="https://saylamah.github.io/consulting.html"
@@ -40,10 +44,12 @@
 
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary">
+
   <meta
     name="twitter:title"
-    content="Scientific &amp; Engineering Consulting | Dr. Ahmad Saylam"
+    content="R&amp;D, Process Development &amp; Scale-Up Consulting | Dr. Ahmad Saylam"
   >
+
   <meta
     name="twitter:description"
     content="Evidence-based support for complex R&amp;D, process-development, technology-assessment, pilot-validation and scale-up decisions."
@@ -62,7 +68,24 @@
         "inLanguage": "en",
         "publisher": {
           "@id": "https://saylamah.github.io/#person"
-        }
+        },
+        "hasPart": [
+          {
+            "@id": "https://saylamah.github.io/selected-work.html#webpage"
+          },
+          {
+            "@id": "https://saylamah.github.io/research-tools.html#webpage"
+          },
+          {
+            "@id": "https://saylamah.github.io/publications.html#webpage"
+          },
+          {
+            "@id": "https://saylamah.github.io/about-cv.html#webpage"
+          },
+          {
+            "@id": "https://saylamah.github.io/consulting.html#webpage"
+          }
+        ]
       },
       {
         "@type": "Person",
@@ -71,10 +94,10 @@
         "honorificPrefix": "Dr.",
         "url": "https://saylamah.github.io/about-cv.html",
         "jobTitle": [
-          "R&D and Technology Development Leader",
-          "Scientific and Engineering Consultant"
+          "R&D, Process & Technology Development Leader",
+          "Scientific & Engineering Consultant"
         ],
-        "description": "R&D and technology-development leader connecting applied physical chemistry, reactive and thermochemical systems, modelling, validation, pilot development and industrial scale-up.",
+        "description": "R&D, process and technology-development leader connecting applied physical chemistry, reactive and thermochemical systems, modelling, validation, process development and industrial scale-up.",
         "address": {
           "@type": "PostalAddress",
           "addressRegion": "North Rhine-Westphalia",
@@ -84,7 +107,8 @@
           "https://github.com/saylamah",
           "https://www.linkedin.com/in/ahmad-saylam",
           "https://orcid.org/0000-0001-7484-1265",
-          "https://scholar.google.com/citations?user=2I4xhywAAAAJ&hl=en"
+          "https://scholar.google.com/citations?user=2I4xhywAAAAJ&hl=en",
+          "https://www.researchgate.net/profile/Ahmad-Saylam"
         ],
         "knowsAbout": [
           "R&D strategy",
@@ -102,14 +126,19 @@
           "Computational fluid dynamics",
           "Process intensification",
           "Wastewater treatment",
-          "Advanced oxidation processes"
+          "Advanced oxidation processes",
+          "Desulfurization",
+          "Biomass pyrolysis",
+          "Biochar",
+          "Technical project leadership",
+          "Scientific and engineering consulting"
         ]
       },
       {
         "@type": "WebPage",
         "@id": "https://saylamah.github.io/consulting.html#webpage",
         "url": "https://saylamah.github.io/consulting.html",
-        "name": "Scientific and Engineering Consulting — Dr. Ahmad Saylam",
+        "name": "R&D, Process Development and Scale-Up Consulting — Dr. Ahmad Saylam",
         "description": "Evidence-based consulting for R&D, technology assessment, process development, modelling, pilot validation and industrial scale-up.",
         "inLanguage": "en",
         "isPartOf": {
@@ -213,10 +242,8 @@
       --green-ink: #17613f;
       --blue-bg: #e3edf5;
       --blue-ink: #244f6b;
-      --yellow-bg: #fff0ce;
-      --yellow-ink: #76510c;
-      --grey-bg: #e8edf1;
-      --grey-ink: #4d5e6a;
+      --violet-bg: #eee9f7;
+      --violet-ink: #57407b;
       --max: 1180px;
       --shadow: 0 16px 40px rgba(18, 60, 86, 0.08);
     }
@@ -508,7 +535,7 @@
     }
 
     .section-heading {
-      max-width: 870px;
+      max-width: 900px;
       margin-bottom: 2.2rem;
     }
 
@@ -562,6 +589,80 @@
     .contact-card p {
       margin-bottom: 0;
       color: var(--muted);
+    }
+
+    .evidence-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.2rem;
+    }
+
+    .evidence-card {
+      display: flex;
+      flex-direction: column;
+      padding: 1.6rem;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-top: 4px solid var(--navy);
+      border-radius: 14px;
+      box-shadow: 0 8px 28px rgba(18, 60, 86, 0.04);
+    }
+
+    .evidence-domain {
+      display: block;
+      margin-bottom: 0.7rem;
+      color: var(--teal-dark);
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .evidence-status {
+      align-self: flex-start;
+      display: inline-flex;
+      margin-bottom: 0.9rem;
+      padding: 0.3rem 0.62rem;
+      background: var(--violet-bg);
+      color: var(--violet-ink);
+      border-radius: 999px;
+      font-size: 0.74rem;
+      font-weight: 800;
+    }
+
+    .evidence-status.publication {
+      background: var(--green-bg);
+      color: var(--green-ink);
+    }
+
+    .evidence-card p {
+      color: var(--muted);
+    }
+
+    .evidence-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: auto;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
+    }
+
+    .evidence-links a {
+      font-weight: 750;
+    }
+
+    .evidence-note {
+      margin-top: 1.5rem;
+      padding: 1.2rem 1.35rem;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--accent);
+      border-radius: 0 12px 12px 0;
+    }
+
+    .evidence-note p:last-child {
+      margin-bottom: 0;
     }
 
     .service-grid {
@@ -627,10 +728,6 @@
       border-top: 3px solid var(--navy);
     }
 
-    .domain-card h3 {
-      margin-bottom: 0.65rem;
-    }
-
     .deliverable-layout {
       display: grid;
       grid-template-columns: minmax(0, 1.3fr) minmax(290px, 0.7fr);
@@ -668,10 +765,6 @@
       color: var(--navy);
     }
 
-    .qualification-panel p:last-child {
-      margin-bottom: 0;
-    }
-
     .workflow {
       display: grid;
       grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -680,8 +773,7 @@
     }
 
     .workflow-step {
-      position: relative;
-      min-height: 240px;
+      min-height: 235px;
       padding: 1.35rem;
       background: #ffffff;
       border: 1px solid var(--line);
@@ -698,10 +790,6 @@
       font-weight: 850;
     }
 
-    .workflow-step h3 {
-      margin-bottom: 0.6rem;
-    }
-
     .workflow-step p {
       margin-bottom: 0;
       color: var(--muted);
@@ -715,10 +803,6 @@
 
     .boundary-card {
       border-left: 4px solid var(--accent);
-    }
-
-    .boundary-card h3 {
-      margin-bottom: 0.7rem;
     }
 
     .engagement-grid {
@@ -753,10 +837,6 @@
       color: #9ddbd5;
     }
 
-    .cta-panel h2 {
-      margin-bottom: 1rem;
-    }
-
     .cta-panel p {
       color: #dbe7ed;
     }
@@ -766,19 +846,10 @@
       color: var(--navy);
     }
 
-    .cta-panel .button.primary:hover {
-      background: var(--soft);
-      color: var(--navy);
-    }
-
     .cta-panel .button.secondary {
       background: transparent;
       color: #ffffff;
       border-color: #ffffff;
-    }
-
-    .cta-panel .button.secondary:hover {
-      background: rgba(255, 255, 255, 0.1);
     }
 
     .inquiry-guide {
@@ -786,10 +857,6 @@
       background: rgba(255, 255, 255, 0.08);
       border: 1px solid rgba(255, 255, 255, 0.2);
       border-radius: 14px;
-    }
-
-    .inquiry-guide h3 {
-      font-size: 1.15rem;
     }
 
     .inquiry-guide ul {
@@ -924,6 +991,7 @@
       .service-grid,
       .problem-grid,
       .domain-grid,
+      .evidence-grid,
       .boundary-grid,
       .engagement-grid,
       .contact-grid {
@@ -1035,9 +1103,9 @@
 
           <p class="hero-lead">
             Dr. Ahmad Saylam supports organizations that need to determine
-            whether a scientific effect, process concept or emerging
-            technology is technically credible, experimentally testable and
-            capable of development toward pilot or industrial application.
+            whether a scientific effect, process concept or emerging technology
+            is technically credible, experimentally testable and capable of
+            development toward pilot or industrial application.
           </p>
 
           <p class="hero-lead">
@@ -1160,8 +1228,150 @@
     </section>
 
     <section
-      id="services"
+      id="demonstrated-capability"
       class="section muted"
+      aria-labelledby="evidence-heading"
+    >
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Demonstrated capability</p>
+
+          <h2 id="evidence-heading">
+            Consulting grounded in documented professional and public technical evidence
+          </h2>
+
+          <p>
+            The following cases demonstrate transferable capability in
+            scientific analysis, experimental development, process engineering
+            and technical project leadership. They support confidence in the
+            methods and responsibilities described on this page, but they do
+            not constitute guarantees of performance for a different client,
+            process, feedstock, plant or operating environment.
+          </p>
+        </div>
+
+        <div class="evidence-grid">
+          <article class="evidence-card">
+            <span class="evidence-domain">
+              Combustion science · Diagnostics · CFD
+            </span>
+
+            <span class="evidence-status publication">
+              Publication + university-reference supported
+            </span>
+
+            <h3>
+              High-Pressure Combustion Diagnostics &amp; Multiscale Modelling
+            </h3>
+
+            <p>
+              Integration of optical diagnostics, chemical and physical
+              interpretation, boundary-condition analysis and zero- to
+              three-dimensional modelling for elevated-pressure flame and
+              particle-formation research.
+            </p>
+
+            <div class="evidence-links">
+              <a href="selected-work.html#high-pressure-combustion">
+                View evidence-backed case
+              </a>
+            </div>
+          </article>
+
+          <article class="evidence-card">
+            <span class="evidence-domain">
+              Automotive R&amp;D · Burner systems · Emissions
+            </span>
+
+            <span class="evidence-status">
+              Qualified employment reference
+            </span>
+
+            <h3>
+              Automotive Burner Test-Rig Integration &amp; Development
+            </h3>
+
+            <p>
+              Test-rig installation, sensor and subsystem integration,
+              experimental execution, result analysis, technical reporting and
+              development-oriented recommendations.
+            </p>
+
+            <div class="evidence-links">
+              <a href="selected-work.html#automotive-burner-development">
+                View evidence-backed case
+              </a>
+            </div>
+          </article>
+
+          <article class="evidence-card">
+            <span class="evidence-domain">
+              Biomass · Pyrolysis · Process engineering
+            </span>
+
+            <span class="evidence-status">
+              Qualified employment reference
+            </span>
+
+            <h3>
+              Biomass Pyrolysis Process &amp; Plant-Concept Engineering
+            </h3>
+
+            <p>
+              Pyrolysis-process development, operating-plant trials, process
+              calculations, technical documentation, plant concepts and
+              specification support.
+            </p>
+
+            <div class="evidence-links">
+              <a href="selected-work.html#pyrolysis-process-development">
+                View evidence-backed case
+              </a>
+            </div>
+          </article>
+
+          <article class="evidence-card">
+            <span class="evidence-domain">
+              Industrial projects · Customers · Coordination
+            </span>
+
+            <span class="evidence-status">
+              Qualified employment reference
+            </span>
+
+            <h3>
+              International Industrial Customer-Project Leadership
+            </h3>
+
+            <p>
+              Independent project planning and control, multidisciplinary
+              coordination, customer and supplier alignment, schedule and
+              budget monitoring and management reporting.
+            </p>
+
+            <div class="evidence-links">
+              <a href="selected-work.html#industrial-project-leadership">
+                View evidence-backed case
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="evidence-note">
+          <p>
+            <strong>Evidence boundary:</strong> employment references verify
+            documented responsibilities; peer-reviewed publications support
+            defined scientific methods and findings. Neither evidence type
+            replaces project-specific due diligence, representative testing,
+            process-safety review or contractual acceptance criteria.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="services"
+      class="section"
       aria-labelledby="services-heading"
     >
       <div class="container">
@@ -1173,10 +1383,10 @@
           </h2>
 
           <p>
-            Services are structured around the client decision and the
-            maturity of the available evidence. Technical methods and
-            application knowledge are combined rather than offered as
-            disconnected activities.
+            Services are structured around the client decision and the maturity
+            of the available evidence. Technical methods and application
+            knowledge are combined rather than offered as disconnected
+            activities.
           </p>
         </div>
 
@@ -1214,8 +1424,8 @@
             </h3>
 
             <p>
-              Objective assessment of emerging technologies, process
-              concepts, performance claims and proposed development pathways.
+              Objective assessment of emerging technologies, process concepts,
+              performance claims and proposed development pathways.
             </p>
 
             <p class="support-label">Typical support</p>
@@ -1240,8 +1450,8 @@
             </h3>
 
             <p>
-              Translating laboratory observations, modelling results and
-              early process concepts into testable pilot configurations and
+              Translating laboratory observations, modelling results and early
+              process concepts into testable pilot configurations and
               defensible scale-up pathways.
             </p>
 
@@ -1253,7 +1463,7 @@
               <li>Experimental and pilot-test matrices</li>
               <li>Operating-window and boundary-condition definition</li>
               <li>Preliminary process-flow and equipment requirements</li>
-              <li>PFD and P&amp;ID technical review</li>
+              <li>Preliminary PFD and P&amp;ID technical review</li>
               <li>Sampling, measurement and data-quality requirements</li>
               <li>Scale-up risk, operability and integration assessment</li>
               <li>Interpretation of pilot results and next-stage recommendations</li>
@@ -1318,7 +1528,7 @@
     </section>
 
     <section
-      class="section"
+      class="section muted"
       aria-labelledby="domains-heading"
     >
       <div class="container">
@@ -1379,8 +1589,8 @@
 
             <p>
               Assessment of cavitation, mixing, transport enhancement and
-              other intensification options where mechanism, energy demand
-              and validation evidence justify their use.
+              other intensification options where mechanism, energy demand and
+              validation evidence justify their use.
             </p>
           </article>
 
@@ -1398,7 +1608,7 @@
     </section>
 
     <section
-      class="section muted"
+      class="section"
       aria-labelledby="deliverables-heading"
     >
       <div class="container">
@@ -1445,9 +1655,9 @@
             </p>
 
             <p>
-              Not every engagement requires modelling, experimentation or
-              pilot development. The aim is to apply the level of analysis
-              needed to support a credible decision without adding unnecessary
+              Not every engagement requires modelling, experimentation or pilot
+              development. The aim is to apply the level of analysis needed to
+              support a credible decision without adding unnecessary
               complexity.
             </p>
           </aside>
@@ -1456,7 +1666,7 @@
     </section>
 
     <section
-      class="section"
+      class="section muted"
       aria-labelledby="method-heading"
     >
       <div class="container">
@@ -1469,8 +1679,8 @@
 
           <p>
             The method connects scientific formulation, modelling, validation
-            and engineering translation while keeping assumptions,
-            limitations and decision criteria visible.
+            and engineering translation while keeping assumptions, limitations
+            and decision criteria visible.
           </p>
         </div>
 
@@ -1515,8 +1725,9 @@
             <h3>Translate</h3>
 
             <p>
-              Convert the evidence into pilot configuration, scale-up, risk,
-              operability and industrial decisions.
+              Convert the evidence into process requirements, pilot
+              configuration, scale-up risk, operability and implementation
+              decisions.
             </p>
           </article>
         </div>
@@ -1524,7 +1735,7 @@
     </section>
 
     <section
-      class="section muted"
+      class="section"
       aria-labelledby="boundaries-heading"
     >
       <div class="container">
@@ -1536,9 +1747,8 @@
           </h2>
 
           <p>
-            Evidence status, confidentiality, intellectual-property
-            boundaries and responsibility for final decisions are addressed
-            explicitly.
+            Evidence status, confidentiality, intellectual-property boundaries
+            and responsibility for final decisions are addressed explicitly.
           </p>
         </div>
 
@@ -1549,9 +1759,9 @@
             <p>
               Hypotheses, exploratory models, screening tools, reconstructed
               models, experimental observations, pilot evidence and validated
-              results are not treated as equivalent. Each engagement
-              identifies what is known, what is assumed, what remains
-              uncertain and what evidence is required for the next decision.
+              results are not treated as equivalent. Each engagement identifies
+              what is known, what is assumed, what remains uncertain and what
+              evidence is required for the next decision.
             </p>
           </article>
 
@@ -1594,7 +1804,7 @@
     </section>
 
     <section
-      class="section"
+      class="section muted"
       aria-labelledby="formats-heading"
     >
       <div class="container">
@@ -1747,6 +1957,14 @@
               >
                 Google Scholar
               </a>
+
+              <a
+                href="https://www.researchgate.net/profile/Ahmad-Saylam"
+                target="_blank"
+                rel="noopener noreferrer external"
+              >
+                ResearchGate
+              </a>
             </div>
           </article>
 
@@ -1799,7 +2017,7 @@
       </span>
 
       <span>
-        Technical evidence website · Scientific and engineering consulting
+        Documented capability · Technical evidence · Engineering decision support
       </span>
     </div>
   </footer>
