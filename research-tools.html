@@ -22,18 +22,22 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
+
   <meta
     property="og:site_name"
     content="Dr. Ahmad Saylam — Scientific &amp; Engineering Portfolio"
   >
+
   <meta
     property="og:title"
     content="Research Methods, Modelling &amp; Reproducible Tools | Dr. Ahmad Saylam"
   >
+
   <meta
     property="og:description"
     content="Scientific methods, modelling environments and reproducible resources connecting molecular mechanisms, reactor behaviour, process development and industrial decisions."
   >
+
   <meta
     property="og:url"
     content="https://saylamah.github.io/research-tools.html"
@@ -41,10 +45,12 @@
 
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary">
+
   <meta
     name="twitter:title"
     content="Research Methods, Modelling &amp; Reproducible Tools | Dr. Ahmad Saylam"
   >
+
   <meta
     name="twitter:description"
     content="Scientific methods, modelling environments and reproducible resources connecting molecular mechanisms, reactor behaviour, process development and industrial decisions."
@@ -71,7 +77,16 @@
       "@id": "https://saylamah.github.io/#person",
       "name": "Ahmad Saylam",
       "honorificPrefix": "Dr.",
-      "url": "https://saylamah.github.io/about-cv.html"
+      "url": "https://saylamah.github.io/about-cv.html",
+      "jobTitle": "R&D, Process & Technology Development Leader",
+      "description": "R&D, process and technology-development leader connecting reactive and thermochemical systems, modelling, validation and industrial scale-up.",
+      "sameAs": [
+        "https://github.com/saylamah",
+        "https://www.linkedin.com/in/ahmad-saylam",
+        "https://orcid.org/0000-0001-7484-1265",
+        "https://scholar.google.com/citations?user=2I4xhywAAAAJ&hl=en",
+        "https://www.researchgate.net/profile/Ahmad-Saylam"
+      ]
     },
     "mainEntity": {
       "@type": "ItemList",
@@ -495,6 +510,50 @@
       border-bottom: 0;
     }
 
+    .evidence-method-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.2rem;
+    }
+
+    .evidence-method-card {
+      display: flex;
+      flex-direction: column;
+      padding: 1.6rem;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-top: 4px solid var(--navy);
+      border-radius: 14px;
+      box-shadow: 0 8px 26px rgba(18, 60, 86, 0.04);
+    }
+
+    .evidence-method-domain {
+      display: block;
+      margin-bottom: 0.7rem;
+      color: var(--teal-dark);
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .evidence-method-card p {
+      color: var(--muted);
+    }
+
+    .evidence-method-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: auto;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
+    }
+
+    .evidence-method-links a {
+      font-weight: 750;
+    }
+
     .repository-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -759,6 +818,7 @@
       .audience-grid,
       .research-grid,
       .decision-grid,
+      .evidence-method-grid,
       .repository-grid,
       .method-grid,
       .policy-grid {
@@ -1162,8 +1222,124 @@
     </section>
 
     <section
-      id="repositories"
       class="section"
+      aria-labelledby="evidence-methods-heading"
+    >
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Methods demonstrated in professional work</p>
+
+          <h2 id="evidence-methods-heading">
+            Scientific and engineering methods connected to documented applications
+          </h2>
+
+          <p>
+            The methods presented on this page are not only software names or
+            theoretical capabilities. Selected professional and scientific
+            cases show how diagnostics, modelling, experimentation, process
+            calculations and project coordination have been applied in defined
+            contexts. These examples demonstrate transferable capability
+            without implying automatic performance in a different system.
+          </p>
+        </div>
+
+        <div class="evidence-method-grid">
+          <article class="evidence-method-card">
+            <span class="evidence-method-domain">
+              Optical diagnostics · Chemical interpretation · CFD
+            </span>
+
+            <h3>High-Pressure Combustion and Multiscale Analysis</h3>
+
+            <p>
+              Demonstrates integration of elevated-pressure flame experiments,
+              soot and particle diagnostics, boundary-condition analysis and
+              zero- to three-dimensional modelling.
+            </p>
+
+            <div class="evidence-method-links">
+              <a href="selected-work.html#high-pressure-combustion">
+                View evidence-backed case
+              </a>
+            </div>
+          </article>
+
+          <article class="evidence-method-card">
+            <span class="evidence-method-domain">
+              Instrumentation · Test execution · Engineering interpretation
+            </span>
+
+            <h3>Automotive Burner Test-Rig Development</h3>
+
+            <p>
+              Demonstrates practical integration of burner subsystems,
+              measurement and control interfaces, planned experiments, result
+              analysis and development-oriented reporting.
+            </p>
+
+            <div class="evidence-method-links">
+              <a href="selected-work.html#automotive-burner-development">
+                View evidence-backed case
+              </a>
+            </div>
+          </article>
+
+          <article class="evidence-method-card">
+            <span class="evidence-method-domain">
+              Plant trials · Process calculations · Concept engineering
+            </span>
+
+            <h3>Biomass Pyrolysis Process Development</h3>
+
+            <p>
+              Demonstrates translation of operating-plant observations into
+              process descriptions, calculations, technical documentation,
+              plant concepts and specification support.
+            </p>
+
+            <div class="evidence-method-links">
+              <a href="selected-work.html#pyrolysis-process-development">
+                View evidence-backed case
+              </a>
+            </div>
+          </article>
+
+          <article class="evidence-method-card">
+            <span class="evidence-method-domain">
+              Project control · Interfaces · Decision communication
+            </span>
+
+            <h3>International Industrial Project Coordination</h3>
+
+            <p>
+              Demonstrates the organizational layer required to connect
+              technical work with customers, internal functions, suppliers,
+              schedules, budgets and management reporting.
+            </p>
+
+            <div class="evidence-method-links">
+              <a href="selected-work.html#industrial-project-leadership">
+                View evidence-backed case
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="boundary-box">
+          <p>
+            Employment references support documented responsibilities, while
+            publications and public repositories support defined scientific
+            methods and calculations. Neither evidence type replaces
+            representative project data, system-specific validation or
+            qualified process-safety and implementation review.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="repositories"
+      class="section muted"
       aria-labelledby="repositories-heading"
     >
       <div class="container">
@@ -1315,7 +1491,7 @@
     </section>
 
     <section
-      class="section muted"
+      class="section"
       aria-labelledby="workflow-heading"
     >
       <div class="container">
@@ -1383,7 +1559,7 @@
     </section>
 
     <section
-      class="section"
+      class="section muted"
       aria-labelledby="kinetic-intelligence-heading"
     >
       <div class="container">
@@ -1403,10 +1579,11 @@
             </p>
 
             <p>
-              The internal package contains tested mathematical and software
-              foundations. Full Cantera combustion benchmarks, real-mechanism
-              state-transfer checks and reproducible performance evaluation
-              remain required validation gates before public release.
+              Selected mathematical and software components have been
+              reconstructed and tested in controlled examples. Full Cantera
+              combustion benchmarks, real-mechanism state-transfer checks and
+              reproducible performance evaluation remain required validation
+              gates before public release.
             </p>
 
             <div class="development-note">
@@ -1435,7 +1612,7 @@
     </section>
 
     <section
-      class="section muted"
+      class="section"
       aria-labelledby="policy-heading"
     >
       <div class="container">
