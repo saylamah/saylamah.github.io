@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Dr. Ahmad Saylam | R&amp;D &amp; Technology Development</title>
+  <title>Dr. Ahmad Saylam | R&amp;D, Process &amp; Technology Development</title>
 
   <meta
     name="description"
-    content="Scientific and engineering portfolio of Dr. Ahmad Saylam covering chemical kinetics, CFD, process development, pilot validation, industrial scale-up and evidence-based consulting."
+    content="Scientific and engineering portfolio of Dr. Ahmad Saylam covering reactive and thermochemical systems, chemical kinetics, CFD, process development, validation, pilot systems, industrial scale-up and evidence-based consulting."
   >
   <meta name="author" content="Dr. Ahmad Saylam">
   <meta name="robots" content="index,follow">
@@ -18,29 +18,35 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
+
   <meta
     property="og:site_name"
     content="Dr. Ahmad Saylam — Scientific &amp; Engineering Portfolio"
   >
+
   <meta
     property="og:title"
-    content="Dr. Ahmad Saylam | R&amp;D &amp; Technology Development"
+    content="Dr. Ahmad Saylam | R&amp;D, Process &amp; Technology Development"
   >
+
   <meta
     property="og:description"
-    content="Scientific engineering connecting molecular mechanisms, modelling, validation, pilot development, industrial scale-up and evidence-based consulting."
+    content="Scientific engineering connecting molecular mechanisms, modelling, validation, process development, pilot systems, industrial scale-up and evidence-based consulting."
   >
+
   <meta property="og:url" content="https://saylamah.github.io/">
 
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary">
+
   <meta
     name="twitter:title"
-    content="Dr. Ahmad Saylam | R&amp;D &amp; Technology Development"
+    content="Dr. Ahmad Saylam | R&amp;D, Process &amp; Technology Development"
   >
+
   <meta
     name="twitter:description"
-    content="Scientific engineering connecting molecular mechanisms, modelling, validation, pilot development, industrial scale-up and evidence-based consulting."
+    content="Scientific engineering connecting molecular mechanisms, modelling, validation, process development, pilot systems, industrial scale-up and evidence-based consulting."
   >
 
   <!-- Structured data -->
@@ -82,10 +88,10 @@
         "honorificPrefix": "Dr.",
         "url": "https://saylamah.github.io/",
         "jobTitle": [
-          "R&D and Technology Development Leader",
-          "Scientific and Engineering Consultant"
+          "R&D, Process & Technology Development Leader",
+          "Scientific & Engineering Consultant"
         ],
-        "description": "R&D and technology-development leader connecting applied physical chemistry, reactive and thermochemical systems, modelling, validation, pilot development and industrial scale-up.",
+        "description": "R&D, process and technology-development leader connecting applied physical chemistry, reactive and thermochemical systems, modelling, validation, pilot development and industrial scale-up.",
         "address": {
           "@type": "PostalAddress",
           "addressRegion": "North Rhine-Westphalia",
@@ -113,15 +119,19 @@
           "R&D strategy",
           "Process intensification",
           "Wastewater treatment",
-          "Advanced oxidation processes"
+          "Advanced oxidation processes",
+          "Desulfurization",
+          "Biomass pyrolysis",
+          "Biochar",
+          "Scientific and engineering consulting"
         ]
       },
       {
         "@type": "ProfilePage",
         "@id": "https://saylamah.github.io/#webpage",
         "url": "https://saylamah.github.io/",
-        "name": "Dr. Ahmad Saylam — R&D and Technology Development",
-        "description": "Scientific and engineering portfolio connecting publications, selected work, technical repositories, modelling methods, industrial development practice and evidence-based consulting.",
+        "name": "Dr. Ahmad Saylam — R&D, Process and Technology Development",
+        "description": "Scientific and engineering portfolio connecting evidence-backed professional work, publications, technical repositories, modelling methods, industrial development practice and consulting services.",
         "inLanguage": "en",
         "isPartOf": {
           "@id": "https://saylamah.github.io/#website"
@@ -153,6 +163,8 @@
       --yellow-ink: #76510c;
       --grey-bg: #e8edf1;
       --grey-ink: #4d5e6a;
+      --violet-bg: #eee9f7;
+      --violet-ink: #57407b;
       --max: 1180px;
       --shadow: 0 16px 40px rgba(18, 60, 86, 0.08);
     }
@@ -446,7 +458,7 @@
     }
 
     .section-heading {
-      max-width: 850px;
+      max-width: 900px;
       margin-bottom: 2.5rem;
     }
 
@@ -508,12 +520,14 @@
       color: var(--muted);
     }
 
+    .case-grid,
     .resource-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 1.2rem;
     }
 
+    .case-card,
     .resource-card {
       display: flex;
       flex-direction: column;
@@ -524,6 +538,11 @@
       box-shadow: var(--shadow);
     }
 
+    .case-card {
+      border-top: 4px solid var(--navy);
+    }
+
+    .case-domain,
     .resource-domain {
       display: block;
       margin-bottom: 0.75rem;
@@ -534,6 +553,7 @@
       text-transform: uppercase;
     }
 
+    .case-card p,
     .resource-card p {
       color: var(--muted);
     }
@@ -546,6 +566,16 @@
       border-radius: 999px;
       font-size: 0.74rem;
       font-weight: 800;
+    }
+
+    .status.peer-reviewed {
+      background: var(--green-bg);
+      color: var(--green-ink);
+    }
+
+    .status.reference {
+      background: var(--violet-bg);
+      color: var(--violet-ink);
     }
 
     .status.diagnostic {
@@ -568,6 +598,7 @@
       color: var(--grey-ink);
     }
 
+    .case-links,
     .resource-links {
       display: flex;
       flex-wrap: wrap;
@@ -577,8 +608,22 @@
       border-top: 1px solid var(--line);
     }
 
+    .case-links a,
     .resource-links a {
       font-weight: 750;
+    }
+
+    .evidence-note {
+      margin-bottom: 2rem;
+      padding: 1.25rem 1.4rem;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--accent);
+      border-radius: 0 12px 12px 0;
+    }
+
+    .evidence-note p:last-child {
+      margin-bottom: 0;
     }
 
     .workflow {
@@ -835,6 +880,7 @@
 
       .stats-grid,
       .card-grid,
+      .case-grid,
       .resource-grid,
       .tool-grid,
       .policy-grid,
@@ -914,7 +960,7 @@
       <div class="container hero-grid">
         <div>
           <p class="eyebrow">
-            R&amp;D · Technology Development · Scientific Engineering
+            R&amp;D · Process &amp; Technology Development · Scientific Engineering
           </p>
 
           <h1 id="hero-heading">
@@ -924,8 +970,8 @@
           <p class="hero-lead">
             Dr. Ahmad Saylam connects applied physical chemistry, chemical
             kinetics, reactor and CFD modelling, experimental validation,
-            pilot development and scale-up across reactive, thermochemical
-            and sustainable process systems.
+            process development, pilot systems and scale-up across reactive,
+            thermochemical and sustainable industrial processes.
           </p>
 
           <div class="button-row">
@@ -933,8 +979,8 @@
               Explore selected work
             </a>
 
-            <a class="button secondary" href="research-tools.html">
-              View research and tools
+            <a class="button secondary" href="about-cv.html">
+              View professional profile
             </a>
           </div>
         </div>
@@ -943,11 +989,12 @@
           <span class="panel-label">Professional focus</span>
 
           <ul class="check-list">
+            <li>R&amp;D, process and technology development</li>
             <li>Reactive systems and kinetic intelligence</li>
             <li>Reactor, CFD and multiscale modelling</li>
             <li>Thermochemical and sustainable processes</li>
-            <li>Technology validation and pilot development</li>
-            <li>Scale-up and engineering decision support</li>
+            <li>Validation, pilot development and scale-up</li>
+            <li>International technical project leadership</li>
           </ul>
         </aside>
       </div>
@@ -962,8 +1009,8 @@
           <strong>35+ years</strong>
 
           <span>
-            Across research, modelling, pilot development and industrial
-            environments
+            Across scientific research, modelling, process development and
+            industrial environments
           </span>
         </article>
 
@@ -979,7 +1026,8 @@
           <strong>Lab to industry</strong>
 
           <span>
-            Connecting scientific evidence, validation, pilots and scale-up
+            Connecting scientific evidence, experiments, pilot systems and
+            scale-up
           </span>
         </article>
 
@@ -987,7 +1035,7 @@
           <strong>International scope</strong>
 
           <span>
-            Scientific, engineering and technology-development collaboration
+            R&amp;D, engineering, customer projects and technical collaboration
           </span>
         </article>
       </div>
@@ -1007,9 +1055,9 @@
 
           <p>
             The work combines fundamental understanding, fit-for-purpose
-            modelling, experimental evidence and engineering interpretation.
-            Each method is selected according to the decision, uncertainty,
-            available data and required scale.
+            modelling, experimental evidence, process development and
+            engineering interpretation. Each method is selected according to
+            the decision, uncertainty, available data and required scale.
           </p>
         </div>
 
@@ -1044,7 +1092,7 @@
 
             <p>
               Pyrolysis, gasification, reforming, syngas, biomass, biochar,
-              waste-to-X, chemical recycling and circular resource pathways.
+              fuels, oils, wastewater treatment and circular process pathways.
             </p>
           </article>
 
@@ -1065,20 +1113,192 @@
 
     <section
       class="section muted"
-      aria-labelledby="evidence-heading"
+      aria-labelledby="professional-evidence-heading"
     >
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">Selected public evidence</p>
+          <p class="eyebrow">Evidence-backed professional work</p>
 
-          <h2 id="evidence-heading">
+          <h2 id="professional-evidence-heading">
+            Applied R&amp;D, process development and technical leadership
+          </h2>
+
+          <p>
+            Selected professional cases translate documented responsibilities
+            into concise engineering context, contribution and decision value.
+            Confidential source documents, customer data, proprietary designs
+            and unverified performance claims remain excluded.
+          </p>
+        </div>
+
+        <div class="evidence-note">
+          <p>
+            <strong>Evidence distinction:</strong> employment references verify
+            professional responsibilities, while peer-reviewed publications
+            support defined scientific methods and results. Neither evidence
+            type is used to imply broader performance than its documented scope.
+          </p>
+        </div>
+
+        <div class="case-grid">
+          <article class="case-card">
+            <span class="case-domain">
+              Combustion science · Optical diagnostics · CFD
+            </span>
+
+            <span class="status peer-reviewed">
+              Peer-reviewed + reference-backed
+            </span>
+
+            <h3>
+              High-Pressure Combustion Diagnostics &amp; Multiscale Modelling
+            </h3>
+
+            <p>
+              Experimental and numerical work examining soot formation,
+              particle development, burner-flow effects and boundary conditions
+              in optically accessible elevated-pressure flames.
+            </p>
+
+            <p>
+              The case demonstrates integration of optical diagnostics,
+              zero- to three-dimensional modelling, transport analysis and
+              experiment–model interpretation.
+            </p>
+
+            <div class="case-links">
+              <a href="selected-work.html#high-pressure-combustion">
+                View full case
+              </a>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <span class="case-domain">
+              Automotive R&amp;D · Burner systems · Emissions
+            </span>
+
+            <span class="status reference">
+              Qualified employment reference
+            </span>
+
+            <h3>
+              Automotive Burner Test-Rig Integration &amp; Development
+            </h3>
+
+            <p>
+              Practical development work connecting test-rig installation,
+              fuel, ignition and air systems, instrumentation, control,
+              experimental execution, data analysis and technical reporting.
+            </p>
+
+            <p>
+              The case demonstrates controlled experimental development and
+              emissions-oriented design feedback without disclosing customer or
+              proprietary technical data.
+            </p>
+
+            <div class="case-links">
+              <a href="selected-work.html#automotive-burner-development">
+                View full case
+              </a>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <span class="case-domain">
+              Biomass · Pyrolysis · Process engineering
+            </span>
+
+            <span class="status reference">
+              Qualified employment reference
+            </span>
+
+            <h3>
+              Biomass Pyrolysis Process &amp; Plant-Concept Engineering
+            </h3>
+
+            <p>
+              Process-development work linking plant trials, process
+              calculations, technical documentation, process descriptions,
+              plant concepts and specification support.
+            </p>
+
+            <p>
+              The case demonstrates how experimental learning can be translated
+              into structured engineering requirements and further development
+              decisions.
+            </p>
+
+            <div class="case-links">
+              <a href="selected-work.html#pyrolysis-process-development">
+                View full case
+              </a>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <span class="case-domain">
+              Industrial projects · Customer interface · Coordination
+            </span>
+
+            <span class="status reference">
+              Qualified employment reference
+            </span>
+
+            <h3>
+              International Industrial Customer-Project Leadership
+            </h3>
+
+            <p>
+              Planning and control of customer projects involving internal
+              departments, external partners, suppliers, technical and
+              commercial coordination, schedules, budgets and management
+              reporting.
+            </p>
+
+            <p>
+              The case demonstrates multidisciplinary project alignment and
+              practical problem solving without publishing customer,
+              contractual or proprietary project information.
+            </p>
+
+            <div class="case-links">
+              <a href="selected-work.html#industrial-project-leadership">
+                View full case
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="button-row">
+          <a class="button primary" href="selected-work.html#professional-cases">
+            Explore all professional cases
+          </a>
+
+          <a class="button secondary" href="about-cv.html">
+            Review professional background
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="section"
+      aria-labelledby="technical-evidence-heading"
+    >
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Public technical evidence</p>
+
+          <h2 id="technical-evidence-heading">
             Reproducible resources with explicit maturity boundaries
           </h2>
 
           <p>
             Public work is presented according to its actual status. An
-            engineering diagnostic, a tested screening framework, a research
-            reconstruction and a scientific hypothesis are not treated as
+            engineering diagnostic, tested screening framework, research
+            reconstruction and scientific hypothesis are not treated as
             equivalent evidence.
           </p>
         </div>
@@ -1110,8 +1330,8 @@
                 Open repository
               </a>
 
-              <a href="publications/desulfurization-reaction-transport.html">
-                View scientific framework
+              <a href="selected-work.html#desulfurization-framework">
+                View case interpretation
               </a>
             </div>
           </article>
@@ -1142,8 +1362,8 @@
                 Open repository
               </a>
 
-              <a href="publications/aop-kinetic-process-framework.html">
-                View scientific framework
+              <a href="selected-work.html#aop-framework">
+                View case interpretation
               </a>
             </div>
           </article>
@@ -1174,8 +1394,8 @@
                 Open repository
               </a>
 
-              <a href="publications/biomass-conversion-biochar-heat.html">
-                View related publication
+              <a href="selected-work.html#biochar-framework">
+                View case interpretation
               </a>
             </div>
           </article>
@@ -1206,16 +1426,16 @@
                 Open repository
               </a>
 
-              <a href="publications/persistence-stabilization-closure.html">
-                View modelling framework
+              <a href="selected-work.html#ndms-framework">
+                View case interpretation
               </a>
             </div>
           </article>
         </div>
 
         <div class="button-row">
-          <a class="button primary" href="selected-work.html">
-            View case-study interpretation
+          <a class="button primary" href="selected-work.html#public-frameworks">
+            View all technical frameworks
           </a>
 
           <a class="button secondary" href="publications.html">
@@ -1226,7 +1446,7 @@
     </section>
 
     <section
-      class="section"
+      class="section muted"
       aria-labelledby="workflow-heading"
     >
       <div class="container">
@@ -1284,8 +1504,8 @@
             <strong>5. Translate</strong>
 
             <p>
-              Convert evidence into pilot design, scale-up, risk, operability
-              and industrial decisions.
+              Convert evidence into process requirements, pilot design,
+              scale-up risk, operability and implementation decisions.
             </p>
           </article>
         </div>
@@ -1293,7 +1513,7 @@
     </section>
 
     <section
-      class="section muted"
+      class="section"
       aria-labelledby="tools-heading"
     >
       <div class="container">
@@ -1346,6 +1566,12 @@
             </p>
           </article>
         </div>
+
+        <div class="button-row">
+          <a class="button secondary" href="research-tools.html">
+            Explore research methods and tools
+          </a>
+        </div>
       </div>
     </section>
 
@@ -1373,10 +1599,10 @@
           </p>
 
           <p>
-            The Consulting page presents defined services, practical
+            The consulting page presents defined services, practical
             deliverables, application domains, working methods and engagement
-            boundaries. This website remains the supporting scientific and
-            engineering evidence layer.
+            boundaries. This website provides the connected professional,
+            scientific and technical evidence.
           </p>
 
           <div class="consulting-note">
@@ -1457,9 +1683,10 @@
             <h3>Evidence status</h3>
 
             <p>
-              Hypotheses, screening tools, reconstructed models, experimental
-              observations and validated results are labelled according to
-              their actual maturity.
+              Professional responsibilities, hypotheses, screening tools,
+              reconstructed models, experimental observations and validated
+              results are labelled according to their actual evidence type and
+              maturity.
             </p>
           </article>
 
@@ -1501,8 +1728,9 @@
 
           <p>
             Relevant discussions may concern R&amp;D leadership, scientific
-            engineering, modelling, validation, technology development,
-            scale-up, consulting or international technical collaboration.
+            engineering, modelling, validation, process and technology
+            development, scale-up, consulting or international technical
+            collaboration.
           </p>
         </div>
 
@@ -1594,7 +1822,7 @@
       </span>
 
       <span>
-        Technical evidence website · Scientific and engineering consulting
+        Professional evidence · Scientific engineering · Decision support
       </span>
     </div>
   </footer>
