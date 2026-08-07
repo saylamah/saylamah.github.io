@@ -8,7 +8,7 @@
 
   <meta
     name="description"
-    content="Selected peer-reviewed publications, technical frameworks, professional articles and open scientific outputs by Dr. Ahmad Saylam across chemical kinetics, combustion, thermochemical processes, water treatment, process intensification, energy systems and industrial scale-up."
+    content="Evidence-organized scientific and engineering outputs across combustion, kinetics, thermochemical processes, water treatment, process intensification and scale-up, with explicit links to canonical knowledge objects, repositories and case studies."
   >
   <meta name="author" content="Dr. Ahmad Saylam">
   <meta name="robots" content="index,follow">
@@ -70,7 +70,7 @@
         "@id": "https://saylamah.github.io/publications.html#webpage",
         "url": "https://saylamah.github.io/publications.html",
         "name": "Publications, Technical Frameworks and Open Outputs",
-        "description": "A searchable collection of peer-reviewed research, doctoral work, technical frameworks, professional articles and open scientific outputs by Dr. Ahmad Saylam.",
+        "description": "A searchable evidence layer connecting peer-reviewed research, doctoral work, technical frameworks, professional articles and open scientific outputs to canonical scientific and engineering knowledge objects.",
         "inLanguage": "en",
         "isPartOf": {
           "@id": "https://saylamah.github.io/#website"
@@ -480,6 +480,30 @@
       text-transform: uppercase;
     }
 
+    .seko-tag {
+      align-self: flex-start;
+      display: inline-flex;
+      margin: -0.2rem 0 0.75rem;
+      padding: 0.24rem 0.52rem;
+      background: #f7f9fa;
+      color: var(--navy);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+    }
+
+    .knowledge-note {
+      margin: 0.85rem 0 0;
+      padding: 0.8rem 0.9rem;
+      background: var(--soft);
+      color: var(--muted);
+      border-left: 3px solid var(--teal);
+      border-radius: 0 8px 8px 0;
+      font-size: 0.87rem;
+    }
+
     .type-peer {
       background: var(--green-bg);
       color: var(--green-ink);
@@ -729,22 +753,25 @@
   <main id="main">
     <section class="hero" aria-labelledby="page-heading">
       <div class="container">
-        <p class="eyebrow">Scientific knowledge objects · Evidence hierarchy · Responsible access</p>
+        <p class="eyebrow">Scholarly record · Open technical outputs · Responsible access</p>
 
         <h1 id="page-heading">
           Publications, Technical Frameworks and Open Scientific Outputs
         </h1>
 
         <p class="hero-lead">
-          A structured evidence library linking scientific knowledge objects (SEKOs), publications, repositories, technical frameworks and engineering case studies across combustion,
-          chemical kinetics, nanoparticle inception, thermochemical systems,
-          wastewater treatment, process intensification, energy systems and
-          engineering scale-up.
+          This page is the evidence layer of the wider scientific and
+          engineering knowledge system. Publications, preprints, technical
+          frameworks and professional articles are presented according to
+          their actual evidence role and linked, where appropriate, to the
+          canonical knowledge object, reproducible repository, methodology or
+          engineering case they support.
         </p>
 
         <div class="hero-actions">
-          <a class="button primary" href="#catalogue">Explore the catalogue</a>
+          <a class="button primary" href="#catalogue">Explore the evidence catalogue</a>
           <a class="button secondary" href="selected-work.html">View engineering case studies</a>
+          <a class="button secondary" href="research-tools.html">View methods &amp; tools</a>
         </div>
       </div>
     </section>
@@ -752,38 +779,41 @@
     <section class="section" aria-labelledby="orientation-heading">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">Knowledge architecture</p>
+          <p class="eyebrow">How the evidence layer is organized</p>
 
           <h2 id="orientation-heading">
-            Scientific knowledge objects supported by multiple evidence sources
+            Knowledge objects and publication outputs are kept distinct
           </h2>
 
           <p>
-            Each scientific knowledge object is supported by peer-reviewed papers, technical frameworks, repositories, professional articles and educational resources where available. Evidence types remain explicitly distinguished. Each record is
-            therefore labelled according to its actual status and bounded by
-            its methods, assumptions, validation and access rights.
+            A publication is one representation of knowledge, not the
+            knowledge object itself. The catalogue therefore keeps publication
+            type, evidence status, identifiers and access routes distinct while
+            connecting selected outputs to the Scientific &amp; Engineering
+            Knowledge Objects (SEKOs), repositories and case studies they
+            support.
           </p>
         </div>
 
         <div class="orientation-grid">
           <article class="orientation-card">
-            <strong>Scientific knowledge objects</strong>
-            <p>Canonical engineering/scientific topics that integrate all supporting evidence.</p>
+            <strong>Peer-reviewed evidence</strong>
+            <p>Journal and conference work supporting defined experimental, computational or theoretical claims.</p>
           </article>
 
           <article class="orientation-card">
-            <strong>Technical frameworks</strong>
-            <p>Engineering methods, diagnostic structures and screening tools with explicit applicability boundaries.</p>
+            <strong>Framework evidence</strong>
+            <p>Open engineering methods and diagnostic structures linked to explicit decision questions and applicability boundaries.</p>
           </article>
 
           <article class="orientation-card">
-            <strong>Open scientific outputs</strong>
-            <p>Theses, preprints and reproducible resources released with provenance, licence and maturity information.</p>
+            <strong>Reproducible representations</strong>
+            <p>Repositories, software archives and open outputs that make calculations, assumptions or reconstruction pathways inspectable.</p>
           </article>
 
           <article class="orientation-card">
-            <strong>Professional articles</strong>
-            <p>Industry-facing knowledge transfer that should not be interpreted as peer-reviewed scientific validation.</p>
+            <strong>Knowledge transfer</strong>
+            <p>Professional articles communicate technical ideas to industry but are not treated as peer-reviewed scientific validation.</p>
           </article>
         </div>
       </div>
@@ -792,38 +822,39 @@
     <section class="section muted" aria-labelledby="priority-heading">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">Priority scientific evidence</p>
+          <p class="eyebrow">Flagship knowledge objects and supporting evidence</p>
 
           <h2 id="priority-heading">
-            Strongest outputs supporting the current professional positioning
+            A small number of canonical objects organize the strongest reusable knowledge
           </h2>
 
           <p>
-            The following groups carry the greatest weight for reactive and
-            thermochemical systems, modelling, validation and scale-up. The
-            complete catalogue remains available below.
+            The catalogue remains publication-based for citation and access,
+            but selected outputs are now explicitly connected to the flagship
+            knowledge objects that they support. This avoids treating every
+            paper, repository or case study as an independent technical asset.
           </p>
         </div>
 
         <div class="priority-grid">
           <article class="priority-card">
-            <strong>Combustion &amp; high-pressure soot</strong>
-            <p>Recent peer-reviewed work in Combustion and Flame, Carbon, Reactions and Experiments in Fluids.</p>
+            <strong>SEKO-NDMS-001</strong>
+            <p>NDMS Persistence–Stabilization Closure — frontier hypothesis, reduced closure, open preprints and reproducible companion repository.</p>
           </article>
 
           <article class="priority-card">
-            <strong>Kinetic intelligence foundations</strong>
-            <p>Mechanism reduction, reaction-network centrality, HCCI chemistry and doctoral oxidation research.</p>
+            <strong>SEKO-DES-001</strong>
+            <p>Desulfurization Reaction–Transport Regimes — engineering diagnosis supported by framework publication, benchmark repository and software archive.</p>
           </article>
 
           <article class="priority-card">
-            <strong>Engineering frameworks</strong>
-            <p>Desulfurization, AOPs, thermochemical process development, industrial usefulness and scale-up.</p>
+            <strong>SEKO-AOP-001</strong>
+            <p>AOP Kinetic Process Framework — matrix-aware kinetic/process interpretation supported by open framework, tested code and software archive.</p>
           </article>
 
           <article class="priority-card">
-            <strong>Frontier scientific models</strong>
-            <p>NDMS hypothesis and persistence–stabilization closure, explicitly presented as exploratory research.</p>
+            <strong>SEKO-BIO-001</strong>
+            <p>Biomass Process Modeling Framework — transparent thermochemical reconstruction supporting biochar, syngas and pathway screening with explicit validation limits.</p>
           </article>
         </div>
       </div>
@@ -832,8 +863,8 @@
     <section id="catalogue" class="section" aria-labelledby="catalogue-heading">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">Search and filter</p>
-          <h2 id="catalogue-heading">Find work by topic</h2>
+          <p class="eyebrow">Publication and evidence catalogue</p>
+          <h2 id="catalogue-heading">Find evidence by topic, output type or identifier</h2>
           <p>
             Search by title, author, source, DOI, method or technical topic.
             Links lead to the website record, DOI or lawful external publication
@@ -883,24 +914,29 @@
             <div class="publication-grid">
               <article class="publication-card priority" data-category="nanoparticles hypothesis preprint">
                 <span class="publication-type type-hypothesis">Scientific hypothesis · Open preprint</span>
+                <span class="seko-tag">SEKO-NDMS-001</span>
                 <h3><a href="publications/ndms-nanoparticle-inception.html">A Transient Nano-Dense Molecular State in Nanoparticle Inception: Bridging Physical Clustering and Chemical Stabilization</a></h3>
                 <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> March 2026<br><strong>Platform:</strong> Zenodo</p>
                 <p class="identifier"><strong>DOI:</strong> 10.5281/zenodo.19730735</p>
                 <p class="description">Proposes NDMS as a testable bridge between reversible molecular clustering and chemically stabilized nanoparticle inception. The concept is exploratory and is not presented as a universally validated physical state or inception mechanism.</p>
+                <p class="knowledge-note"><strong>Knowledge role:</strong> hypothesis evidence for SEKO-NDMS-001; the repository and persistence–stabilization paper provide complementary representations of the same knowledge object.</p>
                 <div class="card-links">
                   <a href="publications/ndms-nanoparticle-inception.html">Open publication page</a>
                   <a href="https://doi.org/10.5281/zenodo.19730735" target="_blank" rel="noopener noreferrer external">Open DOI</a>
                   <a href="https://github.com/saylamah/ndms-nanoparticle-inception" target="_blank" rel="noopener noreferrer external">Related repository</a>
-                  <a href="https://doi.org/10.5281/zenodo.20840788" target="_blank" rel="noopener noreferrer external" > Open software archive DOI </a>
+                  <a href="https://doi.org/10.5281/zenodo.20840788" target="_blank" rel="noopener noreferrer external">Open software archive DOI</a>
+                  <a href="selected-work.html#ndms-framework">Related case</a>
                 </div>
               </article>
 
               <article class="publication-card priority" data-category="nanoparticles hypothesis framework preprint">
                 <span class="publication-type type-hypothesis">Exploratory modelling framework · Open preprint</span>
+                <span class="seko-tag">SEKO-NDMS-001</span>
                 <h3><a href="publications/persistence-stabilization-closure.html">Transient Nano-Dense Molecular States as a Persistence–Stabilization Closure for Combustion Nanoparticle Inception</a></h3>
                 <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> May 2026<br><strong>Platform:</strong> Zenodo</p>
                 <p class="identifier"><strong>DOI:</strong> 10.5281/zenodo.20258147</p>
                 <p class="description">Translates the NDMS hypothesis into a reduced closure separating association, dissociation, non-stabilizing loss and stabilization. It is a falsifiable conceptual model, not a validated particle-number or soot-yield predictor.</p>
+                <p class="knowledge-note"><strong>Knowledge role:</strong> modelling-framework evidence for SEKO-NDMS-001; scientific hypothesis and executable closure remain explicitly distinct from validated inception mechanisms.</p>
                 <div class="card-links">
                   <a href="publications/persistence-stabilization-closure.html">Open publication page</a>
                   <a href="https://doi.org/10.5281/zenodo.20258147" target="_blank" rel="noopener noreferrer external">Open DOI</a>
@@ -1057,15 +1093,17 @@
             <div class="publication-grid">
               <article class="publication-card priority" data-category="water aop kinetics framework preprint">
                 <span class="publication-type type-framework">Kinetic–process framework · Open preprint</span>
+                <span class="seko-tag">SEKO-AOP-001</span>
                 <h3><a href="publications/aop-kinetic-process-framework.html">A Unified Kinetic–Process Framework for Advanced Oxidation Processes: From Radical Chemistry to Reactor-Scale Performance in Wastewater Treatment</a></h3>
                 <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> April 2026<br><strong>Platform:</strong> Zenodo</p>
                 <p class="identifier"><strong>DOI:</strong> 10.5281/zenodo.19732394</p>
                 <p class="description">Links hydroxyl-radical generation, contaminant kinetics, matrix scavenging, oxidant utilization and reactor-scale indicators to explain why intrinsic reactivity may not translate into useful treatment performance.</p>
+                <p class="knowledge-note"><strong>Knowledge role:</strong> scientific-framework evidence for SEKO-AOP-001; the software archive is the reproducible implementation representation.</p>
                 <div class="card-links">
                   <a href="publications/aop-kinetic-process-framework.html">Open publication page</a>
                   <a href="https://doi.org/10.5281/zenodo.19732394" target="_blank" rel="noopener noreferrer external">Open DOI</a>
                   <a href="https://github.com/saylamah/aop-kinetic-process-framework" target="_blank" rel="noopener noreferrer external">Related repository</a>
-                  <a href="https://doi.org/10.5281/zenodo.20841383" target="_blank" rel="noopener noreferrer external" > Open software archive DOI </a>
+                  <a href="https://doi.org/10.5281/zenodo.20841383" target="_blank" rel="noopener noreferrer external">Open software archive DOI</a>
                   <a href="selected-work.html#aop-framework">Related case</a>
                 </div>
               </article>
@@ -1090,10 +1128,12 @@
             <div class="publication-grid">
               <article class="publication-card priority" data-category="desulfurization transport framework preprint">
                 <span class="publication-type type-framework">Engineering diagnostic framework · Open preprint</span>
+                <span class="seko-tag">SEKO-DES-001</span>
                 <h3><a href="publications/desulfurization-reaction-transport.html">Reaction–Transport Regime Analysis for Desulfurization of Gas and Petroleum Streams: An Engineering Diagnostic Framework</a></h3>
                 <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> May 2026<br><strong>Platform:</strong> Zenodo</p>
                 <p class="identifier"><strong>DOI:</strong> 10.5281/zenodo.20095695</p>
                 <p class="description">Distinguishes intrinsic kinetics from adsorption, interphase transfer, internal diffusion, hydrodynamics and downstream separation limitations to identify the controlling regime.</p>
+                <p class="knowledge-note"><strong>Knowledge role:</strong> scientific-framework evidence for SEKO-DES-001; the repository provides executable benchmark and screening representations.</p>
                 <div class="card-links">
                   <a href="publications/desulfurization-reaction-transport.html">Open publication page</a>
                   <a href="https://doi.org/10.5281/zenodo.20095695" target="_blank" rel="noopener noreferrer external">Open DOI</a>
@@ -1122,27 +1162,32 @@
             <div class="publication-grid">
               <article class="publication-card priority" data-category="thermochemical scale-up framework preprint">
                 <span class="publication-type type-framework">Process-development framework · Open preprint</span>
+                <span class="seko-tag">SEKO-TDS-001 · Supporting methodology evidence</span>
                 <h3><a href="publications/thermochemical-process-development.html">Thermochemical Process Development: From Mechanism to Scale-Up and Industrial Adoption</a></h3>
                 <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> June 2026<br><strong>Platform:</strong> Zenodo</p>
                 <p class="identifier"><strong>DOI:</strong> 10.5281/zenodo.20760609</p>
                 <p class="description">Connects feedstock characterization, reaction mechanisms, transport, reactor behaviour, product recovery, pilot validation and industrial implementation through evidence-gated development stages.</p>
+                <p class="knowledge-note"><strong>Knowledge role:</strong> supporting evidence for the cross-domain technology-development, validation and scale-up methodology maintained in Research &amp; Tools.</p>
                 <div class="card-links">
                   <a href="publications/thermochemical-process-development.html">Open publication page</a>
                   <a href="https://doi.org/10.5281/zenodo.20760609" target="_blank" rel="noopener noreferrer external">Open DOI</a>
+                  <a href="research-tools.html#technology-development-methodology">Related methodology</a>
                   <a href="selected-work.html#pyrolysis-process-development">Related case</a>
                 </div>
               </article>
 
               <article class="publication-card" data-category="thermochemical biomass biochar modelling reconstruction">
                 <span class="publication-type type-framework">Thermochemical modelling study · Research reconstruction</span>
+                <span class="seko-tag">SEKO-BIO-001</span>
                 <h3><a href="publications/biomass-conversion-biochar-heat.html">Enhancing Biomass Conversion: Advanced Modeling and Process Optimization for Efficient Biochar and Heat Production</a></h3>
                 <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> September 2024<br><strong>Platform:</strong> Zenodo</p>
                 <p class="identifier"><strong>DOI:</strong> Canonical Zenodo DOI under final verification</p>
                 <p class="description">Uses simplified reactor modelling to examine drying, pyrolysis and combustion trends. It is a screening-level foundation, not a validated feedstock-, particle- or reactor-specific industrial model.</p>
+                <p class="knowledge-note"><strong>Knowledge role:</strong> scientific-output representation supporting SEKO-BIO-001; the canonical knowledge object remains explicitly bounded as a research reconstruction and screening foundation.</p>
                 <div class="card-links">
                   <a href="publications/biomass-conversion-biochar-heat.html">Open publication page</a>
                   <a href="https://github.com/saylamah/biochar-process-modeling" target="_blank" rel="noopener noreferrer external">Related repository</a>
-                  <a href="https://doi.org/10.5281/zenodo.20841046" target="_blank" rel="noopener noreferrer external" > Open software archive DOI </a>
+                  <a href="https://doi.org/10.5281/zenodo.20841046" target="_blank" rel="noopener noreferrer external">Open software archive DOI</a>
                   <a href="selected-work.html#biochar-framework">Related case</a>
                 </div>
               </article>
@@ -1209,13 +1254,16 @@
             <div class="publication-grid">
               <article class="publication-card priority" data-category="engineering scale-up framework preprint">
                 <span class="publication-type type-framework">Engineering scale-up framework · Open preprint</span>
+                <span class="seko-tag">SEKO-TDS-001 · Supporting methodology evidence</span>
                 <h3><a href="publications/engineering-scale-up-lab-to-industry.html">Engineering Scale-Up: Overcoming Challenges from Lab to Industry</a></h3>
                 <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> February 2025<br><strong>Platform:</strong> Zenodo</p>
                 <p class="identifier"><strong>DOI:</strong> 10.5281/zenodo.19767463</p>
                 <p class="description">Treats scale-up as a multidisciplinary development problem involving flow, heat and mass transfer, kinetics, materials, modelling, economics, operability and risk.</p>
+                <p class="knowledge-note"><strong>Knowledge role:</strong> supporting evidence for SEKO-TDS-001 and the evidence-gated technology-development methodology.</p>
                 <div class="card-links">
                   <a href="publications/engineering-scale-up-lab-to-industry.html">Open publication page</a>
                   <a href="https://doi.org/10.5281/zenodo.19767463" target="_blank" rel="noopener noreferrer external">Open DOI</a>
+                  <a href="research-tools.html#technology-development-methodology">Related methodology</a>
                   <a href="selected-work.html">Related cases</a>
                 </div>
               </article>
@@ -1329,16 +1377,18 @@
 
         <div class="boundary-box">
           <p>
-            This catalogue is the scientific-output layer of the wider
-            professional ecosystem. It documents scientific work and public
-            technical reasoning without converting every record into a general
-            industrial-performance claim.
+            This catalogue is the publication and evidence layer of the wider
+            scientific and engineering knowledge system. Selected outputs
+            support canonical SEKOs, methodologies and engineering cases;
+            publication presence alone does not imply general industrial
+            validity or universal applicability.
           </p>
 
           <p>
             Practical interpretation and application context are presented in
-            <a href="selected-work.html">Selected Work</a>. Methods and
-            computational environments are presented in
+            <a href="selected-work.html">Selected Work</a>. Canonical methods,
+            computational environments and the technology-development
+            methodology are presented in
             <a href="research-tools.html">Research &amp; Tools</a>. Defined
             services and engagement boundaries are presented on the
             <a href="consulting.html">Consulting page</a>.
@@ -1374,7 +1424,7 @@
 
     <div class="container footer-bottom">
       <span>© <span id="year">2026</span> Dr. Ahmad Saylam</span>
-      <span>Scholarly record · Evidence status · Responsible access</span>
+      <span>Knowledge objects · Evidence status · Responsible access</span>
     </div>
   </footer>
 
