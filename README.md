@@ -1,249 +1,139 @@
-# Ahmad Saylam
+# Ahmad Saylam — Scientific & Engineering Knowledge Website
 
-**R&D, Process & Technology Development Leader | Reactive & Thermochemical Systems | Modelling, Validation & Scale-Up**
+Source repository for the public scientific and engineering website:
 
-Scientific and engineering work connecting molecular and reaction-level understanding with process development, pilot validation and industrial implementation.
+**https://saylamah.github.io**
 
-I work at the interface of applied physical chemistry, chemical kinetics, thermodynamics, transport phenomena, reactor and process modelling, experimental development and industrial engineering.
+The website presents selected public and non-confidential scientific, engineering and professional evidence across:
 
-My objective is to convert scientific understanding and technical evidence into defensible development decisions: identifying governing mechanisms, selecting fit-for-purpose models, defining meaningful validation programmes, assessing process performance and translating results toward pilot and industrial application.
+- applied physical chemistry, thermodynamics and chemical kinetics;
+- combustion, reactive systems, soot and nanoparticle inception;
+- reactor modelling, CFD and multiscale analysis;
+- thermochemical conversion, biomass, biochar, syngas and waste-to-X;
+- fuels, desulfurization and process intensification;
+- advanced oxidation processes and wastewater treatment;
+- technology development, validation, pilot planning and industrial scale-up.
 
-[Professional Website](https://saylamah.github.io) ·
-[Consulting](https://saylamah.github.io/consulting.html) ·
-[Selected Work](https://saylamah.github.io/selected-work.html) ·
-[Publications](https://saylamah.github.io/publications.html) ·
-[LinkedIn](https://www.linkedin.com/in/ahmad-saylam) ·
-[ORCID](https://orcid.org/0000-0001-7484-1265) ·
-[Google Scholar](https://scholar.google.com/citations?user=2I4xhywAAAAJ&hl=en)
+## Website Role
 
----
+The website is the public interface to a wider scientific and engineering knowledge system.
 
-## Professional Focus
+Its purpose is to connect, without unnecessary duplication:
 
-### R&D, Process & Technology Development
+- canonical scientific and engineering knowledge objects;
+- peer-reviewed publications and open technical outputs;
+- reproducible GitHub repositories and software archives;
+- selected evidence-backed engineering case studies;
+- research methods and development frameworks;
+- professional evidence and career context;
+- consulting applications and collaboration routes.
 
-- Scientific and engineering problem definition
-- Technology-development roadmaps and decision gates
-- Evidence, uncertainty and technical-risk assessment
-- Process-concept and operating-window development
-- Experimental and pilot-programme planning
-- Project-based scientific and technical leadership
+The website follows a contribution-first communication principle:
 
-### Reactive & Thermochemical Systems
+**Contribution → Methodology → Evidence → Application → Biography**
 
-- Combustion, emissions and reactive-flow systems
-- Chemical kinetics and reaction-mechanism analysis
-- Pyrolysis, gasification, reforming and syngas
-- Biomass, biochar, residues and waste-to-X pathways
-- Fuels, oils, desulfurization and hydrocarbon processing
-- Heat, mass, species and reaction transport
+## Knowledge Architecture
 
-### Modelling, Validation & Scale-Up
+Selected technical work is organized around Scientific & Engineering Knowledge Objects (SEKOs).
 
-- Zero- to three-dimensional reactor and process modelling
-- Detailed and reduced chemical mechanisms
-- Reactive-flow, heat-transfer and multiphase CFD
-- Sensitivity, reaction-rate and transport-regime analysis
-- Model-to-experiment comparison
-- Pilot definition, validation and scale-up risk assessment
+A SEKO is a stable knowledge object that may have several controlled representations, such as:
 
-### Sustainable & Environmental Process Systems
+- publication;
+- GitHub repository;
+- Zenodo/software archive;
+- website case study;
+- modelling or validation tool;
+- educational resource;
+- consulting application.
 
-- Wastewater treatment and advanced oxidation
-- Process intensification and hydrodynamic cavitation assessment
-- Resource recovery and circular process concepts
-- Energy and process integration
-- Emerging-technology and performance-claims assessment
-- Industrial implementation and operability review
+This prevents the same technical contribution from being independently redefined in multiple places.
 
----
+Current flagship public knowledge objects include:
 
-## Technical Portfolio Architecture
+- **SEKO-NDMS-001 — NDMS Persistence–Stabilization Closure**
+- **SEKO-DES-001 — Desulfurization Reaction–Transport Regimes**
+- **SEKO-AOP-001 — AOP Kinetic Process Framework**
+- **SEKO-BIO-001 — Biomass Process Modeling Framework**
 
-Public technical work is organised under five connected categories.
+A cross-domain technology-development, validation and scale-up methodology is maintained in the Research & Tools layer and supported by dedicated scale-up and thermochemical-development outputs.
 
-### 1. Fundamental Science & Frontier Models
+## Current Website Structure
 
-Mechanistic research, chemical kinetics, combustion science, soot and nanoparticle inception, complex reaction systems and exploratory scientific hypotheses.
+```text
+index.html           Main scientific and engineering homepage
+selected-work.html   Evidence-backed technical cases and flagship knowledge objects
+research-tools.html  Methods, repositories, reproducible tools and development methodology
+publications.html    Publication and evidence catalogue
+about-cv.html        Professional evidence, career architecture and qualifications
+consulting.html      Consulting applications, services and engagement boundaries
 
-### 2. Translational Engineering Science
+publications/        Individual publication/framework pages
+papers/              Publicly shareable publication records/files
+case-studies/        Detailed engineering case studies where available
+```
 
-Methods connecting molecular and reaction-level understanding with transport phenomena, reactor behaviour, experimental interpretation and engineering decisions.
+Each page has a distinct role:
 
-### 3. Industrial Technologies & Applications
+- **Home:** overall positioning and navigation.
+- **Selected Work:** demonstrated technical contributions and engineering cases.
+- **Research & Tools:** canonical methods, repositories, reproducible tools and technology-development methodology.
+- **Publications:** evidence layer linking papers and open outputs to broader knowledge objects.
+- **Professional Profile:** qualifications, career context and verified professional evidence.
+- **Consulting:** application of documented capability and methodology to defined client problems.
 
-Thermochemical conversion, fuels and oils, desulfurization, water treatment, process intensification, pilot systems and industrial technology development.
+## Evidence and Provenance Policy
 
-### 4. Consulting Case Studies, Methods & Tools
+Public content is selected rather than bulk-published.
 
-Technical assessments, decision-support frameworks, validation methods, scale-up approaches, reproducible calculations and non-confidential case studies.
+Historical programs, mechanisms, figures, datasets and project materials are reviewed for:
 
-### 5. Education & Knowledge Transfer
+- authorship and ownership;
+- confidentiality;
+- licensing and redistribution rights;
+- technical integrity;
+- evidence maturity;
+- applicability boundaries;
+- suitability for public communication.
 
-Scientific publications, professional articles, explanatory resources, reproducible examples and structured technical communication.
+The website does not intentionally disclose confidential client or employer information, restricted operating data, proprietary project details or third-party material without an appropriate right to use it.
 
----
+Research hypotheses, screening frameworks, reconstructed models, software tests, representative validation and industrial evidence are not treated as equivalent. Claims are bounded by the evidence actually available.
 
-## Selected Public Technical Work
+## Repositories, DOI Records and Reproducibility
 
-### [`aop-kinetic-process-framework`](https://github.com/saylamah/aop-kinetic-process-framework)
+Where appropriate, technical frameworks are linked to:
 
-**Status: Tested screening framework**
+- GitHub repositories for transparent implementation;
+- Zenodo releases for persistent archival records and DOI assignment;
+- publication pages for scientific context;
+- Selected Work entries for engineering interpretation.
 
-A Python framework for matrix-aware kinetic and process-level assessment of advanced oxidation processes in wastewater treatment.
+Software verification is distinguished from experimental or industrial validation.
 
-It examines radical scavenging, oxidant utilisation, apparent kinetics, treatment-time estimates and selected engineering indicators. System-specific application requires representative measurements and validation.
+## Development Principles
 
----
+The website and related repositories are maintained using several long-term principles:
 
-### [`desulfurization-reaction-transport-regimes`](https://github.com/saylamah/desulfurization-reaction-transport-regimes)
+- one canonical source wherever practical;
+- reuse before duplication;
+- evidence-proportional claims;
+- explicit applicability boundaries;
+- contribution before biography;
+- traceability between publications, repositories, methods and cases;
+- preservation of scientifically useful legacy work through transparent reconstruction rather than unsupported modernization.
 
-**Status: Engineering diagnostic framework**
+## Related Links
 
-A structured method for distinguishing intrinsic chemistry from mass-transfer, diffusion, adsorption, hydrodynamic and downstream-separation limitations in gas- and petroleum-stream desulfurization.
-
-The framework supports bottleneck diagnosis, experimental planning, process comparison and technology-selection decisions. It is not presented as a universal process-performance predictor.
-
----
-
-### [`biochar-process-modeling`](https://github.com/saylamah/biochar-process-modeling)
-
-**Status: Research reconstruction and screening framework**
-
-Cantera-based calculations and curated technical resources for biomass conversion, biochar, syngas, heat generation, residence-time effects and carbon-management assessment.
-
-The repository provides a transparent development foundation rather than a validated feedstock-, particle- or reactor-specific industrial model.
-
----
-
-### [`ndms-nanoparticle-inception`](https://github.com/saylamah/ndms-nanoparticle-inception)
-
-**Status: Scientific hypothesis and research prototype**
-
-A reproducible conceptual and mathematical framework investigating whether transient precursor association, finite persistence and stabilization can help bridge molecular chemistry and persistent nanoparticle inception.
-
-The NDMS concept is testable but is not presented as an established universal physical state or nanoparticle-inception mechanism.
-
----
-
-## Current Research Development
-
-### Kinetic Intelligence
-
-Historical work on reaction-rate analysis, sensitivity, reaction networks, mechanism reduction and adaptive chemistry is being re-derived as a modern Python and Cantera framework.
-
-Planned modules include:
-
-- mechanism audit and provenance;
-- reactor-case and scenario management;
-- reaction-rate and flux analysis;
-- sensitivity and kinetic-control diagnostics;
-- chemical reaction-network analysis;
-- static and adaptive mechanism reduction;
-- conservative state transfer;
-- validation and applicability reporting.
-
-**Current maturity:** controlled research reconstruction and benchmark validation. It is not presented as validated public software or as evidence of demonstrated computational acceleration.
-
----
-
-## Working Method
-
-The standard development sequence is:
-
-1. **Define**  
-   Establish the system, objective, constraints, uncertainties and required decision.
-
-2. **Formulate**  
-   Identify the governing chemistry, transport, thermodynamics and process interactions.
-
-3. **Model**  
-   Select the simplest defensible analytical, kinetic, reactor, process or CFD model.
-
-4. **Validate**  
-   Compare assumptions and results with measurements, balances, literature, benchmarks and predefined criteria.
-
-5. **Translate**  
-   Convert the evidence into process requirements, pilot configuration, scale-up risk and implementation decisions.
-
-The objective is not merely to demonstrate that a scientific or technological effect exists, but to determine whether it is reproducible, transferable and useful under defined conditions.
-
----
-
-## Scientific & Engineering Consulting
-
-The [consulting platform](https://saylamah.github.io/consulting.html) translates suitable scientific and engineering capabilities into defined services, deliverables and engagement boundaries.
-
-Principal service areas are:
-
-1. **R&D and Technology Development**
-2. **Feasibility, Technology Assessment and Decision Support**
-3. **Process Development, Pilot Validation and Scale-Up**
-4. **Reactive, Thermochemical and Multiscale Modelling**
-5. **Sustainable and Environmental Process Systems**
-
-Selected support may include:
-
-- R&D and technology-development planning;
-- technical feasibility and evidence assessment;
-- process development and operating-window definition;
-- experimental and pilot-validation planning;
-- reactive, thermochemical and multiscale modelling;
-- process-intensification assessment;
-- scale-up and implementation-risk analysis;
-- independent scientific and engineering review.
-
-Potential engagements are assessed for technical fit, evidence availability, implementation value, confidentiality, intellectual-property boundaries and conflicts of interest.
-
-GitHub provides the reproducible technical-evidence layer. The professional website connects this evidence with publications, case studies, consulting services and professional collaboration.
-
----
-
-## Tools & Methods
-
-**Scientific computing**
-
-Python · Fortran · MATLAB · C/C++ · Jupyter Notebook
-
-**Chemical kinetics**
-
-CHEMKIN · Cantera · detailed and reduced mechanisms · reaction-rate analysis · sensitivity analysis · reaction networks · mechanism reduction · adaptive chemistry
-
-**CFD and reactor modelling**
-
-ANSYS Fluent · OpenFOAM · reactive-flow CFD · combustion modelling · species transport · heat transfer · turbulence–chemistry interaction · multiphase modelling · 0D–3D reactor simulation
-
-**Engineering analysis**
-
-Thermodynamics · reaction engineering · heat and mass transfer · transport phenomena · process calculations · validation · optimisation · pilot development · scale-up
-
----
-
-## Evidence, Rights & Provenance
-
-This profile contains selected public and non-confidential scientific and engineering material.
-
-It does not intentionally disclose:
-
-- confidential client or employer information;
-- proprietary operating data or equipment details;
-- company-owned know-how;
-- third-party software, mechanisms or documents without appropriate rights;
-- unpublished collaborator material without consent;
-- unverified industrial-performance claims.
-
-Historical codes, figures, documents and models are reviewed for authorship, ownership, licensing, confidentiality, technical integrity and validation status before public release.
-
----
-
-## Professional Links
-
-- [Professional Website](https://saylamah.github.io)
-- [Scientific & Engineering Consulting](https://saylamah.github.io/consulting.html)
-- [Selected Work & Case Studies](https://saylamah.github.io/selected-work.html)
-- [Research Methods & Tools](https://saylamah.github.io/research-tools.html)
-- [Publications](https://saylamah.github.io/publications.html)
+- [Website](https://saylamah.github.io)
+- [GitHub Profile](https://github.com/saylamah)
 - [LinkedIn](https://www.linkedin.com/in/ahmad-saylam)
 - [ORCID](https://orcid.org/0000-0001-7484-1265)
 - [Google Scholar](https://scholar.google.com/citations?user=2I4xhywAAAAJ&hl=en)
 - [ResearchGate](https://www.researchgate.net/profile/Ahmad-Saylam)
+
+## Author
+
+**Dr. Ahmad Saylam**
+
+R&D, Process & Technology Development Leader  
+Reactive & Thermochemical Systems · Modelling, Validation & Scale-Up
