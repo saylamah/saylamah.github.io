@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Automotive Burner Test-Rig Integration &amp; Emissions-Oriented Development | Dr. Ahmad Saylam</title>
+
+  <meta
+    name="description"
+    content="Evidence-backed engineering case study on automotive burner test-rig integration, instrumentation, experimental execution, emissions-oriented analysis and development support by Dr. Ahmad Saylam."
+  >
+  <meta name="author" content="Dr. Ahmad Saylam">
+  <meta name="robots" content="index,follow">
+
+  <link
+    rel="canonical"
+    href="https://saylamah.github.io/case-studies/automotive-burner-test-rig-development.html"
+  >
+
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Dr. Ahmad Saylam — Scientific &amp; Engineering Portfolio">
+  <meta property="og:title" content="Automotive Burner Test-Rig Integration &amp; Emissions-Oriented Development">
+  <meta
+    property="og:description"
+    content="Applied automotive R&amp;D case connecting burner-system hardware, instrumentation, experiments, emissions analysis and evidence-based development feedback."
+  >
+  <meta
+    property="og:url"
+    content="https://saylamah.github.io/case-studies/automotive-burner-test-rig-development.html"
+  >
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Automotive Burner Test-Rig Integration &amp; Emissions-Oriented Development">
+  <meta
+    name="twitter:description"
+    content="Applied automotive R&amp;D case connecting burner-system hardware, instrumentation, experiments, emissions analysis and development feedback."
+  >
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://saylamah.github.io/case-studies/automotive-burner-test-rig-development.html#article",
+    "url": "https://saylamah.github.io/case-studies/automotive-burner-test-rig-development.html",
+    "headline": "Automotive Burner Test-Rig Integration & Emissions-Oriented Development",
+    "description": "Evidence-backed engineering case study on automotive burner test-rig integration, instrumentation, experimental execution, emissions-oriented analysis and development support.",
+    "inLanguage": "en",
+    "author": {
+      "@type": "Person",
+      "@id": "https://saylamah.github.io/#person",
+      "name": "Ahmad Saylam",
+      "honorificPrefix": "Dr.",
+      "url": "https://saylamah.github.io/about-cv.html"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "@id": "https://saylamah.github.io/#website",
+      "url": "https://saylamah.github.io/",
+      "name": "Dr. Ahmad Saylam — Scientific and Engineering Portfolio"
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --ink: #13202c;
+      --muted: #536575;
+      --line: #d9e2e8;
+      --paper: #ffffff;
+      --soft: #f3f7f8;
+      --navy: #123c56;
+      --teal: #147b75;
+      --teal-dark: #0d5f5b;
+      --accent: #c98b2e;
+      --green-bg: #e3f2eb;
+      --green-ink: #17613f;
+      --blue-bg: #e3edf5;
+      --blue-ink: #244f6b;
+      --max: 1120px;
+      --shadow: 0 16px 40px rgba(18, 60, 86, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Inter, "Segoe UI", Arial, Helvetica, sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--teal-dark);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover { color: var(--navy); }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    h1, h2, h3, h4 {
+      margin-top: 0;
+      line-height: 1.18;
+      letter-spacing: -0.02em;
+    }
+
+    h1 {
+      max-width: 930px;
+      margin-bottom: 1.15rem;
+      font-size: clamp(2.2rem, 4vw, 3.8rem);
+    }
+
+    h2 { font-size: clamp(1.75rem, 3vw, 2.6rem); }
+    h3 { font-size: 1.3rem; }
+    p { margin-top: 0; }
+    ul { margin-top: 0; }
+
+    .container {
+      width: min(var(--max), calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+    }
+
+    .skip-link:focus {
+      top: 8px;
+      left: 8px;
+      z-index: 100;
+      padding: 0.7rem 1rem;
+      background: #ffffff;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.96);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(12px);
+    }
+
+    .header-inner {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      width: 43px;
+      height: 43px;
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      background: var(--navy);
+      color: #ffffff;
+      border-radius: 50%;
+      font-weight: 800;
+    }
+
+    .brand strong,
+    .brand small { display: block; }
+
+    .brand small {
+      color: var(--muted);
+      font-size: 0.72rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .site-nav {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.87rem;
+    }
+
+    .site-nav a {
+      padding: 0.55rem 0.1rem;
+      color: var(--ink);
+      border-bottom: 2px solid transparent;
+      text-decoration: none;
+    }
+
+    .site-nav a:hover,
+    .site-nav a[aria-current="page"] {
+      color: var(--teal-dark);
+      border-bottom-color: var(--teal);
+    }
+
+    .nav-toggle {
+      display: none;
+      padding: 0.55rem 0.8rem;
+      background: #ffffff;
+      color: var(--ink);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    .hero {
+      padding: clamp(4rem, 7vw, 6.5rem) 0;
+      background: linear-gradient(135deg, #f8fbfc 0%, #edf5f5 62%, #f8f4ec 100%);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      margin-bottom: 1rem;
+      color: var(--teal-dark);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .hero-lead {
+      max-width: 880px;
+      color: var(--muted);
+      font-size: clamp(1.08rem, 1.7vw, 1.28rem);
+    }
+
+    .status-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      margin: 1.6rem 0 0;
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.42rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 800;
+    }
+
+    .status.reference {
+      background: var(--blue-bg);
+      color: var(--blue-ink);
+    }
+
+    .status.boundary {
+      background: var(--green-bg);
+      color: var(--green-ink);
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 2rem;
+    }
+
+    .button {
+      min-height: 46px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem 1.15rem;
+      border-radius: 8px;
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .button.primary {
+      background: var(--teal);
+      color: #ffffff;
+    }
+
+    .button.primary:hover {
+      background: var(--teal-dark);
+      color: #ffffff;
+    }
+
+    .button.secondary {
+      background: #ffffff;
+      color: var(--navy);
+      border: 1px solid var(--navy);
+    }
+
+    .button.secondary:hover { background: var(--soft); }
+
+    .section {
+      padding: clamp(3.5rem, 6vw, 5.5rem) 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section.muted { background: var(--soft); }
+
+    .section-heading {
+      max-width: 820px;
+      margin-bottom: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.2rem;
+    }
+
+    .card {
+      padding: 1.45rem;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+    }
+
+    .card h3 { margin-bottom: 0.65rem; }
+    .card p:last-child,
+    .card ul:last-child { margin-bottom: 0; }
+
+    .evidence-note {
+      margin-top: 1.4rem;
+      padding: 1.2rem 1.35rem;
+      background: #fffaf0;
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+    }
+
+    .evidence-note p:last-child { margin-bottom: 0; }
+
+    .method-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 0.8rem;
+    }
+
+    .method-step {
+      padding: 1.1rem;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+
+    .method-step strong {
+      display: block;
+      margin-bottom: 0.35rem;
+      color: var(--teal-dark);
+    }
+
+    .links-list {
+      display: grid;
+      gap: 0.7rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .links-list a {
+      display: block;
+      padding: 0.8rem 0.95rem;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .site-footer {
+      padding: 2.5rem 0;
+      background: var(--navy);
+      color: #ffffff;
+    }
+
+    .site-footer a { color: #ffffff; }
+
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+
+    @media (max-width: 860px) {
+      .nav-toggle { display: inline-flex; }
+
+      .site-nav {
+        display: none;
+        position: absolute;
+        top: 78px;
+        right: 20px;
+        left: 20px;
+        padding: 1rem;
+        background: #ffffff;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .site-nav.open { display: flex; }
+      .grid,
+      .method-grid { grid-template-columns: 1fr; }
+      .footer-grid { flex-direction: column; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html" aria-label="Dr. Ahmad Saylam home">
+        <span class="brand-mark">AS</span>
+        <span>
+          <strong>Dr. Ahmad Saylam</strong>
+          <small>Science · Engineering · Scale-Up</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        Menu
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="../index.html">Home</a>
+        <a href="../selected-work.html" aria-current="page">Selected Work</a>
+        <a href="../research-tools.html">Research &amp; Tools</a>
+        <a href="../publications.html">Publications</a>
+        <a href="../about-cv.html">About</a>
+        <a href="../consulting.html">Consulting</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <p class="eyebrow">Automotive R&amp;D · Burner Systems · Instrumentation · Emissions</p>
+
+        <h1 id="hero-heading">
+          Automotive Burner Test-Rig Integration &amp; Emissions-Oriented Development
+        </h1>
+
+        <p class="hero-lead">
+          Evidence-backed applied R&amp;D work linking burner-system hardware,
+          instrumentation, experimental execution, emissions evaluation, data
+          interpretation and development-oriented feedback for an automotive
+          exhaust-thermal-management application.
+        </p>
+
+        <div class="status-row" aria-label="Evidence status">
+          <span class="status reference">Qualified employment-reference supported</span>
+          <span class="status boundary">Non-confidential public summary</span>
+        </div>
+
+        <div class="button-row">
+          <a class="button primary" href="../selected-work.html#automotive-burner-development">
+            View concise evidence summary
+          </a>
+          <a class="button secondary" href="../about-cv.html">View professional profile</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="challenge-heading">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Engineering context</p>
+          <h2 id="challenge-heading">From test-rig readiness to evidence-based design feedback</h2>
+          <p>
+            The work concerned an automotive burner system used within an exhaust
+            thermal-management development context. The engineering requirement
+            was not only to operate the burner, but to establish a reliable
+            experimental system with traceable fuel, ignition, air, measurement
+            and control interfaces so that operating behaviour and emissions
+            could be assessed under defined conditions.
+          </p>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <h3>System integration</h3>
+            <p>
+              Support for installation and commissioning activities connected the
+              burner test setup with fuel, ignition and air subsystems.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Instrumentation</h3>
+            <p>
+              Pressure, temperature and mass-flow measurements were integrated
+              with the experimental acquisition and control environment to support
+              repeatable testing and interpretation.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Experimental execution</h3>
+            <p>
+              Planned tests were carried out across defined operating conditions,
+              providing an evidence base for performance and emissions-oriented assessment.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Development feedback</h3>
+            <p>
+              Test results were analysed and translated into technical reports,
+              improvement proposals and understanding of relevant burner and
+              control-parameter effects.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted" aria-labelledby="contribution-heading">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Verified contribution</p>
+          <h2 id="contribution-heading">Documented applied R&amp;D responsibilities</h2>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Test-rig and subsystem support</h3>
+            <ul>
+              <li>Support for test-setup installation</li>
+              <li>Connection of fuel, ignition and air systems</li>
+              <li>Practical troubleshooting during experimental development</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Measurement and control interfaces</h3>
+            <ul>
+              <li>Integration of pressure measurements</li>
+              <li>Integration of temperature measurements</li>
+              <li>Integration of mass-flow measurements</li>
+              <li>Connection with acquisition and control systems</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Testing and analysis</h3>
+            <ul>
+              <li>Execution of planned experiments</li>
+              <li>Evaluation of results across operating conditions</li>
+              <li>Emissions-oriented performance characterization</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Engineering communication</h3>
+            <ul>
+              <li>Technical reporting</li>
+              <li>Development-oriented interpretation</li>
+              <li>Improvement proposals</li>
+              <li>Support for burner and control-parameter optimization</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="value-heading">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Decision value</p>
+          <h2 id="value-heading">What this work demonstrates</h2>
+          <p>
+            The case demonstrates transferable capability at the interface of
+            experimental combustion, instrumentation, practical test engineering
+            and evidence-based R&amp;D decision support.
+          </p>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Test readiness</h3>
+            <p>Connecting hardware, sensors and experimental procedures into a working development environment.</p>
+          </article>
+
+          <article class="card">
+            <h3>Operating-window interpretation</h3>
+            <p>
+              Relating burner response and measured outputs to controlled operating
+              conditions rather than treating individual test points in isolation.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Emissions-oriented development</h3>
+            <p>
+              Using experimental evidence to support understanding of performance
+              and emissions behaviour and to inform subsequent development decisions.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Cross-functional engineering</h3>
+            <p>
+              Linking physical hardware, measurement systems, controls,
+              experimentation, analysis and technical reporting within one development workflow.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted" aria-labelledby="method-heading">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Transferable method</p>
+          <h2 id="method-heading">A compact development sequence</h2>
+          <p>
+            The transferable value lies in the development logic rather than in
+            any proprietary test result or customer-specific design detail.
+          </p>
+        </div>
+
+        <div class="method-grid">
+          <div class="method-step"><strong>1 · Integrate</strong>Connect hardware, utilities, instrumentation and control interfaces.</div>
+          <div class="method-step"><strong>2 · Define</strong>Establish operating conditions, measurements and test objectives.</div>
+          <div class="method-step"><strong>3 · Test</strong>Execute planned experiments with traceable settings and observations.</div>
+          <div class="method-step"><strong>4 · Analyse</strong>Evaluate performance, emissions and parameter-response behaviour.</div>
+          <div class="method-step"><strong>5 · Translate</strong>Convert evidence into technical reporting and development recommendations.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="evidence-heading">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Evidence &amp; boundaries</p>
+          <h2 id="evidence-heading">Public wording is deliberately constrained</h2>
+          <p>
+            The responsibilities summarized here are supported by a qualified
+            employment reference. This page demonstrates transferable engineering
+            capability without disclosing customer-owned or employer-owned technical information.
+          </p>
+        </div>
+
+        <div class="evidence-note">
+          <p>
+            <strong>Excluded from this public case:</strong>
+            customer data, test-result datasets, control maps, calibration records,
+            component geometry, proprietary burner design details, confidential
+            operating limits and unpublished development information.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted" aria-labelledby="links-heading">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Related evidence</p>
+          <h2 id="links-heading">Professional and public technical context</h2>
+        </div>
+
+        <ul class="links-list">
+          <li><a href="../selected-work.html#automotive-burner-development">Concise selected-work summary</a></li>
+          <li><a href="../about-cv.html">Professional profile and documented experience</a></li>
+          <li><a href="../publications/diesel-engine-pollutant-emissions.html">Related public work on engine-emissions modelling</a></li>
+          <li><a href="../case-studies/high-pressure-combustion-diagnostics-modelling.html">Flagship high-pressure combustion diagnostics and modelling case</a></li>
+          <li><a href="../consulting.html">Scientific and engineering consulting</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Dr. Ahmad Saylam</strong>
+        <p>R&amp;D · Process &amp; Technology Development · Modelling · Validation · Scale-Up</p>
+      </div>
+
+      <div>
+        <a href="../index.html">Home</a> ·
+        <a href="../selected-work.html">Selected Work</a> ·
+        <a href="../consulting.html">Consulting</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector(".nav-toggle");
+    const nav = document.querySelector("#site-nav");
+
+    if (toggle && nav) {
+      toggle.addEventListener("click", () => {
+        const open = nav.classList.toggle("open");
+        toggle.setAttribute("aria-expanded", String(open));
+      });
+    }
+  </script>
+</body>
+</html>
