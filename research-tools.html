@@ -1427,27 +1427,53 @@ button:focus-visible {
 
             <p>
               Historical work on reaction rates, sensitivity, chemical
-              reaction networks, mechanism reduction and dynamic adaptive
-              chemistry is being re-derived and reconstructed as a modern
-              Python and Cantera framework.
+              reaction networks and mechanism reduction has been extended into
+              a causal adaptive-chemistry study implemented and tested with
+              Python and Cantera.
             </p>
 
             <p>
-              The internal package contains tested mathematical and software
-              foundations. Full Cantera combustion benchmarks, real-mechanism
-              state-transfer checks and reproducible performance evaluation
-              remain required validation gates before public release.
+              The published validation uses GRI-Mech 3.0 and USC Mech II to
+              separate three questions: when the chemistry-refresh schedule
+              should change, whether the reduced chemistry remains accurate,
+              and whether the resulting implementation is computationally
+              faster. The study includes a complete reproducibility supplement
+              with code, validation evidence, diagnostics and runtime analysis.
             </p>
 
             <div class="development-note">
-              Current maturity: research reconstruction. The framework is not
-              presented as validated public software, an industrial predictive
-              product or evidence of demonstrated computational speed-up.
+              <strong>Published validation milestone:</strong>
+              the adaptive method passed the defined accuracy gates for the
+              tested methane/air cases and transferred to a second detailed
+              mechanism using a mechanism-specific candidate domain. Static USC
+              reduction achieved 4.56–4.99× speed-up on the tested computer,
+              while the present adaptive Python/Cantera prototype was slower
+              because controller and mechanism-management operations dominated
+              runtime. Accuracy and computational acceleration are therefore
+              reported as separate results.
+            </div>
+
+            <div class="button-row">
+              <a
+                class="button primary"
+                href="https://doi.org/10.5281/zenodo.21932685"
+                target="_blank"
+                rel="noopener noreferrer external"
+              >
+                Open adaptive-reduction preprint
+              </a>
+
+              <a
+                class="button secondary"
+                href="publications.html"
+              >
+                View publication record
+              </a>
             </div>
           </div>
 
           <div>
-            <h3>Planned technical modules</h3>
+            <h3>Technical modules and evidence chain</h3>
 
             <ul class="development-list">
               <li>Mechanism audit and provenance</li>
@@ -1455,9 +1481,9 @@ button:focus-visible {
               <li>Reaction-rate and flux analysis</li>
               <li>Sensitivity and kinetic-control diagnostics</li>
               <li>Chemical reaction-network analysis</li>
-              <li>Static and adaptive mechanism reduction</li>
+              <li>Static and causal adaptive mechanism reduction</li>
               <li>Conservative state projection</li>
-              <li>Validation and applicability reporting</li>
+              <li>Validation, transfer and runtime attribution</li>
             </ul>
           </div>
         </div>
