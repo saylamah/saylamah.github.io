@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny-ps" viewBox="0 0 256 256" width="256" height="256">
+  <title>SCIENTAVIA</title>
+  <desc>SCIENTAVIA globe, technology network and star mark</desc>
+  <rect width="256" height="256" fill="#ffffff"/>
+
+  <!-- orbital sweeps -->
+  <path d="M30 159 C57 210 159 218 226 151" fill="none" stroke="#0876d9" stroke-width="13" stroke-linecap="round"/>
+  <path d="M34 107 C51 58 139 42 198 57" fill="none" stroke="#123f7e" stroke-width="6" stroke-linecap="round"/>
+  <path d="M31 169 C49 199 114 207 178 184" fill="none" stroke="#123f7e" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- globe -->
+  <circle cx="112" cy="126" r="62" fill="#0a63b9" stroke="#07509a" stroke-width="3"/>
+  <path d="M52 126 H172 M58 103 H166 M59 149 H165" fill="none" stroke="#8ed1ff" stroke-width="1.7"/>
+  <path d="M112 64 C90 82 86 105 86 126 C86 151 93 175 112 188" fill="none" stroke="#8ed1ff" stroke-width="1.7"/>
+  <path d="M112 64 C134 82 138 105 138 126 C138 151 131 175 112 188" fill="none" stroke="#8ed1ff" stroke-width="1.7"/>
+
+  <!-- simplified Europe / Africa -->
+  <path d="M89 90 L101 84 L112 86 L121 82 L131 86 L128 92 L136 96 L130 101 L120 100 L115 105 L105 103 L99 108 L91 105 L84 108 L80 102 L84 96 Z" fill="#ffffff"/>
+  <path d="M94 108 L107 108 L116 114 L122 126 L118 139 L111 151 L105 166 L96 158 L93 143 L86 135 L87 122 L82 116 Z" fill="#ffffff"/>
+  <path d="M132 101 L141 98 L148 102 L145 108 L136 109 Z" fill="#ffffff"/>
+
+  <!-- circuit network -->
+  <path d="M119 124 L132 111 L132 97 L147 82 L160 82" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M124 143 L140 127 L140 113 L153 101 L171 101" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M125 162 L147 140 L147 129 L162 116 L182 116 L193 105" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="132" cy="97" r="6" fill="#0a63b9" stroke="#ffffff" stroke-width="4"/>
+  <circle cx="160" cy="82" r="6" fill="#0a63b9" stroke="#ffffff" stroke-width="4"/>
+  <circle cx="140" cy="113" r="6" fill="#0a63b9" stroke="#ffffff" stroke-width="4"/>
+  <circle cx="171" cy="101" r="6" fill="#0a63b9" stroke="#ffffff" stroke-width="4"/>
+  <circle cx="147" cy="140" r="6" fill="#0a63b9" stroke="#ffffff" stroke-width="4"/>
+  <circle cx="193" cy="105" r="6" fill="#0a63b9" stroke="#ffffff" stroke-width="4"/>
+
+  <!-- gold star -->
+  <path d="M177 45 C180 57 182 61 194 64 C182 67 180 71 177 83 C174 71 172 67 160 64 C172 61 174 57 177 45 Z" fill="#f0a900"/>
+  <path d="M177 55 C178 61 180 63 186 64 C180 65 178 67 177 73 C176 67 174 65 168 64 C174 63 176 61 177 55 Z" fill="#ffffff"/>
+</svg>
