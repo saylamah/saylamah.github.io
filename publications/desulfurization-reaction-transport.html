@@ -64,6 +64,10 @@
     name="citation_abstract_html_url"
     content="https://saylamah.github.io/publications/desulfurization-reaction-transport.html"
   >
+  <meta
+    name="citation_pdf_url"
+    content="https://saylamah.github.io/papers/desulfurization-reaction-transport.pdf"
+  >
 
   <!-- Structured data -->
   <script type="application/ld+json">
@@ -107,6 +111,11 @@
       "https://github.com/saylamah/desulfurization-reaction-transport-regimes"
     ],
     "isAccessibleForFree": true,
+    "encoding": {
+      "@type": "MediaObject",
+      "contentUrl": "https://saylamah.github.io/papers/desulfurization-reaction-transport.pdf",
+      "encodingFormat": "application/pdf"
+    },
     "keywords": [
       "desulfurization",
       "hydrodesulfurization",
@@ -157,9 +166,10 @@
         <p>
           <strong>Scientific status:</strong>
           Engineering diagnostic and screening framework. It supports
-          mechanism-based interpretation, experiment planning and scale-up
-          assessment, but it is not a validated universal reactor-design,
-          catalyst-selection or industrial-performance model.
+          mechanism-based interpretation, experiment planning, regime
+          diagnosis and scale-up assessment, but it is not a universally
+          validated reactor-design, catalyst-selection or
+          industrial-performance model.
         </p>
 
         <p>
@@ -216,21 +226,24 @@
           Hydrodynamic cavitation is treated as an intensification layer that
           may improve interfacial renewal, oxidant activation and apparent
           rates only when these benefits exceed energy, erosion, emulsion and
-          separation penalties. A dimensionless cavitation enhancement factor
-          is proposed to relate apparent-rate improvement to measurable
-          cavitation intensity while avoiding double-counting of physical and
-          chemical effects.
+          separation penalties. Within the framework, a dimensionless
+          cavitation-enhancement factor is proposed as a screening descriptor
+          relating apparent-rate improvement to measurable cavitation
+          intensity while avoiding double-counting of physical and chemical
+          effects. It is not presented as a universal cavitation correlation.
         </p>
 
         <p>
           Illustrative oxidative-desulfurization and
-          hydrodesulfurization calculations show how regime analysis prevents
-          overinterpretation of apparent rate constants. The framework provides
-          an engineering basis for selecting hybrid reactors and defining
-          validation requirements for scale-up, including sulfur speciation,
-          closed sulfur balances, independent mass-transfer measurements,
-          catalyst or adsorbent durability, oxidant utilization and
-          energy-normalized sulfur removal.
+          hydrodesulfurization calculations demonstrate how regime analysis
+          can help prevent overinterpretation of apparent rate constants. These
+          calculations are diagnostic examples rather than independent
+          experimental validation. The framework provides an engineering basis
+          for comparing hybrid-reactor concepts and defining validation
+          requirements for scale-up, including sulfur speciation, closed
+          sulfur balances, independent mass-transfer measurements, catalyst or
+          adsorbent durability, oxidant utilization and energy-normalized
+          sulfur removal.
         </p>
       </section>
 
@@ -264,20 +277,32 @@
         <h2 id="full-text-heading">Full text</h2>
 
         <p>
-          The open preprint and deposited files are available through the
-          Zenodo record:
+          A lawful local copy of the open preprint is available for direct
+          browser reading:
+          <a
+            href="../papers/desulfurization-reaction-transport.pdf"
+            target="_blank"
+            rel="noopener"
+          >
+            View PDF
+          </a>.
+        </p>
+
+        <p>
+          The canonical deposited record, metadata and deposited files remain
+          available through Zenodo:
           <a
             href="https://zenodo.org/records/20095696"
             target="_blank"
             rel="noopener noreferrer external"
           >
-            access the Zenodo record and files
+            open the Zenodo record
           </a>.
         </p>
 
         <p>
-          A companion copy of the primary framework is also maintained in the
-          public engineering repository:
+          A companion copy of the framework is also maintained with the public
+          engineering repository:
           <a
             href="https://github.com/saylamah/desulfurization-reaction-transport-regimes/blob/main/paper/reaction-transport-regime-analysis-desulfurization.pdf"
             target="_blank"
@@ -313,14 +338,22 @@
         <p>
           The public repository contains framework documentation, equations,
           regime classifications, validation guidance, an authoritative
-          illustrative input dataset, executable Python examples and automated
-          scientific and numerical tests.
+          illustrative input dataset, executable Python examples, numerical
+          checks and automated implementation tests.
         </p>
 
         <p>
           The repository has its own archival DOI. Cite the preprint DOI above
           for the scientific paper and the repository DOI below when citing the
           software and engineering-resource release.
+        </p>
+
+        <p>
+          Repository tests and numerical checks support implementation
+          integrity and reproducibility of the released calculations. They do
+          not by themselves validate desulfurization performance for a real
+          feed, catalyst, adsorbent, separator, reactor or intensification
+          device.
         </p>
 
         <ul>
