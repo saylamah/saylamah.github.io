@@ -190,10 +190,12 @@
 
         <p>
           <strong>Scientific status:</strong>
-          Numerical CFD study combining three-dimensional screening and
-          justified two-dimensional analysis. The work evaluates burner-induced
-          flow and soot-formation effects under the simulated atmospheric- and
-          elevated-pressure conditions.
+          Numerical CFD study combining three-dimensional geometric screening
+          with subsequent two-dimensional analysis. The work evaluates
+          burner-induced flow structures and soot-related behaviour under the
+          simulated atmospheric- and elevated-pressure conditions. Its
+          quantitative conclusions remain specific to the stated geometry,
+          models, boundary conditions and validation evidence.
         </p>
 
         <p>
@@ -220,35 +222,41 @@
         <p>
           Three-dimensional CFD simulations of premixed
           C<sub>2</sub>H<sub>4</sub>/air flames at 1.01 and 10 bar were first
-          performed using a one-step chemistry approach. Their purpose was to
-          assess whether prospective axisymmetric two-dimensional and
-          one-dimensional representations could adequately capture the
-          burner-flow behaviour relevant to the study.
+          performed using a one-step chemistry approach. Their role was
+          geometric and hydrodynamic screening: to assess whether an
+          axisymmetric two-dimensional representation could capture the
+          burner-flow features relevant to the later analysis. These
+          calculations were not intended to resolve detailed soot chemistry.
         </p>
 
         <p>
           The resulting two-dimensional analysis indicates that edge
           inter-matrices can generate axial vorticity. At elevated pressure,
-          strong thermal expansion of the burned gases can generate multiple
-          axial vortical structures. These structures produce multiple axial
-          sooting regions that correspond qualitatively to luminous soot
-          streaks observed experimentally.
+          thermal expansion of the burned gases can strengthen or generate
+          multiple axial vortical structures in the model. The associated
+          multiple sooting regions were reported to correspond qualitatively
+          with luminous soot streaks observed experimentally; this qualitative
+          correspondence should not be interpreted as full quantitative
+          validation of the local flow or soot field.
         </p>
 
         <p>
-          Relatively low-temperature regions below approximately 1800 K,
-          together with enhanced mixing around and above the edge
-          inter-matrix location, can promote conditions favourable to soot
-          formation. The calculated influence on the centreline soot-volume
-          fraction nevertheless remained limited: below about 3% for the
-          atmospheric-pressure flame and below about 10% for the 10 bar flame.
+          In the model, relatively low-temperature regions below
+          approximately 1800 K, together with enhanced mixing around and above
+          the edge inter-matrix location, were associated with conditions
+          favourable to soot formation. This is a model-based interpretation of
+          coupled transport, temperature and chemistry rather than a universal
+          soot-formation threshold. The calculated influence on centreline
+          soot-volume fraction remained limited: below about 3% for the
+          atmospheric-pressure case and below about 10% for the 10 bar case.
         </p>
 
         <p>
-          Increasing mixture reactivity—by reducing the rich equivalence ratio
-          or increasing pressure—promoted earlier soot-precursor formation and
-          shifted the sooting region upstream under the investigated
-          conditions.
+          Under the investigated conditions, cases with higher modelled
+          reactivity—obtained by reducing the rich equivalence ratio or
+          increasing pressure—showed earlier soot-precursor formation and an
+          upstream shift of the sooting region. This trend is conditional on the
+          selected fuel, chemistry, pressure range and burner configuration.
         </p>
       </section>
 
@@ -264,10 +272,12 @@
         </p>
 
         <p>
-          The study also establishes a modelling workflow in which
-          three-dimensional simulations are used to test geometric effects
-          before adopting a computationally less demanding axisymmetric
-          representation for more detailed analysis.
+          The study also demonstrates a staged modelling workflow in which
+          three-dimensional simulations are used to test whether important
+          geometric effects can be represented adequately before adopting a
+          computationally less demanding axisymmetric model for more detailed
+          analysis. That dimensional reduction is a case-specific modelling
+          decision, not a general rule for high-pressure burner simulations.
         </p>
       </section>
 
@@ -284,16 +294,18 @@
             locally enhance species and thermal mixing.
           </li>
           <li>
-            Elevated pressure increases flame reactivity and can strengthen
-            thermally driven flow structures.
+            Within the investigated cases, elevated pressure increased
+            modelled flame reactivity and strengthened thermally driven flow
+            structures.
           </li>
           <li>
             Multiple local sooting zones can arise even when the centreline
             soot response remains relatively limited.
           </li>
           <li>
-            More reactive conditions shift soot-precursor formation and the
-            sooting region closer to the burner.
+            Within the simulated domain, more reactive conditions shifted
+            predicted soot-precursor formation and the sooting region closer
+            to the burner.
           </li>
         </ul>
       </section>
@@ -310,9 +322,10 @@
 
         <p>
           The three-dimensional screening calculations used one-step chemistry.
-          Such chemistry can support flow-field assessment but does not resolve
-          the detailed pathways governing soot-precursor formation and particle
-          evolution.
+          Such chemistry can support geometric and flow-field assessment but
+          does not resolve detailed fuel breakdown, aromatic growth,
+          soot-precursor chemistry, particle inception, surface growth,
+          agglomeration or oxidation.
         </p>
 
         <p>
@@ -324,10 +337,33 @@
 
         <p>
           Quantitative application to another facility should include
-          geometry-specific meshing, grid-independence assessment, validated
-          heat-loss and radiation treatment, detailed chemistry and soot
-          modelling, boundary-condition uncertainty and comparison with
-          measured temperature, velocity, species and soot fields.
+          geometry-specific meshing, grid-independence assessment, heat-loss
+          and radiation treatment appropriate to the facility, detailed
+          chemistry and soot modelling, uncertainty in inlet and wall boundary
+          conditions, and comparison with measured temperature, velocity,
+          species and soot fields. Agreement in centreline soot alone would not
+          be sufficient to validate the complete flow–chemistry–soot model.
+        </p>
+      </section>
+
+      <section aria-labelledby="evidence-heading">
+        <h2 id="evidence-heading">Evidence interpretation</h2>
+
+        <p>
+          The study combines several evidence levels: three-dimensional
+          geometric screening, two-dimensional CFD analysis, soot modelling and
+          qualitative comparison with observed luminous structures. These
+          evidence types support different conclusions and should not be
+          treated as interchangeable.
+        </p>
+
+        <p>
+          A qualitative match between simulated sooting structures and luminous
+          streaks supports the proposed flow–soot interpretation, but it does
+          not independently establish local temperature, velocity, species or
+          soot-volume-fraction accuracy. Quantitative validation requires
+          spatially resolved measurements of the variables used to support the
+          corresponding claim.
         </p>
       </section>
 
@@ -341,7 +377,7 @@
               target="_blank"
               rel="noopener"
             >
-              View the website-hosted full-text PDF
+              View PDF
             </a>
           </li>
 
@@ -396,6 +432,20 @@
         </p>
       </section>
 
+      <section aria-labelledby="relation-heading">
+        <h2 id="relation-heading">Relation to diagnostics and kinetic-intelligence work</h2>
+
+        <p>
+          This paper focuses on burner geometry, flow structure and soot-related
+          CFD behaviour. The separate high-pressure-flame-facility diagnostics
+          work addresses experimental characterization of the facility, while
+          later kinetic-intelligence work addresses reaction-network analysis,
+          reduction and adaptive chemistry. These are complementary but
+          distinct evidence layers and should not be presented as if one
+          validates the others automatically.
+        </p>
+      </section>
+
       <section aria-labelledby="related-heading">
         <h2 id="related-heading">Related technical resources</h2>
 
@@ -424,6 +474,12 @@
           <li>
             <a href="ndms-nanoparticle-inception.html">
               A Transient Nano-Dense Molecular State in Nanoparticle Inception
+            </a>
+          </li>
+
+          <li>
+            <a href="../research-tools.html#kinetic-intelligence">
+              Kinetic Intelligence — reduction, network analysis and adaptive chemistry
             </a>
           </li>
         </ul>
