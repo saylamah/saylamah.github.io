@@ -64,6 +64,10 @@
     name="citation_abstract_html_url"
     content="https://saylamah.github.io/publications/ndms-nanoparticle-inception.html"
   >
+  <meta
+    name="citation_pdf_url"
+    content="https://saylamah.github.io/papers/transient-nano-dense-molecular-state.pdf"
+  >
 
   <!-- Structured data -->
   <script type="application/ld+json">
@@ -109,6 +113,11 @@
     ],
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "isAccessibleForFree": true,
+    "encoding": {
+      "@type": "MediaObject",
+      "contentUrl": "https://saylamah.github.io/papers/transient-nano-dense-molecular-state.pdf",
+      "encodingFormat": "application/pdf"
+    },
     "keywords": [
       "nanoparticle inception",
       "combustion particle formation",
@@ -156,9 +165,11 @@
         <p>
           <strong>Scientific status:</strong>
           Testable scientific hypothesis. The transient nano-dense molecular
-          state is proposed as a physically interpretable description of the
-          molecular-to-particle transition and is not presented as an
-          established universal microscopic mechanism.
+          state is proposed as a physically motivated and interpretable
+          description of a possible molecular-to-particle transition regime.
+          It is not presented as an experimentally established physical state,
+          a universal microscopic mechanism or a validated particle-inception
+          model.
         </p>
 
         <p>
@@ -196,27 +207,29 @@
         </p>
 
         <p>
-          This work proposes a testable, physically grounded hypothesis in
-          which the inception of nanoparticles proceeds through the formation
-          of a transient, non-equilibrium, nano-dense molecular state (NDMS)
-          composed of precursor species. In this state, intermolecular
-          interactions arising primarily from quantum-mechanical dispersion
-          forces and configurational effects promote local densification and
-          increase encounter lifetimes. Retained molecular mobility enables
-          coalescence and enhances reactive stabilisation. Subsequent chemical
-          processes reduce volatility and progressively stabilise the evolving
-          structure, leading to the formation of persistent particles.
+          This work proposes a testable, physically motivated hypothesis in
+          which nanoparticle inception may proceed through a transient,
+          non-equilibrium, nano-dense molecular state (NDMS) composed of
+          precursor species. Within the proposed interpretation,
+          intermolecular interactions, including dispersion forces and
+          configurational effects, may promote local densification and increase
+          encounter lifetimes. Retained molecular mobility may then facilitate
+          coalescence and reactive stabilisation. Subsequent chemical or
+          structural changes could reduce volatility and increase persistence,
+          providing a possible route toward incipient-particle formation.
         </p>
 
         <p>
-          The hypothesis provides a continuous description of inception that
-          links gas-phase chemistry and condensed-phase particle formation
-          without requiring a strictly discrete nucleation event. It is
-          consistent with selected experimental and computational observations
-          in soot formation, although the relative contributions of physical
-          clustering and chemical stabilisation remain under active
-          investigation. Its possible application to inorganic systems is
-          considered in the context of cluster-mediated particle formation.
+          The hypothesis provides a continuous conceptual description of
+          inception that links gas-phase chemistry and condensed-phase particle
+          formation without requiring a strictly discrete nucleation event.
+          It is motivated by, and qualitatively compared with, selected
+          experimental and computational observations discussed in the
+          preprint; those comparisons do not constitute independent validation
+          of NDMS. The relative contributions of physical clustering and
+          chemical stabilisation remain unresolved. Possible transfer to
+          inorganic systems is considered only as a system-specific modelling
+          question in the context of cluster-mediated particle formation.
         </p>
 
         <p>
@@ -229,18 +242,57 @@
         </p>
       </section>
 
+      <section aria-labelledby="scope-heading">
+        <h2 id="scope-heading">Scope and evidence boundary</h2>
+
+        <p>
+          NDMS is a hypothesis-level descriptor for a possible transient
+          molecular-to-particle regime. It is not asserted to be a new
+          equilibrium thermodynamic phase, a directly observed universal
+          microscopic state or a generally validated inception mechanism.
+        </p>
+
+        <p>
+          The hypothesis does not replace detailed gas-phase chemistry,
+          molecular association models, molecular simulation, particle
+          dynamics or population-balance descriptions. Its value must be
+          assessed by whether it produces distinct, testable and quantitatively
+          useful predictions relative to simpler alternatives.
+        </p>
+
+        <p>
+          Carbonaceous soot and inorganic flame-aerosol systems may share some
+          mathematical or phenomenological features while retaining different
+          precursor chemistry, interaction energies, stabilization pathways and
+          characteristic timescales. Transfer between material systems must
+          therefore be tested rather than assumed.
+        </p>
+      </section>
+
       <section aria-labelledby="full-text-heading">
         <h2 id="full-text-heading">Full text</h2>
 
         <p>
-          The open preprint and deposited files are available through the
-          Zenodo record:
+          A lawful local copy of the open preprint is available for direct
+          browser reading:
+          <a
+            href="../papers/transient-nano-dense-molecular-state.pdf"
+            target="_blank"
+            rel="noopener"
+          >
+            View PDF
+          </a>.
+        </p>
+
+        <p>
+          The canonical deposited record, metadata and deposited files remain
+          available through Zenodo:
           <a
             href="https://zenodo.org/records/19730735"
             target="_blank"
             rel="noopener noreferrer external"
           >
-            access the Zenodo record and files
+            open the Zenodo record
           </a>.
         </p>
       </section>
@@ -285,14 +337,17 @@
         <p>
           The public repository contains companion papers, scientific notes,
           model-equation documentation, Python demonstrations, notebooks,
-          figures and illustrative data.
+          figures, illustrative data, numerical checks and automated
+          implementation tests.
         </p>
 
         <p>
           The repository materials support scientific communication,
-          reproducibility and hypothesis development. They are not presented
-          as a validated predictive model for a specific flame, fuel, pressure,
-          temperature or particle system.
+          reproducibility and hypothesis development. Numerical checks and
+          automated implementation tests support code integrity and expected
+          mathematical behaviour; they do not establish NDMS as a physical
+          state or provide system-specific physical validation or predictive
+          accuracy.
         </p>
 
         <ul>
@@ -305,8 +360,38 @@
               GitHub repository: ndms-nanoparticle-inception
             </a>
           </li>
+
+          <li>
+            <a
+              href="https://doi.org/10.5281/zenodo.20840788"
+              target="_blank"
+              rel="noopener noreferrer external"
+            >
+              Repository concept DOI: 10.5281/zenodo.20840788
+            </a>
+          </li>
         </ul>
       </section>
+
+      <section aria-labelledby="related-heading">
+        <h2 id="related-heading">Related modelling framework</h2>
+
+        <p>
+          The companion persistence–stabilization paper translates the NDMS
+          hypothesis into a reduced, falsifiable closure that separates
+          precursor association, dissociation, non-stabilizing loss and
+          stabilization. The hypothesis and the reduced executable closure are
+          complementary representations and should not be treated as the same
+          evidence level.
+        </p>
+
+        <p>
+          <a href="persistence-stabilization-closure.html">
+            View the NDMS persistence–stabilization closure
+          </a>
+        </p>
+      </section>
+
     </article>
   </main>
 </body>
