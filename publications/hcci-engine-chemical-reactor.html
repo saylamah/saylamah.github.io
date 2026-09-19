@@ -191,9 +191,10 @@
         <p>
           <strong>Scientific status:</strong>
           Single-zone modelling study and exploratory reactor concept.
-          The reported operating windows and product yields are model-based
-          results that require experimental validation before engineering
-          implementation.
+          The reported operating windows, species concentrations and yields are
+          model-based results within the stated assumptions and require
+          independent experimental validation before engineering
+          implementation or scale-up.
         </p>
 
         <p>
@@ -227,30 +228,36 @@
         </p>
 
         <p>
-          The principal formation of target species occurs within portions of
-          the low- and intermediate-temperature regime, beginning near 680 K
-          and extending to approximately 1000 K depending on the n-alkane.
-          Maximum production occurs during the period of highest mixture
-          reactivity near top dead centre and may survive the remainder of the
-          cycle when high-temperature autoignition is avoided.
+          In the simulations, principal formation of the selected target
+          species occurs within portions of the low- and
+          intermediate-temperature regime, beginning near 680 K and extending
+          to approximately 1000 K depending on the n-alkane and case
+          definition. Maximum modelled production occurs during the period of
+          highest mixture reactivity near top dead centre. Persistence of those
+          species later in the cycle is predicted only when subsequent
+          high-temperature oxidation remains sufficiently limited.
         </p>
 
         <p>
-          An engine speed of 400 rpm was identified as favourable for the
-          investigated C<sub>1</sub>–C<sub>7</sub> n-alkanes. A compression
-          ratio near 5 was reported as favourable for conversion of the
+          Within the specific single-zone simulations, an engine speed of
+          400 rpm was identified as favourable for the investigated
+          C<sub>1</sub>–C<sub>7</sub> n-alkanes. A compression ratio near 5
+          was reported as favourable for conversion of the
           C<sub>4</sub>–C<sub>7</sub> n-alkanes, whereas higher compression
           ratios were required for the less reactive
-          C<sub>1</sub>–C<sub>3</sub> alkanes.
+          C<sub>1</sub>–C<sub>3</sub> alkanes. These values are case-specific
+          model results rather than transferable engine-design settings.
         </p>
 
         <p>
           The intermediate reactivity of n-butane produced a broader productive
-          equivalence-ratio range, including conditions approaching
-          stoichiometry. The other investigated n-alkanes generally required
-          leaner conditions. Model-defined yields of up to 85% were reported
-          for an n-heptane case, supporting further investigation of an
-          HCCI-based route to reactive-fuel blends or chemical intermediates.
+          equivalence-ratio range in the model, including conditions
+          approaching stoichiometry. The other investigated n-alkanes
+          generally required leaner conditions. A model-defined yield of up to
+          85% was reported for one n-heptane case. This result is an
+          exploratory simulation outcome whose practical meaning depends on the
+          yield definition, species recovery, balance closure and experimental
+          confirmation.
         </p>
       </section>
 
@@ -267,11 +274,13 @@
         </p>
 
         <p>
-          The work treats the engine cycle as a controllable transient chemical
-          reactor rather than solely as a combustion device. The central design
+          The work explores whether the engine cycle can be interpreted as a
+          controllable transient chemical-reactor environment rather than
+          solely as a combustion device. Within that exploratory concept, the
           objective is to exploit low- and intermediate-temperature chemistry
-          while preventing complete high-temperature oxidation of the desired
-          intermediates.
+          while limiting subsequent high-temperature oxidation of selected
+          intermediates. The study does not establish an HCCI engine as an
+          industrial chemical-production reactor.
         </p>
       </section>
 
@@ -286,11 +295,14 @@
         </p>
 
         <p>
-          The reported operating windows and yields should therefore be treated
-          as modelling evidence and development hypotheses rather than
-          validated reactor performance. Results are dependent on the selected
-          chemical mechanism, thermodynamic assumptions, numerical treatment
-          and definition of conversion and yield.
+          The reported operating windows, species histories and yields should
+          therefore be treated as modelling evidence and development hypotheses
+          rather than validated reactor performance. Results depend on the
+          selected chemical mechanism, thermodynamic assumptions, compression
+          history, heat-loss treatment, numerical formulation and definitions
+          of conversion, product and yield. Agreement within a single-zone
+          model does not establish multi-zone, real-engine or product-recovery
+          performance.
         </p>
 
         <p>
@@ -309,6 +321,27 @@
         </p>
       </section>
 
+      <section aria-labelledby="evidence-heading">
+        <h2 id="evidence-heading">Evidence interpretation</h2>
+
+        <p>
+          Several evidence levels should be kept distinct. Chemical-kinetic
+          plausibility within the selected mechanism is one level. Single-zone
+          cycle simulation is a second. Experimental confirmation of pressure,
+          temperature and species histories is a third. Demonstration of
+          product quenching, extraction, purification, cycle stability and net
+          process benefit is a further engineering stage.
+        </p>
+
+        <p>
+          A favourable modelled conversion or yield at one operating point
+          therefore does not establish a viable chemical-production process.
+          The relevant decision quantity is recoverable product at the required
+          purity and rate, achieved with acceptable energy demand, safety,
+          durability, control and downstream separation burden.
+        </p>
+      </section>
+
       <section aria-labelledby="full-text-heading">
         <h2 id="full-text-heading">Full text</h2>
 
@@ -318,7 +351,7 @@
             target="_blank"
             rel="noopener"
           >
-            View the author-hosted full-text PDF
+            View PDF
           </a>
         </p>
 
@@ -347,6 +380,20 @@
           >
             https://doi.org/10.5281/zenodo.19438638
           </a>
+        </p>
+      </section>
+
+      <section aria-labelledby="kinetic-intelligence-heading">
+        <h2 id="kinetic-intelligence-heading">Relation to later kinetic-intelligence work</h2>
+
+        <p>
+          This 2020 study is a single-zone application of detailed
+          low-temperature chemistry to an exploratory reactor concept. Later
+          work on reaction networks, degree centrality, DRG, adaptive chemistry
+          and state transfer addresses mechanism analysis and computational
+          efficiency more broadly. Those later methods are related through the
+          kinetics domain but are not part of the evidence base of this HCCI
+          reactor study unless separately demonstrated.
         </p>
       </section>
 
@@ -380,6 +427,12 @@
             <a href="../papers/degree-centrality-combustion-reaction-networks.html">
               Degree Centrality of Combustion Reaction Networks for Analysing
               and Modelling Combustion Processes
+            </a>
+          </li>
+
+          <li>
+            <a href="../research-tools.html#kinetic-intelligence">
+              Kinetic Intelligence — reduction, network analysis and adaptive chemistry
             </a>
           </li>
         </ul>
