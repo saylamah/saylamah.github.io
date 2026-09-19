@@ -166,10 +166,12 @@
         <p>
           <strong>Technical status:</strong>
           Narrative engineering review and scale-up framework. It supports
-          preliminary planning, identification of scale-dependent risks and
-          definition of modelling, pilot and validation work. It is not a
-          substitute for a project-specific process design, hazard assessment,
-          techno-economic study or performance guarantee.
+          preliminary planning, identification of scale-dependent risks,
+          definition of fit-for-purpose modelling and pilot work, and
+          validation planning. It is not a universally validated scale-up
+          method and does not substitute for project-specific process design,
+          hazard assessment, techno-economic analysis or contractual
+          performance guarantees.
         </p>
 
         <p>
@@ -230,10 +232,12 @@
         </p>
 
         <p>
-          The central conclusion is that reliable scale-up requires coordinated
-          experimental, computational and engineering evidence across multiple
-          scales, with explicit validation of the phenomena that control the
-          intended industrial operating window.
+          The central conclusion is that reliable scale-up requires
+          coordinated experimental, computational and engineering evidence
+          across multiple scales, with explicit validation of the phenomena
+          that materially control the intended industrial operating window.
+          Progression between scales should therefore be evidence-gated rather
+          than based on geometric enlargement alone.
         </p>
       </section>
 
@@ -254,17 +258,22 @@
           Geometric, kinematic and dynamic similarity provide a structured
           basis for comparing systems. Dimensionless groups such as Reynolds,
           Froude, Prandtl, Nusselt, Schmidt, Sherwood and Damköhler numbers can
-          support scaling decisions, but practical systems often require
-          prioritization because complete similarity is rarely achievable.
+          support scaling decisions, but their relevance depends on the
+          governing physics and chosen system boundary. Practical systems often
+          require prioritization because complete similarity is rarely
+          achievable and preserving one similarity criterion may disturb
+          another.
         </p>
 
         <h3>Heat and mass transfer</h3>
         <p>
-          Surface-to-volume ratio generally decreases as equipment size grows,
-          while heat-generation and material-throughput requirements increase.
-          This can create temperature gradients, hot spots, transport
-          limitations and changes in product distribution that were absent or
-          weak at laboratory scale.
+          For geometrically similar equipment, surface-to-volume ratio
+          generally decreases as characteristic size increases, while
+          volumetric reaction or throughput demands may rise. This can create
+          temperature gradients, hot spots, transport limitations and changes
+          in product distribution that were absent or weak at laboratory
+          scale. The actual consequence depends on geometry, boundary
+          conditions, heat-release rate and transport regime.
         </p>
 
         <h3>Reaction and residence-time behaviour</h3>
@@ -301,12 +310,14 @@
             balances and quantified uncertainty;
           </li>
           <li>
-            formulate scale-down and pilot experiments that reproduce the
-            dominant industrial constraints;
+            formulate scale-down and pilot experiments that reproduce, as far
+            as practicable, the dominant industrial constraints and
+            scale-dependent phenomena;
           </li>
           <li>
-            develop and validate kinetic, thermodynamic, hydraulic and heat-
-            transfer models against representative data;
+            develop and validate kinetic, thermodynamic, hydraulic and
+            heat-transfer models against representative data for the intended
+            decision and operating domain;
           </li>
           <li>
             use sensitivity and regime analysis to determine which parameters
@@ -325,8 +336,9 @@
             uncertainty decreases;
           </li>
           <li>
-            define acceptance criteria and verify performance before final
-            industrial deployment.
+            define acceptance criteria, residual uncertainties and stop or
+            redesign triggers, then verify performance before final industrial
+            deployment.
           </li>
         </ol>
       </section>
@@ -343,11 +355,13 @@
         </p>
 
         <p>
-          A digital twin should represent a continuously connected and
-          operationally relevant model of the physical asset. A simulation or
-          dashboard alone is not necessarily a digital twin. Reliable use
-          requires verified instrumentation, data reconciliation, model
-          maintenance, version control and defined decision or control
+          In this review, a digital twin is treated as an operationally
+          connected model of a physical asset or process with defined data
+          exchange and decision-support or control functions. A simulation,
+          dashboard or periodically updated model alone should not
+          automatically be labelled a digital twin. Reliable use requires
+          verified instrumentation, data reconciliation, model maintenance,
+          version control, applicability limits and defined decision
           functions.
         </p>
 
@@ -429,10 +443,48 @@
         </p>
 
         <p>
+          Software verification, numerical convergence, calibration,
+          source-model reproduction, pilot confirmation and independent
+          experimental validation are different evidence states. Passing one
+          of these stages does not automatically establish the others.
+        </p>
+
+        <p>
+          Pilot representativeness must be demonstrated rather than assumed.
+          A pilot may reproduce selected controlling phenomena while still
+          differing from the intended industrial system in residence-time
+          distribution, wall effects, heat-loss scaling, phase behaviour,
+          control authority, fouling, feed variability or equipment
+          interaction.
+        </p>
+
+        <p>
           A real industrial project requires verified feed and product data,
-          scale-specific testing, design calculations, process-safety review,
-          regulatory assessment, supplier qualification, commissioning plans
-          and contractual performance criteria.
+          scale-specific testing, closed material and energy balances,
+          fit-for-purpose design calculations, process-safety review,
+          regulatory assessment, materials and supplier qualification,
+          commissioning plans, acceptance criteria and contractual performance
+          definitions appropriate to the application.
+        </p>
+      </section>
+
+      <section aria-labelledby="methodology-heading">
+        <h2 id="methodology-heading">Relation to the wider development methodology</h2>
+
+        <p>
+          This scale-up paper provides a broad engineering review and does not
+          replace the evidence-gated technology-development methodology used
+          elsewhere on this site. In that wider methodology, scale-up is one
+          stage within a sequence of problem definition, governing-phenomena
+          diagnosis, fit-for-purpose modelling, representative validation,
+          pilot development, implementation and learning.
+        </p>
+
+        <p>
+          The appropriate scale-up evidence therefore depends on the specific
+          technology, decision, uncertainty and failure consequence. No single
+          similarity rule, pilot scale, model type or digital method is assumed
+          to be sufficient across all applications.
         </p>
       </section>
 
@@ -446,7 +498,7 @@
               target="_blank"
               rel="noopener"
             >
-              View the website-hosted preprint PDF
+              View PDF
             </a>
           </li>
 
@@ -456,7 +508,7 @@
               target="_blank"
               rel="noopener noreferrer external"
             >
-              Access the Zenodo record and deposited files
+              Access the canonical Zenodo record and deposited files
             </a>
           </li>
         </ul>
@@ -527,8 +579,8 @@
           </li>
 
           <li>
-            <a href="../research-tools.html">
-              Research Tools, Models and Open Engineering Resources
+            <a href="../research-tools.html#technology-development-methodology">
+              Evidence-gated technology-development methodology
             </a>
           </li>
         </ul>
