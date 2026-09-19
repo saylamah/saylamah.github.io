@@ -8,7 +8,7 @@
 
   <meta
     name="description"
-    content="Published research applying graph-theoretic degree centrality to combustion reaction networks and dynamic adaptive chemistry for mechanism reduction."
+    content="Published research applying graph-theoretic degree centrality to combustion reaction networks as a structural descriptor within locally adaptive chemistry and mechanism-reduction analysis."
   >
   <meta
     name="author"
@@ -34,7 +34,7 @@
   >
   <meta
     property="og:description"
-    content="Graph-theoretic identification of principal species in combustion reaction networks for locally adaptive detailed-chemistry modelling."
+    content="Graph-theoretic analysis of locally central species in combustion reaction networks for adaptive detailed-chemistry modelling, with explicit distinction from kinetic importance."
   >
   <meta
     property="og:url"
@@ -50,7 +50,7 @@
   >
   <meta
     name="twitter:description"
-    content="Graph-theoretic identification of principal species in combustion reaction networks for locally adaptive detailed-chemistry modelling."
+    content="Graph-theoretic analysis of locally central species in combustion reaction networks for adaptive detailed-chemistry modelling, with explicit distinction from kinetic importance."
   >
 
   <!-- Scholarly citation metadata -->
@@ -93,7 +93,7 @@
       "@id": "https://saylamah.github.io/papers/degree-centrality-combustion-reaction-networks.html"
     },
     "headline": "Degree centrality of combustion reaction networks for analysing and modelling combustion processes",
-    "description": "A published study introducing degree centrality as a graph-theoretic criterion for identifying principal species in combustion reaction networks and applying it within an adjusted dynamic adaptive chemistry workflow.",
+    "description": "A published study introducing degree centrality as a graph-theoretic structural descriptor for identifying locally central species in combustion reaction networks and applying it within an adjusted dynamic adaptive chemistry workflow.",
     "datePublished": "2019-12-06",
     "inLanguage": "en",
     "author": [
@@ -249,23 +249,28 @@
           A principal or central species is defined through its connectivity
           within the reaction network at a particular simulation time step or
           computational cell. Species with larger degree-centrality values are
-          interpreted as being more strongly connected to other species under
-          the local thermochemical conditions.
+          more highly connected within the chosen network representation under
+          the local thermochemical conditions. This is a topological statement;
+          it does not by itself establish reaction-rate dominance, flux
+          dominance, sensitivity, causal control or importance to a selected
+          combustion observable.
         </p>
 
         <p>
           The degree-centrality criterion is incorporated into an adjusted
           dynamic adaptive chemistry workflow. Principal species are identified
-          locally and dynamically, and the resulting information is used with
-          a directed-relation-graph mechanism-reduction approach.
+          locally and dynamically, and the resulting network information is
+          used together with a directed-relation-graph mechanism-reduction
+          approach. The centrality measure therefore complements, rather than
+          replaces, kinetics-based and reduction-error information.
         </p>
 
         <p>
-          The study also shows that a species classified as highly active or
-          highly connected in a combustion reaction network is not necessarily
-          identical to a species that must be retained for accurate predictive
-          simulation. Network centrality and predictive importance therefore
-          need to be distinguished.
+          The study also shows that a species classified as highly connected
+          in a combustion reaction network is not necessarily identical to a
+          species that must be retained for accurate predictive simulation.
+          Network connectivity, kinetic activity, sensitivity and predictive
+          importance therefore need to be distinguished explicitly.
         </p>
       </section>
 
@@ -277,13 +282,18 @@
           combustion mechanisms and for supporting locally adaptive chemistry
           reduction. Its principal contribution is the explicit use of
           time- or cell-dependent reaction-network structure rather than a
-          single globally fixed species ranking.
+          single globally fixed species ranking. The diagnostic describes
+          structural connectivity; it does not constitute a complete surrogate
+          for reaction rates, reaction fluxes, sensitivity analysis or
+          target-observable error control.
         </p>
 
         <p>
           This approach is relevant to detailed-chemistry simulations in which
-          the dominant thermochemical state and reaction pathways change across
-          time, space or operating conditions.
+          the thermochemical state and active reaction pathways change across
+          time, space or operating conditions. Its usefulness depends on the
+          network definition, local state, reduction objective and validation
+          criterion used in the application.
         </p>
       </section>
 
@@ -294,15 +304,33 @@
           Degree centrality is a structural network measure. A large
           centrality value does not by itself prove that a species controls a
           target observable such as ignition delay, flame speed, pollutant
-          formation or heat release.
+          formation or heat release, nor that it carries the largest reaction
+          rate or flux or has the largest sensitivity coefficient.
         </p>
 
         <p>
           Use of the method for a new fuel, mechanism, reactor or CFD problem
-          requires validation against the intended operating domain and target
+          requires assessment against the intended operating domain and target
           quantities. The selected network definition, edge weighting,
-          threshold criteria, reduction method and error controls can materially
-          affect the resulting reduced chemistry.
+          threshold criteria, reduction method, retained-species logic and
+          error controls can materially affect the resulting reduced chemistry.
+          Validation should therefore be performed against the quantities that
+          matter for the intended application rather than against network
+          centrality itself.
+        </p>
+      </section>
+
+      <section aria-labelledby="evidence-heading">
+        <h2 id="evidence-heading">Evidence interpretation</h2>
+
+        <p>
+          Degree centrality provides descriptive information about graph
+          structure under a defined network construction and thermochemical
+          state. Reaction-rate, flux, sensitivity and target-error measures
+          answer different questions. Agreement of a reduced mechanism with a
+          selected detailed-mechanism result supports that comparison and
+          operating domain; it does not make degree centrality a universally
+          validated species-importance metric.
         </p>
       </section>
 
@@ -315,14 +343,14 @@
             target="_blank"
             rel="noopener"
           >
-            View the Author Accepted Manuscript PDF
+            View AAM
           </a>
         </p>
 
         <p>
-          This is an Accepted Manuscript of an article published by
-          Taylor &amp; Francis in <em>Combustion Theory and Modelling</em> on
-          6 December 2019, available online at:
+          This hosted PDF is the Author Accepted Manuscript, not the Taylor
+          &amp; Francis Version of Record. The final published article is
+          available through the DOI and should be used for formal citation:
           <a
             href="https://doi.org/10.1080/13647830.2019.1699167"
             target="_blank"
@@ -376,15 +404,26 @@
         </p>
       </section>
 
+      <section aria-labelledby="method-context-heading">
+        <h2 id="method-context-heading">Methodological context</h2>
+
+        <p>
+          Degree centrality is one analytical layer within a broader combustion-
+          kinetics toolbox. Directed-relation methods, reaction-rate and flux
+          analysis, sensitivity analysis, mechanism reduction, adaptive chemistry
+          and state-dependent transfer each use different information and should
+          not be collapsed into a single importance measure.
+        </p>
+      </section>
+
       <section aria-labelledby="related-heading">
         <h2 id="related-heading">Related technical resources</h2>
 
         <ul>
           <li>
             <a href="../publications/chemical-kinetic-mechanism-reduction.html">
-              Reduction of Large Detailed Chemical Kinetic Mechanisms for
-              Autoignition Using Joint Analyses of Reaction Rates and
-              Sensitivities
+              Related but distinct mechanism-reduction work using reaction-rate
+              and sensitivity analyses
             </a>
           </li>
 
