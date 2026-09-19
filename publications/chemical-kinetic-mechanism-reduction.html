@@ -208,7 +208,9 @@
           <strong>Access and rights note:</strong>
           This page provides bibliographic information and an independently
           written technical summary. No publisher Version of Record or
-          publisher-formatted full text is hosted on this website.
+          publisher-formatted full text is hosted on this website. A local
+          manuscript copy is not linked here because the exact self-archiving
+          version and reuse rights have not been verified for public hosting.
         </p>
 
         <p>
@@ -229,8 +231,9 @@
         <p>
           The study presents a reduction method for detailed autoignition
           mechanisms that combines reaction-rate analysis with sensitivity
-          analysis to identify reactions that can be removed while retaining
-          the predictive behaviour of the parent mechanism.
+          analysis to identify reactions that can be removed while preserving
+          selected target behaviour of the parent mechanism within the
+          reduction and evaluation domain.
         </p>
 
         <p>
@@ -242,12 +245,14 @@
         </p>
 
         <p>
-          The reduced mechanisms reproduce ignition-delay times and
-          intermediate-species concentrations from the full mechanisms with
-          good reported accuracy. The article reports calculation speedup
-          factors of 5.9 for the n-heptane mechanism and 16.7 for the
-          isooctane mechanism without a reported loss of accuracy in the target
-          predictions.
+          The reduced mechanisms were reported to reproduce the selected
+          ignition-delay and intermediate-species results of the parent
+          mechanisms with good agreement over the evaluated cases. The article
+          reports calculation speedup factors of 5.9 for the n-heptane
+          mechanism and 16.7 for the isooctane mechanism. These speedup values
+          and fidelity statements apply to the study's defined mechanisms,
+          observables, numerical formulation and test conditions and should not
+          be treated as universal performance factors.
         </p>
       </section>
 
@@ -257,17 +262,20 @@
         <p>
           The work addresses a central modelling problem in combustion
           kinetics: reducing the computational cost of detailed mechanisms
-          while retaining the reactions needed to reproduce selected
-          autoignition observables.
+          while retaining enough chemical structure to reproduce selected
+          autoignition observables within a defined application domain.
         </p>
 
         <p>
           Its principal methodological contribution is the joint use of
           reaction-rate and sensitivity information rather than reliance on a
           single reduction criterion. The resulting reduced mechanism remains
-          application-dependent because retained accuracy is defined against
-          the fuels, conditions and target quantities used during reduction and
-          evaluation.
+          application-dependent because retained fidelity is defined against
+          the parent mechanism, fuels, thermochemical conditions, reactor
+          formulation and target quantities used during reduction and
+          evaluation. Agreement with the parent mechanism is computational
+          validation of the reduction relative to that parent model; it is not
+          by itself experimental validation of either mechanism.
         </p>
       </section>
 
@@ -275,17 +283,41 @@
         <h2 id="scope-heading">Scope and application boundary</h2>
 
         <p>
-          A reduced mechanism should not be assumed to retain equal accuracy
-          outside its tested fuel compositions, temperature and pressure
+          A reduced mechanism should not be assumed to retain equal fidelity
+          outside its evaluated fuel compositions, temperature and pressure
           ranges, equivalence ratios, reactor assumptions and target
-          observables.
+          observables. A reduction optimized for ignition delay may not retain
+          the species or pathways required for flame propagation, emissions,
+          soot precursors or other objectives.
         </p>
 
         <p>
-          Application to CFD, engine simulations or new fuels requires
-          independent validation against the intended operating domain,
-          including ignition delay, heat release, major and intermediate
-          species and any pollutant pathways relevant to the new use case.
+          Application to CFD, engine simulations, new fuels or substantially
+          different conditions requires re-evaluation against the intended
+          operating domain. This may include ignition delay, heat release,
+          flame behaviour, major and intermediate species and pollutant or soot
+          precursor pathways relevant to the new use case, together with
+          experimental validation where predictive physical use is claimed.
+        </p>
+      </section>
+
+      <section aria-labelledby="evidence-heading">
+        <h2 id="evidence-heading">Evidence interpretation</h2>
+
+        <p>
+          Three evidence levels should be kept distinct. First, the reduction
+          algorithm can be verified as an implementation. Second, a reduced
+          mechanism can be compared computationally with its parent detailed
+          mechanism for selected targets. Third, either mechanism can be
+          compared with independent experiments. Success at one level does not
+          automatically establish the next.
+        </p>
+
+        <p>
+          Mechanism size reduction and calculation speedup are therefore useful
+          engineering outcomes only when the retained chemistry remains adequate
+          for the intended decision. The smallest mechanism is not necessarily
+          the most useful mechanism.
         </p>
       </section>
 
@@ -326,6 +358,20 @@
         </p>
       </section>
 
+      <section aria-labelledby="kinetic-intelligence-heading">
+        <h2 id="kinetic-intelligence-heading">Relation to later kinetic-intelligence work</h2>
+
+        <p>
+          This 2007 study is a specific mechanism-reduction method based on
+          joint reaction-rate and sensitivity analyses. Later work on reaction
+          networks, degree centrality, DRG, adaptive chemistry and state
+          transfer addresses related but distinct reduction and analysis
+          problems. Those methods should not be presented as if they were part
+          of, or validated by, this original study unless an explicit
+          comparison establishes that connection.
+        </p>
+      </section>
+
       <section aria-labelledby="related-heading">
         <h2 id="related-heading">Related technical resources</h2>
 
@@ -346,6 +392,12 @@
           <li>
             <a href="diesel-engine-pollutant-emissions.html">
               Methodology to Reduce Diesel Engine Pollutant Emissions
+            </a>
+          </li>
+
+          <li>
+            <a href="../research-tools.html#kinetic-intelligence">
+              Kinetic Intelligence — reduction, network analysis and adaptive chemistry
             </a>
           </li>
         </ul>
