@@ -178,9 +178,10 @@
         <p>
           <strong>Scientific status:</strong>
           Numerical feasibility and screening study based on detailed chemical
-          kinetics and homogeneous reactor modelling. The reported emission and
-          power trends require experimental validation before practical engine
-          application.
+          kinetics and homogeneous reactor modelling. The reported emission,
+          combustion and power trends are model-dependent and require
+          independent experimental validation before practical engine
+          application or transfer to other fuels, engines or duty cycles.
         </p>
 
         <p>
@@ -195,10 +196,11 @@
         <h2 id="abstract-heading">Abstract</h2>
 
         <p>
-          The study proposes blending a conventional diesel fuel with a
-          selective additive mixture as a possible route to reducing carbon
-          monoxide, nitrogen oxides and unburned hydrocarbons from diesel-engine
-          operation.
+          The study examines selective additive blending as a possible
+          in-cylinder strategy for changing combustion chemistry and reducing
+          selected pollutants in a diesel-fuel-surrogate, diesel-type HCCI
+          modelling framework. It does not establish a generally applicable
+          emission-control solution for conventional diesel engines.
         </p>
 
         <p>
@@ -219,11 +221,13 @@
 
         <p>
           Under the simulated conditions, the additive blend produced the
-          strongest reductions in carbon monoxide and unburned hydrocarbons for
-          the rich case at an air–fuel ratio of 9.8. Reductions of up to about
-          60% were reported for selected cases. Nitrogen-oxide reduction was
-          generally slight, while predicted engine power decreased by
-          approximately 4–11% depending on the additive-blending ratio.
+          largest modelled reductions in carbon monoxide and unburned
+          hydrocarbons for the rich case at an air–fuel ratio of 9.8. Reductions
+          of up to about 60% were reported for selected model cases.
+          Nitrogen-oxide reduction was generally slight, while predicted engine
+          power decreased by approximately 4–11% depending on the
+          additive-blending ratio. These percentages apply only to the stated
+          model, surrogate, additive formulation and operating cases.
         </p>
 
         <p>
@@ -276,15 +280,18 @@
           than a universal improvement. The largest predicted benefits concern
           carbon monoxide and unburned hydrocarbons under selected rich
           conditions, whereas nitrogen-oxide reduction is modest and engine
-          power declines as the additive fraction increases.
+          power declines as the additive fraction increases. The model therefore
+          does not demonstrate simultaneous optimization of efficiency, power
+          and all regulated pollutants.
         </p>
 
         <p>
-          The study also suggests that the altered reactivity of the blended
-          fuel may permit operation at a lower compression ratio, which could
-          offer an additional route to nitrogen-oxide reduction. That proposal
-          was identified as a subject for further work rather than demonstrated
-          experimentally.
+          The study also suggests that altered fuel reactivity may permit
+          lower-compression-ratio operation under some conditions, which could
+          influence peak temperature and nitrogen-oxide formation. That
+          proposition was identified for further investigation rather than
+          demonstrated experimentally, and the resulting NO<sub>x</sub>,
+          efficiency and stability trade-offs would need to be measured.
         </p>
       </section>
 
@@ -293,18 +300,21 @@
 
         <p>
           The results are derived from homogeneous multi-zone and single-zone
-          simulations. These models do not fully resolve fuel injection,
-          spray breakup, evaporation, local mixture stratification, detailed
-          turbulence–chemistry interaction, wall films, crevice flows,
-          cycle-to-cycle variability or after-treatment behaviour.
+          simulations. These models do not fully resolve direct-injection spray
+          formation, breakup and evaporation, local mixture stratification,
+          detailed turbulence–chemistry interaction, wall films, crevice flows,
+          soot formation and oxidation, cycle-to-cycle variability, transient
+          engine operation or exhaust-after-treatment behaviour.
         </p>
 
         <p>
           The reported percentage reductions should therefore be interpreted as
           model-dependent trends for the selected fuel surrogate, additive
-          formulation, chemical mechanisms, engine geometry and operating
-          conditions—not as guaranteed reductions for commercial diesel fuel
-          or a production engine.
+          formulation, chemical mechanisms, engine representation and operating
+          conditions—not as guaranteed reductions for commercial diesel fuel,
+          a compression-ignition production engine or a regulated drive cycle.
+          Results from rich homogeneous cases should not be transferred directly
+          to conventional stratified diesel combustion.
         </p>
 
         <p>
@@ -316,11 +326,40 @@
         </p>
 
         <p>
+          In-cylinder chemical strategies and exhaust-after-treatment systems
+          address different parts of the emissions problem. EGR, injection
+          strategy, combustion phasing, oxidation catalysts, selective
+          catalytic reduction and particulate filters should therefore be
+          evaluated as interacting controls rather than assumed to provide
+          additive or independent benefits.
+        </p>
+
+        <p>
           A complete industrial assessment would additionally require fuel-cost
           analysis, additive supply and blending control, cold-start and
           transient operation, long-duration durability, life-cycle effects and
           comparison with alternative in-cylinder and exhaust-after-treatment
           strategies.
+        </p>
+      </section>
+
+      <section aria-labelledby="evidence-heading">
+        <h2 id="evidence-heading">Evidence interpretation</h2>
+
+        <p>
+          The study provides modelling evidence about how a defined surrogate
+          fuel and additive blend changes predicted combustion and emissions in
+          the selected homogeneous engine representation. It does not provide
+          measured tailpipe emissions, particulate measurements, certified
+          cycle results or durability evidence.
+        </p>
+
+        <p>
+          Agreement between chemical-kinetic calculations and model trends is
+          not equivalent to experimental validation of engine emissions.
+          Practical assessment requires measured combustion phasing, efficiency,
+          gaseous emissions, particulate mass and number, transient response and
+          after-treatment interaction over the intended operating map.
         </p>
       </section>
 
@@ -333,7 +372,7 @@
             target="_blank"
             rel="noopener"
           >
-            View the open-access article PDF
+            View PDF
           </a>
         </p>
       </section>
@@ -359,6 +398,20 @@
             Emissions. International Journal of Petrochemistry &amp; Natural
             Gas, 1(1), 04–08.
           </cite>
+        </p>
+      </section>
+
+      <section aria-labelledby="kinetic-intelligence-heading">
+        <h2 id="kinetic-intelligence-heading">Relation to later kinetic-intelligence work</h2>
+
+        <p>
+          This 2022 paper is a model-based emissions-screening study using
+          detailed combustion chemistry. Later reaction-network, degree
+          centrality, DRG, adaptive-chemistry and state-transfer work addresses
+          different questions of mechanism analysis and computational
+          reduction. Those later methods are related through the combustion
+          kinetics domain but are not part of the validation evidence for the
+          emission-reduction claims in this paper.
         </p>
       </section>
 
@@ -391,6 +444,12 @@
             <a href="../papers/degree-centrality-combustion-reaction-networks.html">
               Degree Centrality of Combustion Reaction Networks for Analysing
               and Modelling Combustion Processes
+            </a>
+          </li>
+
+          <li>
+            <a href="../research-tools.html#kinetic-intelligence">
+              Kinetic Intelligence — reduction, network analysis and adaptive chemistry
             </a>
           </li>
         </ul>
