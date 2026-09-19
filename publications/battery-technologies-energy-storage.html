@@ -167,9 +167,9 @@
           <strong>Technical status:</strong>
           Narrative technology comparison and application-screening framework.
           It supports preliminary orientation and technology-selection
-          discussions, but it is not a systematic review, bankable techno-
-          economic assessment, life-cycle assessment or final storage-system
-          design.
+          discussions, but it is not a systematic review, validated vendor
+          benchmark, bankable techno-economic assessment, life-cycle assessment
+          or final storage-system design.
         </p>
 
         <p>
@@ -216,34 +216,37 @@
         </p>
 
         <p>
-          Lithium-ion batteries provide high energy efficiency and mature
-          performance for portable electronics, electric vehicles and many
-          stationary applications, while presenting continuing challenges in
-          raw-material supply, safety, degradation and end-of-life management.
-          Sodium-ion systems exchange part of the energy-density advantage for
-          potentially broader material availability and suitability for
-          selected cost-sensitive stationary applications.
+          Lithium-ion batteries provide high efficiency and mature performance
+          across portable electronics, electric vehicles and many stationary
+          applications, while still requiring attention to degradation,
+          thermal-management, safety architecture, raw-material supply and
+          end-of-life management. Sodium-ion systems may offer supply-chain and
+          cost advantages for selected applications, but lower gravimetric and
+          volumetric energy density can constrain weight- and space-sensitive
+          use cases.
         </p>
 
         <p>
-          Solid-state batteries offer a route toward higher energy density and
-          improved safety concepts, but depend on resolving interface,
-          manufacturability, durability and cost limitations. Redox-flow
-          batteries decouple power and energy capacity and can support
-          long-duration stationary storage, although their lower energy density
-          and balance-of-plant requirements limit mobility applications.
-          Organic solid-flow concepts are presented as an emerging route whose
-          practical competitiveness still requires stronger validation.
+          Solid-state batteries offer potential advantages in energy density and
+          safety architecture, but these depend on electrolyte chemistry,
+          interface stability, manufacturability, practical current density,
+          durability and cost. Redox-flow batteries decouple power and energy
+          capacity and can support long-duration stationary storage, although
+          system efficiency, electrolyte properties and balance-of-plant
+          requirements remain important. Organic solid-flow concepts are
+          presented as an emerging route whose practical competitiveness,
+          durability and scale-up still require stronger validation.
         </p>
 
         <p>
           Electrolysis and fuel-cell cycles extend the comparison beyond
-          batteries to hydrogen-based chemical storage. Their principal value
-          lies in long-duration or potentially seasonal storage and coupling
-          between electricity, hydrogen and industrial-energy systems. Their
-          suitability depends strongly on conversion efficiency, equipment
-          cost, hydrogen infrastructure, storage method and the value of sector
-          coupling.
+          batteries to hydrogen-based chemical storage. Their relevance can be
+          greatest where long storage duration, very large energy capacity or
+          sector coupling has higher value than electrical round-trip
+          efficiency. Suitability depends on electrolyser and reconversion
+          efficiency, storage losses, compression or liquefaction duty where
+          applicable, equipment cost, infrastructure and the value of the
+          hydrogen product or cross-sector integration.
         </p>
       </section>
 
@@ -262,32 +265,40 @@
         <p>
           Mature rechargeable electrochemical systems offering high efficiency,
           power capability and energy density across mobile and stationary
-          applications. Selection depends on cell chemistry, duty cycle,
-          thermal management, safety architecture and degradation profile.
+          applications. Selection depends on cell chemistry, usable
+          state-of-charge window, C-rate, temperature, duty cycle, thermal
+          management, safety architecture, calendar ageing and degradation
+          profile.
         </p>
 
         <h3>Sodium-ion batteries</h3>
         <p>
           Rechargeable systems based on sodium-ion insertion chemistry.
-          Potential advantages include material abundance and supply-chain
-          diversification, while lower gravimetric energy density can constrain
-          weight-sensitive uses.
+          Potential advantages include supply-chain diversification and use of
+          more widely available elements in some chemistries, while lower
+          gravimetric and volumetric energy density can constrain weight- or
+          space-sensitive uses. Actual performance remains chemistry- and
+          manufacturer-specific.
         </p>
 
         <h3>Solid-state batteries</h3>
         <p>
           Battery concepts replacing conventional liquid electrolytes with
-          solid electrolytes. Their potential benefits depend on achieving
-          stable interfaces, practical current density, manufacturable thin
-          electrolyte layers, long cycle life and controlled failure behaviour.
+          solid electrolytes. Their potential benefits depend on the specific
+          electrolyte and electrode pairing and on achieving stable interfaces,
+          practical current density, manufacturable thin layers, long cycle
+          life, scalable production and controlled failure behaviour. The term
+          “solid-state” alone does not establish higher safety or energy density
+          at pack level.
         </p>
 
         <h3>Redox-flow batteries</h3>
         <p>
           Stationary systems storing electroactive species in external tanks.
           Independent scaling of power and energy makes them attractive for
-          longer-duration duty, subject to electrolyte cost, pumping losses,
-          membrane performance and system complexity.
+          longer-duration duty, subject to electrolyte cost and stability,
+          pumping losses, membrane or separator performance, tank volume,
+          auxiliary loads and overall system complexity.
         </p>
 
         <h3>Organic solid-flow batteries</h3>
@@ -316,11 +327,12 @@
             required discharge duration, power rating and total stored energy;
           </li>
           <li>
-            acceptable response time and charge–discharge efficiency;
+            acceptable response time and efficiency on a clearly defined
+            boundary, for example cell, DC-system or full AC-to-AC basis;
           </li>
           <li>
-            cycle frequency, calendar life and degradation under the actual
-            duty profile;
+            cycle frequency, depth of discharge, C-rate, state-of-charge
+            window, calendar life and degradation under the actual duty profile;
           </li>
           <li>
             mass, volume and site constraints;
@@ -329,7 +341,8 @@
             safety, thermal management, fire protection and emergency response;
           </li>
           <li>
-            capital cost, replacement cost, operating cost and residual value;
+            capital cost, replacement cost, operating cost, augmentation needs,
+            usable lifetime energy throughput and residual value;
           </li>
           <li>
             raw-material availability, manufacturing capacity and supply-chain
@@ -349,6 +362,36 @@
         </ul>
       </section>
 
+      <section aria-labelledby="comparison-heading">
+        <h2 id="comparison-heading">Comparison-basis discipline</h2>
+
+        <p>
+          Storage technologies should be compared on a common functional basis.
+          Cell-level gravimetric energy density, module-level energy density and
+          complete installed-system energy density are different quantities.
+          Likewise, instantaneous power capability, usable power over a duty
+          cycle and guaranteed grid-delivery power should not be treated as
+          equivalent.
+        </p>
+
+        <p>
+          Safety comparisons also require a defined level of analysis. Material
+          flammability, cell abuse response, propagation behaviour, pack-level
+          thermal management, detection, isolation and fire-protection design
+          are different layers. A chemistry with a favourable intrinsic safety
+          attribute can still require substantial system-level protection.
+        </p>
+
+        <p>
+          For stationary storage, a useful comparison should include duration,
+          round-trip efficiency, availability, degradation or capacity fade,
+          replacement or augmentation, auxiliary loads and lifetime energy
+          throughput. For hydrogen-based storage, the comparison boundary
+          should additionally include conversion and storage losses and the
+          intended value of hydrogen beyond electricity reconversion.
+        </p>
+      </section>
+
       <section aria-labelledby="scope-heading">
         <h2 id="scope-heading">Scope and evidence boundary</h2>
 
@@ -365,7 +408,8 @@
           Cell-level energy density, module-level energy density and complete
           installed-system energy density are not interchangeable. The same
           applies to cell efficiency, DC round-trip efficiency and full
-          AC-to-AC efficiency.
+          AC-to-AC efficiency. Published best-case cell metrics should not be
+          used directly as installed-system performance.
         </p>
 
         <p>
@@ -373,23 +417,49 @@
           temperature, charge and discharge rate, state-of-charge window,
           calendar ageing and end-of-life criterion. Cost comparisons likewise
           require a common basis such as installed cost, usable energy,
-          lifetime throughput or levelized cost of storage.
+          lifetime throughput or levelized cost of storage, together with
+          consistent assumptions for replacement, augmentation, financing and
+          auxiliary consumption.
         </p>
 
         <p>
           Environmental advantage cannot be inferred from chemistry labels
           alone. A defensible comparison requires consistent life-cycle
-          boundaries covering material extraction, manufacturing, transport,
-          operation, replacement, recycling and the electricity mix used for
-          charging.
+          boundaries covering material extraction, refining, manufacturing,
+          transport, operation, replacement, recycling or disposal and the
+          electricity mix used for charging. Recycling potential and actual
+          recycling performance should also be kept distinct.
         </p>
 
         <p>
-          The review does not provide experimental validation, proprietary
-          vendor benchmarking or a bankable economic model. A real project
-          requires duty-cycle definition, system simulation, safety and
-          regulatory assessment, supplier qualification and performance
-          guarantees.
+          The review does not provide independent experimental validation,
+          proprietary vendor benchmarking or a bankable economic model. A real
+          project requires duty-cycle definition, system simulation, safety and
+          regulatory assessment, supplier qualification, warranty review,
+          degradation modelling, installation constraints and performance
+          guarantees at the relevant system boundary.
+        </p>
+      </section>
+
+      <section aria-labelledby="evidence-heading">
+        <h2 id="evidence-heading">Evidence interpretation</h2>
+
+        <p>
+          Laboratory cell results, pilot demonstrations, commercial products
+          and bankable field data represent different evidence levels. A high
+          specific energy, cycle life or efficiency value reported at cell
+          level does not establish the same performance at module, pack or
+          installed-system level.
+        </p>
+
+        <p>
+          Technology maturity should therefore be assessed from the evidence
+          relevant to the intended application: validated duty-cycle
+          performance, safety behaviour, degradation, warranty conditions,
+          maintainability, supply chain, installation constraints and
+          long-duration operating data. No storage family should be treated as
+          universally superior outside a defined application and system
+          boundary.
         </p>
       </section>
 
@@ -403,7 +473,7 @@
               target="_blank"
               rel="noopener"
             >
-              View the website-hosted preprint PDF
+              View PDF
             </a>
           </li>
 
@@ -413,7 +483,7 @@
               target="_blank"
               rel="noopener noreferrer external"
             >
-              Access the Zenodo record and deposited files
+              Access the canonical Zenodo record and deposited files
             </a>
           </li>
         </ul>
@@ -479,6 +549,12 @@
           <li>
             <a href="engineering-scale-up-lab-to-industry.html">
               Engineering Scale-Up: Overcoming Challenges from Lab to Industry
+            </a>
+          </li>
+
+          <li>
+            <a href="../research-tools.html#technology-development-methodology">
+              Evidence-gated technology-development methodology
             </a>
           </li>
         </ul>
