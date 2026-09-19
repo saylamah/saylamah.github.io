@@ -64,6 +64,10 @@
     name="citation_abstract_html_url"
     content="https://saylamah.github.io/publications/aop-kinetic-process-framework.html"
   >
+  <meta
+    name="citation_pdf_url"
+    content="https://saylamah.github.io/papers/aop-kinetic-process-framework.pdf"
+  >
 
   <!-- Structured data -->
   <script type="application/ld+json">
@@ -109,6 +113,11 @@
     ],
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "isAccessibleForFree": true,
+    "encoding": {
+      "@type": "MediaObject",
+      "contentUrl": "https://saylamah.github.io/papers/aop-kinetic-process-framework.pdf",
+      "encodingFormat": "application/pdf"
+    },
     "keywords": [
       "advanced oxidation processes",
       "wastewater treatment",
@@ -157,10 +166,11 @@
 
         <p>
           <strong>Scientific status:</strong>
-          Matrix-aware engineering and screening framework supported by
-          transparent kinetic and process calculations. Application to a
-          specific wastewater, reactor or treatment train requires
-          case-specific data and validation.
+          Matrix-aware, screening-level engineering framework supported by
+          transparent kinetic and process calculations. Software tests support
+          implementation integrity; application to a specific wastewater,
+          reactor or treatment train requires case-specific data and
+          experimental or process validation.
         </p>
 
         <p>
@@ -208,13 +218,14 @@
         </p>
 
         <p>
-          Analysis of representative wastewater matrices shows that
-          hydroxyl-radical consumption is dominated by dissolved organic
-          carbon and inorganic species, reducing effective radical
-          availability by several orders of magnitude compared with idealized
-          laboratory systems. This provides a mechanistic explanation for the
-          discrepancy between intrinsic reactivity and observed degradation
-          rates.
+          Screening calculations for representative wastewater matrices
+          indicate that hydroxyl-radical consumption can be dominated by
+          dissolved organic carbon and inorganic scavengers, reducing
+          effective radical availability by several orders of magnitude
+          relative to idealized systems. This provides a mechanistic basis for
+          understanding why intrinsic contaminant reactivity does not
+          necessarily translate into the same observable degradation rate in
+          a real matrix.
         </p>
 
         <p>
@@ -228,12 +239,15 @@
         </p>
 
         <p>
-          From an engineering perspective, treatment time and energy demand
-          are inversely related to
-          <var>k</var><sub>app</sub>, emphasizing the need for matrix-aware
-          design, realistic performance metrics and process integration. The
-          framework provides a structured basis for AOP screening,
-          optimization and scale-up in wastewater treatment.
+          Within the pseudo-first-order screening formulation, the treatment
+          time required for a specified target conversion decreases as
+          <var>k</var><sub>app</sub> increases. Energy demand then depends on
+          both the required treatment time and the process-specific power
+          input. The framework therefore treats apparent kinetics as one part
+          of a broader matrix-aware assessment that also requires realistic
+          performance metrics, transport analysis and process integration. It
+          provides a structured basis for AOP screening, comparison,
+          optimization studies and scale-up planning in wastewater treatment.
         </p>
       </section>
 
@@ -241,11 +255,13 @@
         <h2 id="scope-heading">Scope and evidence boundary</h2>
 
         <p>
-          The framework supports screening, interpretation, comparison and
-          validation planning. It does not replace a complete radical-reaction
-          mechanism, a validated reactor model, site-specific experiments,
+          The framework supports screening, mechanistic interpretation,
+          comparison, experiment planning and validation planning. It does not
+          replace a complete radical-reaction mechanism, an experimentally
+          validated reactor model, site-specific experiments,
           transformation-product analysis, toxicity assessment, equipment
-          sizing or a final treatment-process design.
+          sizing, process-safety assessment or a final treatment-process
+          design.
         </p>
 
         <p>
@@ -260,14 +276,26 @@
         <h2 id="full-text-heading">Full text</h2>
 
         <p>
-          The open preprint PDF and deposited files are available through the
-          Zenodo record:
+          A lawful local copy of the open preprint is available for direct
+          browser reading:
+          <a
+            href="../papers/aop-kinetic-process-framework.pdf"
+            target="_blank"
+            rel="noopener"
+          >
+            View PDF
+          </a>.
+        </p>
+
+        <p>
+          The canonical deposited record, metadata and deposited files remain
+          available through Zenodo:
           <a
             href="https://zenodo.org/records/19732395"
             target="_blank"
             rel="noopener noreferrer external"
           >
-            access the Zenodo record and files
+            open the Zenodo record
           </a>.
         </p>
       </section>
@@ -312,8 +340,9 @@
 
         <p>
           The public repository contains modular Python calculations,
-          documentation, representative data, examples, automated tests and
-          engineering interpretation guidance for matrix-aware AOP screening.
+          documentation, representative data, reproducible examples,
+          automated implementation tests and engineering interpretation
+          guidance for matrix-aware AOP screening.
         </p>
 
         <p>
