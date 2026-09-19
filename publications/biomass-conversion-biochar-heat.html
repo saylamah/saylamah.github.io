@@ -159,10 +159,12 @@
 
         <p>
           <strong>Scientific status:</strong>
-          Simplified research and engineering screening model. The reported
-          trends require experimental validation and should not be interpreted
-          as validated industrial design data or guaranteed biochar, syngas or
-          heat-production performance.
+          Research reconstruction and screening-level thermochemical model.
+          The reported trends support model reconstruction, qualitative
+          sensitivity analysis and development planning. They are not
+          experimentally validated industrial design data and should not be
+          interpreted as guaranteed biochar, gas-product or heat-production
+          performance.
         </p>
 
         <p>
@@ -192,26 +194,30 @@
         <h2 id="abstract-heading">Abstract</h2>
 
         <p>
-          This work presents a modelling study of drying, pyrolysis and
-          combustion of biomass for biochar, heat and electricity production.
-          Using an ideal stirred-reactor representation, the study examines
-          thermochemical conversion with waste wood as the primary feedstock.
+          This work presents a simplified modelling study of biomass drying,
+          pyrolysis and oxidative conversion relevant to biochar and heat
+          production. Using an ideal stirred-reactor representation, the study
+          examines selected thermochemical-conversion trends with waste wood as
+          the primary feedstock.
         </p>
 
         <p>
-          The analysis considers the predicted effects of temperature, moisture
-          content and oxygen concentration on biochar yield and on the
-          production rates of selected gases, including carbon monoxide,
-          hydrogen and methane. It discusses operating ranges for drying,
-          pyrolysis and oxidation and their potential influence on biochar
-          production and undesirable by-products.
+          The analysis considers model-predicted effects of temperature,
+          moisture content and oxygen concentration on biochar-related trends
+          and selected gas species, including carbon monoxide, hydrogen and
+          methane. It discusses candidate operating ranges for drying,
+          pyrolysis and oxidation and their possible influence on conversion,
+          char-related outputs and undesirable by-products. These trends are
+          screening results rather than validated product-yield predictions.
         </p>
 
         <p>
-          The chemical-kinetic treatment is based on published biomass
-          conversion work associated with Ranzi and co-workers. The results are
-          intended to support qualitative process understanding and the further
-          development of biomass-conversion models.
+          The chemical-kinetic treatment is reconstructed from published
+          biomass-conversion work associated with Ranzi and co-workers. The
+          current implementation should therefore be read as a source-traceable
+          research reconstruction whose purpose is qualitative process
+          understanding, consistency checking and further model development,
+          not as an independently validated biomass mechanism.
         </p>
       </section>
 
@@ -228,12 +234,12 @@
         </p>
 
         <p>
-          Consequently, the archived figures and the reconstructed simulations
-          should presently be treated as research-development and
-          screening-level evidence. Exact numerical reproduction requires
-          confirmation of the original temperature basis, mechanism version,
-          initial conditions, feed composition, reactor assumptions, numerical
-          settings and post-processing method.
+          Consequently, the archived figures and reconstructed simulations
+          remain research-development and screening-level evidence. Exact
+          source-model reproduction is not claimed until the original
+          temperature basis, mechanism version, initial conditions, feed
+          composition, reactor assumptions, numerical settings and
+          post-processing procedure are reconciled and reproduced consistently.
         </p>
       </section>
 
@@ -242,8 +248,9 @@
 
         <p>
           The work may support qualitative sensitivity analysis, model
-          reconstruction, education, validation planning and early-stage
-          comparison of thermochemical process concepts.
+          reconstruction, education, implementation checking, validation
+          planning and early-stage comparison of thermochemical process
+          concepts.
         </p>
 
         <p>
@@ -255,10 +262,33 @@
 
         <p>
           Industrial application requires feedstock-specific characterization,
-          experimentally validated product yields, material and energy balance
-          closure, particle- and reactor-scale heat and mass transfer,
-          hydrodynamic characterization, emissions and tar analysis, materials
-          assessment, process-safety review and scale-up verification.
+          experimentally validated product yields and composition, closed
+          material and energy balances, particle- and reactor-scale heat and
+          mass transfer, hydrodynamic characterization, emissions and tar
+          analysis, materials assessment, process-safety review and
+          representative scale-up evidence. Transfer to another feedstock,
+          reactor type or operating regime requires an explicit applicability
+          assessment rather than assumption by similarity alone.
+        </p>
+      </section>
+
+      <section aria-labelledby="framework-relation-heading">
+        <h2 id="framework-relation-heading">Relation to later pyrolysis modelling work</h2>
+
+        <p>
+          This 2024 biomass study and its companion repository remain a
+          separate research reconstruction and screening foundation. They
+          should not be interpreted as the qualified scientific baseline of
+          later multifeedstock pyrolysis-modelling work.
+        </p>
+
+        <p>
+          Later modelling developments use separate controlled baselines,
+          feedstock domains, validation records, applicability limits and
+          release criteria. Evidence from this reconstruction is reused only
+          where explicitly justified and does not automatically transfer to
+          other feedstocks, kinetic formulations, reactor representations or
+          validation claims.
         </p>
       </section>
 
@@ -272,7 +302,7 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              Open the website PDF
+              View PDF
             </a>
           </li>
 
@@ -282,7 +312,7 @@
               target="_blank"
               rel="noopener noreferrer external"
             >
-              Access the Zenodo record and deposited files
+              Access the canonical Zenodo record and deposited files
             </a>
           </li>
         </ul>
@@ -329,15 +359,17 @@
           The public repository contains a simplified Cantera-compatible
           mechanism, the preserved original script, refactored Python modules,
           curated simulation data, sensitivity cases, assumptions and
-          limitations, model-consistency notes, a validation plan and basic
-          automated software tests.
+          limitations, model-consistency notes, a validation plan, numerical
+          checks and automated implementation tests.
         </p>
 
         <p>
           The repository is classified as a research reconstruction and
-          engineering screening framework. Its software tests verify selected
-          program behaviour; they do not establish that the thermochemical
-          mechanism is quantitatively predictive.
+          engineering screening framework. Numerical checks and automated
+          implementation tests support code integrity and expected program
+          behaviour; they do not establish source-model reproduction,
+          experimental validation or quantitative predictive capability of the
+          thermochemical mechanism.
         </p>
 
         <ul>
@@ -348,6 +380,16 @@
               rel="noopener noreferrer external"
             >
               GitHub repository: biochar-process-modeling
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://doi.org/10.5281/zenodo.20841046"
+              target="_blank"
+              rel="noopener noreferrer external"
+            >
+              Repository software archive DOI: 10.5281/zenodo.20841046
             </a>
           </li>
         </ul>
@@ -368,6 +410,18 @@
             <a href="waste-to-x-biomass-carbon-credit.html">
               Advancing Waste-to-X Technologies: Sustainable Thermochemical
               Pathways for Biomass Valorization and Carbon Credit Potential
+            </a>
+          </li>
+
+          <li>
+            <a href="../research-tools.html#repositories">
+              Public modelling and reproducibility resources
+            </a>
+          </li>
+
+          <li>
+            <a href="../selected-work.html#pyrolysis-process-development">
+              Biomass pyrolysis process and plant-concept engineering case
             </a>
           </li>
         </ul>
