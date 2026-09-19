@@ -64,6 +64,10 @@
     name="citation_abstract_html_url"
     content="https://saylamah.github.io/publications/persistence-stabilization-closure.html"
   >
+  <meta
+    name="citation_pdf_url"
+    content="https://saylamah.github.io/papers/persistence-stabilization-closure.pdf"
+  >
 
   <!-- Structured data -->
   <script type="application/ld+json">
@@ -104,10 +108,16 @@
     "url": "https://saylamah.github.io/publications/persistence-stabilization-closure.html",
     "sameAs": [
       "https://doi.org/10.5281/zenodo.20258147",
-      "https://zenodo.org/records/20258147"
+      "https://zenodo.org/records/20258147",
+      "https://github.com/saylamah/ndms-nanoparticle-inception"
     ],
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "isAccessibleForFree": true,
+    "encoding": {
+      "@type": "MediaObject",
+      "contentUrl": "https://saylamah.github.io/papers/persistence-stabilization-closure.pdf",
+      "encodingFormat": "application/pdf"
+    },
     "keywords": [
       "nanoparticle inception",
       "soot formation",
@@ -131,6 +141,48 @@
     ]
   }
   </script>
+  <style>
+    .equation-block {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 1rem;
+      margin: 1.25rem 0;
+      padding: 0.85rem 1rem;
+      overflow-x: auto;
+      border-left: 3px solid #147b75;
+      background: #f7fafb;
+    }
+
+    .equation-block math {
+      justify-self: center;
+      font-size: 1.08rem;
+    }
+
+    .equation-number {
+      white-space: nowrap;
+      font-family: "Times New Roman", Times, serif;
+    }
+
+    .symbol-list dt {
+      margin-top: 0.65rem;
+      font-weight: 700;
+    }
+
+    .symbol-list dd {
+      margin-left: 1.25rem;
+    }
+
+    @media (max-width: 640px) {
+      .equation-block {
+        grid-template-columns: 1fr;
+      }
+
+      .equation-number {
+        justify-self: end;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -258,53 +310,194 @@
         <h2 id="equations-heading">Minimal closure equations</h2>
 
         <p>
-          In the reduced formulation, the transient-reservoir formation rate is
-          represented as:
+          The reduced closure separates formation of the transient associated
+          reservoir from its competing dissociation, non-stabilizing loss and
+          stabilization pathways. The equations below are written as a
+          transparent modelling closure rather than as system-specific
+          elementary rate laws.
         </p>
 
-        <pre><code>R_form = k_on × C_assoc^m</code></pre>
+        <p>
+          The transient-reservoir formation rate is represented as:
+        </p>
+
+        <div class="equation-block">
+          <math display="block" aria-label="R form equals k on times C assoc to the power m">
+            <mrow>
+              <msub><mi>R</mi><mtext>form</mtext></msub>
+              <mo>=</mo>
+              <msub><mi>k</mi><mtext>on</mtext></msub>
+              <msubsup><mi>C</mi><mtext>assoc</mtext><mi>m</mi></msubsup>
+            </mrow>
+          </math>
+          <span class="equation-number">(1)</span>
+        </div>
 
         <p>
           A minimal balance for the transient NDMS reservoir
           <var>Z</var> is:
         </p>
 
-        <pre><code>dZ/dt = R_form − (k_off + k_loss + k_stab) × Z</code></pre>
+        <div class="equation-block">
+          <math display="block" aria-label="d Z by d t equals R form minus the sum of k off, k loss and k stab times Z">
+            <mrow>
+              <mfrac><mrow><mi>d</mi><mi>Z</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac>
+              <mo>=</mo>
+              <msub><mi>R</mi><mtext>form</mtext></msub>
+              <mo>−</mo>
+              <mrow>
+                <mo>(</mo>
+                <msub><mi>k</mi><mtext>off</mtext></msub>
+                <mo>+</mo>
+                <msub><mi>k</mi><mtext>loss</mtext></msub>
+                <mo>+</mo>
+                <msub><mi>k</mi><mtext>stab</mtext></msub>
+                <mo>)</mo>
+                <mi>Z</mi>
+              </mrow>
+            </mrow>
+          </math>
+          <span class="equation-number">(2)</span>
+        </div>
 
         <p>
-          The bounded probability that a transient associated state becomes
-          stabilized is:
+          The conditional probability that a transient associated state is
+          stabilized before dissociation or other non-stabilizing loss is:
         </p>
 
-        <pre><code>P_stab = k_stab / (k_off + k_loss + k_stab)</code></pre>
+        <div class="equation-block">
+          <math display="block" aria-label="P stab equals k stab divided by the sum of k off, k loss and k stab">
+            <mrow>
+              <msub><mi>P</mi><mtext>stab</mtext></msub>
+              <mo>=</mo>
+              <mfrac>
+                <msub><mi>k</mi><mtext>stab</mtext></msub>
+                <mrow>
+                  <msub><mi>k</mi><mtext>off</mtext></msub>
+                  <mo>+</mo>
+                  <msub><mi>k</mi><mtext>loss</mtext></msub>
+                  <mo>+</mo>
+                  <msub><mi>k</mi><mtext>stab</mtext></msub>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </math>
+          <span class="equation-number">(3)</span>
+        </div>
 
         <p>
           The corresponding source term for persistent incipient-particle
           matter is:
         </p>
 
-        <pre><code>S_NDMS = k_stab × Z</code></pre>
+        <div class="equation-block">
+          <math display="block" aria-label="S NDMS equals k stab times Z">
+            <mrow>
+              <msub><mi>S</mi><mtext>NDMS</mtext></msub>
+              <mo>=</mo>
+              <msub><mi>k</mi><mtext>stab</mtext></msub>
+              <mi>Z</mi>
+            </mrow>
+          </math>
+          <span class="equation-number">(4)</span>
+        </div>
 
         <p>
-          Under the quasi-steady approximation used in the illustrative
-          zero-dimensional demonstration:
+          Under the quasi-steady approximation
+          <math aria-label="d Z by d t approximately equals zero">
+            <mrow>
+              <mfrac><mrow><mi>d</mi><mi>Z</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac>
+              <mo>≈</mo>
+              <mn>0</mn>
+            </mrow>
+          </math>,
+          the illustrative source term becomes:
         </p>
 
-        <pre><code>S_NDMS =
-(k_stab × k_on × C_assoc^m) /
-(k_off + k_loss + k_stab)</code></pre>
+        <div class="equation-block">
+          <math display="block" aria-label="S NDMS equals k stab times k on times C assoc to the power m divided by the sum of k off, k loss and k stab">
+            <mrow>
+              <msub><mi>S</mi><mtext>NDMS</mtext></msub>
+              <mo>=</mo>
+              <mfrac>
+                <mrow>
+                  <msub><mi>k</mi><mtext>stab</mtext></msub>
+                  <msub><mi>k</mi><mtext>on</mtext></msub>
+                  <msubsup><mi>C</mi><mtext>assoc</mtext><mi>m</mi></msubsup>
+                </mrow>
+                <mrow>
+                  <msub><mi>k</mi><mtext>off</mtext></msub>
+                  <mo>+</mo>
+                  <msub><mi>k</mi><mtext>loss</mtext></msub>
+                  <mo>+</mo>
+                  <msub><mi>k</mi><mtext>stab</mtext></msub>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </math>
+          <span class="equation-number">(5)</span>
+        </div>
+
+        <h3>Symbols and dimensional consistency</h3>
+
+        <dl class="symbol-list">
+          <dt><var>C</var><sub>assoc</sub></dt>
+          <dd>
+            Effective concentration or abundance measure of precursor units
+            available for association.
+          </dd>
+
+          <dt><var>m</var></dt>
+          <dd>
+            Effective association order used by the reduced closure. It is a
+            model parameter and is not assumed to represent a universal
+            elementary molecularity.
+          </dd>
+
+          <dt><var>k</var><sub>on</sub></dt>
+          <dd>
+            Effective association coefficient. Its units depend on the chosen
+            definition of <var>C</var><sub>assoc</sub> and on
+            <var>m</var>, so that
+            <var>R</var><sub>form</sub> has units of reservoir amount or
+            concentration per unit time.
+          </dd>
+
+          <dt><var>k</var><sub>off</sub>,
+              <var>k</var><sub>loss</sub> and
+              <var>k</var><sub>stab</sub></dt>
+          <dd>
+            Effective first-order rate coefficients for dissociation,
+            non-stabilizing loss and stabilization, respectively, with units
+            of inverse time in this reduced formulation.
+          </dd>
+
+          <dt><var>Z</var></dt>
+          <dd>
+            Transient associated-reservoir amount or concentration, defined
+            consistently with the chosen implementation.
+          </dd>
+
+          <dt><var>P</var><sub>stab</sub></dt>
+          <dd>
+            Dimensionless conditional stabilization probability. For
+            non-negative rate coefficients and a strictly positive
+            denominator,
+            0 ≤ <var>P</var><sub>stab</sub> ≤ 1.
+          </dd>
+
+          <dt><var>S</var><sub>NDMS</sub></dt>
+          <dd>
+            Source term for persistent incipient-particle matter, with units
+            consistent with <var>Z</var> per unit time.
+          </dd>
+        </dl>
 
         <p>
-          For non-negative rate coefficients,
-          <code>0 ≤ P_stab ≤ 1</code>. This mathematical bound prevents the
-          stabilization probability from exceeding its physical probability
-          range.
-        </p>
-
-        <p>
-          These expressions are a reduced closure for model development and
-          sensitivity analysis. They are not validated rate laws for a
-          specified fuel, flame, pressure, temperature or particle system.
+          These equations are reduced closure relations for hypothesis testing,
+          model development and sensitivity analysis. They are not validated
+          rate laws for a specified fuel, flame, pressure, temperature,
+          precursor family or particle system.
         </p>
       </section>
 
@@ -356,8 +549,10 @@
           <dt><strong>Python script and notebook</strong></dt>
           <dd>
             Reproducible zero-dimensional demonstrations using illustrative
-            parameter values. They demonstrate mathematical behaviour but do
-            not provide system-specific prediction.
+            parameter values. Numerical checks and automated implementation
+            tests support code integrity and expected mathematical behaviour;
+            they do not provide system-specific physical validation or
+            predictive accuracy.
           </dd>
 
           <dt><strong>Industrial or regulatory application</strong></dt>
@@ -439,11 +634,21 @@
         <ul>
           <li>
             <a
+              href="../papers/persistence-stabilization-closure.pdf"
+              target="_blank"
+              rel="noopener"
+            >
+              View PDF
+            </a>
+          </li>
+
+          <li>
+            <a
               href="https://zenodo.org/records/20258147"
               target="_blank"
               rel="noopener noreferrer external"
             >
-              Access the Zenodo record and deposited preprint
+              Access the canonical Zenodo record and deposited preprint
             </a>
           </li>
 
@@ -507,7 +712,8 @@
         <p>
           The public repository contains the reduced equations, explanatory
           documentation, a Python demonstration, a Jupyter notebook, figures,
-          tests and both NDMS companion papers:
+          numerical checks, automated implementation tests and both NDMS
+          companion papers:
         </p>
 
         <ul>
@@ -531,6 +737,14 @@
             </a>
           </li>
         </ul>
+
+        <p>
+          Repository tests and numerical checks support implementation
+          integrity and reproducibility of the released reduced model. They do
+          not establish the NDMS proposition as a physical state, calibrate the
+          closure for a specific system or replace independent experimental
+          validation.
+        </p>
       </section>
 
       <section aria-labelledby="related-heading">
