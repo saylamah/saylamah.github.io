@@ -107,7 +107,7 @@
         "mainEntity": {
           "@type": "ItemList",
           "name": "Selected scientific and engineering outputs",
-          "numberOfItems": 31
+          "numberOfItems": 30
         }
       }
     ]
@@ -903,8 +903,8 @@ input:focus-visible {
             Search by title, author, source, DOI, method or technical topic.
             Links lead to the website record, a locally available PDF, DOI or lawful
             external publication page according to the access status of each output.
-            Where a PDF is lawfully hosted on this website, <strong>View PDF</strong>
-            opens it directly in the browser.
+            Where a lawful local full-text file is available, the access link identifies
+            the available version and opens it directly in the browser.
           </p>
         </div>
 
@@ -939,7 +939,7 @@ input:focus-visible {
             <button class="filter-button" type="button" data-filter="professional" aria-pressed="false">Professional Articles</button>
           </div>
 
-          <p id="results-line" class="results-line" aria-live="polite">31 items shown</p>
+          <p id="results-line" class="results-line" aria-live="polite">30 items shown</p>
         </div>
 
         <div id="publication-catalogue">
@@ -993,8 +993,8 @@ input:focus-visible {
                 <h3><a href="https://doi.org/10.5281/zenodo.21932685" target="_blank" rel="noopener noreferrer external">Causal Adaptive Reduction of Detailed Chemical Kinetic Mechanisms: Accuracy, Transfer to a Second Mechanism, and Runtime Limits</a></h3>
                 <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> 15 August 2026<br><strong>Platform:</strong> Zenodo</p>
                 <p class="identifier"><strong>DOI:</strong> 10.5281/zenodo.21932685</p>
-                <p class="description">Tests a causal adaptive mechanism-reduction controller with GRI-Mech 3.0 and USC Mech II. The study separates reduction accuracy from computational speed, validates transfer to a second parent mechanism, and identifies adaptive-management overhead as the main runtime limitation of the present Python/Cantera implementation.</p>
-                <p class="knowledge-note"><strong>Evidence role:</strong> open preprint with a complete reproducibility supplement covering the frozen method, validation evidence, transfer cases, performance tests and runtime attribution.</p>
+                <p class="description">Tests a causal adaptive mechanism-reduction controller with GRI-Mech 3.0 and USC Mech II. The study separates reduction accuracy from computational speed, demonstrates transfer to a second parent mechanism, and identifies adaptive-management overhead as the main runtime limitation of the present Python/Cantera implementation.</p>
+                <p class="knowledge-note"><strong>Evidence role:</strong> open preprint with a complete reproducibility supplement covering the frozen method, computational-validation evidence, transfer cases, performance tests and runtime attribution.</p>
                 <div class="card-links">
                   <a href="https://doi.org/10.5281/zenodo.21932685" target="_blank" rel="noopener noreferrer external">Open publication &amp; supplement</a>
                   <a href="research-tools.html#kinetic-intelligence-heading">Related kinetic-method development</a>
@@ -1008,7 +1008,7 @@ input:focus-visible {
                 <p class="identifier"><strong>DOI:</strong> 10.1016/j.combustflame.2023.112775</p>
                 <p class="description">Evaluates how lateral species diffusion and heat transfer affect interpretation of near-threshold sooting flames and the adequacy of simplified one-dimensional assumptions.</p>
                 <div class="card-links">
-                  <a href="papers/saylam-2023-combustion-flame-aam-supplemental.pdf" target="_blank" rel="noopener">View PDF</a>
+                  <a href="papers/saylam-2023-combustion-flame-aam-supplemental.pdf" target="_blank" rel="noopener">View AAM &amp; supplement</a>
                   <a href="papers/influence-lateral-species-diffusion-heat-transfer.html">Open publication page</a>
                   <a href="https://doi.org/10.1016/j.combustflame.2023.112775" target="_blank" rel="noopener noreferrer external">Open DOI</a>
                   <a href="selected-work.html#high-pressure-combustion">Related case</a>
@@ -1049,7 +1049,7 @@ input:focus-visible {
                 <p class="identifier"><strong>DOI:</strong> 10.1080/13647830.2019.1699167</p>
                 <p class="description">Applies degree-centrality measures to combustion reaction networks to identify structurally influential species and reactions and connect graph descriptors with kinetic interpretation.</p>
                 <div class="card-links">
-                  <a href="papers/saylam-2020-combustion-theory-modelling-aam.pdf" target="_blank" rel="noopener">View PDF</a>
+                  <a href="papers/saylam-2020-combustion-theory-modelling-aam.pdf" target="_blank" rel="noopener">View AAM</a>
                   <a href="papers/degree-centrality-combustion-reaction-networks.html">Open publication page</a>
                   <a href="https://doi.org/10.1080/13647830.2019.1699167" target="_blank" rel="noopener noreferrer external">Open DOI</a>
                   <a href="research-tools.html#kinetic-intelligence-heading">Related development</a>
@@ -1063,7 +1063,6 @@ input:focus-visible {
                 <p class="identifier"><strong>DOI:</strong> 10.1002/kin.20232</p>
                 <p class="description">Combines reaction-rate and sensitivity analyses to identify removable reactions while preserving autoignition behaviour, providing a scientific foundation for later mechanism-reduction work.</p>
                 <div class="card-links">
-                  <a href="papers/chemical-kinetic-mechanism-reduction.pdf" target="_blank" rel="noopener">View PDF</a>
                   <a href="publications/chemical-kinetic-mechanism-reduction.html">Open publication page</a>
                   <a href="https://doi.org/10.1002/kin.20232" target="_blank" rel="noopener noreferrer external">Open DOI</a>
                   <a href="research-tools.html#kinetic-intelligence-heading">Related development</a>
@@ -1077,7 +1076,6 @@ input:focus-visible {
                 <p class="identifier"><strong>DOI:</strong> 10.1007/s00348-023-03611-0</p>
                 <p class="description">Characterizes an optically accessible high-pressure flame facility using high-speed chemiluminescence and planar OH LIF to separate flame behaviour from facility and boundary effects.</p>
                 <div class="card-links">
-                  <a href="papers/high-pressure-flame-facility-diagnostics.pdf" target="_blank" rel="noopener">View PDF</a>
                   <a href="publications/high-pressure-flame-facility-diagnostics.html">Open publication page</a>
                   <a href="https://doi.org/10.1007/s00348-023-03611-0" target="_blank" rel="noopener noreferrer external">Open DOI</a>
                   <a href="selected-work.html#high-pressure-combustion">Related case</a>
@@ -1112,11 +1110,12 @@ input:focus-visible {
                 <span class="publication-type type-framework">Exploratory HCCI modelling study</span>
                 <h3><a href="publications/hcci-engine-chemical-reactor.html">HCCI Engine as Chemical Reactor to Produce Fuel/Chemicals: An Exploring Study of n-Alkanes Low-Temperature Chemistry</a></h3>
                 <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> 11 December 2020<br><strong>Source:</strong> Asian Journal of Engineering and Technology Innovation, 8(2), 1–12</p>
-                <p class="identifier"><strong>Identifier:</strong> Publisher record; archival DOI to be used only after final canonical confirmation</p>
+                <p class="identifier"><strong>Archival DOI:</strong> 10.5281/zenodo.19438638</p>
                 <p class="description">Explores production of oxygenates, hydrogen peroxide, formaldehyde and alkenes from C1–C7 n-alkanes in an HCCI reactor concept. It is not evidence of an industrial chemical-production process.</p>
                 <div class="card-links">
                   <a href="papers/hcci-engine-chemical-reactor.pdf" target="_blank" rel="noopener">View PDF</a>
                   <a href="publications/hcci-engine-chemical-reactor.html">Open publication page</a>
+                  <a href="https://doi.org/10.5281/zenodo.19438638" target="_blank" rel="noopener noreferrer external">Open archival DOI</a>
                 </div>
               </article>
 
@@ -1136,11 +1135,12 @@ input:focus-visible {
                 <span class="publication-type type-framework">Doctoral thesis</span>
                 <h3><a href="publications/oxidation-autoignition-alkanes-aromatics.html">Modelling Studies of the Oxidation and Autoignition of Alkanes, Aromatics, and Their Mixtures at High Pressure between 600 and 1500 K</a></h3>
                 <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> November 2005<br><strong>Type:</strong> Doctoral thesis in physical chemistry</p>
-                <p class="identifier"><strong>Identifier:</strong> Archival DOI exists; insert only after final canonical confirmation</p>
+                <p class="identifier"><strong>Archival DOI:</strong> 10.5281/zenodo.19438123</p>
                 <p class="description">Integrates hydrocarbon oxidation and autoignition modelling, detailed-mechanism reduction, experimental validation and laser-diagnostic study of soot and polycyclic aromatic species.</p>
                 <div class="card-links">
                   <a href="papers/oxidation-autoignition-alkanes-aromatics.pdf" target="_blank" rel="noopener">View PDF</a>
                   <a href="publications/oxidation-autoignition-alkanes-aromatics.html">Open publication page</a>
+                  <a href="https://doi.org/10.5281/zenodo.19438123" target="_blank" rel="noopener noreferrer external">Open archival DOI</a>
                 </div>
               </article>
             </div>
@@ -1223,20 +1223,6 @@ input:focus-visible {
             <h2 id="thermochemical-heading" class="section-title">Thermochemical Processes, Waste-to-X, Biochar &amp; Circular Conversion</h2>
 
             <div class="publication-grid">
-              <article class="publication-card priority" data-category="thermochemical pyrolysis modelling kinetics reactor-modelling biomass polymers waste-feedstocks process-optimization validation reproducibility python preprint">
-                <span class="publication-type type-framework">Pyrolysis modelling framework · Open preprint</span>
-                <h3><a href="https://doi.org/10.5281/zenodo.22708031" target="_blank" rel="noopener noreferrer external">Pyrolysis Modelling for Process Optimization across Feedstocks and Scales: Principles, Development, Quantitative Validation, and Open Python Tools</a></h3>
-                <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> 6 October 2026<br><strong>Platform:</strong> Zenodo</p>
-                <p class="identifier"><strong>Manuscript &amp; Supplementary Information DOI:</strong> 10.5281/zenodo.22708031<br><strong>Software DOI:</strong> 10.5281/zenodo.22707516</p>
-                <p class="description">Presents an evidence-aware modelling framework for pyrolysis across lignocellulosic biomass and major components, manure, polymers including polyolefins, biomass–plastic mixtures, sewage sludge and food waste. The work connects empirical and kinetic models, detailed chemistry, particle- and reactor-scale representations, quantitative validation and process-oriented analysis while keeping model applicability and evidence strength explicit.</p>
-                <p class="knowledge-note"><strong>Evidence role:</strong> DP-06 scientific and engineering framework. Software verification, source-model reproduction, independent transfer tests and quantitative validation are distinguished explicitly; no universal feedstock model, universal synergy coefficient or universal pressure correction is claimed.</p>
-                <div class="card-links">
-                  <a href="https://doi.org/10.5281/zenodo.22708031" target="_blank" rel="noopener noreferrer external">Open manuscript &amp; SI</a>
-                  <a href="https://doi.org/10.5281/zenodo.22707516" target="_blank" rel="noopener noreferrer external">Open software DOI</a>
-                  <a href="https://github.com/saylamah/pyrolysis-modelling-framework" target="_blank" rel="noopener noreferrer external">Open repository</a>
-                  <a href="research-tools.html#repositories">Related modelling tools</a>
-                </div>
-              </article>
 
               <article class="publication-card priority" data-category="thermochemical scale-up framework preprint">
                 <span class="publication-type type-framework">Process-development framework · Open preprint</span>
@@ -1260,12 +1246,13 @@ input:focus-visible {
                 <span class="seko-tag">SEKO-BIO-001</span>
                 <h3><a href="publications/biomass-conversion-biochar-heat.html">Enhancing Biomass Conversion: Advanced Modeling and Process Optimization for Efficient Biochar and Heat Production</a></h3>
                 <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> September 2024<br><strong>Platform:</strong> Zenodo</p>
-                <p class="identifier"><strong>DOI:</strong> Canonical Zenodo DOI under final verification</p>
+                <p class="identifier"><strong>DOI:</strong> 10.5281/zenodo.19438451</p>
                 <p class="description">Uses simplified reactor modelling to examine drying, pyrolysis and combustion trends. It is a screening-level foundation, not a validated feedstock-, particle- or reactor-specific industrial model.</p>
                 <p class="knowledge-note"><strong>Knowledge role:</strong> scientific-output representation supporting SEKO-BIO-001; the canonical knowledge object remains explicitly bounded as a research reconstruction and screening foundation.</p>
                 <div class="card-links">
                   <a href="papers/biomass-conversion-biochar-heat.pdf" target="_blank" rel="noopener">View PDF</a>
                   <a href="publications/biomass-conversion-biochar-heat.html">Open publication page</a>
+                  <a href="https://doi.org/10.5281/zenodo.19438451" target="_blank" rel="noopener noreferrer external">Open DOI</a>
                   <a href="https://github.com/saylamah/biochar-process-modeling" target="_blank" rel="noopener noreferrer external">Related repository</a>
                   <a href="https://doi.org/10.5281/zenodo.20841046" target="_blank" rel="noopener noreferrer external">Open software archive DOI</a>
                   <a href="selected-work.html#biochar-framework">Related case</a>
@@ -1391,7 +1378,6 @@ input:focus-visible {
                 <p class="meta"><strong>Author:</strong> Ahmad Saylam<br><strong>Date:</strong> 15 April 2025<br><strong>Source:</strong> Biomass Magazine</p>
                 <p class="description">Translates Waste-to-X and biochar assessment into an industry-facing discussion of thermochemical pathways, environmental performance and conditional carbon-credit opportunities.</p>
                 <div class="card-links">
-                  <a href="papers/waste-to-x-biomass-carbon-credit.pdf" target="_blank" rel="noopener">View PDF</a>
                   <a href="https://biomassmagazine.com/articles/advancing-waste-to-x-technologies-carbon-credit-opportunities-and-sustainability-impacts" target="_blank" rel="noopener noreferrer external">Open external publication</a>
                   <a href="publications/waste-to-x-biomass-carbon-credit.html">Related technical output</a>
                 </div>
@@ -1443,7 +1429,7 @@ input:focus-visible {
         <div class="note-grid">
           <article class="note-card">
             <h3>Access and copyright</h3>
-            <p>Where a lawful local PDF is available, a View PDF link opens it directly in the browser. Some journal articles still require publisher or institutional access. Restricted publisher versions are not intentionally reproduced or redistributed here.</p>
+            <p>Where a lawful local full-text file is available, the access link identifies the available version, including an Author Accepted Manuscript (AAM) where applicable, and opens it directly in the browser. Some journal articles still require publisher or institutional access. Restricted publisher versions are not intentionally reproduced or redistributed here.</p>
           </article>
 
           <article class="note-card">
@@ -1482,11 +1468,6 @@ input:focus-visible {
             <a href="consulting.html">Consulting page</a>.
           </p>
 
-          <p>
-            Two legacy records retain temporary identifier notes because their
-            canonical archival DOI requires final confirmation. No conflicting
-            DOI has been published in this page.
-          </p>
         </div>
       </div>
     </section>
