@@ -63,6 +63,10 @@
     name="citation_abstract_html_url"
     content="https://saylamah.github.io/publications/thermochemical-process-development.html"
   >
+  <meta
+    name="citation_pdf_url"
+    content="https://saylamah.github.io/papers/thermochemical-process-development.pdf"
+  >
 
   <!-- Structured data -->
   <script type="application/ld+json">
@@ -107,6 +111,11 @@
     ],
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "isAccessibleForFree": true,
+    "encoding": {
+      "@type": "MediaObject",
+      "contentUrl": "https://saylamah.github.io/papers/thermochemical-process-development.pdf",
+      "encodingFormat": "application/pdf"
+    },
     "keywords": [
       "thermochemical process development",
       "combustion",
@@ -167,10 +176,12 @@
 
         <p>
           <strong>Technical status:</strong>
-          Integrative process-development framework. It supports structured
-          analysis, validation planning, pilot definition and scale-up
-          decisions, but it is not a universal predictive model, final process
-          design or industrial performance guarantee.
+          Integrative process-development methodology. It supports structured
+          problem definition, model selection, validation planning, pilot
+          definition, scale-up assessment and engineering decisions, but it is
+          not a universal predictive model, a validated process design method
+          for every thermochemical system, a final process design or an
+          industrial performance guarantee.
         </p>
 
         <p>
@@ -200,10 +211,12 @@
         <h2 id="scope-heading">Scope</h2>
 
         <p>
-          The paper presents a technical framework for connecting
-          thermochemical mechanisms, transport phenomena, experimental
-          validation, pilot development, flowsheet integration, scale-up
-          evidence and industrial adoption.
+          The paper presents a technical methodology for connecting
+          thermochemical mechanisms, transport phenomena, model development,
+          representative experimental evidence, pilot development, flowsheet
+          integration, scale-up evidence and industrial adoption decisions.
+          These stages are connected through evidence gates rather than assumed
+          to progress automatically from laboratory results to industrial use.
         </p>
       </section>
 
@@ -222,9 +235,9 @@
         </p>
 
         <p>
-          This article argues that thermochemical knowledge remains a central
-          enabling competence because it connects feedstock chemistry,
-          reaction pathways, heat and mass transfer, reactor design, gas
+          This article treats thermochemical knowledge as an enabling
+          technical foundation because it connects feedstock chemistry,
+          reaction pathways, heat and mass transfer, reactor behaviour, gas
           cleaning, emissions control, product specification, process
           integration and scale-up evidence.
         </p>
@@ -232,21 +245,25 @@
         <p>
           The article covers combustion, pyrolysis, gasification, reforming,
           biochar production, syngas generation, hydrogen-related systems,
-          waste valorization and carbon-management pathways. It proposes a
-          development logic built on problem definition, feedstock-envelope
-          qualification, product-intent design, controlling-phenomena
-          analysis, model-assisted uncertainty reduction, experimental
-          validation, decision-quality piloting and disciplined scale-up.
+          waste valorization and carbon-management pathways. It proposes an
+          evidence-gated development logic built on problem definition,
+          feedstock-envelope qualification, product-intent definition,
+          controlling-phenomena analysis, fit-for-purpose modelling,
+          uncertainty reduction, representative experimental validation,
+          decision-quality piloting and disciplined scale-up. The required
+          evidence and model fidelity remain system- and decision-specific.
         </p>
 
         <p>
           The central message is that transformation technologies should not
           be judged by attractive labels or isolated laboratory effects, but
-          by validated operating windows and complete flowsheet consequences.
-          A process is industrially useful only when its benefit remains
-          positive relative to a reference case after energy demand,
-          emissions, separation burden, maintenance, reliability, uncertainty,
-          product specification and implementation constraints are considered.
+          by operating windows supported by representative evidence and by
+          complete flowsheet consequences. Within the proposed decision logic,
+          progression toward industrial use requires a positive and sufficiently
+          robust benefit relative to an appropriate reference case after energy
+          demand, emissions, separation burden, maintenance, reliability,
+          uncertainty, product specification and implementation constraints
+          are considered.
         </p>
       </section>
 
@@ -254,17 +271,42 @@
         <h2 id="evidence-heading">Evidence and application boundary</h2>
 
         <p>
-          The framework is intended for technical structuring, early-stage
-          assessment, development planning, model selection, experiment and
-          pilot definition, integration analysis and scale-up risk review.
+          The methodology is intended for technical structuring,
+          early-stage assessment, development planning, model selection,
+          experiment and pilot definition, integration analysis and scale-up
+          risk review. It is a decision-support structure rather than a
+          substitute for system-specific process development.
         </p>
 
         <p>
-          Application to a specific technology requires feedstock and product
-          specifications, representative experiments, validated models,
-          complete material and energy balances, emissions and separation
-          assessment, operability and safety review, durability evidence and
-          an appropriate techno-economic evaluation.
+          Application to a specific technology requires a defined feedstock
+          envelope and product specification, representative experiments,
+          models validated for the intended decision and operating domain,
+          closed and auditable material and energy balances, emissions and
+          separation assessment, operability and process-safety review,
+          durability evidence and an appropriate techno-economic evaluation.
+          Evidence from one feedstock, reactor scale or operating regime should
+          not be transferred to another without an explicit applicability
+          assessment.
+        </p>
+      </section>
+
+      <section aria-labelledby="methodology-relation-heading">
+        <h2 id="methodology-relation-heading">Relation to modelling frameworks</h2>
+
+        <p>
+          This paper is a cross-domain process-development methodology. It does
+          not replace domain-specific modelling frameworks, mechanisms,
+          datasets or validation packages. For example, a pyrolysis model may
+          support one part of the evidence chain, but its scientific scope,
+          qualified feedstocks, reactor assumptions and validation status must
+          remain controlled independently from this broader methodology.
+        </p>
+
+        <p>
+          Model verification, source-model reproduction, calibration,
+          independent transfer testing and experimental validation are distinct
+          evidence states and should not be treated as interchangeable.
         </p>
       </section>
 
@@ -272,14 +314,26 @@
         <h2 id="full-text-heading">Full text</h2>
 
         <p>
-          The open technical paper and deposited files are available through
-          the Zenodo record:
+          A lawful local copy of the open technical paper is available for
+          direct browser reading:
+          <a
+            href="../papers/thermochemical-process-development.pdf"
+            target="_blank"
+            rel="noopener"
+          >
+            View PDF
+          </a>.
+        </p>
+
+        <p>
+          The canonical deposited record, metadata and deposited files remain
+          available through Zenodo:
           <a
             href="https://zenodo.org/records/20760609"
             target="_blank"
             rel="noopener noreferrer external"
           >
-            access the Zenodo record and files
+            open the Zenodo record
           </a>.
         </p>
       </section>
@@ -342,6 +396,18 @@
               rel="noopener noreferrer external"
             >
               Biochar Process Modeling repository
+            </a>
+          </li>
+
+          <li>
+            <a href="../research-tools.html#technology-development-methodology">
+              Evidence-gated technology-development methodology
+            </a>
+          </li>
+
+          <li>
+            <a href="../selected-work.html#pyrolysis-process-development">
+              Biomass pyrolysis process and plant-concept engineering case
             </a>
           </li>
         </ul>
