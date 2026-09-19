@@ -129,8 +129,12 @@
     <loc>https://saylamah.github.io/publications/wastewater-treatment-resource-recovery.html</loc>
   </url>
 
-   <url>
+  <url>
     <loc>https://saylamah.github.io/case-studies/high-pressure-combustion-diagnostics-modelling.html</loc>
-   </url>
+  </url>
+
+  <url>
+    <loc>https://saylamah.github.io/case-studies/automotive-burner-test-rig-development.html</loc>
+  </url>
 
 </urlset>
