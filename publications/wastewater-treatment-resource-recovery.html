@@ -167,10 +167,10 @@
         <p>
           <strong>Technical status:</strong>
           Narrative technical review and treatment-system framework. It supports
-          technology orientation, preliminary treatment-train development and
-          identification of validation needs, but it is not a systematic review,
-          regulatory opinion, final process design or site-specific performance
-          guarantee.
+          technology orientation, preliminary treatment-train development,
+          identification of evidence gaps and validation planning, but it is not
+          a systematic review, regulatory opinion, validated site-specific
+          process model, final process design or performance guarantee.
         </p>
 
         <p>
@@ -218,19 +218,24 @@
           Persistent contaminants—including pharmaceuticals,
           endocrine-disrupting compounds and per- and polyfluoroalkyl
           substances—may require tertiary or quaternary treatment beyond
-          conventional biological processing. Technologies discussed include
-          ozonation and other oxidation processes, hydrodynamic cavitation,
-          photocatalysis, forward osmosis, cold plasma, microbial fuel cells
-          and controlled-release oxidants.
+          conventional biological processing. The appropriate barrier depends
+          strongly on contaminant chemistry and matrix composition. Oxidation
+          processes may be effective for some organic micropollutants, whereas
+          highly persistent species such as many PFAS often require targeted
+          separation, concentration or specialized destruction strategies.
+          Technologies discussed include ozonation and other oxidation
+          processes, hydrodynamic cavitation, photocatalysis, membrane-based
+          separations, cold plasma, microbial electrochemical concepts and
+          controlled-release oxidants.
         </p>
 
         <p>
-          The review frames the next generation of wastewater-treatment plants
-          as water resource recovery facilities that combine pollution control
-          with energy recovery, nutrient recovery and water reclamation. Its
-          central recommendation is coordinated treatment-train integration
-          rather than selection of isolated technologies solely from
-          laboratory-scale removal percentages.
+          The review frames advanced wastewater-treatment plants as systems
+          that may combine pollution control with water reuse, energy recovery
+          and recovery of nutrients or other resources where technically and
+          economically justified. Its central recommendation is coordinated
+          treatment-train integration rather than selection of isolated
+          technologies solely from laboratory-scale removal percentages.
         </p>
       </section>
 
@@ -251,24 +256,30 @@
           can provide complementary barriers for compounds or organisms that
           are insufficiently controlled by conventional treatment. Selection
           depends on contaminant properties, water-matrix effects, by-product
-          formation and the intended effluent or reuse standard.
+          formation, residual-stream management and the intended discharge or
+          reuse standard. Removal from the aqueous phase must be distinguished
+          from chemical destruction or mineralization.
         </p>
 
         <h3>Energy and resource recovery</h3>
         <p>
           Anaerobic digestion, biogas utilization, nutrient precipitation,
-          water reuse and other recovery routes can shift a treatment facility
-          toward a circular-resource model. Recovery potential must be
-          evaluated together with product quality, internal energy demand,
-          residual handling and market or reuse requirements.
+          water reuse and other recovery routes can improve resource
+          utilization where the recovered stream meets a defined specification
+          and has a credible outlet. Recovery potential must be evaluated
+          together with product quality, contaminants, internal energy demand,
+          chemical use, residual handling, storage, transport and market or
+          reuse requirements.
         </p>
 
         <h3>Monitoring and digital optimization</h3>
         <p>
           Sensors, process analytics, predictive control and digital models can
           support treatment stability and energy optimization. Their usefulness
-          depends on measurement quality, validated process models, data
-          governance, operator integration and clear control objectives.
+          depends on measurement quality, representative training or calibration
+          data where relevant, model verification and validation, data
+          governance, operator integration, fail-safe operation and clear
+          decision or control objectives.
         </p>
       </section>
 
@@ -286,8 +297,9 @@
             results from idealized laboratory water;
           </li>
           <li>
-            include energy, chemical demand, membrane or catalyst replacement,
-            sludge and concentrate management and operator workload;
+            include energy and chemical demand, membrane or catalyst replacement,
+            fouling and cleaning, sludge and concentrate management, residual
+            disposal or recovery, and operator workload;
           </li>
           <li>
             assess transformation products, disinfection by-products and
@@ -304,9 +316,32 @@
           </li>
           <li>
             connect resource recovery to a defined product specification,
-            outlet or reuse pathway.
+            contaminant limit, quality-assurance method and outlet or reuse
+            pathway.
           </li>
         </ul>
+      </section>
+
+      <section aria-labelledby="function-heading">
+        <h2 id="function-heading">Treatment-function interpretation</h2>
+
+        <p>
+          Treatment, polishing, reuse preparation and resource recovery are
+          different engineering functions. A unit operation that reduces a
+          contaminant concentration may not destroy the contaminant, and a
+          process that transfers material into sludge, concentrate, spent
+          adsorbent or another residual stream still requires management of
+          that residual.
+        </p>
+
+        <p>
+          Water reuse requires performance to be assessed against the intended
+          use and its relevant chemical, microbiological and operational
+          quality criteria. Resource recovery likewise requires a defined
+          recovered product, quality specification, contaminant limits and
+          destination; recovery yield alone is not sufficient evidence of a
+          useful circular pathway.
+        </p>
       </section>
 
       <section aria-labelledby="scope-heading">
@@ -320,18 +355,23 @@
         </p>
 
         <p>
-          Removal efficiency, energy demand and cost depend on wastewater
-          composition, contaminant concentration, dissolved organic matter,
-          alkalinity, suspended solids, temperature, hydraulic loading, reactor
-          design, dose, residence time and downstream separation.
+          Removal efficiency, destruction efficiency, energy demand and cost
+          depend on wastewater composition, contaminant concentration,
+          dissolved organic matter, alkalinity, suspended solids, temperature,
+          hydraulic loading, reactor design, dose, residence time, mass-transfer
+          conditions and downstream separation. Values from one matrix or
+          operating regime should not be transferred to another without an
+          explicit applicability assessment.
         </p>
 
         <p>
           Laboratory activity does not establish full-scale feasibility.
-          Implementation requires representative-water testing, mass and energy
-          balances, by-product and toxicity assessment, residual-management
-          planning, process safety, operability analysis and pilot-scale
-          validation.
+          Implementation requires representative-water testing, closed mass and
+          energy balances, by-product and toxicity assessment, residual-stream
+          management, process safety, operability analysis, reliability and
+          maintenance assessment, and representative pilot-scale validation.
+          Software calculations and short-duration tests support development
+          decisions but do not substitute for system-specific validation.
         </p>
 
         <p>
@@ -339,6 +379,25 @@
           preparation in March 2026. Current legal requirements, standards,
           discharge permits and water-reuse criteria must be verified for the
           relevant jurisdiction and project date.
+        </p>
+      </section>
+
+      <section aria-labelledby="aop-relation-heading">
+        <h2 id="aop-relation-heading">Relation to the AOP kinetic–process framework</h2>
+
+        <p>
+          This review provides the broader treatment-train and resource-recovery
+          context. The companion AOP kinetic–process framework addresses a
+          narrower modelling problem: screening how kinetics, water-matrix
+          effects and process conditions influence oxidative-treatment
+          performance.
+        </p>
+
+        <p>
+          The two resources therefore operate at different levels. A kinetic or
+          energy-normalized AOP screening result does not by itself establish
+          treatment-train suitability, reuse compliance, residual management,
+          toxicity control, process safety or full-scale economics.
         </p>
       </section>
 
@@ -352,7 +411,7 @@
               target="_blank"
               rel="noopener"
             >
-              View the website-hosted preprint PDF
+              View PDF
             </a>
           </li>
 
@@ -362,7 +421,7 @@
               target="_blank"
               rel="noopener noreferrer external"
             >
-              Access the Zenodo record and deposited files
+              Access the canonical Zenodo record and deposited files
             </a>
           </li>
         </ul>
@@ -433,6 +492,12 @@
               rel="noopener noreferrer external"
             >
               Open AOP Kinetic–Process Framework repository
+            </a>
+          </li>
+
+          <li>
+            <a href="../research-tools.html#technology-development-methodology">
+              Evidence-gated technology-development methodology
             </a>
           </li>
         </ul>
