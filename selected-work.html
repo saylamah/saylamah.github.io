@@ -101,7 +101,7 @@
     "mainEntity": {
       "@type": "ItemList",
       "name": "Selected professional cases, evidence-based engineering case studies and reusable scientific and engineering resources",
-      "numberOfItems": 11,
+      "numberOfItems": 12,
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -148,24 +148,30 @@
         {
           "@type": "ListItem",
           "position": 8,
+          "name": "Reaction-Network Centrality for Dynamic Combustion-Kinetics Interpretation",
+          "url": "https://saylamah.github.io/selected-work.html#reaction-network-centrality"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
           "name": "Desulfurization Reaction–Transport Regimes",
           "url": "https://saylamah.github.io/selected-work.html#desulfurization-framework"
         },
         {
           "@type": "ListItem",
-          "position": 9,
+          "position": 10,
           "name": "AOP Kinetic Process Framework",
           "url": "https://saylamah.github.io/selected-work.html#aop-framework"
         },
         {
           "@type": "ListItem",
-          "position": 10,
+          "position": 11,
           "name": "Biomass Process Modelling Reconstruction",
           "url": "https://saylamah.github.io/selected-work.html#biochar-framework"
         },
         {
           "@type": "ListItem",
-          "position": 11,
+          "position": 12,
           "name": "NDMS Persistence–Stabilization Closure",
           "url": "https://saylamah.github.io/selected-work.html#ndms-framework"
         }
@@ -1772,6 +1778,118 @@
 
             <a href="papers/degree-centrality-combustion-reaction-networks.html">
               View related reaction-network study
+            </a>
+
+            <a href="research-tools.html#kinetic-intelligence">
+              View later Kinetic Intelligence work
+            </a>
+          </div>
+        </article>
+
+        <article id="reaction-network-centrality" class="case-study">
+          <div class="case-header">
+            <div>
+              <span class="case-domain">
+                Combustion kinetics · Reaction networks · Adaptive chemistry
+              </span>
+
+              <span class="case-classification">
+                Fundamental Science &amp; Frontier Models · Computational
+                Reactive Engineering
+              </span>
+
+              <h3>
+                Reaction-Network Centrality for Dynamic Combustion-Kinetics
+                Interpretation
+              </h3>
+
+              <p class="case-summary">
+                Peer-reviewed work applied graph-theoretic degree centrality to
+                time-dependent combustion reaction networks to identify locally
+                active or principal species as thermochemical conditions
+                changed. The network information was coupled with directed
+                relation graph reduction in a dynamic adaptive chemistry
+                workflow. A central result was that a highly connected species
+                is not automatically a species that must be retained for
+                predictive accuracy.
+              </p>
+            </div>
+
+            <span class="status peer-reviewed">
+              Peer-reviewed network diagnostic · application-dependent
+            </span>
+          </div>
+
+          <div class="case-grid">
+            <section class="case-column">
+              <h4>Technical question</h4>
+              <p>
+                Can the changing topology of a combustion reaction network
+                identify locally active species during a simulation, and can
+                that information support adaptive chemistry without confusing
+                structural connectivity with predictive kinetic importance?
+              </p>
+            </section>
+
+            <section class="case-column">
+              <h4>Contribution</h4>
+              <ul>
+                <li>
+                  Combustion chemistry was represented as a dynamic reaction
+                  network whose species connectivity changes with the local
+                  thermochemical state
+                </li>
+                <li>
+                  Degree centrality was used to identify a principal species at
+                  each selected simulation time or computational location
+                </li>
+                <li>
+                  The dynamically selected principal species was coupled with a
+                  directed relation graph reduction step inside an adjusted
+                  dynamic adaptive chemistry workflow
+                </li>
+                <li>
+                  Tests with C1–C3 alkane chemistry and n-heptane showed that
+                  centrality ranking alone should not be treated as a direct
+                  substitute for predictive mechanism-reduction criteria
+                </li>
+              </ul>
+            </section>
+
+            <section class="case-column">
+              <h4>Decision value</h4>
+              <p>
+                The case separates two questions that are often mixed:
+                <em>Which species is structurally active in the local reaction
+                network?</em> and <em>Which species must be retained to preserve
+                a target prediction?</em> This distinction supports more
+                disciplined use of network metrics for mechanism
+                interpretation, target selection and adaptive-chemistry design.
+              </p>
+            </section>
+
+            <section class="case-column">
+              <h4>Evidence boundary</h4>
+              <p>
+                Degree centrality is a structural network descriptor; a large
+                value does not by itself prove causal control of ignition,
+                heat release, flame speed or pollutant formation. The published
+                implementation used Cantera, GRI-Mech 3.0 for C1–C3 chemistry,
+                an LLNL n-heptane mechanism, DRG reduction and an adjusted DAC
+                workflow. Useful real-CPU-time comparison was not established
+                in the paper. Transfer to other mechanisms, targets, reactors
+                or multidimensional CFD therefore requires separate validation.
+              </p>
+            </section>
+          </div>
+
+          <div class="case-links">
+            <a href="papers/degree-centrality-combustion-reaction-networks.html">
+              View peer-reviewed reaction-network study
+            </a>
+
+            <a href="publications/chemical-kinetic-mechanism-reduction.html">
+              View earlier mechanism-reduction study
             </a>
 
             <a href="research-tools.html#kinetic-intelligence">
