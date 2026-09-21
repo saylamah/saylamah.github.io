@@ -101,7 +101,7 @@
     "mainEntity": {
       "@type": "ItemList",
       "name": "Selected professional cases, evidence-based engineering case studies and reusable scientific and engineering resources",
-      "numberOfItems": 12,
+      "numberOfItems": 13,
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -154,24 +154,30 @@
         {
           "@type": "ListItem",
           "position": 9,
+          "name": "Causal Adaptive Chemistry: Accuracy, Transfer and Runtime Attribution",
+          "url": "https://saylamah.github.io/selected-work.html#causal-adaptive-chemistry"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
           "name": "Desulfurization Reaction–Transport Regimes",
           "url": "https://saylamah.github.io/selected-work.html#desulfurization-framework"
         },
         {
           "@type": "ListItem",
-          "position": 10,
+          "position": 11,
           "name": "AOP Kinetic Process Framework",
           "url": "https://saylamah.github.io/selected-work.html#aop-framework"
         },
         {
           "@type": "ListItem",
-          "position": 11,
+          "position": 12,
           "name": "Biomass Process Modelling Reconstruction",
           "url": "https://saylamah.github.io/selected-work.html#biochar-framework"
         },
         {
           "@type": "ListItem",
-          "position": 12,
+          "position": 13,
           "name": "NDMS Persistence–Stabilization Closure",
           "url": "https://saylamah.github.io/selected-work.html#ndms-framework"
         }
@@ -1894,6 +1900,129 @@
 
             <a href="research-tools.html#kinetic-intelligence">
               View later Kinetic Intelligence work
+            </a>
+          </div>
+        </article>
+
+        <article id="causal-adaptive-chemistry" class="case-study">
+          <div class="case-header">
+            <div>
+              <span class="case-domain">
+                Adaptive chemistry · Mechanism reduction · Runtime engineering
+              </span>
+
+              <span class="case-classification">
+                Computational Reactive Engineering · Reproducible Method
+                Development
+              </span>
+
+              <h3>
+                Causal Adaptive Chemistry: Accuracy, Transfer and Runtime
+                Attribution
+              </h3>
+
+              <p class="case-summary">
+                A 2026 open computational study tested a causal adaptive
+                mechanism-reduction workflow with GRI-Mech 3.0 and USC Mech II.
+                The work deliberately separated three questions that are often
+                conflated: whether reduced chemistry remains accurate, whether
+                the method transfers to a second parent mechanism, and whether
+                the complete adaptive implementation is actually faster. The
+                tested adaptive workflow met its declared accuracy criteria and
+                transferred to USC Mech II, while runtime analysis showed that
+                controller and mechanism-management overhead prevented a net
+                adaptive speed benefit in the present Python/Cantera prototype.
+              </p>
+            </div>
+
+            <span class="status screening">
+              Open computational study · reproducibility supplement
+            </span>
+          </div>
+
+          <div class="case-grid">
+            <section class="case-column">
+              <h4>Technical question</h4>
+              <p>
+                Can an adaptive chemistry workflow reduce the active mechanism
+                as conditions evolve, preserve the declared accuracy targets,
+                transfer across parent mechanisms and still deliver a useful
+                end-to-end computational benefit?
+              </p>
+            </section>
+
+            <section class="case-column">
+              <h4>Contribution</h4>
+              <ul>
+                <li>
+                  Reduction accuracy, mechanism transfer and runtime performance
+                  were evaluated as separate evidence dimensions
+                </li>
+                <li>
+                  GRI-Mech 3.0 methane/air cases were used for the controlled
+                  accuracy baseline
+                </li>
+                <li>
+                  USC Mech II provided a second-mechanism transfer test using a
+                  mechanism-specific candidate domain rather than assuming the
+                  first mechanism's domain would transfer unchanged
+                </li>
+                <li>
+                  Runtime attribution separated chemistry-integration benefit
+                  from controller, rebuild and mechanism-management overhead
+                </li>
+              </ul>
+            </section>
+
+            <section class="case-column">
+              <h4>Decision value</h4>
+              <p>
+                The case demonstrates why reduced chemistry should not be
+                judged by mechanism size or local solver speed alone. A useful
+                adaptive implementation must preserve the required prediction,
+                transfer only within a justified domain, control state and
+                rebuild integrity, and reduce total wall-clock cost after all
+                adaptation overhead is included.
+              </p>
+            </section>
+
+            <section class="case-column">
+              <h4>Evidence boundary</h4>
+              <p>
+                This is computational validation within the declared benchmark
+                cases, not experimental validation of combustion chemistry or a
+                universal adaptive-chemistry result. Static reduction of the
+                tested USC cases produced a computational speed benefit on the
+                reported computer, but the complete adaptive Python/Cantera
+                prototype was slower because management overhead dominated.
+                The results do not establish universal scheduler success,
+                universal mechanism transfer, CFD acceleration or hardware-
+                independent speedup. New fuels, reactors and multidimensional
+                applications require separate validation and performance
+                engineering.
+              </p>
+            </section>
+          </div>
+
+          <div class="case-links">
+            <a
+              href="https://doi.org/10.5281/zenodo.21932685"
+              target="_blank"
+              rel="noopener noreferrer external"
+            >
+              Open preprint and reproducibility supplement
+            </a>
+
+            <a href="research-tools.html#kinetic-intelligence">
+              View Kinetic Intelligence programme
+            </a>
+
+            <a href="#autoignition-mechanism-reduction">
+              View earlier mechanism-reduction case
+            </a>
+
+            <a href="#reaction-network-centrality">
+              View reaction-network case
             </a>
           </div>
         </article>
