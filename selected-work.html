@@ -101,7 +101,7 @@
     "mainEntity": {
       "@type": "ItemList",
       "name": "Selected professional cases, evidence-based engineering case studies and reusable scientific and engineering resources",
-      "numberOfItems": 10,
+      "numberOfItems": 11,
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -142,24 +142,30 @@
         {
           "@type": "ListItem",
           "position": 7,
+          "name": "Autoignition Mechanism Reduction for Efficient Reactive-Flow Modelling",
+          "url": "https://saylamah.github.io/selected-work.html#autoignition-mechanism-reduction"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
           "name": "Desulfurization Reaction–Transport Regimes",
           "url": "https://saylamah.github.io/selected-work.html#desulfurization-framework"
         },
         {
           "@type": "ListItem",
-          "position": 8,
+          "position": 9,
           "name": "AOP Kinetic Process Framework",
           "url": "https://saylamah.github.io/selected-work.html#aop-framework"
         },
         {
           "@type": "ListItem",
-          "position": 9,
+          "position": 10,
           "name": "Biomass Process Modelling Reconstruction",
           "url": "https://saylamah.github.io/selected-work.html#biochar-framework"
         },
         {
           "@type": "ListItem",
-          "position": 10,
+          "position": 11,
           "name": "NDMS Persistence–Stabilization Closure",
           "url": "https://saylamah.github.io/selected-work.html#ndms-framework"
         }
@@ -1653,6 +1659,123 @@
 
             <a href="research-tools.html#kinetic-intelligence">
               View related kinetic-intelligence work
+            </a>
+          </div>
+        </article>
+
+        <article id="autoignition-mechanism-reduction" class="case-study">
+          <div class="case-header">
+            <div>
+              <span class="case-domain">
+                Chemical kinetics · Autoignition · Mechanism reduction
+              </span>
+
+              <span class="case-classification">
+                Fundamental Science &amp; Frontier Models · Computational
+                Reactive Engineering
+              </span>
+
+              <h3>
+                Autoignition Mechanism Reduction for Efficient Reactive-Flow
+                Modelling
+              </h3>
+
+              <p class="case-summary">
+                Peer-reviewed work developed a reduction method that combines
+                reaction-rate and sensitivity analyses to remove reactions that
+                are both slow and non-rate-limiting from detailed hydrocarbon
+                autoignition mechanisms. Applied to n-heptane and isooctane, the
+                reduced mechanisms reproduced selected ignition-delay and
+                intermediate-species predictions of the parent mechanisms while
+                lowering computational cost. The case shows that mechanism
+                reduction must remain tied to defined fuels, operating
+                conditions and target observables.
+              </p>
+            </div>
+
+            <span class="status peer-reviewed">
+              Peer-reviewed computational method · application-dependent
+            </span>
+          </div>
+
+          <div class="case-grid">
+            <section class="case-column">
+              <h4>Technical question</h4>
+              <p>
+                How can a large detailed kinetic mechanism be made smaller and
+                faster without removing reactions that exert strong control over
+                the autoignition quantities that must remain accurate?
+              </p>
+            </section>
+
+            <section class="case-column">
+              <h4>Contribution</h4>
+              <ul>
+                <li>
+                  Reaction-rate analysis identifies reactions carrying
+                  significant kinetic activity along the autoignition
+                  trajectory
+                </li>
+                <li>
+                  Sensitivity analysis retains slower reactions that still
+                  exert strong kinetic control
+                </li>
+                <li>
+                  The two criteria are combined so that slow but rate-limiting
+                  pathways are not discarded simply because their instantaneous
+                  rates are small
+                </li>
+                <li>
+                  Reduction thresholds are treated as mechanism- and
+                  application-dependent choices that require validation against
+                  the parent detailed chemistry
+                </li>
+              </ul>
+            </section>
+
+            <section class="case-column">
+              <h4>Decision value</h4>
+              <p>
+                The case translates mechanism reduction into an engineering
+                decision sequence: define the observables that must be
+                preserved, identify kinetically indispensable reactions, reduce
+                only within that target domain, quantify the computational
+                benefit and revalidate before transfer to a new fuel, reactor or
+                multidimensional simulation.
+              </p>
+            </section>
+
+            <section class="case-column">
+              <h4>Evidence boundary</h4>
+              <p>
+                The published method was evaluated for selected n-heptane and
+                isooctane autoignition applications using CHEMKIN-era detailed
+                mechanisms. Reported computational speedups are historical and
+                should not be transferred to current hardware or software.
+                Accuracy is not established automatically for new fuels,
+                flames, CFD, emissions targets or operating domains. Later
+                reaction-network and adaptive-chemistry work is related but is
+                scientifically distinct from the original reduction method and
+                does not retroactively expand its validation domain.
+              </p>
+            </section>
+          </div>
+
+          <div class="case-links">
+            <a href="publications/chemical-kinetic-mechanism-reduction.html">
+              View peer-reviewed reduction study
+            </a>
+
+            <a href="publications/oxidation-autoignition-alkanes-aromatics.html">
+              View doctoral kinetics foundation
+            </a>
+
+            <a href="papers/degree-centrality-combustion-reaction-networks.html">
+              View related reaction-network study
+            </a>
+
+            <a href="research-tools.html#kinetic-intelligence">
+              View later Kinetic Intelligence work
             </a>
           </div>
         </article>
